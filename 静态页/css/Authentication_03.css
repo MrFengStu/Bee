@@ -1,0 +1,183 @@
+body{
+			text-align: center;
+		}
+		#all{
+			margin: auto;
+			background-color: #ffffff;
+			
+		}
+		#logo{
+			margin: auto;
+			height: 100px;
+		}
+		#logo_id{
+			margin-left: 270px;
+			width: 800px;
+		}
+		.logo_class{
+			width: 800px;
+		}
+		#menu{
+			margin: auto;
+			height: 37px;
+			background-color: #d7d61c;
+		}
+		#menu_id{
+			margin-left: 177px;
+			width: 990px;
+			background-color: #d7d61c;
+			height: 36px;
+			margin-top: -1px;
+		}
+		.menu_class{
+			margin-left: 58px;
+			width: 932px;
+		}
+		#content{
+			margin: auto;
+		}
+		#banner{
+			background-color: #f9f7ed;
+			margin: auto;
+			height: 337px;
+		}
+		#banner_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.banner_class{
+			margin-left: 100px;
+			width: 700px;
+		}
+		#message{
+			margin: auto;
+			margin-top: -70px;
+		}
+		#message_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.message_class{
+			margin-left: 58px;
+			width: 932px;
+			background-color: #faf8f9;
+		}
+
+
+		#footer{
+			background-color: #ded9c5;
+			margin: auto;
+			height: 245px;
+		}
+		#footer_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.footer_class{
+			margin-left: 58px;
+			width: 932px;
+
+		}
+
+		.status{
+			width: 900px;
+			height:125px;
+			margin-top: 70px;
+			padding-top: 60px;
+		}
+		.status img{
+			width: 600px;
+			height: 70px;
+		}
+
+
+		.form{
+			padding-top: 40px;
+			width: 900px;
+			height: 700px;
+		}
+
+		.form_success{
+			width: 700px;
+			height: 70px;
+			margin:auto;
+			padding: auto;
+		}
+		
+		.form_success h1{
+			
+			color: #696969;
+		}
+		.form_list{
+			width: 700px;
+			height: 500px;
+			margin: auto;
+		}
+
+		.list_{
+			width: 500px;
+			height: 450px;
+			margin: auto;
+			padding-top: 50px;
+			margin-top: 20px;
+			font-size: 15px;
+		}
+		.list_1{
+			color: #ff9e35;
+			width: 200px;
+			height: 40px;
+			margin-top: -30px;
+			padding-left:-100px; 
+
+		}
+		.list_2{
+			width: 240px;
+			height: 30px;
+			margin-top: 20px;
+			padding-left: 13px;
+		}
+		.list_3{
+			width: 200px;
+			height: 30px;
+			margin-top: 20px;
+			padding-left: 13px; 
+
+		}
+		.list_4{
+			width: 200px;
+			height: 30px;
+			margin-top: 20px;
+
+		}
+		.list_5{
+			width: 200px;
+			height: 30px;
+			margin-top: 20px;
+			padding-left: 28px;
+		}
+		.list_6{
+			width: 200px;
+			height: 30px;
+			margin-top: 20px;
+		}
+		.list_7{
+			width: 400px;
+			height: 80px;
+			margin-top: 20px;
+			padding-left: 40px;
+		}
+		.button{
+			width: 900px;
+			height: 60px;
+		}
+
+		.button_next{
+			width: 140px;
+			height: 45px;
+			margin-top: -30px;
+			margin-left: 350px;
+		}
+		.btn{
+			width: 100px;
+			height: 40px;
+		}

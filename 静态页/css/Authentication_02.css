@@ -1,0 +1,241 @@
+body{
+			text-align: center;
+		}
+		#all{
+			margin: auto;
+			background-color: #ffffff;
+			
+		}
+		#logo{
+			margin: auto;
+			height: 100px;
+		}
+		#logo_id{
+			margin-left: 270px;
+			width: 800px;
+		}
+		.logo_class{
+			width: 800px;
+		}
+		#menu{
+			margin: auto;
+			height: 37px;
+			background-color: #d7d61c;
+		}
+		#menu_id{
+			margin-left: 177px;
+			width: 990px;
+			background-color: #d7d61c;
+			height: 36px;
+			margin-top: -1px;
+		}
+		.menu_class{
+			margin-left: 58px;
+			width: 932px;
+		}
+		#content{
+			margin: auto;
+		}
+		#banner{
+			background-color: #f9f7ed;
+			margin: auto;
+			height: 337px;
+		}
+		#banner_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.banner_class{
+			margin-left: 100px;
+			width: 700px;
+		}
+		#message{
+			margin: auto;
+			margin-top: -70px;
+		}
+		#message_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.message_class{
+			margin-left: 58px;
+			width: 932px;
+			background-color: #faf8f9;
+		}
+
+
+		#footer{
+			background-color: #ded9c5;
+			margin: auto;
+			height: 245px;
+		}
+		#footer_id{
+			margin-left: 177px;
+			width: 990px;
+		}
+		.footer_class{
+			margin-left: 58px;
+			width: 932px;
+
+		}
+
+		.status{
+			width: 900px;
+			height:125px;
+			margin-top: 70px;
+			padding-top: 60px;
+		}
+		.status img{
+			width: 600px;
+			height: 70px;
+		}
+
+
+		.form{
+			padding-top: 40px;
+			width: 900px;
+			height: 900px;
+		}
+
+		#form1{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form2{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form3{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form4{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form5{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form6{
+			width: 700px;
+			height: 100px;
+			margin-left:100px;
+		}
+		#form7{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form8{
+			width: 700px;
+			height: 70px;
+			margin-left:100px;
+		}
+		#form9{
+			width: 700px;
+			height: 200px;
+			margin-left:100px;
+		}
+
+		.form_name{
+			width: 100px;
+			height:50px;
+			margin-left: 70px;
+			margin-top: 9px;
+			padding-top: 15px;
+			font-size: 15px;
+			color: #696969;
+		}
+		.form_input{
+			width: 250px;
+			height:50px;
+			margin-left: 180px;
+			margin-top: -40px;
+		}
+		.form_kemu1{
+			width: 240px;
+			height: 30px;
+			margin-left: 180px;
+			margin-top: -32px;
+		}
+		.form_kemu2{
+			width: 240px;
+			height: 30px;
+			margin-left: 180px;
+			margin-top: 0px;
+		}
+		.form_dizhi{
+			width: 400px;
+			height:50px;
+			margin-left: 180px;
+			margin-top: -40px;
+		}
+		.form_play_shi{
+			width: 150px;
+			height: 40px;
+			margin-left: 180px;
+			margin-top: -40px;
+		}
+		.shi{
+			width: 30px;
+			height: 30px;
+			margin-left: 330px;
+			margin-top: -30px;
+
+		}
+		.form_play_qu{
+			width: 150px;
+			height: 40px;
+			margin-left: 370px;
+			margin-top: -40px;
+
+		}
+		.qu{
+			width: 30px;
+			height: 30px;
+			margin-left: 520px;
+			margin-top: -30px;
+		}
+		.form_money{
+			width: 90px;
+			height: 50px;
+			margin-left: 180px;
+			margin-top: -40px;
+		}
+		.money{
+			width: 50px;
+			height: 30px;
+			margin-left: 270px;
+			margin-top: -40px;
+		}
+		.form_text{
+			width: 400px;
+			margin-left: 180px;
+			margin-top: -40px;
+		}
+		.form_pay{
+			width: 200px;
+			margin-left: 180px;
+			margin-top: -30px;
+		}
+		.button{
+			width: 900px;
+			height: 60px;
+		}
+
+		.button_next{
+			width: 140px;
+			height: 45px;
+			margin-top: -30px;
+			margin-left: 350px;
+		}
+		.btn{
+			width: 100px;
+			height: 40px;
+		}
