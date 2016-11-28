@@ -47,12 +47,12 @@ public class LoginUserController {
 		if (tuser != null && puser == null && str.equals(auth)) {
 			System.out.println("学生登录成功");
 			session.setAttribute("student", tuser);
-			return "index用户";
+			return "index1";
 			
 		}else if(puser != null && tuser == null && str.equals(auth)){
 			System.out.println("家长登录成功");
 			session.setAttribute("parent", puser);
-			return "index用户";
+			return "index1";
 		}else{
 			System.out.println("登录失败");
 			return "login";

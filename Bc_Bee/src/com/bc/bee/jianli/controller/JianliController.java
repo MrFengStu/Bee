@@ -1,6 +1,8 @@
 package com.bc.bee.jianli.controller;
 
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -46,6 +48,7 @@ public class JianliController {
 	public String jianliQW(@RequestParam("expectCity") String area,@RequestParam("expectPosition") String sub,
 			@RequestParam("expectSalary") String salary,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
 		try {
 			area = new String(area.getBytes("iso-8859-1"),"utf-8");
 			sub =new String(sub.getBytes("iso-8859-1"),"utf-8");
@@ -60,6 +63,7 @@ public class JianliController {
 	@RequestMapping("jianlijl")
 	public String jianliJL(@RequestParam("positionName") String pte,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
 		try {
 			pte = new String(pte.getBytes("iso-8859-1"),"utf-8");
 		} catch (UnsupportedEncodingException e) {
@@ -86,6 +90,7 @@ public class JianliController {
 	@RequestMapping("jianlims")
 	public String jianliMS(@RequestParam("selfDescription") String brief,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
 		try {
 			brief = new String(brief.getBytes("iso-8859-1"),"utf-8");
 		} catch (UnsupportedEncodingException e) {
@@ -97,6 +102,7 @@ public class JianliController {
 	@RequestMapping("jianlizc")
 	public String jianliZC(@RequestParam("workDescription") String expertise,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
 		try {
 			expertise = new String(expertise.getBytes("iso-8859-1"),"utf-8");
 		} catch (UnsupportedEncodingException e) {
@@ -104,6 +110,15 @@ public class JianliController {
 		}
 		this.JianliServiceImpl.jianliZC(res,expertise);
 		return "jianli";
+	}
+	
+	//对时间进行更新
+	public void upDateTime(Resume res){
+		Date ReTime = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//		System.out.println(df.format(ReTime)); 
+		
+		this.JianliServiceImpl.upDateTime(res,df.format(ReTime));
 	}
 	
 	//初始化方法
@@ -133,6 +148,8 @@ public class JianliController {
 		session.setAttribute("pte", res.getPte());//兼职经历
 		session.setAttribute("ted", res.getTed());//教育经历
 		session.setAttribute("brief", res.getBrief());//个人介绍
+		session.setAttribute("ReTime", res.getReTime());//更新时间
+		System.out.println(res.getReTime());
 		session.setAttribute("expertise", res.getExpertise());//用数据库表中个人专长字段代替作品展示
 		return "jianli";
 		
