@@ -31,10 +31,9 @@ public class RecruitmentController {
 	java.util.List<RecInfo> list = null;
 	
 	@RequestMapping("jump")
-	public String jump(Integer PUId,HttpServletRequest request,HttpSession session){
-		PUser puser = (PUser)session.getAttribute("puser");
-		PUId = 1;
-		//PUId = puser.getPUId();
+	public String jump(HttpServletRequest request,HttpSession session){
+		PUser parent = (PUser)session.getAttribute("parent");
+		Integer PUId = parent.getPUId();
 		System.out.println(PUId);
 		java.util.List<Map<String, Object>> list = recruitmentServiceImpl.findTime(PUId);
 		int sum = list.size();
