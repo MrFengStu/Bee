@@ -46,8 +46,8 @@ var youdao_conv_id = 271546;
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="${ctx }/index.jsp">首页</a></li>
-    			<li><a href="${ctx }/companylist.jsp">教员列表</a></li>
-    			<li><a target="_blank" href="${ctx }/list.jsp">职位列表</a></li>
+    			<li><a href="${ctx }/joblist">职位列表</a></li>
+    			<li><a target="_blank" href="${ctx }/jiaoyuan">教员列表</a></li>
     			<li class="current"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></li>
 	    	</ul>
         	<dl class="collapsible_menu">
@@ -968,10 +968,10 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="h/about.html">联系我们</a>
-		    <a target="_blank" href="h/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://weibo.com/u/2710088540">bee微博</a>
-		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">bee微信<i></i></a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">蜜蜂微博</a>
+		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2013-2014 Bee <a href="#" target="_blank">冀ICP备14023790号-2</a></div>
 		</div>
 	</div>

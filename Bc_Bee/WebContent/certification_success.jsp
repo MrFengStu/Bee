@@ -13,10 +13,6 @@
 	
 	<title>认证成功</title>
 
-	<script type="text/javascript">
-var ctx = "h";
-console.log(1);
-</script>
 <link rel="Shortcut Icon" href="h/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/style-djw.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/dd.css"/>
@@ -39,20 +35,16 @@ var youdao_conv_id = 271546;
 
 	<div id="header">
     	<div class="wrapper">
-    		<a href="${ctx }/index.html" class="logo">
+    		<a href="" class="logo">
     			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
-    			<li ><a href="${ctx }/index.html">首页</a></li>
-    			<li ><a href="${ctx }/jianli.html" >教员列表</a></li>
-	    		<li ><a href="${ctx }/发布招聘信息_01.html" rel="nofollow">职位列表</a></li>
-	    		<li ><a href="${ctx }/发布求职信息_01.html" rel="nofollow">发布职位</a></li>
+    			<li ><a href="${ctx }/index1.jsp">首页</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+	    		<li ><a href="${ctx }/jiaoyuan" rel="nofollow">教员列表</a></li>
+	    		<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	</ul>
-        	<ul class="loginTop">
-            	<li><a href="${ctx }/login.html" rel="nofollow">登录</a></li> 
-            	<li>|</li>
-            	<li><a href="${ctx }/register.html" rel="nofollow">注册</a></li>
-            </ul>
+        
                                 </div>
     </div>
 	<div id="container">
@@ -83,11 +75,11 @@ var youdao_conv_id = 271546;
        	</div>
        	<div id="footer">
 		<div class="wrapper">
-			<a href="h/about.html" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">互联网公司导航</a>
-		    <a href="http://e.weibo.com/lagou720" target="_blank" rel="nofollow">拉勾微博</a>
+			<a href="" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="" target="_blank">互联网公司导航</a>
+		    <a href="" target="_blank" rel="nofollow">拉勾微博</a>
 		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 
