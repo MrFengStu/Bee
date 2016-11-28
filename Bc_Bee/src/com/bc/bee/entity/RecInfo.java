@@ -43,13 +43,15 @@ public class RecInfo {
 	private String Grade;
 	private String Subject;
 	private String Salary;
-	private char Settle;
+	private String Settle;
 	private String WTime;
 	private String StuInfo;
 	private String JobDemand;
 	private String Subsidy;
 	private String State;
-	private Date ReTime;
+	private String ReTime;
+	private String Shi;
+	private String Qu;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -110,10 +112,11 @@ public class RecInfo {
 	public void setSubject(String subject) {
 		Subject = subject;
 	}
-	public char getSettle() {
+	
+	public String getSettle() {
 		return Settle;
 	}
-	public void setSettle(char settle) {
+	public void setSettle(String settle) {
 		Settle = settle;
 	}
 	public String getWTime() {
@@ -152,12 +155,25 @@ public class RecInfo {
 	public void setState(String state) {
 		State = state;
 	}
-	public Date getReTime() {
+	public String getReTime() {
 		return ReTime;
 	}
-	public void setReTime(Date reTime) {
+	public void setReTime(String reTime) {
 		ReTime = reTime;
 	}
+	public String getShi() {
+		return Shi;
+	}
+	public void setShi(String shi) {
+		Shi = shi;
+	}
+	public String getQu() {
+		return Qu;
+	}
+	public void setQu(String qu) {
+		Qu = qu;
+	}
+	
 	
 	
 }

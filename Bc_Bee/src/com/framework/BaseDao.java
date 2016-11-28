@@ -22,6 +22,10 @@ public abstract class BaseDao<T, PK extends Serializable> {
 	@Resource
 	private SessionFactory sessionFactory;
 
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
 	public BaseDao() {
 		this.entityClass = null;
 		Class c = getClass();

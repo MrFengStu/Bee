@@ -1,11 +1,11 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 <!DOCTYPE HTML>
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
-<script id="allmobilize" charset="utf-8" src="style/js/allmobilize.min.js"></script>
+<script id="allmobilize" charset="utf-8" src="${ctx }/style/js/allmobilize.min.js"></script>
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
@@ -18,37 +18,37 @@
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
-var ctx = "h";
+
 console.log(1);
 </script>
 <link rel="Shortcut Icon" href="h/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="style/css/style-djw.css"/>
-<link rel="stylesheet" type="text/css" href="style/css/dd.css"/>
-<link rel="stylesheet" type="text/css" href="style/css/external.min.css"/>
-<link rel="stylesheet" type="text/css" href="style/css/popup.css"/>
-<script src="style/js/jquery.1.10.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="style/js/jquery.lib.min.js"></script>
-<script src="style/js/ajaxfileupload.js" type="text/javascript"></script>
-<script type="text/javascript" src="style/js/additional-methods.js"></script>
+<link rel="stylesheet" type="text/css" href="${ctx }/style/css/style-djw.css"/>
+<link rel="stylesheet" type="text/css" href="${ctx }/style/css/dd.css"/>
+<link rel="stylesheet" type="text/css" href="${ctx }/style/css/external.min.css"/>
+<link rel="stylesheet" type="text/css" href="${ctx }/style/css/popup.css"/>
+<script src="${ctx }/style/js/jquery.1.10.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="${ctx }/style/js/jquery.lib.min.js"></script>
+<script src="${ctx }/style/js/ajaxfileupload.js" type="text/javascript"></script>
+<script type="text/javascript" src="${ctx }/style/js/additional-methods.js"></script>
 <!--[if lte IE 8]>
-    <script type="text/javascript" src="style/js/excanvas.js"></script>
+    <script type="text/javascript" src="${ctx }/style/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
 </script> 
-<script type="text/javascript" src="style/js/conv.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/conv.js"></script>
 </head>
 <body>
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
     		<a href="index.html" class="logo">
-    			<img src="style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
+    			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
     			<li class="current"><a href="index.html">首页</a></li>
-    			<li ><a href="companylist.html" >职位列表</a></li>
-    			<li ><a href="companylist.html" >教员列表</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
 	    		<li ><a href="create.html" rel="nofollow">发布职位</a></li>
 	    	</ul>
 	    	
@@ -449,39 +449,39 @@ var youdao_conv_id = 271546;
 		<div class="star">
 		<h1>明星家教</h1>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 		<div class="starlist">
-			<img src="style/images/figure.gif" alt="#">
+			<img src="${ctx }/style/images/figure.gif" alt="#">
 			<a href="#">李教员[女]</a>
-				<img src="style/images/lstar.gif" alt="#" id="lstar">			
+				<img src="${ctx }/style/images/lstar.gif" alt="#" id="lstar">			
 			<p>初中理综</p>
 		</div>
 
@@ -490,7 +490,7 @@ var youdao_conv_id = 271546;
 		</div>
         <div class="content">	
 	        			<div id="search_box">
-		<form id="searchForm" name="searchForm" action="list.html" method="get">
+		<form id="searchForm" name="searchForm" action="${ctx }/search" method="post">
         <ul id="searchType">
         	        	<li data-searchtype="1" class="type_selected">职位</li>
         	<li data-searchtype="4">公司</li>
@@ -518,7 +518,7 @@ var youdao_conv_id = 271546;
 .ui-menu-item{ *width:439px;vertical-align: middle;position: relative;margin: 0px;margin-right: 50px !important;background:#fff;border-right: 1px dashed #ededed;}
 .ui-menu-item a{display:block;overflow:hidden;}
 </style>
-<script type="text/javascript" src="style/js/search.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
 	<dd><a href="list.htmlJava?labelWords=label&city=">理综</a></dd>
@@ -531,13 +531,13 @@ var youdao_conv_id = 271546;
 			<div id="home_banner">
 	            <ul class="banner_bg">
 	            		                <li  class="banner_bg_1 current" >
-	                    <a href="h/subject/s_buyfundation.html?utm_source=DH__lagou&utm_medium=banner&utm_campaign=haomai" target="_blank"><img src="style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
+	                    <a href="h/subject/s_buyfundation.html?utm_source=DH__lagou&utm_medium=banner&utm_campaign=haomai" target="_blank"><img src="${ctx }/style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
 	                </li>
 	                	                <li  class="banner_bg_2" >
-	                    <a href="h/subject/s_worldcup.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=wc" target="_blank"><img src="style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
+	                    <a href="h/subject/s_worldcup.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=wc" target="_blank"><img src="${ctx }/style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
 	                </li>
 	                	                <li  class="banner_bg_3" >
-	                    <a href="h/subject/s_xiamen.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=xiamen" target="_blank"><img src="style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
+	                    <a href="h/subject/s_xiamen.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=xiamen" target="_blank"><img src="${ctx }/style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
 	                </li>
 	                	            </ul>
 	            <div class="banner_control">
@@ -545,15 +545,15 @@ var youdao_conv_id = 271546;
 	                <ul class="thumbs">
 	                		                    <li  class="thumbs_1 current" >
 	                        <i></i>
-	                        <img src="style/images/4469b1b83b1f46c7adec255c4b1e4802.jpg" width="113" height="42" />
+	                        <img src="${ctx }/style/images/4469b1b83b1f46c7adec255c4b1e4802.jpg" width="113" height="42" />
 	                    </li>
 	                    	                    <li  class="thumbs_2" >
 	                        <i></i>
-	                        <img src="style/images/381b343557774270a508206b3a725f39.jpg" width="113" height="42" />
+	                        <img src="${ctx }/style/images/381b343557774270a508206b3a725f39.jpg" width="113" height="42" />
 	                    </li>
 	                    	                    <li  class="thumbs_3" >
 	                        <i></i>
-	                        <img src="style/images/354d445c5fd84f1990b91eb559677eb5.jpg" width="113" height="42" />
+	                        <img src="${ctx }/style/images/354d445c5fd84f1990b91eb559677eb5.jpg" width="113" height="42" />
 	                    </li>
 	                    	                </ul>
 	            </div>
@@ -562,7 +562,7 @@ var youdao_conv_id = 271546;
         	<ul id="da-thumbs" class="da-thumbs">
 	        		        		<li >
 	                    <a href="h/c/1650.html" target="_blank">
-	                        <img src="style/images/a254b11ecead45bda166afa8aaa9c8bc.jpg" width="113" height="113" alt="联想" />
+	                        <img src="${ctx }/style/images/a254b11ecead45bda166afa8aaa9c8bc.jpg" width="113" height="113" alt="联想" />
 	                        <div class="hot_info">
 	                        	<h2 title="联想">联想</h2>
 	                            <em></em>
@@ -574,7 +574,7 @@ var youdao_conv_id = 271546;
 	                </li>
                 	        		<li >
 	                    <a href="h/c/9725.html" target="_blank">
-	                        <img src="style/images/c75654bc2ab141df8218983cfe5c89f9.jpg" width="113" height="113" alt="淘米" />
+	                        <img src="${ctx }/style/images/c75654bc2ab141df8218983cfe5c89f9.jpg" width="113" height="113" alt="淘米" />
 	                        <div class="hot_info">
 	                        	<h2 title="淘米">淘米</h2>
 	                            <em></em>
@@ -586,7 +586,7 @@ var youdao_conv_id = 271546;
 	                </li>
                 	        		<li >
 	                    <a href="h/c/1914.html" target="_blank">
-	                        <img src="style/images/2bba2b71d0b0443eaea1774f7ee17c9f.png" width="113" height="113" alt="优酷土豆" />
+	                        <img src="${ctx }/style/images/2bba2b71d0b0443eaea1774f7ee17c9f.png" width="113" height="113" alt="优酷土豆" />
 	                        <div class="hot_info">
 	                        	<h2 title="优酷土豆">优酷土豆</h2>
 	                            <em></em>
@@ -598,7 +598,7 @@ var youdao_conv_id = 271546;
 	                </li>
                 	        		<li >
 	                    <a href="h/c/6630.html" target="_blank">
-	                        <img src="style/images/f4822a445a8b495ebad81fcfad3e40e2.jpg" width="113" height="113" alt="思特沃克" />
+	                        <img src="${ctx }/style/images/f4822a445a8b495ebad81fcfad3e40e2.jpg" width="113" height="113" alt="思特沃克" />
 	                        <div class="hot_info">
 	                        	<h2 title="思特沃克">思特沃克</h2>
 	                            <em></em>
@@ -610,7 +610,7 @@ var youdao_conv_id = 271546;
 	                </li>
                 	        		<li >
 	                    <a href="h/c/2700.html" target="_blank">
-	                        <img src="style/images/5caf8f9631114bf990f87bb11360653e.png" width="113" height="113" alt="奇猫" />
+	                        <img src="${ctx }/style/images/5caf8f9631114bf990f87bb11360653e.png" width="113" height="113" alt="奇猫" />
 	                        <div class="hot_info">
 	                        	<h2 title="奇猫">奇猫</h2>
 	                            <em></em>
@@ -622,7 +622,7 @@ var youdao_conv_id = 271546;
 	                </li>
                 	        		<li  class="last" >
 	                    <a href="h/c/1335.html" target="_blank">
-	                        <img src="style/images/c0052c69ef4546c3b7d08366d0744974.jpg" width="113" height="113" alt="堆糖网" />
+	                        <img src="${ctx }/style/images/c0052c69ef4546c3b7d08366d0744974.jpg" width="113" height="113" alt="堆糖网" />
 	                        <div class="hot_info">
 	                        	<h2 title="堆糖网">堆糖网</h2>
 	                            <em></em>
@@ -1284,7 +1284,7 @@ var youdao_conv_id = 271546;
 <!-- <div id="loginToolBar">
 	<div>
 		<em></em>
-		<img src="style/images/footbar_logo.png" width="138" height="45" />
+		<img src="${ctx }/style/images/footbar_logo.png" width="138" height="45" />
 		<span class="companycount"></span>
 		<span class="positioncount"></span>
 		<a href="#loginPop" class="bar_login inline" title="登录"><i></i></a>
@@ -1318,9 +1318,9 @@ var youdao_conv_id = 271546;
     </div><!--/#loginPop-->
 </div>
 <!------------------------------------- end ----------------------------------------->
-<script type="text/javascript" src="style/js/Chart.min.js"></script>
-<script type="text/javascript" src="style/js/home.min.js"></script>
-<script type="text/javascript" src="style/js/count.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/Chart.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/home.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/count.js"></script>
 			<div class="clear"></div>
 			<input type="hidden" id="resubmitToken" value="" />
 	    	<a id="backtop" title="回到顶部" rel="nofollow"></a>
@@ -1336,10 +1336,10 @@ var youdao_conv_id = 271546;
 		</div>
 	</div>
 
-<script type="text/javascript" src="style/js/core.min.js"></script>
-<script type="text/javascript" src="style/js/popup.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/core.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/popup.min.js"></script>
 
-<!-- <script src="style/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="${ctx }/style/js/wb.js" type="text/javascript" charset="utf-8"></script>
  -->
 
 </body>

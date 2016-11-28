@@ -31,6 +31,7 @@ public class PUser {
 	private String PUName;
 	private String PUPwd;
 	private String PMailbox;
+	private String PMobile;
 	
 	private Parcer parcer;
 	private Set<RecInfo> recinfos=new HashSet<RecInfo>(0);
@@ -105,6 +106,11 @@ public class PUser {
 	public void setInvitations(Set<Invitation> invitations) {
 		this.invitations = invitations;
 	}
-	
+	public String getPMobile() {
+		return PMobile;
+	}
+	public void setPMobile(String pMobile) {
+		PMobile = pMobile;
+	}
 	
 }

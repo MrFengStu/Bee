@@ -36,12 +36,13 @@ public class Resume {
 	private String Area;
 	private String TeaSubject;
 	private String TeaMode;
-	private char Settle;
+	private String Settle;
 	private String Discount;
 	private String Brief;
 	private String Pte;
-	private char State;
-	private Integer Salary;
+	private String State;
+	private String Salary;
+	private String TUName;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -96,12 +97,6 @@ public class Resume {
 	public void setTeaMode(String teaMode) {
 		TeaMode = teaMode;
 	}
-	public char getSettle() {
-		return Settle;
-	}
-	public void setSettle(char settle) {
-		Settle = settle;
-	}
 	public String getDiscount() {
 		return Discount;
 	}
@@ -120,17 +115,28 @@ public class Resume {
 	public void setPte(String pte) {
 		Pte = pte;
 	}
-	public char getState() {
+	public String getSettle() {
+		return Settle;
+	}
+	public void setSettle(String settle) {
+		Settle = settle;
+	}
+	public String getState() {
 		return State;
 	}
-	public void setState(char state) {
+	public void setState(String state) {
 		State = state;
 	}
-	public Integer getSalary() {
+	public String getSalary() {
 		return Salary;
 	}
-	public void setSalary(Integer salary) {
+	public void setSalary(String salary) {
 		Salary = salary;
 	}
-	
+	public String getTUName() {
+		return TUName;
+	}
+	public void setTUName(String tUName) {
+		TUName = tUName;
+	}
 }
