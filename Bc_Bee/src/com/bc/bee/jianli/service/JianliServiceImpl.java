@@ -47,18 +47,18 @@ public class JianliServiceImpl {
 //			res.setSalary(150);
 //		}
 		res.setSalary(salary);
-		this.JianliDaoImpl.jianliQW(res);
+		this.JianliDaoImpl.upDateResume(res);
 	}
 	@Transactional(readOnly=false)
 	public void jianliJL(Resume res, String pte){
 		res.setPte(pte);
-		this.JianliDaoImpl.jianliJL(res);
+		this.JianliDaoImpl.upDateResume(res);
 	}
 	
 	@Transactional(readOnly=false)
 	public void jianliMS(Resume res, String brief){
 		res.setBrief(brief);
-		this.JianliDaoImpl.jianliMS(res);
+		this.JianliDaoImpl.upDateResume(res);
 	}
 	
 	@Transactional(readOnly=false)
@@ -71,6 +71,12 @@ public class JianliServiceImpl {
 	@Transactional(readOnly=false)
 	public void jianliZC(Resume res, String expertise){
 		res.setExpertise(expertise);
-		this.JianliDaoImpl.jianliZC(res);
+		this.JianliDaoImpl.upDateResume(res);
+	}
+	
+	@Transactional(readOnly=false)
+	public void upDateTime(Resume res, String reTime){
+		res.setReTime(reTime);
+		this.JianliDaoImpl.upDateResume(res);
 	}
 }

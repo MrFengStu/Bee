@@ -16,31 +16,38 @@ public class JianliDaoImpl extends BaseDao<Resume, String> {
 			return null;
 		}
 	}
-	public void jianliQW(Resume res){
-		try {
-			super.update(res);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	public void jianliQW(Resume res){
+//		try {
+//			super.update(res);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 	
-	public void jianliJL(Resume res){
-		try {
-			super.update(res);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	public void jianliJL(Resume res){
+//		try {
+//			super.update(res);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 	
-	public void jianliMS(Resume res){
-		try {
-			super.update(res);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	public void jianliMS(Resume res){
+//		try {
+//			super.update(res);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 	
-	public void jianliZC(Resume res){
+//	public void jianliZC(Resume res){
+//		try {
+//			super.update(res);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
+	public void upDateResume(Resume res){
 		try {
 			super.update(res);
 		} catch (Exception e) {

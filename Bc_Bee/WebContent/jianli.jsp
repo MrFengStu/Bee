@@ -85,7 +85,7 @@ var youdao_conv_id = 271546;
             			<input type="submit" value="保存"/> | <a target="_blank" href="${ctx }/preview.html">预览</a>
             		</form>
             	</div><!--end #resume_name-->
-            	<div class="fr c5" id="lastChangedTime">最后一次更新：<span>2014-07-01 15:14 </span></div><!--end #lastChangedTime-->
+            	<div class="fr c5" id="lastChangedTime">最后一次更新：<span>${ReTime } </span></div><!--end #lastChangedTime-->
             	<div id="resumeScore">
             		<div class="score fl">
             			<canvas height="120" width="120" id="doughnutChartCanvas" style="width: 120px; height: 120px;"></canvas>

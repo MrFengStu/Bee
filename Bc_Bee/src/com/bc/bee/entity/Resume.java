@@ -1,5 +1,7 @@
 package com.bc.bee.entity;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,6 +25,7 @@ import javax.persistence.Table;
  *	Pte（part-time experience兼职经历）
  *	Varchar   255
  *	State（状态）char
+ *TeTime 更新时间
  */
 @Entity
 @Table(name="resume")
@@ -43,6 +46,7 @@ public class Resume {
 	private String State;
 	private String Salary;
 	private String TUName;
+	private String ReTime;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -139,4 +143,11 @@ public class Resume {
 	public void setTUName(String tUName) {
 		TUName = tUName;
 	}
+	public String getReTime() {
+		return ReTime;
+	}
+	public void setReTime(String reTime) {
+		ReTime = reTime;
+	}
+	
 }
