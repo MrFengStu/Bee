@@ -6,8 +6,11 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
 
+<<<<<<< HEAD
 import javax.servlet.http.HttpSession;
 
+=======
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;

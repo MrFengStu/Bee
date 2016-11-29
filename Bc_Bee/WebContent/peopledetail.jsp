@@ -10,11 +10,21 @@
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<<<<<<< HEAD
 <title>蜜蜂网-最专业的大学生招聘平台</title>
 <meta property="qc:admins" content="23635710066417756375" />
 
 <meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
+=======
+<title>内容运营-立方网-拉勾网-最专业的互联网招聘平台</title>
+<meta property="qc:admins" content="23635710066417756375" />
+<meta content="内容运营 武汉 本科 3-5年 全职 运营 大家都来了 你还在等什么！！ 立方网 北京立方网信息技术有限公司 立方网努力尝试把许多人对互联网的需求从现有的娱乐、资讯和交流平台进一步引导到文化与生活伴侣的方面. 拉勾网-最专业的互联网招聘平台" name="description">
+<meta content="内容运营 武汉 本科 3-5年 全职 运营 大家都来了 你还在等什么！！ 立方网 北京立方网信息技术有限公司 立方网努力尝试把许多人对互联网的需求从现有的娱乐、资讯和交流平台进一步引导到文化与生活伴侣的方面. 拉勾网-最专业的互联网招聘平台" name="keywords">
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+
+<!-- <div class="web_root"  style="display:none">h</div> -->
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 <script type="text/javascript">
 var ctx = "h";
 console.log(1);
@@ -27,7 +37,13 @@ console.log(1);
 <script type="text/javascript" src="${ctx }/style/js/jquery.lib.min.js"></script>
 <script src="${ctx }/style/js/ajaxfileupload.js" type="text/javascript"></script>
 <script src="${ctx }/style/js/jquery-hbzx.js" type="text/javascript"></script>
+<<<<<<< HEAD
 
+=======
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="${ctx }/style/js/excanvas.js"></script>
+<![endif]-->
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
 </script> 
@@ -37,6 +53,7 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
+<<<<<<< HEAD
     		<a href="${ctx}/index.jsp" class="logo">
     			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="蜜蜂招聘-专注家教招聘" />
     		</a>
@@ -51,6 +68,22 @@ var youdao_conv_id = 271546;
             	<li><a href="${ctx}/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
             	<li><a href="${ctx}/register.jsp" rel="nofollow">注册</a></li>
+=======
+    		<a href="index.html" class="logo">
+    			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
+    		</a>
+    		<ul class="reset" id="navheader">
+    			<li ><a href="index.html">首页</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    				    			<li ><a href="jianli.html" rel="nofollow">发布职位</a></li>
+	    							    			
+	    		    		</ul>
+        	            <ul class="loginTop">
+            	<li><a href="login.html" rel="nofollow">登录</a></li> 
+            	<li>|</li>
+            	<li><a href="register.html" rel="nofollow">注册</a></li>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
             </ul>
                                 </div>
     </div><!-- end #header -->
@@ -87,7 +120,11 @@ var youdao_conv_id = 271546;
                      
                                         	<dd class="unresume">
 	                        <div>
+<<<<<<< HEAD
 	                        	你在蜜蜂还没有简历呢，你可以<a href="${ctx }/login.jsp" target="_blank" title="完善在线简历">完善在线简历</a>，也可<a class="inline" href="#loginPop" title="登录">上传附件简历</a>直接投递
+=======
+	                        	你在拉勾还没有简历呢，你可以<a href="login.html" target="_blank" title="完善在线简历">完善在线简历</a>，也可<a class="inline" href="#loginPop" title="登录">上传附件简历</a>直接投递
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 	                       	</div>
 	                    </dd>
                                                             <div class="saoma saoma_btm">
@@ -100,7 +137,11 @@ var youdao_conv_id = 271546;
 								<p>
 									想知道HR在看简历嘛？<br />
           							想在微信中收到面试通知？<br />
+<<<<<<< HEAD
           							<span> 扫一扫，给你解决</span>
+=======
+          							<span><< 扫一扫，给你解决</span>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 								</p>
 							</div>
 						</div>
@@ -121,8 +162,13 @@ var youdao_conv_id = 271546;
                                 <h2 class="fl">
                                 	                                  		立方网
                                   	                                  	
+<<<<<<< HEAD
                                   	                                    	<img src="${ctx }/style/images/valid.png" width="15" height="19" alt="蜜蜂认证企业" /> 
                                     	<span class="dn">蜜蜂认证企业</span>
+=======
+                                  	                                    	<img src="${ctx }/style/images/valid.png" width="15" height="19" alt="拉勾认证企业" /> 
+                                    	<span class="dn">拉勾认证企业</span>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
                                                                         
                                 </h2>
                             </div>
@@ -130,11 +176,19 @@ var youdao_conv_id = 271546;
                     </dt>
                     <dd>
                     	<ul class="c_feature reset">
+<<<<<<< HEAD
                         	<li><span>领域</span> 大学生家教</li>
                         	<li><span>规模</span> 5-20人</li>
                         	<li>
                         		<span>主页</span> 
                         		           							<a href="${ctx }/index.jsp" target="_blank" title="http://L99.com" rel="nofollow">http://littleBee.com</a>
+=======
+                        	<li><span>领域</span> 移动互联网,游戏</li>
+                        	<li><span>规模</span> 50-150人</li>
+                        	<li>
+                        		<span>主页</span> 
+                        		           							<a href="http://L99.com" target="_blank" title="http://L99.com" rel="nofollow">http://L99.com</a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
            						                        	</li>
                         </ul>
                         
@@ -168,7 +222,11 @@ var youdao_conv_id = 271546;
                         </div> -->
                        	
                        	                       	<h4>工作地址</h4>
+<<<<<<< HEAD
                        	<div>石家庄市裕华区河北师范大学软件学院</div>
+=======
+                       	<div>武汉市武昌区螃蟹岬凤凰大厦A1-1301</div>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
                        	<div id="smallmap"></div>
                        	<a href="javascript:;" id="mapPreview">查看完整地图</a>
                        	                    </dd>
@@ -217,7 +275,11 @@ var youdao_conv_id = 271546;
 	            				            				<span class="red">在线简历还不完善，请完善后选择投递</span>
 	            				            		</label>
             			<div class="setBtns">
+<<<<<<< HEAD
             											<a href="${ctx }/jianli/jiben" target="_blank">修改</a>
+=======
+            											<a href="jianli.html" target="_blank">修改</a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
             			</div>
 	            		<div class="clear"></div>
 	            		<label class="radio">
@@ -258,7 +320,11 @@ var youdao_conv_id = 271546;
 	            				            				<span class="red">在线简历还不完善，请完善后选择投递</span>
 	            				            		</label>
             			<div class="setBtns">
+<<<<<<< HEAD
             											<a href="${ctx }/jianli/jiben" target="_blank">修改</a>
+=======
+            											<a href="jianli.html" target="_blank">修改</a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
             			</div>
 	            		<div class="clear"></div>
 	            		<label class="radio">
@@ -334,7 +400,11 @@ var youdao_conv_id = 271546;
 		</form>
 		<div class="login_right">
 			<div>还没有拉勾帐号？</div>
+<<<<<<< HEAD
 			<a href="${ctx }/register.jsp" class="registor_now">立即注册</a>
+=======
+			<a href="register.html" class="registor_now">立即注册</a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 		    <div class="login_others">使用以下帐号直接登录:</div>
 		    <a href="h/ologin/auth/sina.html" target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
 		    <a href="h/ologin/auth/qq.html" class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录" ></a>
@@ -526,7 +596,11 @@ var youdao_conv_id = 271546;
 	                        class="filePrew" type="file" onchange="file_check(this,'h/nearBy/updateMyResume.json','resumeUpload2')" />
                         </a>
                     </form>
+<<<<<<< HEAD
                     <a class="btn" href="${ctx }/jianli.jsp" target="_blank">完善在线简历</a>
+=======
+                    <a class="btn" href="jianli.html" target="_blank">完善在线简历</a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 	            </td>
 	        </tr>
 	    </table>
@@ -647,12 +721,20 @@ $(function(){
 			// 创建地址解析器实例
 			var sMyGeo = new BMap.Geocoder();
 			// 将地址解析结果显示在地图上,并调整地图视野
+<<<<<<< HEAD
 			sMyGeo.getPoint("石家庄市裕华区河北师范大学软件学院", function(sPoint){
+=======
+			sMyGeo.getPoint("武汉市武昌区螃蟹岬凤凰大厦A1-1301", function(sPoint){
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 			  if (sPoint) {
 				  sMap.centerAndZoom(sPoint, 16);
 				  sMap.addOverlay(new BMap.Marker(sPoint));
 			  }
+<<<<<<< HEAD
 			}, "石家庄");
+=======
+			}, "武汉");
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 		}
 
 		/*弹窗大地图*/
@@ -665,9 +747,15 @@ $(function(){
 		var gc = new BMap.Geocoder();
 		$(function(){
 			$('#mapPreview').bind('click',function(){
+<<<<<<< HEAD
 				$.colorbox({inline:true, href:"#baiduMap",title:"工作地址"});
 				var address = "石家庄市裕华区河北师范大学软件学院";
 				var city = "石家庄";
+=======
+				$.colorbox({inline:true, href:"#baiduMap",title:"公司地址"});
+				var address = "武汉市武昌区螃蟹岬凤凰大厦A1-1301";
+				var city = "武汉";
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 				var lat = $('#positionLat').val();
 				var lng = $('#positionLng').val();
 			    map.setCurrentCity(city);
@@ -721,10 +809,17 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
+<<<<<<< HEAD
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
 		    <a href="#" target="_blank">家教招聘导航</a>
 		    <a href="#" target="_blank" rel="nofollow">拉勾微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">拉勾微信<i></i></a>
+=======
+			<a href="h/about.html" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">互联网公司导航</a>
+		    <a href="http://e.weibo.com/lagou720" target="_blank" rel="nofollow">拉勾微博</a>
+		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备14023790号-2</a></div>
 		</div>
 	</div>

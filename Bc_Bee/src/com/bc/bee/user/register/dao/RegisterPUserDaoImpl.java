@@ -35,7 +35,14 @@ public class RegisterPUserDaoImpl extends BaseDao<PUser, String> {
 	public void save(PUser puser){
 		try {
 			Parcer parcer = new Parcer();
+<<<<<<< HEAD
 			puser.setParcer(parcer);
+=======
+			RecInfo recinfo = new RecInfo();
+			puser.getRecinfos().add(recinfo);
+			puser.setParcer(parcer);
+			recinfo.setPuser(puser);
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 			parcer.setPuser(puser);
 			super.save(puser);
 		} catch (Exception e) {

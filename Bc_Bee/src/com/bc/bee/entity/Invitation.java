@@ -15,8 +15,12 @@ import javax.persistence.Table;
  *	UId（教员Id 外键）int
  *	RIId（招聘表Id 外键）int
  *	InTime（邀请时间）date
+<<<<<<< HEAD
  *	State（状态）char
  * RlId 招聘表外键
+=======
+ *	State（状态）varchar
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
  */
 @Entity
 @Table(name="invitation")
@@ -27,7 +31,10 @@ public class Invitation {
 	private PUser puser;
 	private Date InTime;
 	private char State;
+<<<<<<< HEAD
 	private Integer RlId;
+=======
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -67,11 +74,14 @@ public class Invitation {
 	public void setState(char state) {
 		State = state;
 	}
+<<<<<<< HEAD
 	public Integer getRlId() {
 		return RlId;
 	}
 	public void setRlId(Integer rlId) {
 		RlId = rlId;
 	}
+=======
+>>>>>>> 7314ee1be915242474e8771eb8ff06c434fc7bfe
 	
 }
