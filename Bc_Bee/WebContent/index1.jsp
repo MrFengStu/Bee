@@ -9,17 +9,13 @@
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>拉勾网-最专业的互联网招聘平台</title>
+<title>蜜蜂网-最专业的互联网家教平台</title>
 <meta property="qc:admins" content="23635710066417756375" />
 <meta content="" name="description">
 <meta content="" name="keywords">
 <meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
-<script type="text/javascript">
-var ctx = "h";
-console.log(1);
-</script>
 <link rel="Shortcut Icon" href="h/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="style/css/style-djw.css"/>
 <link rel="stylesheet" type="text/css" href="style/css/dd.css"/>
@@ -41,31 +37,29 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a href="index.html" class="logo">
+    		<a href="" class="logo">
     			<img src="style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
-    			<li class="current"><a href="index.html">首页</a></li>
-    			<li ><a href="companylist.html" >职位列表</a></li>
-    			<li ><a href="companylist.html" >教员列表</a></li>
+    			<li class="current"><a href="">首页</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
 	    		<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	</ul>
-	    	<div class="username">
-		    	<a href="#"><img class="user" src="style/images/user.png" width="40" height="40" alt="#"></a>
-			    	<select name="select" class="k1">
-		    			<option value="选择品牌">用户详情</option>
-						<option value="选择品牌1">职位申请</option>
-						<option value="选择品牌2">我的简历</option>
-						<option value="选择品牌">投递箱</option>
-						<option value="选择品牌1">收藏夹</option>
-						<option value="选择品牌2">账号设置</option>
-		    		</select>
-		    </div>
-        	<ul class="loginTop">
-            	<li><a href="login.html" rel="nofollow">登录</a></li> 
-            	<li>|</li>
-            	<li><a href="register.html" rel="nofollow">注册</a></li>
-            </ul>
+		        <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl>
                                 </div>
     </div><!-- end #header -->
     <div id="container">
@@ -81,34 +75,34 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_Java?labelWords=label">书法</a>
+					        			<a href="${ctx }/search">书法</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_Java?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="h/jobs/list_C%2B%2B?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="h/jobs/list_PHP?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="h/jobs/list_%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="h/jobs/list_C?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="h/jobs/list_C%23?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -118,25 +112,25 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_移动开发?labelWords=label">       								            						        				舞蹈
+					        			<a href="${ctx }/search">       								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_HTML5?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="h/jobs/list_Android?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-							            										   	<a href="h/jobs/list_iOS?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
-							            										   	<a href="h/jobs/list_WP?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
@@ -144,31 +138,31 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_前端开发?labelWords=label">		        									            								            							            								            							            								            							            								            							            								            							            								            						        				音乐
+					        			<a href="${ctx }/search">		        									            								            							            								            							            								            							            								            							            								            							            								            						        				音乐
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_web%E5%89%8D%E7%AB%AF?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>小提琴</a>
-							            										   	<a href="h/jobs/list_Flash?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>钢琴</a>
-							            										   	<a href="h/jobs/list_html5?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>古筝</a>
-							            										   	<a href="h/jobs/list_JavaScript?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>吉他</a>
-							            										   	<a href="h/jobs/list_U3D?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>长笛</a>
-							            										   	<a href="h/jobs/list_COCOS2D-X?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>架子鼓</a>
@@ -176,23 +170,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_测试?labelWords=label">			        									            								            							            								            							            								            							            								            							            								            							            								            						        			学科
+					        			<a href="${ctx }/search">			        									            								            							            								            							            								            							            								            							            								            							            								            						        			学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="h/jobs/list_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-							            										   	<a href="h/jobs/list_%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-							            										   	<a href="h/jobs/list_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>写作</a>
@@ -209,33 +203,33 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_产品经理?labelWords=label">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
+					        			<a href="${ctx }/search">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="h/jobs/list_%E7%BD%91%E9%A1%B5%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="h/jobs/list_%E7%A7%BB%E5%8A%A8%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E5%8A%A9%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="h/jobs/list_%E6%95%B0%E6%8D%AE%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="h/jobs/list_%E7%94%B5%E5%95%86%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -244,23 +238,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_产品设计师?labelWords=label">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
+					        			<a href="${ctx }/search">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E7%BD%91%E9%A1%B5%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
-										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
@@ -268,43 +262,43 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_高端产品职位?labelWords=label">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        			学科
+					        			<a href="${ctx }/search">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        			学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E9%83%A8%E7%BB%8F%E7%90%86?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>物理</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>化学</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>生物</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>历史</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>政治</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>地理</a>
@@ -319,33 +313,33 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_产品经理?labelWords=label">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
+					        			<a href="${ctx }/search">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="h/jobs/list_%E7%BD%91%E9%A1%B5%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="h/jobs/list_%E7%A7%BB%E5%8A%A8%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E5%8A%A9%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="h/jobs/list_%E6%95%B0%E6%8D%AE%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="h/jobs/list_%E7%94%B5%E5%95%86%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -354,23 +348,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_产品设计师?labelWords=label">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
+					        			<a href="${ctx }/search">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E7%BD%91%E9%A1%B5%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
-										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-										   	<a href="h/jobs/list_%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%B8%88?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
@@ -378,43 +372,43 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h/jobs/list_高端产品职位?labelWords=label">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        学科
+					        			<a href="${ctx }/search">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E9%83%A8%E7%BB%8F%E7%90%86?labelWords=label"
+							        											   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+							            										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>物理</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>化学</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>生物</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>历史</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>政治</a>
-										   	<a href="h/jobs/list_%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91?labelWords=label"
+										   	<a href="${ctx }/search"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>地理</a>
@@ -426,9 +420,9 @@ var youdao_conv_id = 271546;
 									
 									
 							</div>
-			<a class="subscribe" href="subscribe.html" target="_blank">订阅职位</a>
+			<a class="subscribe" href="" target="_blank">订阅职位</a>
 		</div>
-		<div class="load">
+		 <!--   <div class="load">
 		<div class="login_box">
         	<form id="loginForm" action="index.html">
 				<input type="text" id="email" name="email" value="" tabindex="1" placeholder="请输入登录邮箱地址" />
@@ -437,7 +431,6 @@ var youdao_conv_id = 271546;
 			    <label class="fl" for="remember"><input type="checkbox" id="remember" value="" checked="checked" name="autoLogin" /> 记住我</label>
 			    <a href="reset.html" class="fr" target="_blank">忘记密码？</a>
 			    
-				<!--<input type="submit" id="submitLogin" value="登 &nbsp; &nbsp; 录" />-->
 				<a style="color:#fff;" href="index.html" class="submitLogin" title="登 &nbsp; &nbsp; 录"/>登 &nbsp; &nbsp; 录</a>
 
 			    
@@ -454,7 +447,10 @@ var youdao_conv_id = 271546;
 			    <a  href="h/ologin/auth/qq.html"  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
 			</div>
         </div>
-		</div>
+		</div>-->
+		<table height="200px">
+		<td></td>
+		</table>
 		<div class="star">
 		<h1>明星家教</h1>
 		<div class="starlist">
@@ -499,7 +495,7 @@ var youdao_conv_id = 271546;
 		</div>
         <div class="content">	
 	        			<div id="search_box">
-		<form id="searchForm" name="searchForm" action="list.html" method="get">
+		<form id="searchForm" name="searchForm" action="${ctx }/search" method="post">
         <ul id="searchType">
         	        	<li data-searchtype="1" class="type_selected">职位</li>
         	<li data-searchtype="4">公司</li>
@@ -530,23 +526,23 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
-	<dd><a href="list.htmlJava?labelWords=label&city=">理综</a></dd>
-	<dd><a href="list.htmlPHP?labelWords=label&city=">文综</a></dd>
-	<dd><a href="list.htmlAndroid?labelWords=label&city=">高三英语</a></dd>
-	<dd><a href="list.htmliOS?labelWords=label&city=">作业辅导</a></dd>
-	<dd><a href="list.html前端?labelWords=label&city=">小学全科</a></dd>
-	<dd><a href="list.html产品经理?labelWords=label&city=">历史</a></dd>
+	<dd><a href="">理综</a></dd>
+	<dd><a href="">文综</a></dd>
+	<dd><a href="">高三英语</a></dd>
+	<dd><a href="">作业辅导</a></dd>
+	<dd><a href="">小学全科</a></dd>
+	<dd><a href="">历史</a></dd>
 </dl>			
 			<div id="home_banner">
 	            <ul class="banner_bg">
 	            		                <li  class="banner_bg_1 current" >
-	                    <a href="h/subject/s_buyfundation.html?utm_source=DH__lagou&utm_medium=banner&utm_campaign=haomai" target="_blank"><img src="style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
+	                    <a href="" target="_blank"><img src="style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
 	                </li>
 	                	                <li  class="banner_bg_2" >
-	                    <a href="h/subject/s_worldcup.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=wc" target="_blank"><img src="style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
+	                    <a href="" target="_blank"><img src="style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
 	                </li>
 	                	                <li  class="banner_bg_3" >
-	                    <a href="h/subject/s_xiamen.html?utm_source=DH__lagou&utm_medium=home&utm_campaign=xiamen" target="_blank"><img src="style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
+	                    <a href="" target="_blank"><img src="style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
 	                </li>
 	                	            </ul>
 	            <div class="banner_control">
@@ -570,7 +566,7 @@ var youdao_conv_id = 271546;
 			
         	<ul id="da-thumbs" class="da-thumbs">
 	        		        		<li >
-	                    <a href="h/c/1650.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/a254b11ecead45bda166afa8aaa9c8bc.jpg" width="113" height="113" alt="联想" />
 	                        <div class="hot_info">
 	                        	<h2 title="联想">联想</h2>
@@ -582,7 +578,7 @@ var youdao_conv_id = 271546;
 	                    </a>
 	                </li>
                 	        		<li >
-	                    <a href="h/c/9725.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/c75654bc2ab141df8218983cfe5c89f9.jpg" width="113" height="113" alt="淘米" />
 	                        <div class="hot_info">
 	                        	<h2 title="淘米">淘米</h2>
@@ -594,7 +590,7 @@ var youdao_conv_id = 271546;
 	                    </a>
 	                </li>
                 	        		<li >
-	                    <a href="h/c/1914.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/2bba2b71d0b0443eaea1774f7ee17c9f.png" width="113" height="113" alt="优酷土豆" />
 	                        <div class="hot_info">
 	                        	<h2 title="优酷土豆">优酷土豆</h2>
@@ -606,7 +602,7 @@ var youdao_conv_id = 271546;
 	                    </a>
 	                </li>
                 	        		<li >
-	                    <a href="h/c/6630.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/f4822a445a8b495ebad81fcfad3e40e2.jpg" width="113" height="113" alt="思特沃克" />
 	                        <div class="hot_info">
 	                        	<h2 title="思特沃克">思特沃克</h2>
@@ -618,7 +614,7 @@ var youdao_conv_id = 271546;
 	                    </a>
 	                </li>
                 	        		<li >
-	                    <a href="h/c/2700.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/5caf8f9631114bf990f87bb11360653e.png" width="113" height="113" alt="奇猫" />
 	                        <div class="hot_info">
 	                        	<h2 title="奇猫">奇猫</h2>
@@ -630,7 +626,7 @@ var youdao_conv_id = 271546;
 	                    </a>
 	                </li>
                 	        		<li  class="last" >
-	                    <a href="h/c/1335.html" target="_blank">
+	                    <a href="" target="_blank">
 	                        <img src="style/images/c0052c69ef4546c3b7d08366d0744974.jpg" width="113" height="113" alt="堆糖网" />
 	                        <div class="hot_info">
 	                        	<h2 title="堆糖网">堆糖网</h2>
@@ -652,7 +648,7 @@ var youdao_conv_id = 271546;
 	            		            		            				            		<li class="clearfix">
 		            																		            					                	<div class="hot_pos_l">
 			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
+			                        	<a href="" target="_blank">高中数学</a> 
 			                            &nbsp;
 			                            <span class="c9">[裕华区]</span>
 			                    </div>
@@ -954,7 +950,7 @@ var youdao_conv_id = 271546;
 			    </li>
 	                		                	            				            		
 	                		                	                
-	                	                <a href="list.html" class="btn fr" target="_blank">查看更多</a>
+	                	                <a href="${ctx }/joblist" class="btn fr" target="_blank">查看更多</a>
 	                	            </ul>
 	            <ul class="hot_pos hot_posHotPosition reset" style="display:none;">
 	            		            		            				            		<li class="clearfix">
@@ -1242,46 +1238,46 @@ var youdao_conv_id = 271546;
 			    <dl>
 			        <dt>友情链接</dt>
 			        <dd>
-			        		<a href="http://www.zhuqu.com/" target="_blank">住趣家居网</a> <span>|</span>
-			        		<a href="http://www.woshipm.com/" target="_blank">人人都是产品经理</a> <span>|</span>
-			        		<a href="http://zaodula.com/" target="_blank">互联网er的早读课</a> <span>|</span>
-			                <a href="http://lieyunwang.com/" target="_blank">猎云网</a> <span>|</span>
-			        		<a href="http://www.ucloud.cn/" target="_blank">UCloud</a> <span>|</span>
-			          		<a href="http://www.iconfans.com/" target="_blank">iconfans</a>  <span>|</span>
-			          		<a href="http://www.html5dw.com/" target="_blank">html5梦工厂</a>   <span>|</span>
-			          		<a href="http://www.sykong.com/" target="_blank">手游那点事</a> 
+			        		<a href="" target="_blank">住趣家居网</a> <span>|</span>
+			        		<a href="" target="_blank">人人都是产品经理</a> <span>|</span>
+			        		<a href="" target="_blank">互联网er的早读课</a> <span>|</span>
+			                <a href="" target="_blank">猎云网</a> <span>|</span>
+			        		<a href="" target="_blank">UCloud</a> <span>|</span>
+			          		<a href="" target="_blank">iconfans</a>  <span>|</span>
+			          		<a href="" target="_blank">html5梦工厂</a>   <span>|</span>
+			          		<a href="" target="_blank">手游那点事</a> 
 			          		
-			          		<a href="http://www.mycodes.net/" target="_blank">源码之家</a> <span>|</span>
-			          		<a href="http://www.uehtml.com/" target="_blank">uehtml</a> <span>|</span>
-			          		<a href="http://www.w3cplus.com/" target="_blank">W3CPlus</a> <span>|</span>
-			          		<a href="http://www.boxui.com/" target="_blank">盒子UI</a> <span>|</span>
-			          		<a href="http://www.uimaker.com/" target="_blank">uimaker</a> <span>|</span>
-			          		<a href="http://www.yixieshi.com/" target="_blank">互联网的一些事</a> <span>|</span>
-			          		<a href="http://www.chuanke.com/" target="_blank">传课网</a> <span>|</span>
-			          		<a href="http://www.eoe.cn/" target="_blank">安卓开发</a> <span>|</span>
-			          		<a href="http://www.eoeandroid.com/" target="_blank">安卓开发论坛</a> 
-			          		<a href="http://hao.360.cn/" target="_blank" >360安全网址导航</a> <span>|</span>
-			          		<a href="http://se.360.cn/" target="_blank" >360安全浏览器</a> <span>|</span>
-			          		<a href="http://www.hao123.com/" target="_blank" >hao123上网导航</a> <span>|</span>
-			          		<a href="http://www.ycpai.com" target="_blank" >互联网创业</a><span>|</span>
-			          		<a href="http://www.zhongchou.cn" target="_blank" >众筹网</a><span>|</span>
-			          		<a href="http://www.marklol.com/" target="_blank" >马克互联网</a><span>|</span>
-			          		<a href="http://www.chaohuhr.com/" target="_blank" >巢湖英才网</a>
+			          		<a href="" target="_blank">源码之家</a> <span>|</span>
+			          		<a href="" target="_blank">uehtml</a> <span>|</span>
+			          		<a href="" target="_blank">W3CPlus</a> <span>|</span>
+			          		<a href="" target="_blank">盒子UI</a> <span>|</span>
+			          		<a href="" target="_blank">uimaker</a> <span>|</span>
+			          		<a href="" target="_blank">互联网的一些事</a> <span>|</span>
+			          		<a href="" target="_blank">传课网</a> <span>|</span>
+			          		<a href="" target="_blank">安卓开发</a> <span>|</span>
+			          		<a href="" target="_blank">安卓开发论坛</a> 
+			          		<a href="" target="_blank" >360安全网址导航</a> <span>|</span>
+			          		<a href="" target="_blank" >360安全浏览器</a> <span>|</span>
+			          		<a href="" target="_blank" >hao123上网导航</a> <span>|</span>
+			          		<a href="" target="_blank" >互联网创业</a><span>|</span>
+			          		<a href="" target="_blank" >众筹网</a><span>|</span>
+			          		<a href="" target="_blank" >马克互联网</a><span>|</span>
+			          		<a href="" target="_blank" >巢湖英才网</a>
 			          		
-			          		<a href="http://www.zhubajie.com/" target="_blank" >创意服务外包</a><span>|</span>
-			          		<a href="http://www.thinkphp.cn/" target="_blank" >thinkphp</a><span>|</span>
-			          		<a href="http://www.chuangxinpai.com/" target="_blank" >创新派</a><span>|</span>
+			          		<a href="" target="_blank" >创意服务外包</a><span>|</span>
+			          		<a href="" target="_blank" >thinkphp</a><span>|</span>
+			          		<a href="" target="_blank" >创新派</a><span>|</span>
 
-			          		<a href="http://w3cshare.com/" target="_blank" >W3Cshare</a><span>|</span>
-			          		<a href="http://www.518lunwen.cn/" target="_blank" >论文发表网</a><span>|</span>
-			          		<a href="http://www.199it.com" target="_blank" >199it</a><span>|</span>
+			          		<a href="" target="_blank" >W3Cshare</a><span>|</span>
+			          		<a href="" target="_blank" >论文发表网</a><span>|</span>
+			          		<a href="" target="_blank" >199it</a><span>|</span>
 
-			          		<a href="http://www.shichangbu.com" target="_blank" >市场部网</a><span>|</span>
-			          		<a href="http://www.meitu.com/" target="_blank" >美图公司</a><span>|</span>
-			          		<a href="https://www.teambition.com/" target="_blank" >Teambition</a>
-			          		<a href="http://oupeng.com/" target="_blank" >欧朋浏览器</a><span>|</span>
-			          		<a href="http://iwebad.com/" target="_blank">网络广告人社区</a>
-			          		<a href="h/af/flink.html" target="_blank" class="more">更多</a>
+			          		<a href="" target="_blank" >市场部网</a><span>|</span>
+			          		<a href="" target="_blank" >美图公司</a><span>|</span>
+			          		<a href="" target="_blank" >Teambition</a>
+			          		<a href="" target="_blank" >欧朋浏览器</a><span>|</span>
+			          		<a href="" target="_blank">网络广告人社区</a>
+			          		<a href="" target="_blank" class="more">更多</a>
 			        </dd>
 			    </dl>
 			</div>
@@ -1337,11 +1333,11 @@ var youdao_conv_id = 271546;
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a href="h/about.html" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">互联网公司导航</a>
-		    <a href="http://e.weibo.com/lagou720" target="_blank" rel="nofollow">拉勾微博</a>
-		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备14023790号-2</a></div>
+			<a href="" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="" target="_blank">互联网公司导航</a>
+		    <a href="" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

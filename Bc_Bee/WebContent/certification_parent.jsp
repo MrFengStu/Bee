@@ -51,20 +51,15 @@
 
 	<div id="header">
 		<div class="wrapper">
-			<a href="${ctx }/style/index.html" class="logo"> <img
+			<a href="" class="logo"> <img
 				src="${ctx }/style/images/logo.png" width="229" height="43"
 				alt="蜜蜂招聘-专注家教招聘" />
 			</a>
 			<ul class="reset" id="navheader">
-				<li><a href="${ctx }/index.html">首页</a></li>
-				<li><a href="${ctx }/#">教员列表</a></li>
-				<li><a href="${ctx }/#" rel="nofollow">职位列表</a></li>
-				<li><a href="${ctx }/#" rel="nofollow">发布职位</a></li>
-			</ul>
-			<ul class="loginTop">
-				<li><a href="${ctx }/login.html" rel="nofollow">登录</a></li>
-				<li>|</li>
-				<li><a href="${ctx }/register.html" rel="nofollow">注册</a></li>
+				<li><a href="${ctx }/index1.jsp">首页</a></li>
+				<li><a href="${ctx }/joblist">职位列表</a></li>
+				<li><a href="${ctx }/jiaoyuan" rel="nofollow">教员列表</a></li>
+				<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 			</ul>
 		</div>
 	</div>
@@ -123,7 +118,7 @@
 		</div>
 		<div id="footer">
 			<div class="wrapper">
-				<a href="#" target="_blank" rel="nofollow">联系我们</a> <a href="#"
+				<a href="" target="_blank" rel="nofollow">联系我们</a> <a href="#"
 					target="_blank">互联网公司导航</a> <a href="#" target="_blank"
 					rel="nofollow">蜜蜂微博</a> <a class="footer_qr" href="#"
 					rel="nofollow">蜜蜂微信<i></i></a>

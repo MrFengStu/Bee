@@ -7,7 +7,6 @@
 </script><script type="text/javascript" async="" src="${ctx }/style/js/conversion.js"></script><script src="${ctx }/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
 <meta content="no-siteapp" http-equiv="Cache-Control">
 <link  media="handheld" rel="alternate">
-<!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>用户-家长账户信息</title>
 <meta content="23635710066417756375" property="qc:admins">
@@ -40,13 +39,13 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="${ctx }/">
+    		<a class="logo" href="">
     			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
-    			<li><a href="index.html">首页</a></li>
-    			<li><a href="companylist.html">公司</a></li>
-    			<li><a target="_blank" href="${ctx }/toForum.html">论坛</a></li>
+    			<li><a href="${ctx }/index1.jsp">首页</a></li>
+    			<li><a href="${ctx }/joblist">职位列表</a></li>
+    			<li><a target="_blank" href="${ctx }/jiaoyuan">教员列表</a></li>
     				    			<li class="current"><a rel="nofollow" href="jianli.html">我的简历</a></li>
 	    						    		</ul>
         	        	<dl class="collapsible_menu">
@@ -164,9 +163,9 @@ var youdao_conv_id = 271546;
             <div class="content_r">
             	<div class="mycenterR" id="myInfo">
             		<h2>我的信息</h2>
-            		<a target="_blank" href="collections.html">账号绑定</a>
+            		<a target="_blank" href="">账号绑定</a>
             		<br>
-            		            		            		<a target="_blank" href="subscribe.html">修改密码</a>
+            		            		            		<a target="_blank" href="">修改密码</a>
             	</div><!--end #myInfo-->
 
 				<div class="mycenterR" id="myResume">
@@ -193,20 +192,11 @@ var youdao_conv_id = 271546;
 	            		<input type="submit" value="保 存" class="btn_profile_save">
 						<a class="btn_profile_cancel" href="javascript:;">取 消</a>
 	            	</form>
-            	</div><!--end #resumeSet-->
-
-            		<!--<div class="mycenterR" id="myResume">
-            		<h2>收藏夹 
-            			            			<a title="上传附件简历" href="#uploadFile" class="inline cboxElement">查看编辑</a>
-            			            		</h2>
-            		<div class="resumeUploadDiv">
-	            			            		暂无收藏
-	            		            		</div>
-            	</div><!--end #myResume-->
+            	</div>
 				
 				<div class="mycenterR" id="myShare">
             		<h2>当前每日招聘量：3个</h2>
-            		<a target="_blank" href="${ctx }/share/invite.html">邀请好友，提升招聘量</a>
+            		<a target="_blank" href="">邀请好友，提升招聘量</a>
             	</div><!--end #myShare-->
             	
 								
@@ -373,11 +363,11 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="${ctx }/about.html">联系我们</a>
-		    <a target="_blank" href="${ctx }/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">拉勾微博</a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">拉勾微博</a>
 		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2013-2014 Lagou <a href="" target="_blank">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

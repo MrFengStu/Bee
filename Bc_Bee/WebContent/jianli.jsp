@@ -968,9 +968,9 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="h/about.html">联系我们</a>
-		    <a target="_blank" href="h/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://weibo.com/u/2710088540">bee微博</a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">bee微博</a>
 		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">bee微信<i></i></a>
 			<div class="copyright">&copy;2013-2014 Bee <a href="#" target="_blank">冀ICP备14023790号-2</a></div>
 		</div>

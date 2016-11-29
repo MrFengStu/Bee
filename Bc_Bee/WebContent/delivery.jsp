@@ -10,7 +10,7 @@
 <link  media="handheld" rel="alternate"/>
 <!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>投递箱-Bee-最专业的互联网家教平台</title>
+<title>投递箱-蜜蜂网-最专业的互联网家教平台</title>
 <meta content="23635710066417756375" property="qc:admins"/>
 <meta name="description" content="拉勾网是3W旗下的互联网领域垂直招聘网站,互联网职业机会尽在拉勾网"/>
 <meta name="keywords" content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招"/>
@@ -46,8 +46,8 @@ var youdao_conv_id = 271546;
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="${ctx }/index.jsp">首页</a></li>
-    			<li><a href="${ctx }/companylist.jsp">教员列表</a></li>
-    			<li><a target="_blank" href="${ctx }/list.jsp">职位列表</a></li>
+    			<li><a href="${ctx }/joblist">职位列表</a></li>
+    			<li><a target="_blank" href="${ctx }/jiaoyuan">教员列表</a></li>
     			<li><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></li>
 	    	</ul>
         	<dl class="collapsible_menu">
@@ -178,42 +178,42 @@ var youdao_conv_id = 271546;
             		<h2>可能适合你的职位 <i>匹配度</i></h2>
             		<ul class="reset">
             			<li>
-            				<a target="_blank" href="http://www.lagou.com/jobs/22194.html">
+            				<a target="_blank" href="">
 								<span class="f16">产品经理</span>
 								<span class="c7">广州百田</span>
 								<em>92%</em>
 							</a>
             			</li>
             			<li>
-            				<a target="_blank" href="http://www.lagou.com/jobs/148004.html">
+            				<a target="_blank" href="">
 								<span class="f16">产品经理</span>
 								<span class="c7">短讯神州</span>
 								<em>92%</em>
 							</a>
             			</li>
             			<li>
-            				<a target="_blank" href="http://www.lagou.com/jobs/46793.html">
+            				<a target="_blank" href="">
 								<span class="f16">产品经理</span>
 								<span class="c7">爱拍</span>
 								<em>89%</em>
 							</a>
             			</li>
             			<li>
-            				<a target="_blank" href="http://www.lagou.com/jobs/99307.html">
+            				<a target="_blank" href="">
 								<span class="f16">产品经理</span>
 								<span class="c7">一彩票</span>
 								<em>88%</em>
 							</a>
             			</li>
             			<li>
-            				<a target="_blank" href="http://www.lagou.com/jobs/147510.html">
+            				<a target="_blank" href="">
 								<span class="f16">产品经理</span>
 								<span class="c7">林安集团</span>
 								<em>88%</em>
 							</a>
             			</li>
             		</ul>
-            		<a target="_blank" class="more" href="${ctx }/mList.jsp">更多推荐职位&gt;&gt;</a>
+            		<a target="_blank" class="more" href="">更多推荐职位&gt;&gt;</a>
             	</div><!--end #myRecommend-->
 								<div class="greybg qrcode mt20">
                 	<img width="242" height="242" alt="Bee微信公众号二维码" src="${ctx }/style/images/qr_delivery.png"/>
@@ -326,11 +326,11 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="about.html">联系我们</a>
-		    <a target="_blank" href="http://www.lagou.com/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">Bee微博</a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">Bee微博</a>
 		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">Bee微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Bee <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2013-2014 Bee <a href="" target="_blank">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

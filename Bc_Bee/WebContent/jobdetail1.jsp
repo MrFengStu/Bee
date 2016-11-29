@@ -44,23 +44,23 @@ var youdao_conv_id = 271546;
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="index.html">首页</a></li>
-    			<li><a href="${ctx }/jiaoyuan">教员列表</a></li>
-    			<li><a href="${ctx }/joblist" >职位列表</a></li>
-    				    			<li><a rel="nofollow" href="jianli.html">发布职位</a></li>
+    			<li><a href="${ctx }/jiaoyuan">职位列表</a></li>
+    			<li><a href="${ctx }/joblist" >教员列表</a></li>
+    				    			<li><a rel="nofollow" href="${ctx}/publish/jump">发布职位</a></li>
 	    						    		</ul>
         	        	<dl class="collapsible_menu">
             	<dt>
-           			<span>jason&nbsp;</span> 
+           			<span>${name }&nbsp;</span> 
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                                	<dd><a rel="nofollow" href="jianli.html">我的简历</a></dd>
-                	                	<dd><a href="collections.html">我收藏的职位</a></dd>
-                	                	                	<dd><a href="delivery.html">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                	                	<dd class="btm"><a href="subscribe.html">我的订阅</a></dd>
-                	<dd><a href="">我要招人</a></dd>
-                                                <dd><a href="accountBind.html">帐号设置</a></dd>
-                                <dd class="logout"><a rel="nofollow" href="login.html">退出</a></dd>
+                                	<dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
             </dl>
                                     <div class="dn" id="noticeTip">
             	<span class="bot"></span>
@@ -159,43 +159,7 @@ var youdao_conv_id = 271546;
                         </a>
                     </dt>
                     <dd>
-                    	<!--<ul class="c_feature reset">
-                        	<li><span>领域</span> 移动互联网,电子商务</li>
-                        	<li><span>规模</span> 50-150人</li>
-                        	<li>
-                        		<span>主页</span> 
-                        		           							<a rel="nofollow" title="http://www.guoguan.com" target="_blank" href="http://www.guoguan.com">http://www.guoguan.com</a>
-           						                        	</li>
-                        </ul>-->
-                        
-                       
-                        
-                        <!--	                    	<h4>公司产品</h4>
-	                        <ul class="c_feature reset">
-	                        		                        		<li><span>中国道</span></li>
-	                        		                        </ul>
-                                                
-                       	<h4>公司标签</h4>
-                        <ul class="company_tags reset" id="hasLabels">
-                        	                            	<li><span>年底双薪</span></li>
-                                                        	<li><span>五险一金</span></li>
-                                                        	<li><span>带薪年假</span></li>
-                                                        	<li><span>节日礼物</span></li>
-                                                        	<li><span>年度旅游</span></li>
-                                                        	<li><span>岗位晋升</span></li>
-                                                        	<li><span>管理规范</span></li>
-                                                        	<li><span>领导好</span></li>
-                                                        	<li><span>美女多</span></li>
-                                                        	<li><span>帅哥多</span></li>
-                                                        	<li><span>技能培训</span></li>
-                                                        	<li><span>年终分红</span></li>
-                                                       <li class="link"><a>编辑</a></li>
-                        </ul>
-                        <div class="clear"></div>
-                        <div id="addLabel" class="addLabel dn">
-                            <input type="text" class="fl" id="label" name="label" placeholder="添加自定义标签" />	
-                            <input type="submit" id="add" value="贴上" />
-                        </div> -->
+                    	
                        	
                        	                       	<h4>工作地址</h4>
                        	<div>石家庄市裕华区南二环东路19号</div>
@@ -207,44 +171,44 @@ var youdao_conv_id = 271546;
             		<h2>可能适合你的职位 <i>匹配度</i></h2>
             		<ul class="reset">
             			            			<li>
-            				<a target="_blank" href="jobs/22194.html">
+            				<a target="_blank" href="">
 								<span class="f14">小学数学</span>
 								<span class="c7">家长B</span>
 								<em>92%</em>
 							</a>
             			</li>
             			            			<li>
-            				<a target="_blank" href="jobs/148004.html">
+            				<a target="_blank" href="">
 								<span class="f14">初中数学</span>
 								<span class="c7">家长C</span>
 								<em>92%</em>
 							</a>
             			</li>
             			            			<li>
-            				<a target="_blank" href="jobs/46793.html">
+            				<a target="_blank" href="">
 								<span class="f14">小学语文</span>
 								<span class="c7">家长D</span>
 								<em>89%</em>
 							</a>
             			</li>
             			            			<li>
-            				<a target="_blank" href="jobs/99307.html">
+            				<a target="_blank" href="">
 								<span class="f14">小学英语</span>
 								<span class="c7">家长E</span>
 								<em>88%</em>
 							</a>
             			</li>
             			            			<li>
-            				<a target="_blank" href="jobs/147510.html">
+            				<a target="_blank" href="">
 								<span class="f14">初中英语</span>
 								<span class="c7">家长F</span>
 								<em>88%</em>
 							</a>
             			</li>
             			            		</ul>
-            		            		<a target="_blank" class="more" href="mList.html">更多推荐职位&gt;&gt;</a>
+            		            		<a target="_blank" class="more" href="">更多推荐职位&gt;&gt;</a>
             		            	</div><!--end #myRecommend-->
-				                <a class="eventAd" target="_blank" href="subject/s_zhouyou.html?utm_source=BD__lagou&amp;utm_medium=&amp;utm_campaign=zhouyou">
+				                <a class="eventAd" target="_blank" href="">
                   <img width="280" height="135" src="${ctx }/style/images/zhouyou.jpg">
                 </a>
             </div>
@@ -639,35 +603,7 @@ var youdao_conv_id = 271546;
 <script src="${ctx }/style/js/job_detail.js" type="text/javascript"></script>
 <script src="${ctx }/style/js/count.js" type="text/javascript"></script>
 
-<!-- <script type="text/javascript">
-var options = {
-    	"snsId": "snwb",
-    	"uid": "",
-    	"token": "",
-    	"openId": "",
-    	"appKey": "",
-    	"merchantId": "11253",
-    	"merchantType": "news",
-    	"socialLoginUrl_sina": ctx+"/ologin/auth/sina.html",
-    	"socialLoginUrl_qq": "",
-    	"weiboId_sina": "3619164344010985",
-    	"weiboId_qq": "",
-    	"socialAllUrl": ctx+"/user/hbzx.html",
-    	"productId": "149487",
-    	"productCategory": "",
-    	"productName": "web前端开发",
-    	"productArea": "广州",
-    	"productPrice": "",
-    	"productUrl": ctx+"/jobs/149487.html",
-    	"productImage": ctx+"/upload/logo/ff80808145ae05750145b0467a1c7ddd.png",
-    	"excerpt": "广州 / 全职 / 8k-15k / 经验3-5年 / 大专及以上 / 职位诱惑 : 高薪高福利，良好办公空间",
-    	"sendContent":"我觉得这个职位不错，你觉得咋样？",
-    	"shareContent":"请输入你对此职位的评论",
-    	"autoSend": false,
-    	"load": true
-　　}
-</script>
-<script src="${ctx }/style/js/common.js" type="text/javascript"></script> -->
+
 <script>
 $(function(){
 	$('#weibolist .cookietxte').text('推荐本职位给好友');
@@ -776,11 +712,11 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="about.html">联系我们</a>
-		    <a target="_blank" href="af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">拉勾微博</a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">拉勾微博</a>
 		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2013-2014 Lagou <a href="" target="_blank">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 
