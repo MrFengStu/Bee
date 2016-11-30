@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
-	</script><script type="text/javascript" async="" src="${ctx}/style/js/conversion.js"></script><script src="style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
+	</script><script type="text/javascript" async="" src="${ctx}/style/js/conversion.js"></script><script src="${ctx}/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
 	<meta content="no-siteapp" http-equiv="Cache-Control">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	
@@ -14,7 +14,7 @@
 var ctx = "h";
 console.log(1);
 </script>
-<link rel="Shortcut Icon" href="${ctx}/h/images/favicon.ico">
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/style-djw.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/dd.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/external.min.css"/>
@@ -27,6 +27,7 @@ console.log(1);
     <script type="text/javascript" src="style/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
+
 var youdao_conv_id = 271546; 
 </script> 
 <script type="text/javascript" src="${ctx}/style/js/conv.js"></script>
@@ -40,15 +41,15 @@ var youdao_conv_id = 271546;
     			<img src="${ctx}/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
-    			<li ><a href="${ctx}/index.html">首页</a></li>
-    			<li ><a href="${ctx}/jianli.html" >教员列表</a></li>
-	    		<li class="current"><a href="${ctx}/发布招聘信息_01.html" rel="nofollow">职位列表</a></li>
-	    		<li ><a href="${ctx}/发布求职信息_01.html" rel="nofollow">发布职位</a></li>
+    			<li ><a href="${ctx }/index.jsp">首页</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
+	    		<li class="current"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	</ul>
         	<ul class="loginTop">
-            	<li><a href="${ctx}/login.html" rel="nofollow">登录</a></li> 
+            	<li><a href="${ctx}/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
-            	<li><a href="${ctx}/register.html" rel="nofollow">注册</a></li>
+            	<li><a href="${ctx}/register.jsp" rel="nofollow">注册</a></li>
             </ul>
                                 </div>
     </div>
@@ -90,11 +91,11 @@ var youdao_conv_id = 271546;
        	</div>
        	<div id="footer">
 		<div class="wrapper">
-			<a href="${ctx}/h/about.html" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="${ctx}/h/af/zhaopin.html" target="_blank">互联网公司导航</a>
-		    <a href="${ctx}/http://e.weibo.com/lagou720" target="_blank" rel="nofollow">拉勾微博</a>
-		    <a class="footer_qr" href="${ctx}/javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

@@ -10,11 +10,7 @@
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>职位订阅-拉勾网-最专业的互联网招聘平台</title>
-<meta property="qc:admins" content="23635710066417756375" />
-<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站,互联网职业机会尽在拉勾网" name="description"/>
-<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords"/>
-<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<title>订阅-蜜蜂网-最专业的大学生家教招聘平台</title>
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
@@ -35,20 +31,20 @@ console.log(1);
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
 </script> 
-<script type="text/javascript" src="style/js/conv.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/conv.js"></script>
 </head>
 <body>
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a href="index.html" class="logo">
-    			<img src="style/images/logo.png" width="229" height="43" alt="Bee-小蜜蜂家教平台" />
+    		<a href="${ctx }/index.jsp" class="logo">
+    			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="蜜蜂招聘" />
     		</a>
     		<ul class="reset" id="navheader">
     			<li ><a href="${ctx }/index.jsp">首页</a></li>
-    			<li ><a href="companylist.jsp" >教员列表</a></li>
-    			<li ><a href="${ctx }/list.jsp" target="_blank">职位列表</a></li>
-    			<li ><a href="${ctx }/jianli.jsp" rel="nofollow">发布职位</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
+	    		<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	</ul>
         	 <ul class="loginTop">
             	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
@@ -356,7 +352,7 @@ var youdao_conv_id = 271546;
 	                	<td>
 	                		<label class="fl" for="checkbox">
 	                			<input type="checkbox" id="checkbox" name="checkbox" checked  class="checkbox valid" />
-	                			我已阅读并同意<a href="h/privacy.html" target="_blank">《拉勾用户协议》</a>
+	                			我已阅读并同意<a href="h/privacy.html" target="_blank">《蜜蜂用户协议》</a>
 	                		</label>
 	                	</td>
 	                </tr>
@@ -395,11 +391,11 @@ var youdao_conv_id = 271546;
 		    <input type="submit" id="submitLogin" value="登 &nbsp; &nbsp; 录" />
 		</form>
 		<div class="login_right">
-			<div>还没有拉勾帐号？</div>
-			<a href="register.html" class="registor_now">立即注册</a>
+			<div>还没有蜜蜂帐号？</div>
+			<a href="${ctx }/register.jsp" class="registor_now">立即注册</a>
 		    <div class="login_others">使用以下帐号直接登录:</div>
-		    <a href="h/ologin/auth/sina.html" target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
-		    <a href="h/ologin/auth/qq.html" class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+		    <a href="#" target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+		    <a href="#" class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
 		</div>
     </div><!--/#loginPop-->
     
@@ -408,7 +404,7 @@ var youdao_conv_id = 271546;
        	<h4>确认要退订该订阅？</h4>
        	<table width="100%">
        		<tr>
-       			<td align="center"><p>点击确认后你将不再收到拉勾为你提供的精准职位推送。</p></td>
+       			<td align="center"><p>点击确认后你将不再收到蜜蜂为你提供的精准职位推送。</p></td>
        		</tr>
         	<tr>
             	<td align="center">
@@ -436,16 +432,16 @@ var youdao_conv_id = 271546;
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a href="h/about.html" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">互联网公司导航</a>
-		    <a href="http://e.weibo.com/lagou720" target="_blank" rel="nofollow">Bee微博</a>
-		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">Bee微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 
-<script type="text/javascript" src="style/js/core.min.js"></script>
-<script type="text/javascript" src="style/js/popup.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/core.min.js"></script>
+<script type="text/javascript" src="${ctx }/style/js/popup.min.js"></script>
 
 <!--  -->
 
