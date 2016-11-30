@@ -10,7 +10,7 @@
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>拉勾网-最专业的互联网招聘平台</title>
+<title>蜜蜂网-最专业的互联网家教平台</title>
 <meta property="qc:admins" content="23635710066417756375" />
 <meta content="" name="description">
 <meta content="" name="keywords">
@@ -42,20 +42,20 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a href="index.html" class="logo">
+    		<a href="" class="logo">
     			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
     			<li class="current"><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/joblist" >职位列表</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
-	    		<li ><a href="create.html" rel="nofollow">发布职位</a></li>
+	    		<li ><a href="${ctx }/login.jsp" rel="nofollow">发布职位</a></li>
 	    	</ul>
 	    	
         	<ul class="loginTop">
-            	<li><a href="login.html" rel="nofollow">登录</a></li> 
+            	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
-            	<li><a href="register.html" rel="nofollow">注册</a></li>
+            	<li><a href="${ctx }/register.jsp" rel="nofollow">注册</a></li>
             </ul>
                                 </div>
     </div><!-- end #header -->
