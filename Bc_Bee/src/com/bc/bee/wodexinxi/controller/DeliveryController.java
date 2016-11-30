@@ -33,9 +33,10 @@ public class DeliveryController {
 	public String Init(HttpSession session){
 //	TUser tuser= (TUser) session.getAttribute("TUser");
 	//模拟tuser已经获取到	
-		TUser tuser = new TUser();
-		tuser.setTUId(1);
-		tuser.setTUName("scbnbb");
+//		TUser tuser = new TUser();
+//		tuser.setTUId(1);
+//		tuser.setTUName("scbnbb");
+		TUser tuser = (TUser) session.getAttribute("student");
 		//根据用户Id查询出在数据库投递表中这个用户所有的投递记录
 		List<Delivery> deliverys = DeliveryServiceImpl.findByTUId(tuser.getTUId());
 		

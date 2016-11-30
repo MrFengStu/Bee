@@ -127,12 +127,14 @@ public class JianliController {
 		
 	//	TUser tuser= (TUser) session.getAttribute("TUser");
 	//模拟tuser已经获取到	
-		TUser tuser = new TUser();
-		tuser.setTUId(1);
+	//	TUser tuser = new TUser();
+	//	tuser.setTUId(1);
+		TUser tuser = (TUser) session.getAttribute("student");
 		TDeInfo tde = JianliServiceImpl.jiben(tuser.getTUId());
 		session.setAttribute("TDeInfo", tde);
 //		System.out.println(tde.getTMailbox());
-		session.setAttribute("name", tde.getTName());//用户名
+//		System.out.println(tde.getTName());
+		session.setAttribute("name", tuser.getTUName());//用户名
 		session.setAttribute("grade", tde.getTGrade());//年级
 		session.setAttribute("sex", tde.getTSex());//性别
 		session.setAttribute("tel", tde.getTContactInfo());//电话号
@@ -141,6 +143,7 @@ public class JianliController {
 		session.setAttribute("college", tde.getTCollege());//学校
 	
 		Resume res = JianliServiceImpl.jianli(tuser.getTUId());
+//		System.out.println(res.getArea());
 		session.setAttribute("Resume", res);
 		session.setAttribute("area", res.getArea());//期望工作地点
 		session.setAttribute("sub", res.getTeaSubject());//期望所教科目
