@@ -16,7 +16,7 @@
 <meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
-<link rel="Shortcut Icon" href="${ctx }/h/images/favicon.ico">
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/style-djw.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/dd.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/external.min.css"/>
@@ -26,7 +26,7 @@
 <script src="${ctx }/style/js/ajaxfileupload.js" type="text/javascript"></script>
 <script type="text/javascript" src="${ctx }/style/js/additional-methods.js"></script>
 <!--[if lte IE 8]>
-    <script type="text/javascript" src="style/js/excanvas.js"></script>
+    <script type="text/javascript" src="${ctx }/style/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
@@ -645,14 +645,15 @@ var youdao_conv_id = 271546;
             </ul>
             <div id="hotList">
 	            <ul class="hot_pos reset">
+	            <c:forEach items="${recinfo }" var="rf">
 	            		            		            				            		<li class="clearfix">
 		            																		            					                	<div class="hot_pos_l">
 			                    <div class="mb10">
-			                        	<a href="" target="_blank">高中数学</a> 
+			                        	<a href="h/jobs/147822.html" target="_blank">${rf.jobTitle }</a> 
 			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
+			                            <span class="c9">${rf.workArea }</span>
 			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
+			                        <span><em class="c7">结算方式： </em>${rf.salary}</span>
 			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
 			                        <span><em class="c7">专业： </em>软件专业</span>
 			                        <br />
@@ -662,305 +663,27 @@ var youdao_conv_id = 271546;
 			                        <!-- <a  class="wb">分享到微博</a> -->
 			                    </div>
 			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
+			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">${rf.contacts}</a></div>
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
+			                        <span><em class="c7">工作时间：</em>周六下午</span><br/>
+			                       	<button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>			                    
+			                       	</div>
 			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	            
-
-
-
-	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	                		                	            				            		<li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	            
-
-
-
-	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	                		                	            				            		<li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	            
-
-
-
-	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	                		                	            				            		
+			                 </c:forEach>	                		                	           	            	            	                         	                		                	           	            	            	           	           	        	                	            				            		
 	                		                	                
-	                	                <a href="${ctx }/joblist" class="btn fr" target="_blank">查看更多</a>
-	                	            </ul>
+	             <a href="${ctx }/joblist" class="btn fr" target="_blank">查看更多</a>
+	        </ul>
 	            <ul class="hot_pos hot_posHotPosition reset" style="display:none;">
+	            <c:forEach items="${recinfo1 }" var="rf1">
 	            		            		            				            		<li class="clearfix">
 		            																		            					                	<div class="hot_pos_l">
 			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
+			                        	<a href="h/jobs/147822.html" target="_blank">${rf1.jobTitle }</a> 
 			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
+			                            <span class="c9">${rf1.workArea }</span>
 			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
+			                        <span><em class="c7">结算方式： </em>${rf1.salary}</span>
 			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
 			                        <span><em class="c7">专业： </em>软件专业</span>
 			                        <br />
@@ -970,266 +693,15 @@ var youdao_conv_id = 271546;
 			                        <!-- <a  class="wb">分享到微博</a> -->
 			                    </div>
 			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
+			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">${rf1.contacts}</a></div>
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span>
 			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
 			                    </div>
 			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	            
-
-
-
-	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	                		                	            				            		<li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	            
-
-
-
-	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	                		                	            				            		<li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	                		                	            <li class="odd clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a href="h/jobs/147974.html" target="_blank">作业辅导</a> 
-			                            &nbsp;
-			                            <span class="c9">[桥西区]</span>
-			                            			                        </div>
-			                        <span><em class="c7">结算方式： </em>日结30元/天</span>
-			                        <span><em class="c7">学历：</em>大学本科</span> <br />
-			                        <span><em class="c7">专业 </em>数学与信息专业</span>
-			                        <br />
-			                        </span>
-			                       
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/5232.html" target="_blank">王先生</a></div>
-			                        <span><em class="c7">地址：</em> 裕华区中山路256号</span>
-			                        			                        <br />
-			                        <span><em class="c7">工作时间：</em> 每天下午</span>
-			                        <br/><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			    </li>
-	            
-	            <li class="clearfix">
-		            																		            					                	<div class="hot_pos_l">
-			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">高中数学</a> 
-			                            &nbsp;
-			                            <span class="c9">[裕华区]</span>
-			                    </div>
-			                        <span><em class="c7">结算方式： </em>日结40元/天</span>
-			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
-			                        <span><em class="c7">专业： </em>软件专业</span>
-			                        <br />
-			                
-			                     
-				                    <span>1天前发布</span>
-			                        <!-- <a  class="wb">分享到微博</a> -->
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">李女士</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
-			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
-			                    </div>
-			                 </li>
-	                	                	            				            		
-	                	                	                <a href="list.html?city=%E5%85%A8%E5%9B%BD" class="btn fr" target="_blank">查看更多</a>
+			                 </c:forEach>
+	   							 <a href="${ctx }/joblist" class="btn fr" target="_blank">查看更多</a>
 	            </ul>
             </div>
             

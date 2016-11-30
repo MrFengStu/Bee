@@ -52,6 +52,7 @@ public class RecInfo {
 	private String ReTime;
 	private String Shi;
 	private String Qu;
+	private int View;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -172,6 +173,12 @@ public class RecInfo {
 	}
 	public void setQu(String qu) {
 		Qu = qu;
+	}
+	public int getView() {
+		return View;
+	}
+	public void setView(int view) {
+		View = view;
 	}
 	
 	
