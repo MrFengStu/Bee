@@ -12,9 +12,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>职位列表</title>
 <meta property="qc:admins" content="23635710066417756375" />
-<meta content="前端开发招聘  全国地区招聘 紫色医疗招聘前端开发,月薪:10k-20k,要求:本科及以上学历,3-5年工作经验。职位诱惑：借移动医疗大势享受坐直升飞机的职场发展 公司规模:15-50人移动互联网 ,健康医疗类公司招聘信息汇总  最新最热门互联网行业招聘信息，尽在拉勾网" name="description">
-<meta content="前端开发招聘,全国地区前端开发招聘,紫色医疗招聘前端开发,移动互联网 类公司招聘信息汇总,健康医疗类公司招聘信息汇总,拉勾招聘,拉勾网,互联网招聘" name="keywords">
-<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
@@ -376,11 +373,11 @@ function editForm(inputId,inputValue){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a href="" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="" target="_blank">互联网公司导航</a>
-		    <a href="" target="_blank" rel="nofollow">拉勾微博</a>
-		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="">京ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 
