@@ -51,12 +51,20 @@ var youdao_conv_id = 271546;
     				    			<li ><a href="jianli.html" rel="nofollow">发布职位</a></li>
 	    							    			
 	    		    		</ul>
-        	            <ul class="loginTop">
-            	<li><a href="login.html" rel="nofollow">登录</a></li> 
-            	<li>|</li>
-            	<li><a href="register.html" rel="nofollow">注册</a></li>
-            </ul>
-                                </div>
+        	            <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl>            </div>
     </div><!-- end #header -->
     <div id="container">
         
@@ -235,7 +243,7 @@ var youdao_conv_id = 271546;
 			                    </div> 
 						        <div class="hot_pos_r">
 			                        <div class="apply">
-			                        <a href="${ctx }/mail/add?RlId=${rf.rlId}" target="_blank">投个简历</a>
+			                        <a href="${ctx }/mail/listadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
 			                        				                        </div>
 			                        <div class="mb10"><a href="h/c/1712.html" title="紫色医疗" target="_blank">${rf.contacts}</a></div>
 			                        
