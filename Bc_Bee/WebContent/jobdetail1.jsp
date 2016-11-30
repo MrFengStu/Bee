@@ -45,6 +45,12 @@ var youdao_conv_id = 271546;
     			<li><a href="${ctx }/joblist" >教员列表</a></li>
     				    			<li><a rel="nofollow" href="${ctx}/publish/jump">发布职位</a></li>
 	    						    		</ul>
+	    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){%>
+	    			<ul class="loginTop">
+            	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
+            	<li>|</li>
+            	<li><a href="${ctx }/register.jsp" rel="nofollow">注册</a></li>
+            </ul><%}else{ %>
         	        	<dl class="collapsible_menu">
             	<dt>
            			<span>${name }&nbsp;</span> 
@@ -58,7 +64,7 @@ var youdao_conv_id = 271546;
                 <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
-            </dl>
+            </dl><%} %>
                                     <div class="dn" id="noticeTip">
             	<span class="bot"></span>
 				<span class="top"></span>
