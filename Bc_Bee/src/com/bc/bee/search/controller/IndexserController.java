@@ -26,16 +26,16 @@ public class IndexserController {
 	@Resource
 	private IndexserServiceImpl IndexserServiceImpl;
 	
-	@RequestMapping("search")
-	public String search(HttpServletRequest request,HttpSession session){
-		
-		String name=request.getParameter("kd");
-		System.out.println(name);
-		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName(name);
-		session.setAttribute("recinfo", recinfo);
-		
-		return "list";
-	}
+//	@RequestMapping("search")
+//	public String search(HttpServletRequest request,HttpSession session){
+//		
+//		String name=request.getParameter("kd");
+//		System.out.println(name);
+//		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName(name);
+//		session.setAttribute("recinfo", recinfo);
+//		
+//		return "list";
+//	}
 	@RequestMapping("search1")
 	public String search1(HttpServletRequest request,HttpSession session){
 		

@@ -44,7 +44,11 @@ var youdao_conv_id = 271546;
     			<li class="current"><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/joblist" >职位列表</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
-	    		<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else{ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 	    	<ul class="loginTop">
@@ -81,34 +85,34 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">书法</a>
+					        			<a href="h"${ctx }/search1?&kd=小学书法 ">书法</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=小学硬笔书法 "
 										   		
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学软笔书法 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学行书 "
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学楷书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学草书 "
 										   		
 										   		 									            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学硬笔书法 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -118,25 +122,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">       								            						        				舞蹈
+					        			<a href="${ctx }/search1?&kd=小学舞蹈 ">       								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=小学爵士舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="${ctx }/search"
-										   		
-										   		 									            										            											            										            											            										            											            										            											            										            											            			class="curr"
+							            										   	<a href="${ctx }/search1?&kd=小学街舞 "						            											            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学民族舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学芭蕾舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
@@ -144,31 +146,31 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">		        									            								            							            								            							            								            							            								            							            								            							            								            						        				音乐
+					        			<a href="${ctx }/search1?&kd=小学音乐 ">		        									            								            							            								            							            								            							            								            							            								            							            								            						        				音乐
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=小学小提琴 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>小提琴</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学钢琴 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>钢琴</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学古筝 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>古筝</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学吉他 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>吉他</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学长笛 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>长笛</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学架子鼓 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>架子鼓</a>
@@ -176,23 +178,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">			        									            								            							            								            							            								            							            								            							            								            							            								            						        			学科
+					        			<a href="${ctx }/search1?&kd=小学学科 ">			        									            								            							            								            							            								            							            								            							            								            							            								            						        			学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=小学数学 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学语文 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学英语 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=小学写作 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            											            										            										   		
 										   	>写作</a>
@@ -209,33 +211,32 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
+					        			<a href="${ctx }/search1?&kd=初中书法 ">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
-										   		
+							        											   	<a href="${ctx }/search1?&kd=初中硬笔书法 "
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中软笔书法 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中楷书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中行书 "
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中草书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中隶书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -244,23 +245,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
+					        			<a href="${ctx }/search1?&kd=初中舞蹈 ">				        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=初中爵士舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中芭蕾舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中街舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中民族舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
@@ -268,43 +269,43 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        			学科
+					        			<a href="${ctx }/search1?&kd=初中学科 ">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        			学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=初中数学 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=初中语文 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中英语 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中物理"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>物理</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中化学 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>化学</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中生物 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>生物</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中历史 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>历史</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中政治 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>政治</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=初中地理 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>地理</a>
@@ -319,33 +320,33 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
+					        			<a href="${ctx }/search1?&kd=高中书法 ">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				书法
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=高中硬笔书法 "
 										   		
 										   		 									            										            											            			class="curr"
 									            											            										            											            										            											            										            											            										            										   		
 										   	>硬笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中软笔书法 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>软笔书法</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中楷书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>楷书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中行书 "
 										   		
 										   		 									            										            											            										            											            			class="curr"
 									            											            										            											            										            											            										            										   		
 										   	>行书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中草书"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>草书</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中隶书 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>隶书</a>
@@ -354,23 +355,23 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
+					        			<a href="${ctx }/search1?&kd=高中舞蹈 ">					        									            								            							            								            							            								            							            								            							            								            							            								            						        				舞蹈
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=高中爵士舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>爵士舞</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中芭蕾舞"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>芭蕾舞</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中街舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>街舞</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中民族舞 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>民族舞</a>
@@ -378,43 +379,43 @@ var youdao_conv_id = 271546;
 					        	</dl>
 													    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="${ctx }/search">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        学科
+					        			<a href="${ctx }/search1?&kd=高中学科 ">					        									            								            							            								            								            							            								            							            								            							            								            							            								            						        学科
 					        			</a>
 					        		</dt>
 						        	<dd>
-							        											   	<a href="${ctx }/search"
+							        											   	<a href="${ctx }/search1?&kd=高中数学 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>数学</a>
-							            										   	<a href="${ctx }/search"
+							            										   	<a href="${ctx }/search1?&kd=高中语文 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>语文</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中英语 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>英语</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中物理 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>物理</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中化学 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>化学</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中生物"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>生物</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中历史 "
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>历史</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中政治"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>政治</a>
-										   	<a href="${ctx }/search"
+										   	<a href="${ctx }/search1?&kd=高中地理"
 										   		
 										   		 									            										            											            										            											            										            											            										            											            										            										   		
 										   	>地理</a>
@@ -438,7 +439,7 @@ var youdao_conv_id = 271546;
 			    <label class="fl" for="remember"><input type="checkbox" id="remember" value="" checked="checked" name="autoLogin" /> 记住我</label>
 			    <a href="reset.html" class="fr" target="_blank">忘记密码？</a>
 			    
-				<a style="color:#fff;" href="index.html" class="submitLogin" title="登 &nbsp; &nbsp; 录"/>登 &nbsp; &nbsp; 录</a>
+				<a style="color:#fff;" href="${ctx}/login.jsp" class="submitLogin" title="登 &nbsp; &nbsp; 录"/>登 &nbsp; &nbsp; 录</a>
 
 			    
 			    <input type="hidden" id="callback" name="callback" value=""/>
@@ -448,7 +449,7 @@ var youdao_conv_id = 271546;
 			</form>
 			<div class="login_right">
 				 
-				<a  href="register.html"  class="registor_now">立即注册</a>
+				<a  href="${ctx}/register.jsp"  class="registor_now">立即注册</a>
 			    <div class="login_others">使用以下帐号直接登录:</div>
 			    <a  href="h/ologin/auth/sina.html"  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
 			    <a  href="h/ologin/auth/qq.html"  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
@@ -502,10 +503,10 @@ var youdao_conv_id = 271546;
 		</div>
         <div class="content">	
 	        			<div id="search_box">
-		<form id="searchForm" name="searchForm" action="${ctx }/search" method="post">
+		<form id="searchForm" name="searchForm" action="${ctx }/search1" method="post">
         <ul id="searchType">
         	        	<li data-searchtype="1" class="type_selected">职位</li>
-        	<li data-searchtype="4">公司</li>
+        	<!--  <li data-searchtype="4">公司</li>-->
         	        </ul>
         <div class="searchtype_arrow"></div>
         <input type="text" id="search_input" name = "kd"  tabindex="1" value=""  placeholder="请输入职位名称，如：小学家教"  />
