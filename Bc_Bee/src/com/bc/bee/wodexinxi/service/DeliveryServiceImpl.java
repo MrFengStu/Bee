@@ -31,4 +31,7 @@ public class DeliveryServiceImpl {
 	public void deleteByDeId(int ReId){
 		this.DeliveryDaoImpl.deleteByDeId(ReId);
 	}
+	public Delivery findByDeId(int DeId){
+		return this.DeliveryDaoImpl.findByDeId(DeId);
+	}
 }

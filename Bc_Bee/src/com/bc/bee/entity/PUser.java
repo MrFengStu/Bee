@@ -91,7 +91,7 @@ public class PUser {
 		this.comments = comments;
 	}
 	
-	@OneToMany(mappedBy="puser",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="puser",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	public Set<Delivery> getDeliverys() {
 		return deliverys;
 	}
