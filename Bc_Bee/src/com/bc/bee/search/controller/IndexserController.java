@@ -30,8 +30,18 @@ public class IndexserController {
 	public String search(HttpServletRequest request,HttpSession session){
 		
 		String name=request.getParameter("kd");
-		
+		System.out.println(name);
 		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName(name);
+		session.setAttribute("recinfo", recinfo);
+		
+		return "list";
+	}
+	@RequestMapping("search1")
+	public String search1(HttpServletRequest request,HttpSession session){
+		
+		String name=request.getParameter("kd");
+		System.out.println(name);
+		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName1(name);
 		session.setAttribute("recinfo", recinfo);
 		
 		return "list";
