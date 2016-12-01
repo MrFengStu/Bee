@@ -47,11 +47,26 @@ var youdao_conv_id = 271546;
     				    			<li ><a href="${ctx }/jianli.jsp" rel="nofollow">发布职位</a></li>
 	    							    			
 	    		    		</ul>
-        	            <ul class="loginTop">
-            	<li><a href="${ctx}/login.jsp" rel="nofollow">登录</a></li> 
+	    		    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		    		<ul class="loginTop">
+            	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
-            	<li><a href="${ctx}/register.jsp" rel="nofollow">注册</a></li>
-            </ul>
+            	<li><a href="${ctx }/register.jsp" rel="nofollow">注册</a></li>
+            </ul><%}else{ %>
+        	           <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl><%} %>
                                 </div>
     </div><!-- end #header -->
     <div id="container">

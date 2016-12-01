@@ -10,9 +10,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>职位详细信息</title>
 <meta content="23635710066417756375" property="qc:admins">
-<meta name="description" content="web前端开发 广州 大专 3-5年 全职 前端开发 高薪高福利，良好办公空间 国馆 广东国馆酒业有限公司 让文化温暖人心 拉勾网-最专业的互联网招聘平台">
-<meta name="keywords" content="web前端开发 广州 大专 3-5年 全职 前端开发 高薪高福利，良好办公空间 国馆 广东国馆酒业有限公司 让文化温暖人心 拉勾网-最专业的互联网招聘平台">
-<meta content="QIQ6KC1oZ6" name="baidu-site-verification">
 
 <!-- <div class="web_root"  style="display:none">http://www.lagou.com</div> -->
 <script type="text/javascript">
@@ -48,6 +45,12 @@ var youdao_conv_id = 271546;
     			<li><a href="${ctx }/joblist" >教员列表</a></li>
     				    			<li><a rel="nofollow" href="${ctx}/publish/jump">发布职位</a></li>
 	    						    		</ul>
+	    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){%>
+	    			<ul class="loginTop">
+            	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
+            	<li>|</li>
+            	<li><a href="${ctx }/register.jsp" rel="nofollow">注册</a></li>
+            </ul><%}else{ %>
         	        	<dl class="collapsible_menu">
             	<dt>
            			<span>${name }&nbsp;</span> 
@@ -61,7 +64,7 @@ var youdao_conv_id = 271546;
                 <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
-            </dl>
+            </dl><%} %>
                                     <div class="dn" id="noticeTip">
             	<span class="bot"></span>
 				<span class="top"></span>
@@ -712,11 +715,11 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="">联系我们</a>
-		    <a target="_blank" href="">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="">拉勾微博</a>
-		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="" target="_blank">京ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

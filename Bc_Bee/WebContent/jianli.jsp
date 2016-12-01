@@ -12,9 +12,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <title>用户-学生账户信息</title>
 <meta content="23635710066417756375" property="qc:admins"/>
-<meta name="description" content="拉勾网是3W旗下的互联网领域垂直招聘网站,互联网职业机会尽在拉勾网"/>
-<meta name="keywords" content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招"/>
-<meta content="QIQ6KC1oZ6" name="baidu-site-verification"/>
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
@@ -968,11 +965,11 @@ $(function(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="">联系我们</a>
-		    <a target="_blank" href="">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="">bee微博</a>
-		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">bee微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Bee <a href="#" target="_blank">冀ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

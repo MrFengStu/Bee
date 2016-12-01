@@ -12,9 +12,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>职位列表</title>
 <meta property="qc:admins" content="23635710066417756375" />
-<meta content="前端开发招聘  全国地区招聘 紫色医疗招聘前端开发,月薪:10k-20k,要求:本科及以上学历,3-5年工作经验。职位诱惑：借移动医疗大势享受坐直升飞机的职场发展 公司规模:15-50人移动互联网 ,健康医疗类公司招聘信息汇总  最新最热门互联网行业招聘信息，尽在拉勾网" name="description">
-<meta content="前端开发招聘,全国地区前端开发招聘,紫色医疗招聘前端开发,移动互联网 类公司招聘信息汇总,健康医疗类公司招聘信息汇总,拉勾招聘,拉勾网,互联网招聘" name="keywords">
-<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
@@ -51,12 +48,26 @@ var youdao_conv_id = 271546;
     				    			<li ><a href="jianli.html" rel="nofollow">发布职位</a></li>
 	    							    			
 	    		    		</ul>
-        	            <ul class="loginTop">
-            	<li><a href="login.html" rel="nofollow">登录</a></li> 
+	    		    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		    		<ul class="loginTop">
+            	<li><a href="${ctx }/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
-            	<li><a href="register.html" rel="nofollow">注册</a></li>
-            </ul>
-                                </div>
+            	<li><a href="${ctx }/register.jsp" rel="nofollow">注册</a></li>
+            </ul><%}else{ %>
+        	            <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl> <%} %>           </div>
     </div><!-- end #header -->
     <div id="container">
         
@@ -235,7 +246,7 @@ var youdao_conv_id = 271546;
 			                    </div> 
 						        <div class="hot_pos_r">
 			                        <div class="apply">
-			                        <a href="${ctx }/mail/add?RlId=${rf.rlId}" target="_blank">投个简历</a>
+			                        <a href="${ctx }/mail/listadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
 			                        				                        </div>
 			                        <div class="mb10"><a href="h/c/1712.html" title="紫色医疗" target="_blank">${rf.contacts}</a></div>
 			                        
@@ -376,11 +387,11 @@ function editForm(inputId,inputValue){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a href="" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="" target="_blank">互联网公司导航</a>
-		    <a href="" target="_blank" rel="nofollow">拉勾微博</a>
-		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="">京ICP备14023790号-2</a></div>
+			<a href="#" target="_blank" rel="nofollow">联系我们</a>
+		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
+		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 
