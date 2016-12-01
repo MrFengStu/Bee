@@ -41,6 +41,7 @@ public class RegisterTUserDaoImpl extends BaseDao<TUser, String> {
 			tuser.setTeacer(teacer);
 			tuser.setTdeinfo(tdeinfo);
 			tuser.setResume(resume);
+			
 			teacer.setTuser(tuser);
 			tdeinfo.setTuser(tuser);
 			resume.setTuser(tuser);

@@ -222,7 +222,7 @@ var youdao_conv_id = 271546;
             </div>
             
             	            <ul class="hot_pos reset">
-            	            <c:forEach items="${resumes }" var="rs">
+            	            <c:forEach items="${resumes}" var="rs">
 	                    		                    			                <li class="odd clearfix">
 			                			                				                	<div class="hot_pos_l">
 			                        <div class="mb10">
@@ -239,7 +239,7 @@ var youdao_conv_id = 271546;
 			                    </div> 
 						        <div class="hot_pos_r">
 			                        <div class="apply">
-			                        <a href="toudi.html" target="_blank">发出邀请</a>
+			                        <a href="${ctx}/send/sendInvitation?param=${rs.TUName}" target="_blank">发出邀请</a>
 			                        				                        </div>
 			                        <div class="mb10"><a href="${ctx }/peopledetail" title="紫色医疗" target="_blank">个人详情</a></div>
 			                       
