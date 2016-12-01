@@ -28,4 +28,12 @@ public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
 			e.printStackTrace();
 		}
 	}
+	public Delivery findByDeId(int DeId){
+		try {
+			return super.findOne("from Delivery where DeId=?", new Object[]{DeId});
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

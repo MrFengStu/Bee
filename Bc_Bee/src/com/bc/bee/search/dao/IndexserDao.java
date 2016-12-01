@@ -34,4 +34,21 @@ public class IndexserDao extends BaseDao<RecInfo, String>{
 
 		
 	}
+	public  List<RecInfo> findByName1(String name) {
+		Session u = super.getSessionFactory().openSession();
+		try{
+			//name = new String(name.getBytes("iso-8859-1"),"utf-8");
+			System.out.println(name);
+			Query query = u.createQuery("from RecInfo where JobTitle like '%" + name + "%'");
+			return query.list();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}finally{
+			u.close();
+		}
+
+		
+	}
 }

@@ -21,4 +21,8 @@ public class IndexserServiceImpl {
 		return this.IndexserDao.findByName(name);
 	}
 	
+	public List<RecInfo> findByName1(String name){
+		return this.IndexserDao.findByName1(name);
+	}
+	
 }

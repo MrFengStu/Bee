@@ -42,10 +42,14 @@ var youdao_conv_id = 271546;
     			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
-    			<li ><a href="${ctx }/index1.jsp">首页</a></li>
+    			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/joblist" target="_blank" >职位列表</a></li>
     			<li ><a href="${ctx }/jiaoyuan">教员列表</a></li>
-    				    			<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+    				    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else{ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%} %>
 	    							    			
 	    		    		</ul>
 	    		    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -241,7 +245,7 @@ var youdao_conv_id = 271546;
 			                        <div class="apply">
 			                        <a href="${ctx}/send/sendInvitation?param=${rs.TUName}" target="_blank">发出邀请</a>
 			                        				                        </div>
-			                        <div class="mb10"><a href="${ctx }/peopledetail" title="紫色医疗" target="_blank">个人详情</a></div>
+			                        <div class="mb10"><a href="${ctx }/peopledetail?name=${rs.TUName }" title="紫色医疗" target="_blank">个人详情</a></div>
 			                       
 			                    </div>
 			                 </li>

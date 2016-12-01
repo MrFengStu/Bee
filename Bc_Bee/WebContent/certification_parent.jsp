@@ -56,10 +56,14 @@
 				alt="蜜蜂招聘-专注家教招聘" />
 			</a>
 			<ul class="reset" id="navheader">
-				<li><a href="${ctx }/index1.jsp">首页</a></li>
+				<li><a href="${ctx }/index.jsp">首页</a></li>
 				<li><a href="${ctx }/joblist">职位列表</a></li>
 				<li><a href="${ctx }/jiaoyuan" rel="nofollow">教员列表</a></li>
-				<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+				<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else{ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%} %>
 			</ul>
 		</div>
 	</div>
