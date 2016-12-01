@@ -119,7 +119,10 @@ public class DeliveryController {
 		public String Delete(@RequestParam("DeId") int DeId,HttpSession session){
 //			System.out.println(DeId);
 			//因为是级联，所以不能直接删
-		//	this.DeliveryServiceImpl.deleteByDeId(DeId);
-			return "delivery";
+			Delivery delivery = this.DeliveryServiceImpl.findByDeId(DeId);
+	//		delivery.setPuser(null);
+	//		delivery.setTuser(null);
+			this.DeliveryServiceImpl.deleteByDeId(DeId);
+			return "redirect:Init";
 		}
 }

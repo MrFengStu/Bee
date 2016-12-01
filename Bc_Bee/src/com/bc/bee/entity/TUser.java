@@ -112,7 +112,7 @@ public class TUser {
 		this.comments = comments;
 	}
 
-	@OneToMany(mappedBy="tuser",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="tuser",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	public Set<Delivery> getDeliverys() {
 		return deliverys;
 	}
