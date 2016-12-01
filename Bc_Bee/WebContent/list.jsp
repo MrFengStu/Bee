@@ -45,7 +45,11 @@ var youdao_conv_id = 271546;
     			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
     			<li ><a href="${ctx }/joblist">职位列表</a></li>
-    				    			<li ><a href="jianli.html" rel="nofollow">发布职位</a></li>
+    				    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else{ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%} %>
 	    							    			
 	    		    		</ul>
 	    		    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -248,7 +252,7 @@ var youdao_conv_id = 271546;
 			                        <div class="apply">
 			                        <a href="${ctx }/mail/listadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
 			                        				                        </div>
-			                        <div class="mb10"><a href="h/c/1712.html" title="紫色医疗" target="_blank">${rf.contacts}</a></div>
+			                        <div class="mb10"><a href="${ctx }/job1?&id=${rf.rlId }" title="紫色医疗" target="_blank">${rf.contacts}</a></div>
 			                        
 			                        			                        
 			                       

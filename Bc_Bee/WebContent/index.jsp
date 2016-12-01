@@ -657,7 +657,7 @@ var youdao_conv_id = 271546;
 	            		            		            				            		<li class="clearfix">
 		            																		            					                	<div class="hot_pos_l">
 			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">${rf.jobTitle }</a> 
+			                        	<a href="${ctx }/job1?&id=${rf.rlId }"target="_blank">${rf.jobTitle }</a> 
 			                            &nbsp;
 			                            <span class="c9">${rf.workArea }</span>
 			                    </div>
@@ -671,7 +671,7 @@ var youdao_conv_id = 271546;
 			                        <!-- <a  class="wb">分享到微博</a> -->
 			                    </div>
 			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">${rf.contacts}</a></div>
+			                    	<div class="mb10 recompany"><a href="${ctx }/job1?&id=${rf.rlId }" target="_blank">${rf.contacts}</a></div>
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span><br/>
@@ -688,7 +688,7 @@ var youdao_conv_id = 271546;
 	            		            		            				            		<li class="clearfix">
 		            																		            					                	<div class="hot_pos_l">
 			                    <div class="mb10">
-			                        	<a href="h/jobs/147822.html" target="_blank">${rf1.jobTitle }</a> 
+			                        	<a href="${ctx }/job1?&id=${rf.rlId }" target="_blank">${rf1.jobTitle }</a> 
 			                            &nbsp;
 			                            <span class="c9">${rf1.workArea }</span>
 			                    </div>
@@ -702,7 +702,7 @@ var youdao_conv_id = 271546;
 			                        <!-- <a  class="wb">分享到微博</a> -->
 			                    </div>
 			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a href="h/c/399.html" target="_blank">${rf1.contacts}</a></div>
+			                    	<div class="mb10 recompany"><a href="${ctx }/job1?&id=${rf.rlId }" target="_blank">${rf1.contacts}</a></div>
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span>

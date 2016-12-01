@@ -42,7 +42,11 @@ var youdao_conv_id = 271546;
     			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/joblist" >职位列表</a></li>
 	    		<li ><a href="${ctx }/jiaoyuan" rel="nofollow">教员列表</a></li>
-	    		<li ><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else{ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%} %>
 	    	</ul>
         
                                 </div>
