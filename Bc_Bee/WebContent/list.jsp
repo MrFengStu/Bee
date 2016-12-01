@@ -42,7 +42,7 @@ var youdao_conv_id = 271546;
     			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
     		</a>
     		<ul class="reset" id="navheader">
-    			<li ><a href="index.html">首页</a></li>
+    			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
     			<li ><a href="${ctx }/joblist">职位列表</a></li>
     				    			<li ><a href="jianli.html" rel="nofollow">发布职位</a></li>
