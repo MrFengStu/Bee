@@ -675,7 +675,8 @@ var youdao_conv_id = 271546;
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span><br/>
-			                       	<button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>			                    
+			                       	<div class="apply"><a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
+			                        				                        </div>		                    
 			                       	</div>
 			                 </li>
 			                 </c:forEach>	                		                	           	            	            	                         	                		                	           	            	            	           	           	        	                	            				            		
