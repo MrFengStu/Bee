@@ -32,6 +32,11 @@
 var youdao_conv_id = 271546; 
 </script> 
 <script type="text/javascript" src="${ctx }/style/js/conv.js"></script>
+<script type="text/javascript">
+	function login() {
+		document.loginForm.submit();
+	}
+</script>
 </head>
 <body>
 <div id="body">
@@ -432,14 +437,14 @@ var youdao_conv_id = 271546;
 		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 		    <div class="load">
 		<div class="login_box">
-        	<form id="loginForm" action="index.html">
+        	<form name="loginForm" id="loginForm" action="${ctx }/login/indexuser">
 				<input type="text" id="email" name="email" value="" tabindex="1" placeholder="请输入登录邮箱地址" />
 			  	<input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" />
 				<span class="error" style="display:none;" id="beError"></span>
 			    <label class="fl" for="remember"><input type="checkbox" id="remember" value="" checked="checked" name="autoLogin" /> 记住我</label>
-			    <a href="reset.html" class="fr" target="_blank">忘记密码？</a>
-			    
-				<a style="color:#fff;" href="${ctx}/login.jsp" class="submitLogin" title="登 &nbsp; &nbsp; 录"/>登 &nbsp; &nbsp; 录</a>
+			    <a href="" class="fr" target="_blank">忘记密码？</a>
+			    <input style="color:#fff;" type="submit" value="登录">
+				<a style="color:#fff;" onclick="login()" class="submitLogin" title="登 &nbsp; &nbsp; 录">登 &nbsp; &nbsp; 录</a>
 
 			    
 			    <input type="hidden" id="callback" name="callback" value=""/>
@@ -451,8 +456,8 @@ var youdao_conv_id = 271546;
 				 
 				<a  href="${ctx}/register.jsp"  class="registor_now">立即注册</a>
 			    <div class="login_others">使用以下帐号直接登录:</div>
-			    <a  href="h/ologin/auth/sina.html"  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
-			    <a  href="h/ologin/auth/qq.html"  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+			    <a  href=""  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+			    <a  href=""  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
 			</div>
         </div>
 		</div><%} %>
