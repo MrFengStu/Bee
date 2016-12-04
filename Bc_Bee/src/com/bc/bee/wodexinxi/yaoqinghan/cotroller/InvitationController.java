@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.Invitation;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.TUser;
