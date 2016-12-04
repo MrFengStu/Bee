@@ -51,8 +51,10 @@ var youdao_conv_id = 271546;
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
     		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
-	    	<%}else{ %>
+	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
+	    		<li><a href="${ctx}/jianli.jsp" rel="nofollow">我的简历</a></li>
 	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -60,7 +62,7 @@ var youdao_conv_id = 271546;
             	<li><a href="${ctx}/login.jsp" rel="nofollow">登录</a></li> 
             	<li>|</li>
             	<li><a href="${ctx}/register.jsp" rel="nofollow">注册</a></li>
-            </ul><%}else{ %>
+            </ul><%}else if(session.getAttribute("student") != null && session.getAttribute("parent") == null){ %>
 		        <dl class="collapsible_menu">
             	<dt>
            			<span>${name }&nbsp;</span> 
@@ -72,7 +74,19 @@ var youdao_conv_id = 271546;
                 <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
                 <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
-                <dd style="display: none;"><a href="${ctx }/accountBind.jsp">帐号设置</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl><%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
+            <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
+                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
+                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
             </dl><%} %>
                                 </div>
@@ -443,7 +457,6 @@ var youdao_conv_id = 271546;
 				<span class="error" style="display:none;" id="beError"></span>
 			    <label class="fl" for="remember"><input type="checkbox" id="remember" value="" checked="checked" name="autoLogin" /> 记住我</label>
 			    <a href="" class="fr" target="_blank">忘记密码？</a>
-			    <input style="color:#fff;" type="submit" value="登录">
 				<a style="color:#fff;" onclick="login()" class="submitLogin" title="登 &nbsp; &nbsp; 录">登 &nbsp; &nbsp; 录</a>
 
 			    

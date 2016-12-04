@@ -10,7 +10,7 @@
 <link  media="handheld" rel="alternate">
 <!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>我收藏的职位-招聘服务-蜜蜂网-最专业的家教平台</title>
+<title>我发布的职位-招聘服务-蜜蜂网-最专业的家教平台</title>
 <meta content="23635710066417756375" property="qc:admins">
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
@@ -39,7 +39,7 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a class="logo" href="h/">
-    			<img width="229" height="43" alt="Bee-小蜜蜂家教平台" src="style/images/logo.png">
+    			<img width="229" height="43" alt="Bee-小蜜蜂家教平台" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="${ctx }/index1.jsp">首页</a></li>
@@ -74,7 +74,7 @@ var youdao_conv_id = 271546;
             <div class="content_l">
             	<dl class="c_collections">
                     <dt>
-                        <h1><em></em>我收藏的职位</h1>
+                        <h1><em></em>我发布的职位</h1>
                     </dt>
                     <dd>
                     	<form id="collectionsForm">
@@ -83,19 +83,18 @@ var youdao_conv_id = 271546;
                             <c:forEach items="${recInfo}" var="rec">
                             
                                	 <li data-id="133340">
-                             		<a title="携程旅行网" target="_blank" href="${ctx }/c/6636.html">
+                             		<a title="携程旅行网" target="_blank" href="">
                              			<img alt="携程旅行网" src="${ctx }/style/images/ff808081441c19bf01441f9a47190b3a.png">
                              		</a>
                              		<div class="co_item">
                              			<h2 title="酒店业务助理">
 	                                        <a target="_blank" href="h/jobs/133340.html">
 	                                        	<em>${rec.jobTitle}</em> 
-	                                        	<span>（4k以上）</span>
+	                                        	<span>时薪：${rec.salary}</span>
 	                                    	</a>
 	                                    </h2>
-	                                    <span class="co_time">发布时间：2014-06-27 09:37</span>
-	                                    <div class="co_cate">携程旅行网 / 北京 / 1-3年 / 本科</div>
-	                                    <span class="co_youhuo c7">出勤福利</span>
+	                                    <span class="co_time">发布时间：${rec.reTime}</span>
+	                                    <div class="co_cate">${rec.shi}&nbsp;${rec.qu}</div>
                                         <a class="collectionCancel collection_link collected" href="javascript:;">
                                         	取消收藏
                                         	<span>已取消收藏</span>
@@ -171,7 +170,7 @@ $(function(){
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
