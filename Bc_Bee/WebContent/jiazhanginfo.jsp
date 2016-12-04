@@ -37,21 +37,19 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a class="logo" href="">
-    			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="${ctx }/style/images/logo.png">
+    			<img width="229" height="43" alt="蜜蜂招聘" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="${ctx }/index.jsp">首页</a></li>
     			<li><a href="${ctx }/joblist">职位列表</a></li>
     			<li><a target="_blank" href="${ctx }/jiaoyuan">教员列表</a></li>
-    				    			<li class="current"><a rel="nofollow" href="jianli.html">我的简历</a></li>
 	    						    		</ul>
         	        	<dl class="collapsible_menu">
             	<dt>
-           			<span>jason&nbsp;</span> 
+           			<span>${name }&nbsp;</span> 
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                                	<dd><a rel="nofollow" href="jianli.html">我的简历</a></dd>
                 	                	<dd><a href="collections.html">我收藏的职位</a></dd>
                 	                	                	<dd class="btm"><a href="subscribe.html">我的订阅</a></dd>
                 	<dd><a href="create.html">我要招人</a></dd>
