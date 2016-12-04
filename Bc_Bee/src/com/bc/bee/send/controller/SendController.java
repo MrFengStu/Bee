@@ -54,6 +54,7 @@ public class SendController {
 	System.out.println("123");
 	String TUName = (String) session.getAttribute("TUName");
 	System.out.println("111"+TUName);
+	System.out.println(TUName);
 	List<TUser> tuser= this.saveServiceImpl.findByName(TUName);
 
 	
