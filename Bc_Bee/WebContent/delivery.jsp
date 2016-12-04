@@ -138,14 +138,7 @@ var youdao_conv_id = 271546;
             	<div class="mycenterR" id="myInfo">
             		<h2>我的信息</h2>
             		
-           <!-- 		<a href="toudi.html" target="_blank">投递箱<span id="noticeNoPage" class="red dn">&nbsp;(0)</span></a>
-            		<br>           
-            		<a target="_blank" href="mList.html">邀请函</a>  
-                    <br> 
-                    <a href="collections.html">收藏夹</a>
-                    <br>
-                    <a target="_blank" href="subscribe.html">订阅栏</a>
-           -->
+       
            			<table>
                			<tr>
                				<td>

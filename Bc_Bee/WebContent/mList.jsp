@@ -75,74 +75,7 @@ var youdao_conv_id = 271546;
         <div class="clearfix">
             <div class="content_l recommend_list">
             	<h2>Bee家长用户根据你的简历邀请你以下职位： <a class="more" href="${ctx }/jianli/Init">修改简历信息&gt;&gt;</a></h2>
-      <!--         	<ul class="hot_pos reset">
-	            	<li class="clearfix">
-		            	<div class="hot_pos_l">
-			                <div class="mb10">
-			                    <a target="_blank" href="http://www.lagou.com/jobs/22194.html">产品经理</a> 
-			                    &nbsp;
-			                    <span class="c9">[广州]</span>
-			                </div>
-			                        <span><em class="c7">月薪：</em> 8k-15k</span>
-			                        <span><em class="c7">经验：</em> 1-3年</span>
-			                        <span><em class="c7">最低学历：</em> 本科</span>
-			                        <br>
-			                        <span><em class="c7">职位诱惑：</em> 上市公司，快速发展空间，产品的话语权</span>
-			                        <br>
-				                    <span>1天前发布</span>
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a target="_blank" href="http://www.lagou.com/c/5004.html">广州百田</a></div>
-			                        <span><em class="c7">领域：</em> 移动互联网,游戏</span>
-			                        			                        <br>
-			                        <span><em class="c7">阶段：</em> 上市公司</span>
-			                        <span><em class="c7">规模：</em> 500-2000人</span>
-			                        <ul class="companyTags reset">
-			                        	<li>股票期权</li>
-			                        					    <li>专项奖金</li>
-			                        					    <li>年底双薪</li>
-			                        					                        				                        </ul>
-			                    </div>
-			                    <div class="recommend">
-			                    	92%
-			                    	<span>该职位与你的简历匹配度是92%  </span>
-			                    </div>
-			                </li>
 
-	                		<li class="clearfix">
-		            			            						            						            					                	<div class="hot_pos_l">
-			                    	<div class="mb10">
-			                        	<a target="_blank" href="http://www.lagou.com/jobs/132091.html">产品经理</a> 
-			                            &nbsp;
-			                            <span class="c9">[广州]</span>
-			                            			                        </div>
-			                        <span><em class="c7">月薪：</em> 3k-6k</span>
-			                        <span><em class="c7">经验：</em> 3-5年</span>
-			                        <span><em class="c7">最低学历：</em> 大专</span>
-			                        <br>
-			                        <span><em class="c7">职位诱惑：</em> 极高奖励制度</span>
-			                        <br>
-				                    <span>09:03发布</span>
-			                    </div>
-			                	<div class="hot_pos_r">
-			                    	<div class="mb10 recompany"><a target="_blank" href="http://www.lagou.com/c/23877.html">集首饰的设计、生产、经营于一体的国际珠宝商</a></div>
-			                        <span><em class="c7">领域：</em> 电子商务</span>
-			                        			                        <span><em class="c7">创始人：</em> 何忆慈</span>
-			                        			                        <br>
-			                        <span><em class="c7">阶段：</em> 初创型(未融资)</span>
-			                        <span><em class="c7">规模：</em> 15-50人</span>
-			                        <ul class="companyTags reset">
-			                        	<li>年终分红 </li>
-			                        	<li>绩效奖金 </li>
-			                        	<li>五险一金 </li>
-			                        </ul>
-			                    </div>
-			                    <div class="recommend">
-			                    	84%
-			                    	<span>该职位与你的简历匹配度是84%  </span>
-			                    </div>
-			                </li>
-	                	</ul> -->
     <form id="deliveryForm">
        <ul class="reset my_delivery">
        <c:forEach items="${invitationmap }" var="ms" >
