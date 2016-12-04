@@ -1,5 +1,6 @@
 package com.bc.bee.recruitment.dao;
 
+import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.RecInfo;
 
 import java.text.SimpleDateFormat;
@@ -43,5 +44,7 @@ public class RecruitmentDaoImpl extends BaseDao<RecInfo, Integer> {
 			return temp;
 		
 	}
+	
+	
 
 }

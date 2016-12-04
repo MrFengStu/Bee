@@ -31,5 +31,7 @@ public class RecruitmentServiceImpl {
 		return list;
 	}
 	
+	
 
+	
 }

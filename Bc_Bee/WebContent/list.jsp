@@ -45,8 +45,7 @@ var youdao_conv_id = 271546;
     			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li class="current"><a href="${ctx }/joblist">职位列表</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
-    			
-    				    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+    			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
@@ -69,6 +68,7 @@ var youdao_conv_id = 271546;
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
                 <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd style="display: none;"><a href="${ctx }/Invitation/Init">我收到的邀请</a></dd>
+                <dd style="display: none;"><a href="${ctx }/certification_student.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
             </dl><%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
             <dl class="collapsible_menu">
@@ -81,8 +81,9 @@ var youdao_conv_id = 271546;
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
-            </dl><%} %>          </div>
+            </dl><%} %>    </div>
     </div><!-- end #header -->
     <div id="container">
         
