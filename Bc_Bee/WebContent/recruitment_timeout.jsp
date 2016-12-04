@@ -38,16 +38,16 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a href="index.html" class="logo">
-    			<img src="${ctx}/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
+    			<img src="${ctx}/style/images/logo.png" width="229" height="43" alt="蜜蜂" />
     		</a>
     		<ul class="reset" id="navheader">
     			<li ><a href="${ctx }/index.jsp">首页</a></li>
     			<li ><a href="${ctx }/joblist" >职位列表</a></li>
     			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
 	    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
-	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    		<li class="current" style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else{ %>
-	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    		<li class="current"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%} %>
 	    	</ul>
         	<dl class="collapsible_menu">
@@ -77,7 +77,7 @@ var youdao_conv_id = 271546;
                 	
 	                <form style="height: 200px;">
 	                <div style="margin-top: 120px;margin-left: 100px; color: #ed0324;">
-	                	<h1>您今天已经发了5条招聘信息，明天在来吧~</h1>
+	                	<h1>您今天已经发了5条招聘信息，明天再来吧~</h1>
 	                </div>
                     </form>
                     <div class="contactus">
