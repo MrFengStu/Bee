@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bc.bee.entity.Invitation;
+import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.RecInfo;
+import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TUser;
 import com.bc.bee.wodexinxi.yaoqinghan.service.InvitationServiceImpl;
 @Controller
@@ -50,12 +52,31 @@ public class InvitationController {
 		session.setAttribute("name", tuser.getTUName());
 		return "mList";
 	}
+	
+	@RequestMapping("send")
+	public String send(HttpSession session){
+		PUser puser = (PUser)session.getAttribute("parent");
+		List <Invitation> invitations = this.InvitationServiceImpl.findByPUId(puser.getPUId());
+		Iterator i=invitations.iterator();
+		HashMap invitationmap=new HashMap();
+		while(i.hasNext()){
+			Invitation invitation = (Invitation) i.next();
+			Resume resume = this.InvitationServiceImpl.findResumeByTUId(invitation.getTuser().getTUId());
+//			RecInfo recinfo = this.InvitationServiceImpl.findRecByRlId(invitation.getRlId());
+			invitationmap.put(invitation,resume );
+			
+		}
+		session.setAttribute("invitationmap", invitationmap);
+		session.setAttribute("name", puser.getPUName());
+		return "parentinvit";
+	}
+	
 	//删除
 	@RequestMapping(value="delete",method=RequestMethod.GET)
 	public String Delete(@RequestParam("InId") int InId,HttpSession session){
 		System.out.println(InId);
 		//因为是级联，所以不能直接删
-	//	this.InvitationServiceImpl.deleteByInId(InId);
+		//this.InvitationServiceImpl.deleteByInId(InId);
 		return "mList";
 	}
 }

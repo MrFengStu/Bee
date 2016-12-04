@@ -26,4 +26,13 @@ public class InvitationDaoImpl extends BaseDao<Invitation, String> {
 			e.printStackTrace();
 		}
 	}
+	public List<Invitation> findByPUId(int PUId){
+		try{
+			List<Invitation> lists = super.findByProperty("from Invitation lu where lu.puser.PUId=? ", new Object[]{PUId});
+			return lists;
+		}catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
