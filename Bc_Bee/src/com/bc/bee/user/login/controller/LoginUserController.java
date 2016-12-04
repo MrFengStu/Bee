@@ -64,7 +64,7 @@ public class LoginUserController {
 		}
 	}
 	
-	@RequestMapping("indexuser")
+	@RequestMapping(value="indexuser",method=RequestMethod.POST)
 	public String indexlogin(@RequestParam("email") String email, @RequestParam("password") String pwd, 
 			HttpServletRequest request,HttpSession session
 			,HttpServletResponse response) {

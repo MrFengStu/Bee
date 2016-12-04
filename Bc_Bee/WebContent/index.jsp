@@ -70,10 +70,8 @@ var youdao_conv_id = 271546;
             		<i></i>
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
-                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
                 <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
-                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Invitation/Init">我收到的邀请</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
             </dl><%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
             <dl class="collapsible_menu">
@@ -83,10 +81,9 @@ var youdao_conv_id = 271546;
             		<i></i>
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
-                <dd style="display: none;"><a href="${ctx }/collections.jsp">我收藏的职位</a></dd>
-                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我的订阅</a></dd>
-                <dd style="display: none;"><a href="${ctx }/create.jsp">我要招人</a></dd>
+                <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
             </dl><%} %>
                                 </div>
@@ -451,7 +448,7 @@ var youdao_conv_id = 271546;
 		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 		    <div class="load">
 		<div class="login_box">
-        	<form name="loginForm" id="loginForm" action="${ctx }/login/indexuser">
+        	<form name="loginForm" id="loginForm" action="${ctx }/login/indexuser" method="post">
 				<input type="text" id="email" name="email" value="" tabindex="1" placeholder="请输入登录邮箱地址" />
 			  	<input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" />
 				<span class="error" style="display:none;" id="beError"></span>
