@@ -16,7 +16,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bc.bee.entity.PUser;
+import com.bc.bee.entity.RecInfo;
 import com.bc.bee.jiazhanginfo.service.JiainfoServiceImpl;
+
+import javafx.scene.Parent;
 /**
  *  author：吴敬怡
  *  日期：2016/11/17
@@ -37,9 +40,22 @@ public class JiainfoController {
 	@RequestMapping(value="edit",method=RequestMethod.POST)
 	public String edit(@RequestParam("name") String name,@RequestParam("tel") String tel,
 			@RequestParam("email") String email,HttpSession session){
+		PUser parent=(PUser) session.getAttribute("parent");
+		Integer id=parent.getPUId();
 		
+		this.jiainfoServiceImpl.editPUser(name,tel,email,id);
 		
-		this.jiainfoServiceImpl.editPUser(name,tel,email);
+		return "jiazhanginfo";
+	}
+	
+	@RequestMapping(value="show")
+	public String show(HttpServletRequest request,HttpSession session){
+		
+		PUser parent=(PUser) session.getAttribute("parent");
+		Integer id=parent.getPUId();
+		System.out.println(id);
+		List<PUser> puser1=this.jiainfoServiceImpl.findById(id);
+		session.setAttribute("puser1",puser1 );
 		
 		return "jiazhanginfo";
 	}
