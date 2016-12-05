@@ -48,7 +48,7 @@ var youdao_conv_id = 271546;
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
-	    		<li><a href="${ctx}/jianli.jsp" rel="nofollow">我的简历</a></li>
+	    		<li><a href="${ctx}/jianli/Init" rel="nofollow">我的简历</a></li>
 	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -113,13 +113,14 @@ var youdao_conv_id = 271546;
 
             		<div class="basicEdit dn">
             			<form id="profileForm" action="${ctx }/jiazhang/edit" method="post">
+            			<c:forEach items="${puser1 }" var="pu1">
 						  <table>
 						    <tbody><tr>
 						      <td valign="top">
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td>
-						        <input type="text" placeholder="姓名" value="jason" name="name" id="name">
+						        <input type="text" placeholder="姓名" value="${pu1.PUName }" name="name" id="name">
 						      </td>
 						      <td valign="top"></td> 
 						      
@@ -130,7 +131,7 @@ var youdao_conv_id = 271546;
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td colspan="3">
-						          <input type="text" placeholder="手机号码" value="18644444444" name="tel" id="tel">
+						          <input type="text" placeholder="手机号码" value="${pu1.PMobile }" name="tel" id="tel">
 						      </td>
 						   	</tr>
 						   	<tr>
@@ -138,7 +139,7 @@ var youdao_conv_id = 271546;
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td colspan="3">
-						          <input type="text" placeholder="接收面试通知的邮箱" value="jason@qq.com" name="email" id="email">
+						          <input type="text" placeholder="接收面试通知的邮箱" value="${pu1.PMailbox}" name="email" id="email">
 						      </td>
 						    </tr>
 						    
@@ -150,6 +151,7 @@ var youdao_conv_id = 271546;
 						      </td>
 						    </tr>
 						  </tbody></table>
+						  </c:forEach>
 						</form><!--end #profileForm-->
 						<div class="new_portrait">
 						  <div class="portrait_upload" id="portraitNo">
@@ -168,14 +170,16 @@ var youdao_conv_id = 271546;
 						  	<span style="display:none;" id="headPic_error" class="error"></span>
 						</div><!--end .new_portrait-->
             		</div><!--end .basicEdit-->
-            		<input type="hidden" id="nameVal" value="jason">
+            		<c:forEach items="${puser1 }" var="pu1">
+            		<input type="hidden" id="nameVal" value="${pu1.PUName }">
             		<input type="hidden" id="genderVal" value="男">
             		<input type="hidden" id="topDegreeVal" value="大专">
             		<input type="hidden" id="workyearVal" value="3年">
             		<input type="hidden" id="currentStateVal" value="">
-            		<input type="hidden" id="emailVal" value="jason@qq.com">
-            		<input type="hidden" id="telVal" value="18644444444">
+            		<input type="hidden" id="emailVal" value="${pu1.PMailbox}">
+            		<input type="hidden" id="telVal" value="${pu1.PMobile }">
             		<input type="hidden" id="pageType" value="1"> 
+            		</c:forEach>
             	</div><!--end #basicInfo-->
 
 
@@ -199,11 +203,11 @@ var youdao_conv_id = 271546;
             	</div><!--end #myResume-->
 
             	<div class="mycenterR" id="resumeSet">
-            		<h2>收到的求职信  <a href="autoFilterResumes.html">修改设置</a></h2>
+            		<h2>我通过的求职信</h2>
             		<!-- -1 (0=附件， 1=在线， 其他=未设置) -->
             		            		            			<div class="noSet set0 dn">默认使用<span>附件简历</span>进行投递</div>
             			<div class="noSet set1 dn">默认使用<span>在线简历</span>进行投递</div>
-						<div class="noSet">暂未收到求职信</div>
+						<div class="noSet"><a href="#">详细信息</a></div>
             		            		<input type="hidden" class="defaultResume" value="-1">
             		<form class="dn" id="resumeSetForm">
 	            		<label><input type="radio" value="1" class="resume1" name="resume">默认使用<span>在线简历</span>进行投递</label>
