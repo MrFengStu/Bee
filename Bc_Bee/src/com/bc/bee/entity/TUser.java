@@ -121,7 +121,7 @@ public class TUser {
 		this.deliverys = deliverys;
 	}
 
-	@OneToMany(mappedBy="tuser",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="tuser",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	public Set<Invitation> getInvitations() {
 		return invitations;
 	}

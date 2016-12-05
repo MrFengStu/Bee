@@ -97,7 +97,7 @@ var youdao_conv_id = 271546;
 	                	结算方式：
 	           			<span>${ms.value.settle }</span>
 	                </div>
-	               <a class="btn_showprogress" href="">删除</a>
+	               <a class="btn_showprogress" href="${ctx }/Invitation/resumedelete?InId=${ms.key.inId}">删除</a>
 				</li>
 				</c:forEach>
               </ul>

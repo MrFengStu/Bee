@@ -75,9 +75,15 @@ public class InvitationController {
 	//删除
 	@RequestMapping(value="delete",method=RequestMethod.GET)
 	public String Delete(@RequestParam("InId") int InId,HttpSession session){
-		System.out.println(InId);
-		//因为是级联，所以不能直接删
-		//this.InvitationServiceImpl.deleteByInId(InId);
-		return "mList";
+//		System.out.println(InId);
+		
+		this.InvitationServiceImpl.deleteByInId(InId);
+		return "redirect:Init";
+	}
+	@RequestMapping(value="resumedelete",method=RequestMethod.GET)
+	public String resumeDelete(@RequestParam("InId") int InId,HttpSession session){
+//		System.out.println(InId);
+		this.InvitationServiceImpl.deleteByInId(InId);
+		return "redirect:send";
 	}
 }
