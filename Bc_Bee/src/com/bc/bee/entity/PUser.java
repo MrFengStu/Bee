@@ -99,7 +99,7 @@ public class PUser {
 		this.deliverys = deliverys;
 	}
 	
-	@OneToMany(mappedBy="puser",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="puser",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	public Set<Invitation> getInvitations() {
 		return invitations;
 	}

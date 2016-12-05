@@ -32,7 +32,7 @@ public class InvitationServiceImpl {
 		return this.RecInfoDaoImpl.findByRlId(RlId);
 	}
 	@Transactional(readOnly=false)
-	public void deleteByDeId(int InId){
+	public void deleteByInId(int InId){
 		this.InvitationDaoImpl.deleteByInId(InId);
 	}
 	public List<Invitation> findByPUId(int PUId){
