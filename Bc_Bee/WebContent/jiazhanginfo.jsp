@@ -48,7 +48,7 @@ var youdao_conv_id = 271546;
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
-	    		<li><a href="${ctx}/jianli.jsp" rel="nofollow">我的简历</a></li>
+	    		<li><a href="${ctx}/jianli/Init" rel="nofollow">我的简历</a></li>
 	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -199,11 +199,11 @@ var youdao_conv_id = 271546;
             	</div><!--end #myResume-->
 
             	<div class="mycenterR" id="resumeSet">
-            		<h2>收到的求职信  <a href="autoFilterResumes.html">修改设置</a></h2>
+            		<h2>我通过的求职信</h2>
             		<!-- -1 (0=附件， 1=在线， 其他=未设置) -->
             		            		            			<div class="noSet set0 dn">默认使用<span>附件简历</span>进行投递</div>
             			<div class="noSet set1 dn">默认使用<span>在线简历</span>进行投递</div>
-						<div class="noSet">暂未收到求职信</div>
+						<div class="noSet"><a href="#">详细信息</a></div>
             		            		<input type="hidden" class="defaultResume" value="-1">
             		<form class="dn" id="resumeSetForm">
 	            		<label><input type="radio" value="1" class="resume1" name="resume">默认使用<span>在线简历</span>进行投递</label>

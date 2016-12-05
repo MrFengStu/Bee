@@ -48,7 +48,7 @@ var youdao_conv_id = 271546;
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
-	    		<li><a href="${ctx}/jianli.jsp" rel="nofollow">我的简历</a></li>
+	    		<li><a href="${ctx}/jianli/Init" rel="nofollow">我的简历</a></li>
 	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
