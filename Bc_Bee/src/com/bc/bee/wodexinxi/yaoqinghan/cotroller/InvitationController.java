@@ -77,7 +77,7 @@ public class InvitationController {
 	public String Delete(@RequestParam("InId") int InId,HttpSession session){
 		System.out.println(InId);
 		//因为是级联，所以不能直接删
-		//this.InvitationServiceImpl.deleteByInId(InId);
+		this.InvitationServiceImpl.deleteByInId(InId);
 		return "mList";
 	}
 }
