@@ -29,14 +29,14 @@ public class JianliController {
 			@RequestParam("email") String email,HttpSession session){
 		
 		TDeInfo tde = (TDeInfo) session.getAttribute("TDeInfo");
-		try {
-			name = new String(name.getBytes("iso-8859-1"),"utf-8");
-			topDegree =new String(name.getBytes("iso-8859-1"),"utf-8");
-			gender = new String(name.getBytes("iso-8859-1"),"utf-8");
-			grade = new String(grade.getBytes("iso-8859-1"),"utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			name = new String(name.getBytes("iso-8859-1"),"utf-8");
+//			topDegree =new String(name.getBytes("iso-8859-1"),"utf-8");
+//			gender = new String(name.getBytes("iso-8859-1"),"utf-8");
+//			grade = new String(grade.getBytes("iso-8859-1"),"utf-8");
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		tde.setTMailbox(email);
 		tde.setTGrade(grade);
 		tde.setTContactInfo(tel);
@@ -49,13 +49,13 @@ public class JianliController {
 			@RequestParam("expectSalary") String salary,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-		try {
-			area = new String(area.getBytes("iso-8859-1"),"utf-8");
-			sub =new String(sub.getBytes("iso-8859-1"),"utf-8");
-			salary = new String(salary.getBytes("iso-8859-1"),"utf-8");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//			area = new String(area.getBytes("iso-8859-1"),"utf-8");
+//			sub =new String(sub.getBytes("iso-8859-1"),"utf-8");
+//			salary = new String(salary.getBytes("iso-8859-1"),"utf-8");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		this.JianliServiceImpl.jianliQW(res,area,sub,salary);
 		return "jianli";
 	}
@@ -64,11 +64,11 @@ public class JianliController {
 	public String jianliJL(@RequestParam("positionName") String pte,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-		try {
-			pte = new String(pte.getBytes("iso-8859-1"),"utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			pte = new String(pte.getBytes("iso-8859-1"),"utf-8");
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		this.JianliServiceImpl.jianliJL(res,pte);
 		return "jianli";
 	}
@@ -78,12 +78,12 @@ public class JianliController {
 			@RequestParam("professionalName") String major,
 			HttpSession session){
 		TDeInfo tde = (TDeInfo) session.getAttribute("TDeInfo");
-		try {
-			school = new String(school.getBytes("iso-8859-1"),"utf-8");
-			major = new String(major.getBytes("iso-8859-1"),"utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			school = new String(school.getBytes("iso-8859-1"),"utf-8");
+//			major = new String(major.getBytes("iso-8859-1"),"utf-8");
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		this.JianliServiceImpl.jibenJY(tde,school,major);
 		return "jianli";
 	}
@@ -91,11 +91,11 @@ public class JianliController {
 	public String jianliMS(@RequestParam("selfDescription") String brief,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-		try {
-			brief = new String(brief.getBytes("iso-8859-1"),"utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			brief = new String(brief.getBytes("iso-8859-1"),"utf-8");
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		this.JianliServiceImpl.jianliMS(res,brief);
 		return "jianli";
 	}
@@ -103,11 +103,11 @@ public class JianliController {
 	public String jianliZC(@RequestParam("workDescription") String expertise,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-		try {
-			expertise = new String(expertise.getBytes("iso-8859-1"),"utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			expertise = new String(expertise.getBytes("iso-8859-1"),"utf-8");
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		this.JianliServiceImpl.jianliZC(res,expertise);
 		return "jianli";
 	}
