@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
+import com.bc.bee.entity.TUser;
 import com.bc.bee.resumepreview.dao.ResumepreviewDaoImpl;
 
  
@@ -20,6 +21,12 @@ public class ResumepreviewServiceImpl {
 	
 	public java.util.List<Resume> findById(Integer TUId){
 		java.util.List<Resume> list = resumepreviewDaoImpl.findById(TUId);
+		return list;
+	}
+	
+	public java.util.List<Resume> findByName(String faculty){
+		System.out.println("222"+faculty);
+		java.util.List<Resume> list = resumepreviewDaoImpl.findByName(faculty);
 		return list;
 	}
 	
