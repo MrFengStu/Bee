@@ -9,6 +9,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.RecInfo;
+import com.bc.bee.entity.Resume;
+import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.wodexinxi.dao.DeliveryDaoImpl;
 import com.bc.bee.wodexinxi.dao.RecInfoDaoImpl;
 
@@ -19,6 +21,9 @@ public class DeliveryServiceImpl {
 	private DeliveryDaoImpl DeliveryDaoImpl;
 	@Resource
 	private RecInfoDaoImpl RecInfoDaoImpl;
+	@Resource
+	private com.bc.bee.wodexinxi.yaoqinghan.dao.ResumeDaoImpl ResumeDaoImpl;
+
 	
 	public List<Delivery> findByTUId(int TUId){
 		return this.DeliveryDaoImpl.findByTUId(TUId);
@@ -34,4 +39,11 @@ public class DeliveryServiceImpl {
 	public Delivery findByDeId(int DeId){
 		return this.DeliveryDaoImpl.findByDeId(DeId);
 	}
+	public List<Delivery> findByPUId(int PUId){
+		return this.DeliveryDaoImpl.findByPUId(PUId);
+	}
+	public Resume findByReId(int ReId){
+		return this.ResumeDaoImpl.findByReId(ReId);
+	}
+
 }

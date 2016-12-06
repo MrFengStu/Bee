@@ -15,4 +15,12 @@ public class ResumeDaoImpl extends BaseDao<Resume, String> {
 			return null;
 		}
 	}
+	public Resume findByReId(int ReId){
+		try {
+			return super.findOne("from Resume where ReId=?",new Object[]{ReId});
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
