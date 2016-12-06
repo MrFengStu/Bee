@@ -156,31 +156,31 @@ function get_jianlivar(){
                     	<c:if test="${jianlivar == 'a'}">
                      		<h1>
                         		<em></em>
- 								待处理简历  <span>（共1份）</span>     
+ 								待处理简历  <span></span>     
 							</h1>
                     	</c:if> 
                     	<c:if test="${jianlivar == 'b'}">
                      		<h1>
                         		<em></em>
- 								待定简历  <span>（共1份）</span>     
+ 								待定简历  <span></span>     
 							</h1>
                     	</c:if>
                     	<c:if test="${jianlivar == 'c'}">
                      		<h1>
                         		<em></em>
- 								通过初筛简历  <span>（共1份）</span>     
+ 								通过初筛简历  <span></span>     
 							</h1>
                     	</c:if>
                     	<c:if test="${jianlivar == 'd'}">
                      		<h1>
                         		<em></em>
- 								通知面试简历  <span>（共1份）</span>     
+ 								通知面试简历  <span></span>     
 							</h1>
                     	</c:if>
                     	<c:if test="${jianlivar == 'e'}">
                      		<h1>
                         		<em></em>
- 								不合适简历  <span>（共1份）</span>     
+ 								不合适简历  <span></span>     
 							</h1>
                     	</c:if>    
                     </dt>
@@ -244,6 +244,7 @@ function get_jianlivar(){
  </div><!-- end .filter_options -->	                        	                        		       
        <ul class="reset resumeLists">
        <c:forEach items="${ParDeList}" var="ms">
+       
        		<li data-id="1686182" class="onlineResume">
 			   <label class="checkbox">
 			      <input type="checkbox">
@@ -255,8 +256,9 @@ function get_jianlivar(){
 			      </a>
 			      <div class="resumeIntro">
 			       	<h3 class="unread">
-						<a target="_blank" title="预览jason的简历" href="${ctx}/resumeView.html?deliverId=1686182">
+						<a  title="预览jason的简历" href="${ctx}/resumepreview/parentresume?faculty=${ms.get(3) }">
 			                 ${ms.get(3) }的简历
+			                 <!--  <input type="hidden" value="${ms.get(3) }" name="faculty">-->
 			            </a>
 			            <em></em>
 			        </h3> 

@@ -145,9 +145,11 @@ $(function(){
 					                 	 <div class="descriptionShow">
 		            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c9">评价内容：</span>
 		                </div><!--end .descriptionShow-->
-						<c:forEach items="${tuser1 }" var="t1">
-						${t1.comCon }
-						</c:forEach>	
+		                <div class="basicShow">
+							<c:forEach items="${tuser1 }" var="t1">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${t1.comCon }</span>
+							</c:forEach>	
+						</div>
 	
 	                </div>
 	            </div>

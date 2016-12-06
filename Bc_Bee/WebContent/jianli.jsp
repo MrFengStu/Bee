@@ -117,7 +117,7 @@ var youdao_conv_id = 271546;
             	</div><!--end #resumeScore-->
 
             	<div class="profile_box" id="basicInfo">
-            		<h2>基本信息</h2>
+            		<h2>基本信息1</h2>
             		<span class="c_edit"></span>
             		<div class="basicShow">
             			            			<span>${name } |  ${sex } |  ${college } |  <br>
