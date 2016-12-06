@@ -100,21 +100,21 @@ var youdao_conv_id = 271546;
               <div class="d_item">
                     <h2 title="随便写">
 	                      <a target="_blank" href="">
-	                           <em>${te.TUName}   <!--  ${ms.value.teaSubject }--></em> 
-	                           <span>(${ms.value.salary}/小时)</span>
+	                           <em>${te.TUName}     </em> 
+	                           <span></span>
 	                      </a>
 	                </h2>
 	                <div class="clear"></div>
-	                <a title="公司名称" class="d_jobname" target="_blank" href="${ctx }/preview/show?id=${te.TUId}">
+	                <a title="公司名称" class="d_jobname" target="_blank" href="${ctx }/preview/show?id=${te.tuser.TUId}">
 	                	 <span>${ms.value.area}</span> 
 	               </a>
 	               <span class="d_time">${ms.key.inTime}</span>
 	               <div class="clear"></div>
 	               <div class="d_resume">
 	                	结算方式：
-	           			<span>${ms.value.settle }</span>
+	           			<span></span>
 	                </div>
-	               <a class="btn_showprogress" href="${ctx }/Invitation/resumedelete?InId=${ms.key.inId}">删除</a>
+	               <a class="btn_showprogress" href="">删除</a>
 				</li>
 				</c:forEach>
               </ul>
