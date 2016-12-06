@@ -249,7 +249,7 @@ public class DeliveryController {
 			delivery.setState('d');
 			this.DeliveryServiceImpl.uadateDelivery(delivery);
 			session.setAttribute("success_TUId", delivery.getTuser().getTUId());
-			System.out.println(delivery.getTuser().getTUId());
-			return "redirect:jiazhangInit";
+	//		System.out.println(delivery.getTuser().getTUId());
+			return "transaction";
 		}
 }
