@@ -160,6 +160,7 @@ public class DeliveryController {
 				list.add(tdeinfo.getTMailbox());			//教员邮箱9
 				list.add(resume.getTeaSubject());			//擅长科目10
 				list.add(resume.getSalary());				//期望薪资11
+				list.add(delivery.getDeId().toString());    //投递表主键12
 				if(delivery.getState()=='a'){
 					ParDeListA.add(list);
 				}else if(delivery.getState()=='b'){
@@ -221,5 +222,14 @@ public class DeliveryController {
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListE");
 			session.setAttribute("ParDeList", ParDeList);
 			return "canInterviewResumes";
+		}
+		//不合适方法
+		@RequestMapping("buheshi")
+		public String  Improper(@RequestParam("DeId") int DeId,HttpSession session){
+//			System.out.println(DeId);
+			Delivery delivery = this.DeliveryServiceImpl.findByDeId(DeId);
+			delivery.setState('e');
+			this.DeliveryServiceImpl.uadateDelivery(delivery);
+			return "redirect:jiazhangInit";
 		}
 }

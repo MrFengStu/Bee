@@ -45,5 +45,13 @@ public class DeliveryServiceImpl {
 	public Resume findByReId(int ReId){
 		return this.ResumeDaoImpl.findByReId(ReId);
 	}
+	@Transactional(readOnly=false)
+	public void uadateDelivery(Delivery delivery){
+		try {
+			this.DeliveryDaoImpl.update(delivery);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }
