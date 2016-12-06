@@ -19,6 +19,15 @@ public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
 			return null;
 		}
 	}
+	public List<Delivery> findByPUId(int PUId){
+		try {
+			List<Delivery> list = super.findByProperty("from Delivery lu where lu.puser.PUId=? ", new Object[]{PUId});
+			return list;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 	
 	public void deleteByDeId(int DeId){
 
