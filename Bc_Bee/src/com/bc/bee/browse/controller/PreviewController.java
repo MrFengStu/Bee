@@ -20,7 +20,9 @@ import com.bc.bee.entity.Comment;
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.TUser;
+import com.bc.bee.resumepreview.service.ResumepreviewServiceImpl;
 import com.bc.bee.browse.dao.PreviewDao;
+import com.bc.bee.entity.Resume;
 
 @Controller
 @RequestMapping("preview")
@@ -28,30 +30,24 @@ public class PreviewController {
 	
 	@Resource
 	private PreviewDao PreviewDao;
+	@Resource
+	private ResumepreviewServiceImpl resumepreviewserviceimpl;
 	
 	@RequestMapping(value="show")
 	public String show(String id,HttpServletRequest request,HttpSession session){
 		
-		if(session.getAttribute("student") != null && session.getAttribute("parent") == null){
-			TUser student=(TUser) session.getAttribute("student");
-			Integer idn=student.getTUId();
-			System.out.println(id);
-			
-			List<Comment> comment=this.PreviewDao.findById(idn);
-			session.setAttribute("tuser1",comment );
-			
-		}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){
 			System.out.println(id);
 			Integer id2 = Integer.parseInt(id);
 			System.out.println(id2);
 			
+			List<Resume> resume=(List<Resume>) this.resumepreviewserviceimpl.findById(id2);
+			session.setAttribute("resume", resume);
+			
 			List<Comment> comment=this.PreviewDao.findById(id2);
 			session.setAttribute("tuser1",comment );
-		}
+			System.out.println("测试");
 		
-		
-		
-		return "preview";
+			return "preview";
 	}
 	
 	@RequestMapping(value="save")
