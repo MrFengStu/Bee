@@ -99,7 +99,7 @@ var youdao_conv_id = 271546;
            <li>
               <div class="d_item">
                     <h2 title="随便写">
-	                      <a target="_blank" href="">
+	                      <a target="_blank" href="${ctx }/preview/show?id=${te.tuser.TUId}">
 	                           <em>${te.TUName}     </em> 
 	                           <span></span>
 	                      </a>

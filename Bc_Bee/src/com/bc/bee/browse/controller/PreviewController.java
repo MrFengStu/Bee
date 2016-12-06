@@ -47,6 +47,8 @@ public class PreviewController {
 			
 			List<Comment> comment=this.PreviewDao.findById(id2);
 			session.setAttribute("tuser1",comment );
+			System.out.println("测试");
+		
 		}
 		
 		
