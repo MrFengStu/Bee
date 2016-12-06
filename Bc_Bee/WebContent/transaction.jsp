@@ -112,7 +112,7 @@
 				<dd>
 
 					<form class="corp_form" name="bindForm" id="bindForm"
-						action="" method="post">
+						action="${ctx }/success/receive" method="post">
 						<h3>
 							<em class="redstar">*</em>合作时长 <span>（请填写合作时长，方便双方评论使用）</span>
 						</h3>
