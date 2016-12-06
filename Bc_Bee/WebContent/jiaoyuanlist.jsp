@@ -79,7 +79,7 @@ var youdao_conv_id = 271546;
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
@@ -193,16 +193,16 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
-	<dd><a href="${ctx }/search">英语</a></dd>
-	<dd><a href="${ctx }/search">小学英语</a></dd>
-	<dd><a href="${ctx }/search">小学数学</a></dd>
-	<dd><a href="${ctx }/search">100元</a></dd>
-	<dd><a href="${ctx }/search">语文</a></dd>
-	<dd><a href="${ctx }/search">初中英语</a></dd>
-	<dd><a href="${ctx }/search">数学</a></dd>
-	<dd><a href="${ctx }/search">理综</a></dd>
-	<dd><a href="${ctx }/search">生物</a></dd>
-	<dd><a href="${ctx }/search">历史</a></dd>
+	<dd><a href="${ctx }/search1?&kd=英语">英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=小学英语">小学英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=小学数学">小学数学</a></dd>
+	<dd><a href="${ctx }/search1?&kd=100元">100元</a></dd>
+	<dd><a href="${ctx }/search1?&kd=语文">语文</a></dd>
+	<dd><a href="${ctx }/search1?&kd=初中英语">初中英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=数学">数学</a></dd>
+	<dd><a href="${ctx }/search1?&kd=理综">理综</a></dd>
+	<dd><a href="${ctx }/search1?&kd=生物">生物</a></dd>
+	<dd><a href="${ctx }/search1?&kd=历史">历史</a></dd>
 </dl>			<div class="breakline"></div>
             <dl class="workplace" id="workplaceSelect">
                 <dt class="fl">工作地点：</dt>

@@ -78,7 +78,7 @@ var youdao_conv_id = 271546;
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
