@@ -99,12 +99,9 @@ var youdao_conv_id = 271546;
             	<div class="fl" id="resume_name">
 	            	<div class="nameShow fl">
 	            		<h1 title="jason的简历">${name }的简历</h1>
-	            		<span class="rename">重命名</span> | <a target="_blank" href="${ctx }/preview.html">预览</a>
+	            		<span class="rename">重命名</span> | <a target="_blank" href="${ctx }/resumepreview/resume">预览</a>
             		</div>
-            		<form class="fl dn" id="resumeNameForm">
-            			<input type="text" value="jason的简历" name="resumeName" class="nameEdit c9"/>	
-            			<input type="submit" value="保存"/> | <a target="_blank" href="${ctx }/preview.html">预览</a>
-            		</form>
+            		
             	</div><!--end #resume_name-->
             	<div class="fr c5" id="lastChangedTime">最后一次更新：<span>${ReTime } </span></div><!--end #lastChangedTime-->
             	<div id="resumeScore">
