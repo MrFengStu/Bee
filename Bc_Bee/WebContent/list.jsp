@@ -50,7 +50,7 @@ var youdao_conv_id = 271546;
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
 	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
-	    		<li><a href="${ctx}/jianli.jsp" rel="nofollow">我的简历</a></li>
+	    		<li><a href="${ctx}/jianli/Init" rel="nofollow">我的简历</a></li>
 	    	<%} %>
 	    	</ul>
 	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
@@ -77,9 +77,9 @@ var youdao_conv_id = 271546;
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
@@ -189,16 +189,17 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
-	<dd><a href="list.htmlJava?labelWords=label&city=全国">英语</a></dd>
-	<dd><a href="list.htmlPHP?labelWords=label&city=全国">小学英语</a></dd>
-	<dd><a href="list.htmlAndroid?labelWords=label&city=全国">小学数学</a></dd>
-	<dd><a href="list.htmliOS?labelWords=label&city=全国">100元</a></dd>
-	<dd><a href="list.html前端?labelWords=label&city=全国">语文</a></dd>
-	<dd><a href="list.html产品经理?labelWords=label&city=全国">初中英语</a></dd>
-	<dd><a href="list.htmlUI?labelWords=label&city=全国">数学</a></dd>
-	<dd><a href="list.html运营?labelWords=label&city=全国">理综</a></dd>
-	<dd><a href="list.htmlBD?labelWords=label&city=全国">生物</a></dd>
-	<dd><a href="list.html?gx=实习&city=全国">历史</a></dd>
+	<dd><a href="${ctx }/search1?&kd=英语">英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=小学英语">小学英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=小学数学">小学数学</a></dd>
+	<dd><a href="${ctx }/search1?&kd=100元">100元</a></dd>
+	<dd><a href="${ctx }/search1?&kd=语文">语文</a></dd>
+	<dd><a href="${ctx }/search1?&kd=初中英语">初中英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=数学">数学</a></dd>
+	<dd><a href="${ctx }/search1?&kd=理综">理综</a></dd>
+	<dd><a href="${ctx }/search1?&kd=生物">生物</a></dd>
+	<dd><a href="${ctx }/search1?&kd=历史">历史</a></dd>
+	
 </dl>			<div class="breakline"></div>
             <dl class="workplace" id="workplaceSelect">
                 <dt class="fl">工作地点：</dt>

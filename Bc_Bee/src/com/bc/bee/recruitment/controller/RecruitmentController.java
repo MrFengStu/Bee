@@ -1,11 +1,7 @@
 package com.bc.bee.recruitment.controller;
 
 import java.io.UnsupportedEncodingException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Map;
-import java.sql.Date;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -13,14 +9,11 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.PUser;
+import com.bc.bee.entity.Parcer;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.recruitment.service.RecruitmentServiceImpl;
-import antlr.collections.List;
 
 @Controller
 @RequestMapping("publish")
@@ -35,8 +28,12 @@ public class RecruitmentController {
 	public String jump(Integer PUId, HttpServletRequest request, HttpSession session) {
 		PUser parent = (PUser) session.getAttribute("parent");
 		PUId = parent.getPUId();
+		Parcer parcer = this.recruitmentServiceImpl.findParcer(PUId);
+		if(parcer.getIdnum()==null || parcer.getPRName()==null || parcer.getIdnum().equals("") || parcer.getPRName().equals("")){
+			return "certification_parent";
+		}
 		System.out.println(PUId);
-		java.util.List<Map<String, Object>> list = recruitmentServiceImpl.findTime(PUId);
+		java.util.List<String> list = recruitmentServiceImpl.findTime(PUId);
 		int sum = list.size();
 		int last = 5 - sum;
 		System.out.println(last);

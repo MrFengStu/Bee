@@ -43,7 +43,7 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a href="" class="logo">
-    			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
+    			<img src="${ctx }/style/images/logo.png" width="229" height="43" alt="蜜蜂网" />
     		</a>
     		<ul class="reset" id="navheader">
     			<li class="current"><a href="${ctx }/index.jsp">首页</a></li>
@@ -81,7 +81,7 @@ var youdao_conv_id = 271546;
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
@@ -103,7 +103,7 @@ var youdao_conv_id = 271546;
 					   	<div class="menu_sub dn">
 					   								    	<dl class="reset">
 					        							        		<dt>
-					        			<a href="h"${ctx }/search1?&kd=小学书法 ">书法</a>
+					        			<a href="${ctx }/search1?&kd=小学书法 ">书法</a>
 					        		</dt>
 						        	<dd>
 							        											   	<a href="${ctx }/search1?&kd=小学硬笔书法 "
@@ -445,7 +445,7 @@ var youdao_conv_id = 271546;
 									
 									
 							</div>
-			<a class="subscribe" href="" target="_blank">订阅职位</a>
+			<a class="subscribe" href="${ctx }/joblist" target="_blank">订阅职位</a>
 		</div>
 		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 		    <div class="load">
@@ -468,8 +468,8 @@ var youdao_conv_id = 271546;
 				 
 				<a  href="${ctx}/register.jsp"  class="registor_now">立即注册</a>
 			    <div class="login_others">使用以下帐号直接登录:</div>
-			    <a  href=""  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
-			    <a  href=""  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+			    <a  href="#"  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+			    <a  href="#"  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
 			</div>
         </div>
 		</div><%} %>
@@ -551,23 +551,23 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
-	<dd><a href="">理综</a></dd>
-	<dd><a href="">文综</a></dd>
-	<dd><a href="">高三英语</a></dd>
-	<dd><a href="">作业辅导</a></dd>
-	<dd><a href="">小学全科</a></dd>
-	<dd><a href="">历史</a></dd>
+	<dd><a href="${ctx }/search1?&kd=理综">理综</a></dd>
+	<dd><a href="${ctx }/search1?&kd=文综">文综</a></dd>
+	<dd><a href="${ctx }/search1?&kd=高三英语">高三英语</a></dd>
+	<dd><a href="${ctx }/search1?&kd=作业辅导">作业辅导</a></dd>
+	<dd><a href="${ctx }/search1?&kd=小学全科">小学全科</a></dd>
+	<dd><a href="${ctx }/search1?&kd=历史">历史</a></dd>
 </dl>			
 			<div id="home_banner">
 	            <ul class="banner_bg">
 	            		                <li  class="banner_bg_1 current" >
-	                    <a href="" target="_blank"><img src="${ctx }/style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
+	                    <a href="#" target="_blank"><img src="${ctx }/style/images/d05a2cc6e6c94bdd80e074eb05e37ebd.jpg" width="612" height="160" alt="好买基金——来了就给100万" /></a>
 	                </li>
 	                	                <li  class="banner_bg_2" >
-	                    <a href="" target="_blank"><img src="${ctx }/style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
+	                    <a href="#" target="_blank"><img src="${ctx }/style/images/c9d8a0756d1442caa328adcf28a38857.jpg" width="612" height="160" alt="世界杯放假看球，老板我也要！" /></a>
 	                </li>
 	                	                <li  class="banner_bg_3" >
-	                    <a href="" target="_blank"><img src="${ctx }/style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
+	                    <a href="#" target="_blank"><img src="${ctx }/style/images/d03110162390422bb97cebc7fd2ab586.jpg" width="612" height="160" alt="出北京记——第一站厦门" /></a>
 	                </li>
 	                	            </ul>
 	            <div class="banner_control">
@@ -723,7 +723,8 @@ var youdao_conv_id = 271546;
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span>
-			                        			                        <br /><button style="width:90px;height:25px;background:orange;border-color:orange;">投个简历</button>	
+			                        <div class="apply"><a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
+			                        				                        </div>	
 			                    </div>
 			                 </li>
 			                 </c:forEach>
@@ -736,46 +737,36 @@ var youdao_conv_id = 271546;
 			    <dl>
 			        <dt>友情链接</dt>
 			        <dd>
-			        		<a href="" target="_blank">住趣家居网</a> <span>|</span>
-			        		<a href="" target="_blank">人人都是产品经理</a> <span>|</span>
-			        		<a href="" target="_blank">互联网er的早读课</a> <span>|</span>
-			                <a href="" target="_blank">猎云网</a> <span>|</span>
-			        		<a href="" target="_blank">UCloud</a> <span>|</span>
-			          		<a href="" target="_blank">iconfans</a>  <span>|</span>
-			          		<a href="" target="_blank">html5梦工厂</a>   <span>|</span>
-			          		<a href="" target="_blank">手游那点事</a> 
+			        		<a href="#" target="_blank">河北师范大学</a> <span>|</span>
+			        		<a href="#" target="_blank">河北科技大学</a> <span>|</span>
+			        		<a href="#" target="_blank">石家庄学院</a> <span>|</span>
+			                <a href="#" target="_blank">石家庄经济学院</a> <span>|</span>
+			        		<a href="#" target="_blank">石家庄铁道大学</a> <span>|</span>
+			          		<a href="#" target="_blank">河北经贸大学</a>  <span>|</span>
+			          		<a href="#" target="_blank">河北医科大学</a>   <span>|</span>
 			          		
-			          		<a href="" target="_blank">源码之家</a> <span>|</span>
-			          		<a href="" target="_blank">uehtml</a> <span>|</span>
-			          		<a href="" target="_blank">W3CPlus</a> <span>|</span>
-			          		<a href="" target="_blank">盒子UI</a> <span>|</span>
-			          		<a href="" target="_blank">uimaker</a> <span>|</span>
-			          		<a href="" target="_blank">互联网的一些事</a> <span>|</span>
-			          		<a href="" target="_blank">传课网</a> <span>|</span>
-			          		<a href="" target="_blank">安卓开发</a> <span>|</span>
-			          		<a href="" target="_blank">安卓开发论坛</a> 
-			          		<a href="" target="_blank" >360安全网址导航</a> <span>|</span>
-			          		<a href="" target="_blank" >360安全浏览器</a> <span>|</span>
-			          		<a href="" target="_blank" >hao123上网导航</a> <span>|</span>
-			          		<a href="" target="_blank" >互联网创业</a><span>|</span>
-			          		<a href="" target="_blank" >众筹网</a><span>|</span>
-			          		<a href="" target="_blank" >马克互联网</a><span>|</span>
-			          		<a href="" target="_blank" >巢湖英才网</a>
 			          		
-			          		<a href="" target="_blank" >创意服务外包</a><span>|</span>
-			          		<a href="" target="_blank" >thinkphp</a><span>|</span>
-			          		<a href="" target="_blank" >创新派</a><span>|</span>
-
-			          		<a href="" target="_blank" >W3Cshare</a><span>|</span>
-			          		<a href="" target="_blank" >论文发表网</a><span>|</span>
-			          		<a href="" target="_blank" >199it</a><span>|</span>
-
-			          		<a href="" target="_blank" >市场部网</a><span>|</span>
-			          		<a href="" target="_blank" >美图公司</a><span>|</span>
-			          		<a href="" target="_blank" >Teambition</a>
-			          		<a href="" target="_blank" >欧朋浏览器</a><span>|</span>
-			          		<a href="" target="_blank">网络广告人社区</a>
-			          		<a href="" target="_blank" class="more">更多</a>
+			          		<a href="#" target="_blank">58同城</a> <span>|</span>
+			          		<a href="#" target="_blank">赶集网</a> <span>|</span>
+			          		<a href="#" target="_blank">拉钩网</a> <span>|</span>
+			          		<a href="#" target="_blank">中华英才网</a> <span>|</span>
+			          		<a href="#" target="_blank">大街网</a> <span>|</span>
+			          		<a href="#" target="_blank">前程无忧</a> <span>|</span>
+			          		<a href="#" target="_blank">应届毕业生网</a> <span>|</span>
+			          		<a href="#" target="_blank">卓博人才网</a> <span>|</span>
+			          		<a href="#" target="_blank">百才招聘网</a> 
+			          		<a href="#" target="_blank" >智联招聘</a> <span>|</span>
+			          		<a href="#" target="_blank" >我的工作网</a> <span>|</span>
+			          		<a href="#" target="_blank" >猎聘网</a> <span>|</span>
+			          		<a href="#" target="_blank" >互联网创业</a><span>|</span>
+			          		<a href="#" target="_blank" >众筹网</a><span>|</span>
+			          		<a href="#" target="_blank" >马克互联网</a><span>|</span>
+			          		<a href="#" target="_blank" >新浪微博</a><span>|</span>
+			          		<a href="#" target="_blank" >百度百科</a><span>|</span>
+			          		<a href="#" target="_blank" >谷歌搜索</a>
+			          		
+			          		
+			          		<a href="#" target="_blank" class="more">更多</a>
 			        </dd>
 			    </dl>
 			</div>
@@ -832,10 +823,10 @@ var youdao_conv_id = 271546;
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="#" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
-			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">冀ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

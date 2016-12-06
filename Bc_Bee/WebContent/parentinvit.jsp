@@ -42,32 +42,49 @@ var youdao_conv_id = 271546;
     		<a class="logo" href="${ctx }/index.html">
     			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="${ctx }/style/images/logo.png">
     		</a>
-    		<ul id="navheader" class="reset">
-    			<li><a href="${ctx }/index.jsp">首页</a></li>
-    			<li><a href="${ctx }/jiaoyuan">教员列表</a></li>
-    			<li><a target="_blank" href="${ctx }/joblist">职位列表</a></li>
-    				    			<li><a rel="nofollow" href="${ctx }/jianli/Init">我的简历</a></li>
-	    						    		</ul>
-        	        	<dl class="collapsible_menu">
+    		<ul class="reset" id="navheader">
+    			<li class="current"><a href="${ctx }/index.jsp">首页</a></li>
+    			<li ><a href="${ctx }/joblist" >职位列表</a></li>
+    			<li ><a href="${ctx }/jiaoyuan" >教员列表</a></li>
+    		<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
+	    		<li><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
+	    	<%}else if(session.getAttribute("parent") == null && session.getAttribute("student") != null){ %>
+	    		<li><a href="${ctx}/jianli/Init" rel="nofollow">我的简历</a></li>
+	    	<%} %>
+	    	</ul>
+	    	<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
+	    	<ul class="loginTop">
+            	<li><a href="${ctx}/login.jsp" rel="nofollow">登录</a></li> 
+            	<li>|</li>
+            	<li><a href="${ctx}/register.jsp" rel="nofollow">注册</a></li>
+            </ul><%}else if(session.getAttribute("student") != null && session.getAttribute("parent") == null){ %>
+		        <dl class="collapsible_menu">
             	<dt>
            			<span>${name }&nbsp;</span> 
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                    <dd><a rel="nofollow" href="${ctx }/jianli.html">我的简历</a></dd>
-                	<dd><a href="${ctx }/collections.html">我收藏的职位</a></dd>
-                	<dd><a href="delivery.html">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                	<dd class="btm"><a href="${ctx }/subscribe.html">我的订阅</a></dd>
-                	<dd><a href="${ctx }/create.html">我要招人</a></dd>
-                    <dd><a href="${ctx }/accountBind.html">帐号设置</a></dd>
-                    <dd class="logout"><a rel="nofollow" href="${ctx }/login.html">退出</a></dd>
-            </dl>
-            <div class="dn" id="noticeTip">
-            	<span class="bot"></span>
-				<span class="top"></span>
-				<a target="_blank" href="${ctx }/delivery.html"><strong>0</strong>条新投递反馈</a>
-				<a class="closeNT" href="javascript:;"></a>
-            </div>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli/Init">我的简历</a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd style="display: none;"><a href="${ctx }/Invitation/Init">我收到的邀请</a></dd>
+                <dd style="display: none;"><a href="${ctx }/certification_student.jsp">用户认证</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl><%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
+            <dl class="collapsible_menu">
+            	<dt>
+           			<span>${name }&nbsp;</span> 
+            		<span class="red dn" id="noticeDot-0"></span>
+            		<i></i>
+            	</dt>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
+                <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
+                <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
+                <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
+                <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
+            </dl><%} %>
                     </div>
     </div><!-- end #header -->
     <div id="container">
