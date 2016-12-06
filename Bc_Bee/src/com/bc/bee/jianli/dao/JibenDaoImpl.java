@@ -34,6 +34,9 @@ public class JibenDaoImpl extends BaseDao<TDeInfo, String> {
 	public void updateCount(Integer TUId){
 		try {
 			TDeInfo tdeinfo = super.findOne("from TDeInfo lu where lu.tuser.TUId=? ", new Object[]{TUId});
+			if(tdeinfo.getCount()==null){
+				tdeinfo.setCount(0);
+			}
 			tdeinfo.setCount(tdeinfo.getCount()+1);
 			super.update(tdeinfo);
 		} catch (Exception e) {

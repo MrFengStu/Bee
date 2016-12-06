@@ -207,7 +207,7 @@ var youdao_conv_id = 271546;
             		<!-- -1 (0=附件， 1=在线， 其他=未设置) -->
             		            		            			<div class="noSet set0 dn">默认使用<span>附件简历</span>进行投递</div>
             			<div class="noSet set1 dn">默认使用<span>在线简历</span>进行投递</div>
-						<div class="noSet"><a href="#">详细信息</a></div>
+						<div class="noSet"><a href="${ctx }/success/student">详细信息</a></div>
             		            		<input type="hidden" class="defaultResume" value="-1">
             		<form class="dn" id="resumeSetForm">
 	            		<label><input type="radio" value="1" class="resume1" name="resume">默认使用<span>在线简历</span>进行投递</label>
