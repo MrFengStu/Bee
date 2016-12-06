@@ -33,7 +33,7 @@ public class RecruitmentController {
 			return "certification_parent";
 		}
 		System.out.println(PUId);
-		java.util.List<Map<String, Object>> list = recruitmentServiceImpl.findTime(PUId);
+		java.util.List<String> list = recruitmentServiceImpl.findTime(PUId);
 		int sum = list.size();
 		int last = 5 - sum;
 		System.out.println(last);

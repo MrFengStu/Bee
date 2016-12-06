@@ -79,7 +79,7 @@ var youdao_conv_id = 271546;
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
@@ -99,12 +99,9 @@ var youdao_conv_id = 271546;
             	<div class="fl" id="resume_name">
 	            	<div class="nameShow fl">
 	            		<h1 title="jason的简历">${name }的简历</h1>
-	            		<span class="rename">重命名</span> | <a target="_blank" href="${ctx }/preview.html">预览</a>
+	            		<span class="rename">重命名</span> | <a target="_blank" href="${ctx }/resumepreview/resume">预览</a>
             		</div>
-            		<form class="fl dn" id="resumeNameForm">
-            			<input type="text" value="jason的简历" name="resumeName" class="nameEdit c9"/>	
-            			<input type="submit" value="保存"/> | <a target="_blank" href="${ctx }/preview.html">预览</a>
-            		</form>
+            		
             	</div><!--end #resume_name-->
             	<div class="fr c5" id="lastChangedTime">最后一次更新：<span>${ReTime } </span></div><!--end #lastChangedTime-->
             	<div id="resumeScore">

@@ -17,6 +17,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.bc.bee.browse.dao.JiaoliatDao;
+import com.bc.bee.browse.dao.PreviewDao;
+import com.bc.bee.entity.Comment;
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
@@ -30,6 +32,8 @@ public class JiaolistController{
 	
 	@Resource
 	private JiaoliatDao JiaoliatDao;
+	@Resource
+	private PreviewDao PreviewDao;
 	
 	@RequestMapping("jiaoyuan")
 	public String jiao(HttpServletRequest request,HttpSession session){
@@ -42,12 +46,15 @@ public class JiaolistController{
 	}
 	
 	@RequestMapping("peopledetail")
-	public String people(HttpServletRequest request,HttpSession session){
+	public String people(String id,HttpServletRequest request,HttpSession session){
 		
-		String name=request.getParameter("name");
-		System.out.println(name);
-		List<Resume> resume=this.JiaoliatDao.findByName(name);
+		System.out.println(id);
+		Integer idn = Integer.parseInt(id);
+		System.out.println(idn);
+		List<Resume> resume=this.JiaoliatDao.findById(idn);
 		session.setAttribute("resume", resume);
+		List<Comment> comment=this.PreviewDao.findById(idn);
+		session.setAttribute("tuser1",comment );
 		
 		return "peopledetail";
 	

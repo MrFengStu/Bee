@@ -78,7 +78,7 @@ var youdao_conv_id = 271546;
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhang/show">我的信息</a></dd>
                 <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
-                <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
+                <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
                 <dd class="logout" style="display: none;"><a rel="nofollow" href="${ctx }/login.jsp">退出</a></dd>
@@ -114,6 +114,11 @@ var youdao_conv_id = 271546;
                         <h3 class="description">详细信息</h3>
                         <p>工作信息： <br />1、优惠信息：${rm.discount}； <br />2、期望薪资：${rm.salary}； <br />3、授课科目：${rm.SGrade};<br/>4、授课方式：${rm.teaMode};<br/>5、授课区域：${rm.area};<br/></p>
                          <h3 class="description">个人介绍</h3><p>${rm.brief}</p>
+                          <h3 class="description">评价：</h3>
+                          <c:forEach items="${tuser1 }" var="t1">
+
+                            <p>${t1.comCon }</p>
+                          </c:forEach>
                     </dd>
                      
                                         	<dd class="unresume">

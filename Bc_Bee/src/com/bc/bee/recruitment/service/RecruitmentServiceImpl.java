@@ -31,8 +31,8 @@ public class RecruitmentServiceImpl {
 	public void addRecruitment(RecInfo r){
 		this.recruitmentDaoImpl.saveRecInfo(r);
 	}
-	public java.util.List<Map<String, Object>> findTime(Integer PUId){
-		java.util.List<Map<String, Object>> list = recruitmentDaoImpl.findTime(PUId);
+	public java.util.List<String> findTime(Integer PUId){
+		java.util.List<String> list = recruitmentDaoImpl.findTime(PUId);
 		return list;
 	}
 	public Parcer findParcer(Integer PUId){
