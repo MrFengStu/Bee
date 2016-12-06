@@ -176,7 +176,7 @@ public class DeliveryController {
 					ParDeListE.add(list);
 				}
 //				ParDeList.add(list);
-				System.out.println(list.get(3));
+//				System.out.println(list.get(3));
 			}
 			session.setAttribute("ParDeListA", ParDeListA);
 			session.setAttribute("ParDeListB", ParDeListB);
@@ -193,6 +193,8 @@ public class DeliveryController {
 		public String jiazhangA(HttpSession session,HttpServletRequest request){
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListA");
 			session.setAttribute("ParDeList", ParDeList);
+			String jianlivar = "a";
+			session.setAttribute("jianlivar", jianlivar);
 			return "canInterviewResumes";
 		}
 		//待定简历
@@ -200,6 +202,8 @@ public class DeliveryController {
 		public String jiazhangB(HttpSession session,HttpServletRequest request){
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListB");
 			session.setAttribute("ParDeList", ParDeList);
+			String jianlivar = "b";
+			session.setAttribute("jianlivar", jianlivar);
 			return "canInterviewResumes";
 		}
 		//通过初筛简历
@@ -207,6 +211,8 @@ public class DeliveryController {
 		public String jiazhangC(HttpSession session,HttpServletRequest request){
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListC");
 			session.setAttribute("ParDeList", ParDeList);
+			String jianlivar = "c";
+			session.setAttribute("jianlivar", jianlivar);
 			return "canInterviewResumes";
 		}
 		//通知面试简历
@@ -214,6 +220,8 @@ public class DeliveryController {
 		public String jiazhangD(HttpSession session,HttpServletRequest request){
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListD");
 			session.setAttribute("ParDeList", ParDeList);
+			String jianlivar = "d";
+			session.setAttribute("jianlivar", jianlivar);
 			return "canInterviewResumes";
 		}
 		//不合适简历
@@ -221,6 +229,8 @@ public class DeliveryController {
 		public String jiazhangE(HttpSession session,HttpServletRequest request){
 			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListE");
 			session.setAttribute("ParDeList", ParDeList);
+			String jianlivar = "e";
+			session.setAttribute("jianlivar", jianlivar);
 			return "canInterviewResumes";
 		}
 		//不合适方法
