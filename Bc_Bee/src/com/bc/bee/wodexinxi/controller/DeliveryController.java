@@ -242,4 +242,14 @@ public class DeliveryController {
 			this.DeliveryServiceImpl.uadateDelivery(delivery);
 			return "redirect:jiazhangInit";
 		}
+		//通知面试
+		@RequestMapping("notint")
+		public String NotInt(@RequestParam("DeId") int DeId,HttpSession session){
+			Delivery delivery = this.DeliveryServiceImpl.findByDeId(DeId);
+			delivery.setState('d');
+			this.DeliveryServiceImpl.uadateDelivery(delivery);
+			session.setAttribute("success_TUId", delivery.getTuser().getTUId());
+			System.out.println(delivery.getTuser().getTUId());
+			return "redirect:jiazhangInit";
+		}
 }
