@@ -26,7 +26,7 @@ console.log(1);
 <link href="${ctx }/style/css/external.min.css" type="text/css" rel="stylesheet"/>
 <link href="${ctx }/style/css/popup.css" type="text/css" rel="stylesheet"/>
 <script type="text/javascript" src="${ctx }/style/js/jquery.1.10.1.min.js"></script>
-<script src="style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/jquery.lib.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="${ctx }/style/js/ajaxfileupload.js"></script>
 <script src="${ctx }/style/js/additional-methods.js" type="text/javascript"></script>
 
