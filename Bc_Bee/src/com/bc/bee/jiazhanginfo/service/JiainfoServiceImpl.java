@@ -1,5 +1,7 @@
 package com.bc.bee.jiazhanginfo.service;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -21,11 +23,15 @@ public class JiainfoServiceImpl {
 	@Resource
 	private JiainfoDaoImpl jiainfoDaoImpl;
 	
-	public void editPUser(String name,String tel,String email){
-		PUser p = this.jiainfoDaoImpl.getPUser(name,tel,email);
+	public void editPUser(String name,String tel,String email,Integer id){
+		PUser p = this.jiainfoDaoImpl.getPUser(name,tel,email,id);
 		p.setPUName(name);
 		p.setPMailbox(email);
 		p.setPMobile(tel);
 		this.jiainfoDaoImpl.updatePUser(p);
 	}
+	public List<PUser> findById(Integer id){
+		return this.jiainfoDaoImpl.findById(id);
+	}
+
 }
