@@ -1,5 +1,6 @@
 package com.bc.bee.recruitment.service;
 
+import com.bc.bee.entity.Parcer;
 import com.bc.bee.entity.RecInfo;
 
 import java.util.Map;
@@ -14,6 +15,7 @@ import com.framework.BaseDao;
 
 import antlr.collections.List;
 
+import com.bc.bee.recruitment.dao.ParcerDaoImpl;
 import com.bc.bee.recruitment.dao.RecruitmentDaoImpl;
 
 @Service
@@ -23,6 +25,9 @@ public class RecruitmentServiceImpl {
 	@Resource
 	private RecruitmentDaoImpl recruitmentDaoImpl;
 	
+	@Resource
+	private ParcerDaoImpl parcerdaoimpl;
+	
 	public void addRecruitment(RecInfo r){
 		this.recruitmentDaoImpl.saveRecInfo(r);
 	}
@@ -30,7 +35,9 @@ public class RecruitmentServiceImpl {
 		java.util.List<Map<String, Object>> list = recruitmentDaoImpl.findTime(PUId);
 		return list;
 	}
-	
+	public Parcer findParcer(Integer PUId){
+		return this.parcerdaoimpl.selectParcer(PUId);
+	}
 	
 
 	
