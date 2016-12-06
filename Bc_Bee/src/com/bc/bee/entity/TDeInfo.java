@@ -35,6 +35,7 @@ public class TDeInfo {
 	private String TContactInfo;
 	private String TMailbox;
 	private String TAddress;
+	private Integer Count;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -100,6 +101,12 @@ public class TDeInfo {
 	}
 	public void setTAddress(String tAddress) {
 		TAddress = tAddress;
+	}
+	public Integer getCount() {
+		return Count;
+	}
+	public void setCount(Integer count) {
+		Count = count;
 	}
 	
 }

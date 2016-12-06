@@ -31,5 +31,14 @@ public class JibenDaoImpl extends BaseDao<TDeInfo, String> {
 			e.printStackTrace();
 		}
 	}
+	public void updateCount(Integer TUId){
+		try {
+			TDeInfo tdeinfo = super.findOne("from TDeInfo lu where lu.tuser.TUId=? ", new Object[]{TUId});
+			tdeinfo.setCount(tdeinfo.getCount()+1);
+			super.update(tdeinfo);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
 
