@@ -18,6 +18,7 @@ public class Success {
 	private Integer TrId;
 	private Integer PUId;
 	private Integer TUId;
+	private String Time;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -38,6 +39,12 @@ public class Success {
 	}
 	public void setTUId(Integer tUId) {
 		TUId = tUId;
+	}
+	public String getTime() {
+		return Time;
+	}
+	public void setTime(String time) {
+		Time = time;
 	}
 	
 }

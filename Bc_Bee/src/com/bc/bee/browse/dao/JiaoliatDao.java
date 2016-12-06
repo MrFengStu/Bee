@@ -32,12 +32,12 @@ public class JiaoliatDao extends BaseDao<Resume, String> {
 		
 	}
 	
-	public  List<Resume> findByName(String name) {
+	public  List<Resume> findById(Integer id) {
 		Session u = super.getSessionFactory().openSession();
 		try{
 			//name = new String(name.getBytes("iso-8859-1"),"utf-8");
-			System.out.println(name);
-			Query query = u.createQuery("from Resume where TUName = '"+name+"'");
+			System.out.println(id);
+			Query query = u.createQuery("from Resume where TUId = '"+id+"'");
 			return query.list();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

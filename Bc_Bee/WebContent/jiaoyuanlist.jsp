@@ -242,7 +242,7 @@ var youdao_conv_id = 271546;
 	                    		                    			                <li class="odd clearfix">
 			                			                				                	<div class="hot_pos_l">
 			                        <div class="mb10">
-			                            <a href="${ctx }/peopledetail?name=${rs.TUName }" title="前端开发" target="_blank">${rs.TUName }</a> 
+			                            <a href="${ctx }/peopledetail?id=${rs.reId }" title="前端开发" target="_blank">${rs.TUName }</a> 
 			                            &nbsp;
 			                            <span class="c9">${rs.area }</span>
 			                            			                        </div>
@@ -257,7 +257,7 @@ var youdao_conv_id = 271546;
 			                        <div class="apply">
 			                        <a href="${ctx}/send/sendInvitation?param=${rs.TUName}" target="_blank">发出邀请</a>
 			                        				                        </div>
-			                        <div class="mb10"><a href="${ctx }/peopledetail?name=${rs.TUName }" title="紫色医疗" target="_blank">个人详情</a></div>
+			                        <div class="mb10"><a href="${ctx }/peopledetail?id=${rs.reId }" title="紫色医疗" target="_blank">个人详情</a></div>
 			                       
 			                    </div>
 			                 </li>
