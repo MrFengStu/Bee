@@ -1,5 +1,6 @@
 package com.bc.bee.deal.controller;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -37,16 +38,17 @@ public class SuccessController {
 	}
 	
 	@RequestMapping("student")
-	public void student(HttpSession session){
+	public String student(HttpSession session){
 		PUser puser = (PUser)session.getAttribute("parent");
 		List<Success> list = this.successserviceimpl.findByPUId(puser.getPUId());
 		Iterator i = list.iterator();
-		List<TeaCer> teacers = null;
+		List<TeaCer> teacers =new ArrayList<TeaCer>();
 		while(i.hasNext()){
 			Success success = (Success) i.next();
 			TeaCer teacer = this.successserviceimpl.findByTUId(success.getTUId());
 			teacers.add(teacer);
 		}
 		session.setAttribute("teacer", teacers);
+		return "accepted";
 	}
 }
