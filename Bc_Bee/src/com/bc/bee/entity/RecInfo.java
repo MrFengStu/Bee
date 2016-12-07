@@ -53,6 +53,7 @@ public class RecInfo {
 	private String Shi;
 	private String Qu;
 	private Integer View;
+	private String School;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -179,6 +180,12 @@ public class RecInfo {
 	}
 	public void setView(Integer view) {
 		View = view;
+	}
+	public String getSchool() {
+		return School;
+	}
+	public void setSchool(String school) {
+		School = school;
 	}
 	
 	

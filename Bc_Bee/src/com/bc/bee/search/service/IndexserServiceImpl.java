@@ -25,4 +25,28 @@ public class IndexserServiceImpl {
 		return this.IndexserDao.findByName1(name);
 	}
 	
+	public List<RecInfo> findByAreaSchoolSubject(String area, String school, String subject){
+		return this.IndexserDao.findByAreaSchoolSubject(area, school, subject);
+	}
+	public List<RecInfo> findByAreaSchool(String area, String school){
+		return this.IndexserDao.findByAreaSchool(area, school);
+	}
+	public List<RecInfo> findBySchoolSubject(String school, String subject){
+		return this.IndexserDao.findBySchoolSubject(school, subject);
+	}
+	public List<RecInfo> findByAreaSubject(String area, String subject){
+		return this.IndexserDao.findByAreaSubject(area, subject);
+	}
+	public List<RecInfo> findByArea(String area ){
+		System.out.println("service实现");
+		return this.IndexserDao.findByArea(area);
+		
+	}
+	public List<RecInfo> findBySchool(String school){
+		return this.IndexserDao.findBySchool(school);
+	}
+	public List<RecInfo> findBySubject(String subject){
+		return this.IndexserDao.findBySubject(subject);
+	}
+	
 }
