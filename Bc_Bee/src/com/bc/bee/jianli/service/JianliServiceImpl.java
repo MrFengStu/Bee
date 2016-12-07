@@ -34,24 +34,30 @@ public class JianliServiceImpl {
 	}
 	
 	@Transactional(readOnly=false)
-	public void jianliQW(Resume res,String area,String sub, String salary){
-		res.setArea(area);
-		res.setTeaSubject(sub);
-//		if(salary.equals("30元以下")){
-//			res.setSalary(25);
-//		}else if(salary.equals("30元-50元")){
-//			res.setSalary(40);
-//		}else if(salary.equals("50元-100元")){
-//			res.setSalary(80);
-//		}else{
-//			res.setSalary(150);
-//		}
-		res.setSalary(salary);
+	public void jianliQW(Resume res,String area,String sub, String salary, String teaMode){
+		if(area!=null && area.length()!=0 ){
+			res.setArea(area);
+		}
+		if(sub!=null && sub.length()!=0){
+			res.setTeaSubject(sub);
+		}
+		if( teaMode!= null && teaMode.length()!=0){
+			res.setTeaMode(teaMode);
+		}
+		if(salary!=null && salary.length()!=0){
+			res.setSalary(salary);
+		}
 		this.JianliDaoImpl.upDateResume(res);
 	}
 	@Transactional(readOnly=false)
-	public void jianliJL(Resume res, String pte){
-		res.setPte(pte);
+	public void jianliJL(Resume res, String pte, String sGrade){
+		
+		if(pte!=null && pte.length()!=0 ){
+			res.setPte(pte);
+		}
+		if(sGrade!=null && sGrade.length()!=0){
+			res.setSGrade(sGrade);
+		}
 		this.JianliDaoImpl.upDateResume(res);
 	}
 	
@@ -62,15 +68,22 @@ public class JianliServiceImpl {
 	}
 	
 	@Transactional(readOnly=false)
-	public void jibenJY(TDeInfo tde, String school, String major){
-		tde.setTCollege(school);
-		tde.setTMajor(major);
-		this.JibenDaoImpl.jibenJY(tde);
+	public void jianliJY(Resume res, String ted){
+		if(ted!=null && ted.length()!=0){
+			res.setTed(ted);
+		}
+		this.JianliDaoImpl.upDateResume(res);
 	}
 	
 	@Transactional(readOnly=false)
-	public void jianliZC(Resume res, String expertise){
-		res.setExpertise(expertise);
+	public void jianliZC(Resume res, String expertise, String discount){
+		
+		if(expertise!=null && expertise.length()!=0){
+			res.setExpertise(expertise);
+		}
+		if(discount!=null && discount.length()!=0){
+			res.setDiscount(discount);
+		}
 		this.JianliDaoImpl.upDateResume(res);
 	}
 	
