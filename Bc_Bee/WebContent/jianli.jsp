@@ -130,27 +130,29 @@ var youdao_conv_id = 271546;
             		</div><!--end .basicShow-->
 
             		<div class="basicEdit dn">
+            		<!-- 教员详细信息的修改 -->
             			<form id="profileForm"  action="${ctx }/jianli/jiben" method="post">
 						  <table>
-						    <tbody><tr>
-						      <td valign="top">
-						        <span class="redstar">*</span>
-						      </td> 
-						      <td>
-						        <input type="text" placeholder="姓名" value="jason" name="name" id="name"/>
-						      </td>
-						      <td valign="top"></td> 
-						      <td>
-						          <ul class="profile_radio clearfix reset">
-						            <li class="current">
-						           	  	 男<em></em>
-						              	<input type="radio" checked="checked" name="gender" value="男"/> 
-						            </li>
-						            <li>
-						            	  女<em></em>
-						              	<input type="radio" name="gender" value="女"/> 
-						            </li>
-						          </ul>  
+						    <tbody>
+						    <tr>
+						      	<td valign="top">
+						        	<span class="redstar">*</span>
+						      	</td> 
+						      	<td>
+						        	<input type="text" placeholder="姓名" value="jason" name="name" id="name"/>
+						      	</td>
+						      	<td valign="top"></td> 
+						      	<td>
+						          	<ul class="profile_radio clearfix reset">
+						            	<li class="current">
+						           	  	 	男<em></em>
+						              		<input type="radio" checked="checked" name="gender" value="男"/> 
+						            	</li>
+						            	<li>
+						            	  	女<em></em>
+						              		<input type="radio" name="gender" value="女"/> 
+						            	</li>
+						          	</ul>  
 						      </td>
 						    </tr>
 						    <tr>
@@ -158,11 +160,11 @@ var youdao_conv_id = 271546;
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td>
-						      	<input type="hidden" id="topDegree" value="大专" name="topDegree"/>
-						        <input type="button" value="大专" id="select_topDegree" class="profile_select_190 profile_select_normal"/>
+						      	<input type="hidden" id="topDegree" value="${grade }" name="topDegree"/>
+						        <input type="button" value="${grade }" id="select_topDegree" class="profile_select_190 profile_select_normal"/>
 								<div class="boxUpDown boxUpDown_190 dn" id="box_topDegree" style="display: none;">
 						        	<ul>
-						        		<li>大专</li><li>本科</li><li>硕士</li><li>博士</li><li>其他</li>
+						        		<li>大学一年级</li><li>大学二年级</li><li>大学三年级</li><li>大学四年级</li><li>其他</li>
 						        								        	</ul>
 						        </div>  
 						      </td>
@@ -170,50 +172,33 @@ var youdao_conv_id = 271546;
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td>
-				<!-- 		      <input type="hidden" id="grade" value="" name="grade"/>
-						          <input type="button" value="" id="select_workyear" class="profile_select_190 profile_select_normal"/>
-								  <div class="boxUpDown boxUpDown_190 dn" id="box_workyear" style="display: none;">
-						          	 <ul>
-						        		<li>一年级</li><li>二年级</li><li>三年级</li><li>四年级</li><li>五年级</li>
-						        	 </ul>
-						          </div>  
-				 -->
-				 		          <input type="text" placeholder="年级" value="${grade }" name="grade" id="grade"/>
+				 		          <input type="text" placeholder="专业" value="${major }" name="grade" id="grade"/>
 						      </td>
 						    </tr>
+	
 						    <tr>
 						      <td valign="top">
 						        <span class="redstar">*</span>
 						      </td> 
 						      <td colspan="3">
-						          <input type="text" placeholder="手机号码" value="18644444444" name="tel" id="tel"/>
+						        <input type="text" placeholder="手机号" value="${tel }" name="tel" id="tel"/>
 						      </td>
 						   	</tr>
 						   	<tr>
 						      <td valign="top">
 						        <span class="redstar">*</span>
 						      </td> 
-						      <td colspan="3">
-						          <input type="text" placeholder="接收面试通知的邮箱" value="jason@qq.com" name="email" id="email"/>
+						      <td>
+						      	<input type="text" placeholder="学校" value="${college }" name="college" id="college"/>
+						      </td>
+						       <td valign="top">
+						        <span class="redstar">*</span>
+						      </td> 
+						      <td colspan="2">
+						          <input type="text" placeholder="接收面试通知的邮箱" value="${email }" name="email" id="email"/>
 						      </td>
 						    </tr>
-						    <tr>
-				<%-- <!--jsy-去除了目前状态选项-->
-					      <td valign="top"> </td> 
-						      <td colspan="3">
-						          <input type="hidden" id="currentState" value="" name="currentState">
-						          <input type="button" value="目前状态" id="select_currentState" class="profile_select_410 profile_select_normal">
-								  <div class="boxUpDown boxUpDown_410 dn" id="box_currentState" style="display: none;">
-						          	  <ul>
-						        								        			<li>我目前已离职，可快速到岗</li>
-						        								        			<li>我目前正在职，正考虑换个新工作</li>
-						        								        			<li>我暂时不想找工作</li>
-						        								        			
-						        								        	  </ul>
-						          </div>  
-						      </td>
-						    </tr>
-			  	--%>
+
 						    <tr>
 						      <td></td> 
 						      <td colspan="3">
@@ -221,7 +206,8 @@ var youdao_conv_id = 271546;
 						          <a class="btn_profile_cancel" href="javascript:;">取 消</a>
 						      </td>
 						    </tr>
-						  </tbody></table>
+						</tbody>
+					</table>
 						</form><!--end #profileForm-->
 						<div class="new_portrait">
 						  <div class="portrait_upload" id="portraitNo">
@@ -234,16 +220,16 @@ var youdao_conv_id = 271546;
 						  <input type="file" value="" title="支持jpg、jpeg、gif、png格式，文件小于5M" onchange="img_check(this,'h/resume/uploadPhoto.json','headPic');" name="headPic" id="headPic" class="myfiles"/>
 							<!-- <input type="hidden" id="headPicHidden" /> -->
 						  	<em>
-						                  尺寸：120*120px <br/>   
-						                  大小：小于5M
+						                   
+						                 大小： 5兆以内
 						  	</em>
 						  	<span style="display:none;" id="headPic_error" class="error"></span>
 						</div><!--end .new_portrait-->
             		</div><!--end .basicEdit-->
             		<input type="hidden" id="nameVal" value="${name }"/>
             		<input type="hidden" id="genderVal" value="${sex }"/>
-            		<input type="hidden" id="topDegreeVal" value="大专"/>
-            		<input type="hidden" id="workyearVal" value="${grade }"/>
+            		<input type="hidden" id="topDegreeVal" value="${grade }"/>
+            		<input type="hidden" id="workyearVal" value="${major }"/>
             		<input type="hidden" id="currentStateVal" value=""/>
             		<input type="hidden" id="emailVal" value="${email }"/>
             		<input type="hidden" id="telVal" value="${tel }"/>

@@ -79,4 +79,8 @@ public class JianliServiceImpl {
 		res.setReTime(reTime);
 		this.JianliDaoImpl.upDateResume(res);
 	}
+	@Transactional(readOnly=false)
+	public void upDatejianli(Resume res){
+		this.JianliDaoImpl.upDateResume(res);
+	}
 }

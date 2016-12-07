@@ -33,5 +33,13 @@ public class ResumepreviewController {
 		return "preview";
 	}
 
-	
+	@RequestMapping("parentresume")
+	public String parentResume(HttpServletRequest request, HttpSession session){
+		 
+		String faculty = (String) request.getParameter("faculty");
+		 
+		List<Resume> list= this.resumepreviewserviceimpl.findByName(faculty);
+		session.setAttribute("resume", list);
+		return "preview";
+	}
 }
