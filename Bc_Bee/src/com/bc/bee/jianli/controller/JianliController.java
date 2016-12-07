@@ -1,6 +1,5 @@
 package com.bc.bee.jianli.controller;
 
-import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -23,25 +22,35 @@ public class JianliController {
 	private JianliServiceImpl JianliServiceImpl;
 	
 	@RequestMapping("jiben")
-	public String jibenUpdate(@RequestParam("name") String name,@RequestParam("topDegree") String topDegree,
-			@RequestParam("gender") String gender,
-			@RequestParam("grade") String grade,@RequestParam("tel") String tel,
+	public String jibenUpdate(@RequestParam("name") String name,@RequestParam("topDegree") String grade,
+			@RequestParam("gender") String tsex,
+			@RequestParam("grade") String tmajor,@RequestParam("tel") String tel,
+			@RequestParam("college") String college,
 			@RequestParam("email") String email,HttpSession session){
 		
 		TDeInfo tde = (TDeInfo) session.getAttribute("TDeInfo");
-//		try {
-//			name = new String(name.getBytes("iso-8859-1"),"utf-8");
-//			topDegree =new String(name.getBytes("iso-8859-1"),"utf-8");
-//			gender = new String(name.getBytes("iso-8859-1"),"utf-8");
-//			grade = new String(grade.getBytes("iso-8859-1"),"utf-8");
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
+	//	System.out.println(gender);
+		tde.setTName(name);
+		this.upDatejianliTUName(name, session);
 		tde.setTMailbox(email);
 		tde.setTGrade(grade);
+		tde.setTCollege(college);
+		tde.setTSex(tsex);
+		tde.setTMajor(tmajor);
 		tde.setTContactInfo(tel);
+//		System.out.println(tde.getCount());
+		if(tde.getCount()==null){
+			tde.setCount(0);
+		}
 		this.JianliServiceImpl.jibenUpdate(tde);
-		return "jianli";
+		return "redirect:Init";
+	}
+	//修改简历表中的TUName字段
+	public void upDatejianliTUName(String name,HttpSession session){
+		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
+		res.setTUName(name);
+		this.JianliServiceImpl.upDatejianli(res);
 	}
 	
 	@RequestMapping("jianliqw")
@@ -49,13 +58,7 @@ public class JianliController {
 			@RequestParam("expectSalary") String salary,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-//		try {
-//			area = new String(area.getBytes("iso-8859-1"),"utf-8");
-//			sub =new String(sub.getBytes("iso-8859-1"),"utf-8");
-//			salary = new String(salary.getBytes("iso-8859-1"),"utf-8");
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+
 		this.JianliServiceImpl.jianliQW(res,area,sub,salary);
 		return "jianli";
 	}
@@ -64,11 +67,7 @@ public class JianliController {
 	public String jianliJL(@RequestParam("positionName") String pte,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-//		try {
-//			pte = new String(pte.getBytes("iso-8859-1"),"utf-8");
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
+
 		this.JianliServiceImpl.jianliJL(res,pte);
 		return "jianli";
 	}
@@ -134,7 +133,7 @@ public class JianliController {
 		session.setAttribute("TDeInfo", tde);
 //		System.out.println(tde.getTMailbox());
 //		System.out.println(tde.getTName());
-		session.setAttribute("name", tuser.getTUName());//用户名
+		session.setAttribute("name", tde.getTName());//用户名
 		session.setAttribute("grade", tde.getTGrade());//年级
 		session.setAttribute("sex", tde.getTSex());//性别
 		session.setAttribute("tel", tde.getTContactInfo());//电话号
