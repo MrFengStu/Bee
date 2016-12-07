@@ -39,14 +39,25 @@ public class PreviewDao extends BaseDao<Comment,String> {
 		}
 	}
 
-	public void save(Comment t) {
+	public void save1(Comment t) {
 		try {
-			String comment = t.getComCon();
-			t.setComCon(comment);
 			this.save(t);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+	
+	public Comment getComment(Integer id){
+		try {
+			Session s = super.getSessionFactory().openSession();
+			Comment t = s.get(Comment.class, id);
+			s.close();
+			return t;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
 		}
 	}
 

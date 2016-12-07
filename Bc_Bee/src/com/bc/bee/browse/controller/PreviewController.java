@@ -52,16 +52,17 @@ public class PreviewController {
 	
 	@RequestMapping(value="save")
 	public String save(String id,HttpServletRequest request,HttpSession session){
-		String text=(String) session.getAttribute("text");
-		session.setAttribute("comment", text);
+		String text=request.getParameter("text");
+		System.out.println(text);
 		System.out.println(id);
 		Integer id2 = Integer.parseInt(id);
 		System.out.println(id2);
-		Comment t=(Comment) this.PreviewDao.findById(id2);
-		t.setComCon(text);
-		this.PreviewDao.save(t);
 		
-		return "preview";
+		Comment comment=this.PreviewDao.getComment(id2);
+		comment.setComCon(text);
+		this.PreviewDao.save1(comment);
+		
+		return "accepted";
 	}
 	
 }

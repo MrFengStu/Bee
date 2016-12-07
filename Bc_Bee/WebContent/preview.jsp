@@ -2,7 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 <!DOCTYPE HTML>
-<html><head>
+<html>
+<head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>简历预览-我的简历-拉勾网-最专业的互联网招聘平台</title>
 <meta content="23635710066417756375" property="qc:admins">
@@ -35,7 +36,15 @@ $(function(){
 	});
 });
 </script>
-<script src="${ctx}/style/js/ajaxCross.json" charset="UTF-8"></script></head>
+<script src="${ctx}/style/js/ajaxCross.json" charset="UTF-8"></script>
+<script type="text/javascript">
+	function preview() {
+		document.loginForm.submit();
+	}
+	
+</script>
+
+</head>
 
 <body>
  <c:forEach items="${resume}" var="rs">
@@ -110,16 +119,18 @@ $(function(){
 				            
 	            </div><!--end #worksShow-->
  <!--新增内容-->
+
  	<%if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
+ 	
  			<div class="profile_box" id="comment1">
 	                <h2>评价</h2>
 	                <div class="commentShow">
 					                 	 <div class="descriptionShow">
 		            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c9">评价内容：</span>
 		                </div><!--end .descriptionShow-->
-						<c:forEach items="${tuser1 }" var="t1">
-						${t1.comCon }
-						</c:forEach>	
+						 <c:forEach items="${tuser1 }" var="t1">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${t1.CId }.${t1.comCon }</p>
+						</c:forEach>
 	
 	                </div>
 	        </div>
@@ -130,14 +141,15 @@ $(function(){
 				                 	 <div class="descriptionShow">
 	            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c9">评论内容：</span>
 	                </div><!--end .descriptionShow-->
-						<form action="${ctx }/preview/save">
+						<form action="${ctx }/preview/save?&id=${rs.reId}" method="post"">
 							<textarea cols="40" rows="8" value="" id='txt' name="text"></textarea>
 							<br />
-							<button  >提交评论</button>
+							<button  ><a onclick="preview()" >提交评论</a></button>
 						</form>
 
                 </div>
             </div>
+             
      <%}else if(session.getAttribute("student") != null && session.getAttribute("parent") == null){ %>
 	     <div class="profile_box" id="comment1">
 	                <h2>评价</h2>
@@ -154,6 +166,7 @@ $(function(){
 	                </div>
 	            </div>
      <%} %>
+	
  <!--新增内容-->         
 	            
 	            
