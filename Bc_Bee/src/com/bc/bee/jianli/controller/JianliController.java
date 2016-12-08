@@ -55,35 +55,27 @@ public class JianliController {
 	
 	@RequestMapping("jianliqw")
 	public String jianliQW(@RequestParam("expectCity") String area,@RequestParam("expectPosition") String sub,
-			@RequestParam("expectSalary") String salary,HttpSession session){
+			@RequestParam("expectSalary") String salary,@RequestParam("mode") String teaMode,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-
-		this.JianliServiceImpl.jianliQW(res,area,sub,salary);
-		return "jianli";
+		this.JianliServiceImpl.jianliQW(res,area,sub,salary,teaMode);
+		return "redirect:Init";
 	}
 	
 	@RequestMapping("jianlijl")
-	public String jianliJL(@RequestParam("positionName") String pte,HttpSession session){
+	public String jianliJL(@RequestParam("positionName") String pte,@RequestParam("sgrade") String sGrade,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-
-		this.JianliServiceImpl.jianliJL(res,pte);
+		this.JianliServiceImpl.jianliJL(res,pte,sGrade);
 		return "jianli";
 	}
 	
-	@RequestMapping("jibenjy")
-	public String jibenJY(@RequestParam("schoolName") String school,
-			@RequestParam("professionalName") String major,
+	@RequestMapping("jianlijy")
+	public String jibenJY(@RequestParam("ted") String ted,
 			HttpSession session){
-		TDeInfo tde = (TDeInfo) session.getAttribute("TDeInfo");
-//		try {
-//			school = new String(school.getBytes("iso-8859-1"),"utf-8");
-//			major = new String(major.getBytes("iso-8859-1"),"utf-8");
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
-		this.JianliServiceImpl.jibenJY(tde,school,major);
+		Resume res = (Resume) session.getAttribute("Resume");
+		this.upDateTime(res);
+		this.JianliServiceImpl.jianliJY(res,ted);
 		return "jianli";
 	}
 	@RequestMapping("jianlims")
@@ -99,15 +91,11 @@ public class JianliController {
 		return "jianli";
 	}
 	@RequestMapping("jianlizc")
-	public String jianliZC(@RequestParam("workDescription") String expertise,HttpSession session){
+	public String jianliZC(@RequestParam("workDescription") String expertise,@RequestParam("discount") String discount,HttpSession session){
 		Resume res = (Resume) session.getAttribute("Resume");
 		this.upDateTime(res);
-//		try {
-//			expertise = new String(expertise.getBytes("iso-8859-1"),"utf-8");
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
-		this.JianliServiceImpl.jianliZC(res,expertise);
+
+		this.JianliServiceImpl.jianliZC(res,expertise,discount);
 		return "jianli";
 	}
 	
@@ -148,7 +136,10 @@ public class JianliController {
 		session.setAttribute("sub", res.getTeaSubject());//期望所教科目
 		session.setAttribute("salary", res.getSalary());//期望薪资
 		session.setAttribute("pte", res.getPte());//兼职经历
+		session.setAttribute("teamode", res.getTeaMode()); //授课方式
+		session.setAttribute("sgrade", res.getSGrade()); //所教学生年级
 		session.setAttribute("ted", res.getTed());//教育经历
+		session.setAttribute("discount", res.getDiscount());//优惠信息
 		session.setAttribute("brief", res.getBrief());//个人介绍
 		session.setAttribute("ReTime", res.getReTime());//更新时间
 		System.out.println(res.getReTime());
