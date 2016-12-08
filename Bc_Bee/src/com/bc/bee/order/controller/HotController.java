@@ -17,13 +17,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.order.service.HotServiceImpl;
+import com.bc.bee.search.service.HotsearchServiceImpl;
 
 @Controller
 public class HotController {
 	@Resource
 	private HotServiceImpl HotServiceImpl;
+	@Resource
+	private HotsearchServiceImpl HotsearchServiceImpl;
 	@RequestMapping("/")
 	public String order(HttpServletRequest request,HttpSession session){
 		System.out.println("a");
@@ -32,6 +36,9 @@ public class HotController {
 		System.out.println("b");
 		List<RecInfo> recinfo1=this.HotServiceImpl.orderByTime();
 		session.setAttribute("recinfo1", recinfo1);
+		
+		List<Hotsearch> hotsearch=this.HotsearchServiceImpl.findByCount();
+		session.setAttribute("hotsearch", hotsearch);
 		
 		
 		return "index";

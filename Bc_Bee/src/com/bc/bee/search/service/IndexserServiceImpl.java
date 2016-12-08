@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.search.dao.IndexserDao;
 
@@ -20,6 +21,8 @@ public class IndexserServiceImpl {
 	public List<RecInfo> findByName(String name){
 		return this.IndexserDao.findByName(name);
 	}
+	
+	
 	
 	public List<RecInfo> findByName1(String name){
 		return this.IndexserDao.findByName1(name);

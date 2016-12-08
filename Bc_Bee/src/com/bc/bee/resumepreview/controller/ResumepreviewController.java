@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.Resume;
+import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.entity.TUser;
 import com.bc.bee.resumepreview.service.ResumepreviewServiceImpl;
 
@@ -28,18 +29,28 @@ public class ResumepreviewController {
 		System.out.println("123");
 		TUId = student.getTUId();
 		
-		List<Resume> resume=(List<Resume>) this.resumepreviewserviceimpl.findById(TUId);
+		 
+		Resume resume=this.resumepreviewserviceimpl.findById(TUId);
+		TDeInfo tdeinfo=this.resumepreviewserviceimpl.findByTUId(TUId);
 		session.setAttribute("resume", resume);
+		session.setAttribute("tdeinfo", tdeinfo);
+ 
+		
 		return "preview";
 	}
+ 
 
 	@RequestMapping("parentresume")
 	public String parentResume(HttpServletRequest request, HttpSession session){
 		 
 		String faculty = (String) request.getParameter("faculty");
-		 
-		List<Resume> list= this.resumepreviewserviceimpl.findByName(faculty);
+		
+		System.out.println(faculty);
+		TDeInfo tdeinfo=this.resumepreviewserviceimpl.findByNameP(faculty);
+		Resume list= this.resumepreviewserviceimpl.findByName(faculty);
+		System.out.println(tdeinfo.getTName());
 		session.setAttribute("resume", list);
+		session.setAttribute("tdeinfo",tdeinfo);
 		return "preview";
 	}
 }

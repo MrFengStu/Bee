@@ -47,11 +47,12 @@ $(function(){
 </head>
 
 <body>
- <c:forEach items="${resume}" var="rs">
+ 
+ 
   	<div id="previewWrapper">
         <div class="preview_header">
          
-            <h1 title="jason的简历">${rs.TUName }的简历</h1>
+            <h1 title="jason的简历">${resume.TUName }的简历</h1>
                         	<a title="下载简历" class="inline cboxElement" href="#downloadOnlineResume">下载该简历</a>
                     </div><!--end .preview_header-->
 
@@ -59,11 +60,24 @@ $(function(){
             <div class="profile_box" id="basicInfo">
                 <h2>基本信息</h2>
                 <div class="basicShow">
-                   <span>${rs.TUName} | ${rs.area}|
-                             ${rs.expertise } |                                       		3年工作经验
-            		            			| ${rs.SGrade }<br>
-            			            				 <br>
-            			            			${rs.brief }|18644444444 | jason@qq.com<br>
+                  <span>
+                   ${tdeinfo.TName}   
+                   &nbsp;&nbsp; 
+                   ${tdeinfo.TSex} 
+                   &nbsp;&nbsp; 
+                   ${tdeinfo.TCollege} 
+                   &nbsp;&nbsp; 
+                   ${tdeinfo.TMajor} 
+                   &nbsp;&nbsp; 
+                   ${tdeinfo.TGrade} 
+                   &nbsp;&nbsp; 
+                   </br> 
+                   ${tdeinfo.TAddress}
+                   </br> 
+                   ${tdeinfo.TContactInfo} 
+                   ${tdeinfo.TMailbox} 
+                   </br> 
+
             			
             		</span>
            			<div class="m_portrait">
@@ -72,20 +86,29 @@ $(function(){
                     </div>
                 </div><!--end .basicShow-->
             </div><!--end #basicInfo-->
-			
+ 
 				            <div class="profile_box" id="expectJob">
 	                <h2>期望工作</h2>
 	                <div class="expectShow">
-	                	${rs.teaSubject} | ${rs.settle} | ${rs.teaMode }
+	                	${resume.area}
+	                	&nbsp;&nbsp; 
+	                	${resume.teaSubject} 
+	                	&nbsp;&nbsp; 
+	                	</br>
+	                	${resume.salary}
+	                	&nbsp;&nbsp; 
+	                	${resume.teaMode}
+	                	&nbsp;&nbsp;
 	                </div><!--end .expectShow-->
 	            </div><!--end #expectJob-->
 						
 				            <div class="profile_box" id="workExperience">
-	                <h2>工作经历</h2>
+	                <h2>兼职经历</h2>
 	                <div class="experienceShow">
 	                  <ul class="wlist clearfix">
 	                  	                    	           				            				<li class="clear">
-            					           					<span class="c9">${rs.pte }</span>
+            					           					<span class="c9">${resume.SGrade}</span>
+            					           					<span class="c9">${resume.pte}</span>
 	           					
 	           				</li>
 	           					          				                  </ul>
@@ -101,7 +124,7 @@ $(function(){
 	                  	                  	            				            				<li class="clear">
             				            					 
             					<div>
-            						<h3>  ${rs.ted}</h3>
+            						<h3> ${resume.ted}</h3>
             					 
             					</div>
             				</li>
@@ -112,7 +135,7 @@ $(function(){
 				            <div class="profile_box" id="selfDescription">
 	                <h2>自我描述</h2>
 	                <div class="descriptionShow">
-	            	 ${rs.brief}
+	            	 ${resume.brief}
 	                </div><!--end .descriptionShow-->
 	            </div><!--end #selfDescription-->
 						
@@ -141,7 +164,7 @@ $(function(){
 				                 	 <div class="descriptionShow">
 	            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c9">评论内容：</span>
 	                </div><!--end .descriptionShow-->
-						<form action="${ctx }/preview/save?&id=${rs.reId}" method="post"">
+						<form action="${ctx }/preview/save?&id=${resume.reId}" method="post"">
 							<textarea cols="40" rows="8" value="" id='txt' name="text"></textarea>
 							<br />
 							<button  ><a onclick="preview()" >提交评论</a></button>
@@ -172,7 +195,7 @@ $(function(){
 	            
 			        </div><!--end .preview_content-->
   	</div>
-  	</c:forEach><!--end #previewWrapper-->
+ <!--end #previewWrapper-->
 
 <!-------------------------------------弹窗lightbox ----------------------------------------->
 <div style="display:none;">
