@@ -48,13 +48,13 @@ public class IndexserController {
 		System.out.println(name);
 		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName1(name);
 		session.setAttribute("recinfo", recinfo);
-		if(recinfo.isEmpty()){
-			Hotsearch hot=new Hotsearch();
-			hot.setIncluding(name);
-			hot.setCountn(1);
-			this.HotsearchServiceImpl.save1(hot);
+		List<Hotsearch> hot=this.HotsearchServiceImpl.getSearch(name);
+		if(hot.isEmpty()){
+			Hotsearch hot2=new Hotsearch();
+			hot2.setIncluding(name);
+			hot2.setCountn(1);
+			this.HotsearchServiceImpl.save1(hot2);
 		}else{
-			List<Hotsearch> hot=this.HotsearchServiceImpl.getSearch(name);
 			Hotsearch hot1=hot.get(0);
 			Integer count=hot1.getCountn();
 			hot1.setCountn(count+1);

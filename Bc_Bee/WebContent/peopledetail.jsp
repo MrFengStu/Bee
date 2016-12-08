@@ -117,7 +117,7 @@ var youdao_conv_id = 271546;
                           <h3 class="description">评价：</h3>
                           <c:forEach items="${tuser1 }" var="t1">
 
-                            <p>${t1.comCon }</p>
+                            <p>[${t1.CTime }]&nbsp;&nbsp;${t1.comCon }</p>
                           </c:forEach>
                     </dd>
                      
@@ -220,21 +220,21 @@ var youdao_conv_id = 271546;
       <input type="hidden" value="683"  id="companyid" />
       <input type="hidden" value="" id="positionLng" />
       <input type="hidden" value="" id="positionLat" />
-	
+	  <%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 		<div id="loginToolBar">
 		<div>
 			<em></em>
 			<img src="${ctx }/style/images/footbar_logo.png" width="138" height="45" />
 			<span class="companycount"></span>
 			<span class="positioncount"></span>
-			<a href="#loginPop" class="bar_login inline" title="登录"><i></i></a>
+			<a href="${ctx }/login.jsp" class="bar_login inline" title="登录"><i></i></a>
 			<div class="right">
 				<a href="register.html?from=jobs_footerbar" onclick="_hmt.push(['_trackEvent', 'button', 'click', 'register'])" class="bar_register" id="bar_register" target="_blank"><i></i></a>
 			</div>
 			<input type="hidden" id="cc" value="16064" />
 			<input type="hidden" id="cp" value="96931" />
 		</div>
-	</div>
+	</div><%}%>
 		<div id="tipOverlay" ></div>
 <!-------------------------------------弹窗lightbox  ----------------------------------------->
 <div style="display:none;">
