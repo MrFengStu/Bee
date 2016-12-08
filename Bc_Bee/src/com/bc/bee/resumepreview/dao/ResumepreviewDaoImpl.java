@@ -8,44 +8,29 @@ import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
+import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.entity.TUser;
 import com.framework.BaseDao;
 
 @Repository
 public class ResumepreviewDaoImpl extends BaseDao<Resume, String> {
 
-	public  List<Resume> findById(Integer TUId) {
-		Session u = super.getSessionFactory().openSession();
-		
-		try{ 
-			Query query = u.createQuery("from Resume where TUId = '"+TUId+"'");
-
-			return query.list();
+	public Resume findById(Integer TUId){
+		try {
+			return super.findOne("from Resume where TUId=?",new Object[]{TUId});
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
-		}finally{
-			u.close();
 		}
-	
 	}
 	
-	public  List<Resume> findByName(String faculty) {
-		Session u = super.getSessionFactory().openSession();
-		System.out.println(faculty);
-		try{ 
-			Query query = u.createQuery("from Resume where TUName = '"+faculty+"'");
-
-			return query.list();
+	public Resume findByName(String faculty){
+		try {
+			return super.findOne("from Resume where TUName=?",new Object[]{faculty});
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
-		}finally{
-			u.close();
 		}
-	
 	}
 	
 	
