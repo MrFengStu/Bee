@@ -89,39 +89,50 @@ var youdao_conv_id = 271546;
         
        	<div class="sidebar">
        		            <div id="options" class="greybg">
-                                <dl >
+                              <!--   <dl >
                    	<dt>工作时间 <em ></em></dt>
 	                <dd >
-	                    	                    	<div>周一-周五</div>
-	                    	                    	<div>周六日</div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=周一至周五">周一至周五</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=周六日">周六日</a></div>
+	                    	                    	
+	                    	                </dd> 
+                </dl>--> 
+                                <dl >
+                   	<dt>按时间分类 <em ></em></dt>
+	                <dd >
+	                    	                    	<div><a href="${ctx }/search1?&kd=小学数学">周一至周五</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=小学语文">周六日</a></div>
+	                    	                    	
+	                    	                    	
 	                    	                    	
 	                    	                </dd> 
                 </dl>
                                 <dl >
-                   	<dt>教学科目 <em ></em></dt>
-	                <dd >
-	                    	                    	<div>数学</div>
-	                    	                    	<div>语文</div>
-	                    	                    	<div>英语</div>
-	                    	                    	<div>物理</div>
-	                    	                    	<div>化学</div>
-	                    	                    	<div>生物</div>
-	                    	                    	<div>历史</div>
-	                    	                    	<div>地理</div>
-	                    	                    	<div>政治</div>
-	                    	                    	<div>文综</div>
-	                    	                    	<div>理综</div>
-	                    	                    	<div>艺术类</div>
-	                    	                    	<div>其他</div>
+                   	<dt>按科目分类<em ></em></dt>
+	                 <dd >
+	                    	                    	<div><a href="${ctx }/search1?&kd=数学">数学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=语文">语文</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=英语">英语</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=物理">物理</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=化学">化学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=生物">生物</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=历史">历史</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=地理">地理</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=政治">政治</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=文综">文综</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=理综">理综</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=艺术类">艺术类</a></div>
+	                    	                    	<!--  <div><a href="${ctx }/search1?&kd=其他">其他</a></div>-->
 	                    	                    	
-	                    	                </dd> 
-                </dl>
-                                <dl >
-                   	<dt>教学年级 <em ></em></dt>
+	                    	                </dd>
+                </dl><dl >
+                   	<dt>按年级分类<em ></em></dt>
 	                <dd >
-	                    	                    	<div>小学</div>
-	                    	                    	<div>初中</div>
-	                    	                    	<div>高中</div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=数学">小学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=语文">初中</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=英语">高中</a></div>
+	                    	                    	
+	                    	                    	
 	                    	                    	
 	                    	                </dd> 
                 </dl>
@@ -204,30 +215,105 @@ var youdao_conv_id = 271546;
             <dl class="workplace" id="workplaceSelect">
                 <dt class="fl">工作地点：</dt>
                	               	<dd >
-                	<a href="javascript:;" class="current">桥西区</a> 
+                	<a href="${ctx }/search?&param=地点桥西区">桥西区</a> 
                 	                	|
                 	               	</dd>
                	               	<dd >
-                	<a href="javascript:;" >桥东区</a> 
+                	<a href="${ctx }/search?&param=地点桥东区">桥东区</a> 
                 	                	|
                 	               	</dd>
                	               	<dd >
-                	<a href="javascript:;" >新华区</a> 
+                	<a href="${ctx }/search?&param=地点新华区">新华区</a> 
                 	                	|
                 	               	</dd>
                	               	<dd >
-                	<a href="javascript:;" >长安区</a> 
+                	<a href="${ctx }/search?&param=地点长安区">长安区</a> 
                 	                	|
                 	               	</dd>
                	               	<dd >
-                	<a href="javascript:;" >裕华区</a> 
+                	<a href="${ctx }/search?&param=地点裕华区">裕华区</a> 
                 	                	|
                 	               	</dd>
-               	               	<dd class="more">
-                	<a href="javascript:;" >其他地区</a>
-                						<div class="triangle citymore_arrow"></div> 
-                	                	
+               	   
+               	                <dd id="box_expectCity" class="searchlist_expectCity dn">
+	            	<span class="bot"></span>
+	            	<span class="top"></span>
+		    				    						    			    						    		<dl>
+			    			
+			    	  	</dl>
+			    	  				    				    </dd>  
+            </dl>
+            
+            <dl class="workplace" id="workplaceSelect">
+                <dt class="fl">教育程度：</dt>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=程度小学">小学</a> 
+                	                	|
                 	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=程度初中">初中</a> 
+                	                	|
+                	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=程度高中">高中</a> 
+                	                	|
+                	               	</dd>
+               	               	 
+               	         
+               	    
+               	                <dd id="box_expectCity" class="searchlist_expectCity dn">
+	            	<span class="bot"></span>
+	            	<span class="top"></span>
+		    				    						    			    						    		<dl>
+			    			
+			    	  	</dl>
+			    	  				    				    </dd>  
+            </dl>
+
+            <dl class="workplace" id="workplaceSelect">
+                <dt class="fl">教学科目：</dt>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=科目数学">数学</a> 
+                	                	|
+                	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=科目语文">语文</a> 
+                	                	|
+                	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=科目英语">英语</a> 
+                	                	|
+                	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=科目物理">物理</a> 
+                	                	|
+                	               	</dd>
+               	               	<dd >
+                	<a href="${ctx }/search?&param=科目化学">化学</a> 
+                	                	|
+                	               	</dd>
+                	               	
+                	               	<dd >
+                	<a href="${ctx }/search?&param=科目生物">生物</a> 
+                	                	|
+                	               	</dd>
+                	               	<dd >
+                	<a href="${ctx }/search?&param=科目历史">历史</a> 
+                	                	|
+                	               	</dd>
+                	               	<dd >
+                	<a href="${ctx }/search?&param=科目政治">政治</a> 
+                	                	|
+                	               	</dd>
+                	               	<dd >
+                	<a href="${ctx }/search?&param=科目地理">地理</a> 
+                	                	|
+                	               	</dd>
+                	               	<dd >
+                	<a href="${ctx }/search?&param=科目艺术">艺术类</a> 
+                	                	|
+                	               	</dd>
+               	               	 
                	               	
                	    
                	                <dd id="box_expectCity" class="searchlist_expectCity dn">
@@ -238,6 +324,8 @@ var youdao_conv_id = 271546;
 			    	  	</dl>
 			    	  				    				    </dd>  
             </dl>
+            
+            
          
             <div id="tip_didi" class="dn">
             	<span>亲，“嘀嘀打车”已更名为“滴滴打车”了哦，我们已帮您自动跳转~</span>
@@ -245,7 +333,7 @@ var youdao_conv_id = 271546;
             </div>
             
             	            <ul class="hot_pos reset">
-            	            <c:forEach items="${recinfo }" var="rf">
+            	            <c:forEach items="${recinfo}" var="rf">
 	                    		                    			                <li class="odd clearfix">
 			                			                				                	<div class="hot_pos_l">
 			                        <div class="mb10">
