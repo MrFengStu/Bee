@@ -38,7 +38,7 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="h/">
+    		<a class="logo" href="${ctx }/index.jsp">
     			<img width="229" height="43" alt="Bee-小蜜蜂家教平台" src="style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
