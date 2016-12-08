@@ -54,7 +54,9 @@ public class UploadControllerImpl {
                  
                 // 转存文件
                 file.transferTo(saveDir);
-                session.setAttribute("filePath", filePath);
+                PUser puser = (PUser)session.getAttribute("parent");
+                puser.setPic(filePath);
+                session.setAttribute("parent", puser);
                 //System.out.println(filePath);
                 return true;
             } catch (Exception e) {

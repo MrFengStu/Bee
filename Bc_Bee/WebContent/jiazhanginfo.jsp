@@ -159,7 +159,7 @@ var youdao_conv_id = 271546;
 						      <span>上传自己的头像</span>
 						  </div>
 						  <div>
-						    <img width="120" height="120" src="${filePath }">
+						    <img width="120" height="120" src="${parent.pic }">
 						  </div>
 						  <input type="file" value="" title="支持jpg、jpeg、gif、png格式，文件小于5M" name="headPic" id="headPic" class="myfiles">
 							<!-- <input type="hidden" id="headPicHidden" /> -->
