@@ -160,7 +160,7 @@ var youdao_conv_id = 271546;
 		                        	                        	                   		                	                </dd>
                 </dl>
                                 <div id="weibolist"></div>
-                                </c:forEach>
+                                
             </div>	
             <div class="content_r">
                 <dl class="job_company">
@@ -169,7 +169,7 @@ var youdao_conv_id = 271546;
                             <img width="80" height="80" alt="广东国馆酒业有限公司" src="${ctx }/style/images/ff80808145ae05750145b0467a1c7ddd.png" class="b2">
                             <div>
                                 <h2 class="fl">
-                                	                                  		家长A
+                                	                                  		${rf1.contacts}
                                   	                                  	
                                   	                                    	<img width="15" height="19" alt="拉勾认证企业" src="${ctx }/style/images/valid.png"> 
                                     	<span class="dn">拉勾认证企业</span>
@@ -182,9 +182,9 @@ var youdao_conv_id = 271546;
                     	
                        	
                        	                       	<h4>工作地址</h4>
-                       	<div>石家庄市裕华区南二环东路19号</div>
-                       	<div id="smallmap" style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: grab;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; width: 280px; height: 200px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span style="position: absolute; padding: 0px; margin: 0px; border: 0px none; -moz-user-select: none; cursor: pointer; background: url(${ctx }/style/images/img/blank.gifquot) repeat scroll 0% 0% transparent; width: 19px; height: 25px; left: 130px; top: 75px; z-index: -4625058;" "="" unselectable="on" class="BMap_Marker BMap_noprint" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; -moz-user-select: none; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font: 12px arial,simsun,sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span style="position: absolute; padding: 0px; margin: 0px; border: 0px none; width: 0px; height: 0px; -moz-user-select: none; left: 130px; top: 75px; z-index: -4625058;" unselectable="on" class="BMap_Marker"><div style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;"><img style="border:none;margin-left:0px; margin-top:0px; " src="${ctx }/style/images/marker_red_sprite.png"></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"><span style="position: absolute; padding: 0px; margin: 0px; border: 0px none; width: 20px; height: 11px; -moz-user-select: none; left: 134px; top: 89px;" unselectable="on"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;"><img style="border:none;margin-left:-19px; margin-top:-13px; " src="${ctx }/style/images/marker_red_sprite.png"></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 140px; top: 100px; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: block;"><div style="position: absolute; overflow: visible; top: 100px; left: 140px; z-index: 0; display: block;"><canvas style="position: absolute; width: 256px; height: 256px; left: -156px; top: -103px; background: none repeat scroll 0% 0% rgb(243, 241, 236);" width="256" height="256" id="_1_bg_12319_2568_16"></canvas><canvas style="position: absolute; width: 256px; height: 256px; left: 100px; top: -103px; background: none repeat scroll 0% 0% rgb(243, 241, 236);" width="256" height="256" id="_1_bg_12320_2568_16"></canvas></div><div style="position: absolute; overflow: visible; top: 100px; left: 140px; z-index: 10; display: block;"><canvas style="position: absolute; width: 256px; height: 256px; left: -156px; top: -103px;" width="256" height="256" id="_1_poi_12319_2568_16"></canvas><canvas style="position: absolute; width: 256px; height: 256px; left: 100px; top: -103px;" width="256" height="256" id="_1_poi_12320_2568_16"></canvas></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div style="position: absolute; z-index: 1201; top: 10px; right: 10px; width: 17px; height: 16px; background: url(${ctx }/style/images/img/st-close.pngquot) no-repeat scroll 0% 0% transparent; cursor: pointer; display: none;" title="退出全景"></div><div style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:-moz-grab" id="zoomer"><div style="top:0;left:0;" class="BMap_zoomer"></div><div style="top:0;right:0;" class="BMap_zoomer"></div><div style="bottom:0;left:0;" class="BMap_zoomer"></div><div style="bottom:0;right:0;" class="BMap_zoomer"></div></div><div style="height: 32px; position: absolute; z-index: 30; -moz-user-select: none; bottom: 0px; right: auto; top: auto; left: 1px; display: none;" class=" anchorBL"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: medium none;"><img src="${ctx }/style/images/copyright_logo.png" style="border:none;width:77px;height:32px"></a></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; -moz-user-select: none; color: black; background: none repeat scroll 0% 0% transparent; font: 11px/15px arial,simsun,sans-serif; bottom: 2px; right: auto; top: auto; left: 4px; position: absolute; z-index: 10;"><span _cid="1" style="display: inline;"><span style="font-size:11px">&copy; 2014 Baidu&nbsp;- Data &copy; <a style="display:inline;" href="http://www.navinfo.com/" target="_blank">NavInfo</a> &amp; <a style="display:inline;" href="http://www.cennavi.com.cn/" target="_blank">CenNavi</a> &amp; <a style="display:inline;" href="http://www.365ditu.com/" target="_blank">道道通</a></span></span></div></div>
-                       	<a id="mapPreview" href="javascript:;">查看完整地图</a>
+                       <div>${rf1.address}</div>
+                      	<div id="smallmap"></div>
+                       	<a href="javascript:;" id="mapPreview">查看完整地图</a>
                        	                    </dd>
                 </dl>
                 				<div id="myRecommend_jd">
@@ -645,85 +645,86 @@ $(function(){
 
 <script src="http://api.map.baidu.com/api?v=2.0&amp;ak=3d6a9f4b807441569414b01eecc20959" type="text/javascript"></script><script src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=3d6a9f4b807441569414b01eecc20959&amp;services=&amp;t=20140617153133" type="text/javascript"></script>
 <script type="text/javascript">
-		//百度地图API功能
-		var sMap = new BMap.Map("smallmap");
-		sMap.enableScrollWheelZoom(true);
-		
-		if($('#positionLat').val() &amp;&amp; $('#positionLng').val()){
-			var sPoint = new BMap.Point($('#positionLng').val(),$('#positionLat').val());
-			sMap.centerAndZoom(sPoint,12);
-			sMap.addOverlay(new BMap.Marker(sPoint));              // 将标注添加到地图中
-			
-		}else{
-			// 创建地址解析器实例
-			var sMyGeo = new BMap.Geocoder();
-			// 将地址解析结果显示在地图上,并调整地图视野
-			sMyGeo.getPoint("广州市天河区珠江新城花城大道18号建滔广场6楼", function(sPoint){
-			  if (sPoint) {
-				  sMap.centerAndZoom(sPoint, 16);
-				  sMap.addOverlay(new BMap.Marker(sPoint));
-			  }
-			}, "广州");
-		}
+//百度地图API功能
+var sMap = new BMap.Map("smallmap");
+sMap.enableScrollWheelZoom(true);
 
-		/*弹窗大地图*/
-		var map = new BMap.Map("allmap");
-		map.addControl(new BMap.NavigationControl());
-		map.addControl(new BMap.MapTypeControl());
-		map.addControl(new BMap.OverviewMapControl());
-		map.enableScrollWheelZoom(true);
-		// 创建地址解析器实例
-		var gc = new BMap.Geocoder();
-		$(function(){
-			$('#mapPreview').bind('click',function(){
-				$.colorbox({inline:true, href:"#baiduMap",title:"公司地址"});
-				var address = "广州市天河区珠江新城花城大道18号建滔广场6楼";
-				var city = "广州";
-				var lat = $('#positionLat').val();
-				var lng = $('#positionLng').val();
-			    map.setCurrentCity(city);
-			    map.setZoom(12);
-				if(lat &amp;&amp; lng){
-					var p = new BMap.Point(lng, lat);
-					var marker = new BMap.Marker(p);  // 创建标注
-					map.addOverlay(marker);              // 将标注添加到地图中
-					setTimeout(function(){
-						map.centerAndZoom(p, 15);
-					},1000);
-					map.setCenter(p);
-					map.setZoom(15);
-					var sContent =
-						"&lt;h4 style='margin:0 0 5px 0;padding:0.2em 0'&gt;"+city+"&lt;/h4&gt;" + 
-						"&lt;p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'&gt;"+address+"&lt;/p&gt;" + 
-						"&lt;/div&gt;";
-					 var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
-				 	//图片加载完毕重绘infowindow
-			 		marker.openInfoWindow(infoWindow);
-		 		}else{
-					gc.getPoint(address, function(point){
-						  if (point) {
-							  	var p = new BMap.Point(point.lng, point.lat);
-								var marker = new BMap.Marker(p);  // 创建标注
-								map.addOverlay(marker);              // 将标注添加到地图中
-								setTimeout(function(){
-									map.centerAndZoom(p, 15);
-								},1000);
-								map.setZoom(14);
-								var sContent =
-									"&lt;h4 style='margin:0 0 5px 0;padding:0.2em 0'&gt;"+city+"&lt;/h4&gt;" + 
-									"&lt;p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'&gt;"+address+"&lt;/p&gt;" + 
-									"&lt;/div&gt;";
-								 var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
-							 	//图片加载完毕重绘infowindow
-						 		marker.openInfoWindow(infoWindow);
-						  }
-					}, city);
-				}
-				
-				
-			});
+if($('#positionLat').val() && $('#positionLng').val()){
+	var sPoint = new BMap.Point($('#positionLng').val(),$('#positionLat').val());
+	sMap.centerAndZoom(sPoint,12);
+	sMap.addOverlay(new BMap.Marker(sPoint));              // 将标注添加到地图中
 	
-		});
+}else{
+	// 创建地址解析器实例
+	var sMyGeo = new BMap.Geocoder();
+	// 将地址解析结果显示在地图上,并调整地图视野
+	sMyGeo.getPoint("${rf1.address}", function(sPoint){
+	  if (sPoint) {
+		  sMap.centerAndZoom(sPoint, 16);
+		  sMap.addOverlay(new BMap.Marker(sPoint));
+	  }
+	}, "石家庄");
+}
+
+/*弹窗大地图*/
+var map = new BMap.Map("allmap");
+map.addControl(new BMap.NavigationControl());
+map.addControl(new BMap.MapTypeControl());
+map.addControl(new BMap.OverviewMapControl());
+map.enableScrollWheelZoom(true);
+// 创建地址解析器实例
+var gc = new BMap.Geocoder();
+$(function(){
+	$('#mapPreview').bind('click',function(){
+		$.colorbox({inline:true, href:"#baiduMap",title:"工作地址"});
+		var address = ${rf1.address};
+		var city = "石家庄";
+		var lat = $('#positionLat').val();
+		var lng = $('#positionLng').val();
+	    map.setCurrentCity(city);
+	    map.setZoom(12);
+		if(lat && lng){
+			var p = new BMap.Point(lng, lat);
+			var marker = new BMap.Marker(p);  // 创建标注
+			map.addOverlay(marker);              // 将标注添加到地图中
+			setTimeout(function(){
+				map.centerAndZoom(p, 15);
+			},1000);
+			map.setCenter(p);
+			map.setZoom(15);
+			var sContent =
+				"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+city+"</h4>" + 
+				"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>"+address+"</p>" + 
+				"</div>";
+			 var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+		 	//图片加载完毕重绘infowindow
+	 		marker.openInfoWindow(infoWindow);
+ 		}else{
+			gc.getPoint(address, function(point){
+				  if (point) {
+					  	var p = new BMap.Point(point.lng, point.lat);
+						var marker = new BMap.Marker(p);  // 创建标注
+						map.addOverlay(marker);              // 将标注添加到地图中
+						setTimeout(function(){
+							map.centerAndZoom(p, 15);
+						},1000);
+						map.setZoom(14);
+						var sContent =
+							"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+city+"</h4>" + 
+							"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>"+address+"</p>" + 
+							"</div>";
+						 var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+					 	//图片加载完毕重绘infowindow
+				 		marker.openInfoWindow(infoWindow);
+				  }
+			}, city);
+		}
+		
+		
+	});
+
+});
+</c:forEach>
 </script>
 			<div class="clear"></div>
 			<input type="hidden" value="6c401d88d0e34445a3482fa27afe4d77" id="resubmitToken">
