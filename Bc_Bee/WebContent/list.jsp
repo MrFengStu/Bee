@@ -98,58 +98,41 @@ var youdao_conv_id = 271546;
 	                    	                </dd> 
                 </dl>--> 
                                 <dl >
-                   	<dt>小学科目 <em ></em></dt>
+                   	<dt>按时间分类 <em ></em></dt>
 	                <dd >
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学数学">小学数学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学语文">小学语文</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学英语">小学英语</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学物理">小学物理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学化学">小学化学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学生物">小学生物</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学历史">小学历史</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学地理">小学地理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学政治">小学政治</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学文综">小学文综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学理综">小学理综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=小学艺术类">小学艺术类</a></div>
-	                    	                    	<!--  <div><a href="${ctx }/search1?&kd=其他">其他</a></div>-->
+	                    	                    	<div><a href="${ctx }/search1?&kd=小学数学">周一至周五</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=小学语文">周六日</a></div>
+	                    	                    	
+	                    	                    	
 	                    	                    	
 	                    	                </dd> 
                 </dl>
                                 <dl >
-                   	<dt>初中科目<em ></em></dt>
+                   	<dt>按科目分类<em ></em></dt>
 	                 <dd >
-	                    	                    	<div><a href="${ctx }/search1?&kd=数学">初中数学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=语文">初中语文</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=英语">初中英语</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=物理">初中物理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=化学">初中化学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=生物">初中生物</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=历史">初中历史</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=地理">初中地理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=政治">初中政治</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=文综">初中文综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=理综">初中理综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=艺术类">初中艺术类</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=数学">数学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=语文">语文</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=英语">英语</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=物理">物理</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=化学">化学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=生物">生物</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=历史">历史</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=地理">地理</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=政治">政治</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=文综">文综</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=理综">理综</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=艺术类">艺术类</a></div>
 	                    	                    	<!--  <div><a href="${ctx }/search1?&kd=其他">其他</a></div>-->
 	                    	                    	
 	                    	                </dd>
                 </dl><dl >
-                   	<dt>高中科目 <em ></em></dt>
+                   	<dt>按年级分类<em ></em></dt>
 	                <dd >
-	                    	                    	<div><a href="${ctx }/search1?&kd=数学">高中数学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=语文">高中语文</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=英语">高中英语</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=物理">高中物理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=化学">高中化学</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=生物">高中生物</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=历史">高中历史</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=地理">高中地理</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=政治">高中政治</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=文综">高中文综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=理综">高中理综</a></div>
-	                    	                    	<div><a href="${ctx }/search1?&kd=艺术类">高中艺术类</a></div>
-	                    	                    	<!--  <div><a href="${ctx }/search1?&kd=其他">其他</a></div>-->
+	                    	                    	<div><a href="${ctx }/search1?&kd=数学">小学</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=语文">初中</a></div>
+	                    	                    	<div><a href="${ctx }/search1?&kd=英语">高中</a></div>
+	                    	                    	
+	                    	                    	
 	                    	                    	
 	                    	                </dd> 
                 </dl>
