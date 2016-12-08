@@ -551,12 +551,9 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 <dl class="hotSearch">
 	<dt>热门搜索：</dt>
-	<dd><a href="${ctx }/search1?&kd=理综">理综</a></dd>
-	<dd><a href="${ctx }/search1?&kd=文综">文综</a></dd>
-	<dd><a href="${ctx }/search1?&kd=高三英语">高三英语</a></dd>
-	<dd><a href="${ctx }/search1?&kd=作业辅导">作业辅导</a></dd>
-	<dd><a href="${ctx }/search1?&kd=小学全科">小学全科</a></dd>
-	<dd><a href="${ctx }/search1?&kd=历史">历史</a></dd>
+	<c:forEach items="${hotsearch}" var="hs">
+	<dd><a href="${ctx }/search1?&kd=${hs.including }">${hs.including }</a></dd>
+	</c:forEach>
 </dl>			
 			<div id="home_banner">
 	            <ul class="banner_bg">

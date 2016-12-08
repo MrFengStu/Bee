@@ -11,6 +11,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
+import com.bc.bee.entity.Comment;
+import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
 
@@ -51,6 +53,7 @@ public class IndexserDao extends BaseDao<RecInfo, String>{
 
 		
 	}
+	
 	
 	
 	
