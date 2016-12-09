@@ -6,32 +6,32 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.bc.bee.entity.RecInfo;
-import com.bc.bee.paging.dao.JobListDaoImpl;
+import com.bc.bee.entity.Resume;
+import com.bc.bee.paging.dao.JiaoListDaoImpl;
 import com.framework.Page2;
 
 @Service
-public class JobListServiceImpl {
+public class JiaoListServiceImpl {
 	@Resource
-	private JobListDaoImpl jobListDaoImpl;
-
+	private JiaoListDaoImpl jiaoListDaoImpl;
+	
 	public Page2 queryForPage(int currentPage, int pageSize) {
 		Page2 page = new Page2();
 		// 总记录数
-		int allRow = jobListDaoImpl.getAllRowCount();
+		int allRow = jiaoListDaoImpl.getAllRowCount();
 		// 当前页开始记录
 		int offset = page.countOffset(currentPage, pageSize);
 		// 分页查询结果集
-		List<RecInfo> list = jobListDaoImpl.queryForPage(offset, pageSize);
+		List<Resume> list = jiaoListDaoImpl.queryForPage(offset, pageSize);
 		page.setPageNo(currentPage);
 		page.setPageSize(pageSize);
 		page.setTotalRecords(allRow);
-		page.setList(list);
+		page.setList2(list);
 		return page;
 
 	}
 
 	public int ServicegetCount() {
-		return jobListDaoImpl.getAllRowCount();
+		return jiaoListDaoImpl.getAllRowCount();
 	}
 }

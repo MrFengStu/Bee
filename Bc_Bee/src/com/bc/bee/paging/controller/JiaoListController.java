@@ -10,27 +10,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.bc.bee.entity.RecInfo;
-import com.bc.bee.paging.service.JobListServiceImpl;
+import com.bc.bee.entity.Resume;
+import com.bc.bee.paging.service.JiaoListServiceImpl;
 import com.framework.Page2;
 
 @Controller
-public class JobListController {
+public class JiaoListController {
 	@Resource
-	private JobListServiceImpl jobListServiceImpl;
-
+	private JiaoListServiceImpl jiaoListServiceImpl;
+	
 
 	// 找到所有的记录并实现了分页
-	@RequestMapping("joblist")
+	@RequestMapping("jiaoyuan")
 	public String findAll(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap) {
 		String pageNo = request.getParameter("pageNo");
 		if (pageNo == null) {
 			pageNo = "1";
 		}
-		Page2 page = jobListServiceImpl.queryForPage(Integer.valueOf(pageNo), 6);
+		Page2 page = jiaoListServiceImpl.queryForPage(Integer.valueOf(pageNo), 6);
 		request.setAttribute("page", page);
-		List<RecInfo> list = page.getList();
+		List<Resume> list = page.getList2();
 		modelMap.put("list", list);
-		return "list";
+		return "jiaoyuanlist";
 	}
 }
