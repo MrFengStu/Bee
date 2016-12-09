@@ -15,22 +15,20 @@ import com.framework.BaseDao;
 @Repository
 public class JoblistDao extends BaseDao<RecInfo, String> {
 
-	
-	 public List<RecInfo> findAll() {
-	 Session a = super.getSessionFactory().openSession();
-	 try{
-	 Query query = a.createQuery("from RecInfo");
-	 return query.list();
-	 } catch (Exception e) {
-	 // TODO Auto-generated catch block
-	 e.printStackTrace();
-	 return null;
-	 }finally{
-	 a.close();
-	 }
-	
-	
-	 }
+//	public List<RecInfo> findAll() {
+//		Session a = super.getSessionFactory().openSession();
+//		try {
+//			Query query = a.createQuery("from RecInfo");
+//			return query.list();
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//			return null;
+//		} finally {
+//			a.close();
+//		}
+//
+//	}
 
 	public List<RecInfo> findById(Integer id) {
 		Session u = super.getSessionFactory().openSession();
