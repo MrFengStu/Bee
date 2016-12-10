@@ -47,7 +47,8 @@ public class UploadControllerImpl {
             try {
                 // 保存的文件路径(如果用的是Tomcat服务器，文件会上传到\\%TOMCAT_HOME%\\webapps\\YourWebProject\\upload\\文件夹中  )
                 String filePath = request.getSession().getServletContext()
-                    .getRealPath("/") + "upload/" + file.getOriginalFilename();
+                 .getRealPath("/") + "upload/" + file.getOriginalFilename();
+            	System.out.println("path"+filePath);
                 File saveDir = new File(filePath);
                 if (!saveDir.getParentFile().exists())
                     saveDir.getParentFile().mkdirs();
@@ -55,8 +56,10 @@ public class UploadControllerImpl {
                 // 转存文件
                 file.transferTo(saveDir);
                 PUser puser = (PUser)session.getAttribute("parent");
-                puser.setPic(filePath);
+                puser.setPic(file.getOriginalFilename());
+                System.out.println("会话中的路径"+puser.getPic());
                 session.setAttribute("parent", puser);
+                this.uploadserviceimpl.upload(puser.getPUId(), file.getOriginalFilename());
                 //System.out.println(filePath);
                 return true;
             } catch (Exception e) {
@@ -83,12 +86,6 @@ public class UploadControllerImpl {
                 saveFile(request, file);
             }
         }
-        HttpSession session = request.getSession();
-        PUser puser = (PUser)session.getAttribute("parent");
-        String filePath = (String)session.getAttribute("filePath");
-        System.out.println(puser.getPUId());
-        System.out.println(filePath);
-        this.uploadserviceimpl.upload(puser.getPUId(), filePath);
         // 重定向
         return "index";
     }
