@@ -51,7 +51,7 @@
 
 	<div id="header">
 		<div class="wrapper">
-			<a href="" class="logo"> <img
+			<a href="${ctx }/index.jsp" class="logo"> <img
 				src="${ctx }/style/images/logo.png" width="229" height="43"
 				alt="蜜蜂招聘-专注家教招聘" />
 			</a>

@@ -36,7 +36,7 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="index.html">
+    		<a class="logo" href="${ctx }/index.jsp">
     			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
