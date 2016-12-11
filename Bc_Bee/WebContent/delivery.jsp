@@ -156,7 +156,16 @@ var youdao_conv_id = 271546;
                         </form>
                     </dd>
                 </dl>
-            </div>	
+                 <div class="">
+           		共${deliveryPage.totalCount }条记录&nbsp;&nbsp;
+				共${deliveryPage.totalPageNum }页 &nbsp;&nbsp;
+				当前第${deliveryPage.currentPageNum }页<br />
+				<c:forEach begin="1" end="${deliveryPage.totalPageNum }" var="pageNum">
+						<a name="pagen" href="${ctx }/Delivery/Init?pageNum=${pageNum }">${pageNum }</a>
+					</c:forEach>
+            </div>
+            </div>
+           	
             <div class="content_r">
             	<div class="mycenterR" id="myInfo">
             		<h2>我的信息</h2>

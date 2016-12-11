@@ -13,6 +13,7 @@ import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.wodexinxi.dao.DeliveryDaoImpl;
 import com.bc.bee.wodexinxi.dao.RecInfoDaoImpl;
+import com.framework.Page;
 
 @Service
 @Transactional(readOnly=true)
@@ -52,6 +53,9 @@ public class DeliveryServiceImpl {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum, int pageSize){
+		return this.DeliveryDaoImpl.findDeliveryPageList(TUId,pageNum,pageSize,null);
 	}
 
 }

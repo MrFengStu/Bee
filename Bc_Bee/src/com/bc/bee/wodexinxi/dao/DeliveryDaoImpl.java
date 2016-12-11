@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.Delivery;
 import com.framework.BaseDao;
+import com.framework.Page;
 
 @Repository
 public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
@@ -40,6 +41,20 @@ public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
 	public Delivery findByDeId(int DeId){
 		try {
 			return super.findOne("from Delivery where DeId=?", new Object[]{DeId});
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum, int pageSize,Object[] params){
+		String hql = "from Delivery lu where lu.tuser.TUId="+TUId;
+	//	System.out.println("hql语句："+hql);
+		try {
+			Page<Delivery> deliveryPageList = new Page<Delivery>();
+			deliveryPageList.setCurrentPageNum(pageNum);
+			deliveryPageList.setPageSize(pageSize);
+			deliveryPageList=this.findByPage(pageNum, pageSize, hql, params);
+			return deliveryPageList;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
