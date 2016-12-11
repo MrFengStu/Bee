@@ -17,14 +17,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.search.service.IndexserServiceImpl;
+import com.bc.bee.search.service.HotsearchServiceImpl;;
 
 @Controller
 public class IndexserController {
 	
 	@Resource
 	private IndexserServiceImpl IndexserServiceImpl;
+	@Resource
+	private HotsearchServiceImpl HotsearchServiceImpl;
+	
 	
 //	@RequestMapping("search")
 //	public String search(HttpServletRequest request,HttpSession session){
@@ -43,6 +48,21 @@ public class IndexserController {
 		System.out.println(name);
 		List<RecInfo> recinfo=this.IndexserServiceImpl.findByName1(name);
 		session.setAttribute("recinfo", recinfo);
+		List<Hotsearch> hot=this.HotsearchServiceImpl.getSearch(name);
+		if(hot.isEmpty()){
+			Hotsearch hot2=new Hotsearch();
+			hot2.setIncluding(name);
+			hot2.setCountn(1);
+			this.HotsearchServiceImpl.save1(hot2);
+		}else{
+			Hotsearch hot1=hot.get(0);
+			Integer count=hot1.getCountn();
+			hot1.setCountn(count+1);
+			this.HotsearchServiceImpl.update(hot1);
+		}
+		
+		
+		
 		
 		return "list";
 	}

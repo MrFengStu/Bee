@@ -32,6 +32,7 @@ public class PUser {
 	private String PUPwd;
 	private String PMailbox;
 	private String PMobile;
+	private String Pic;
 	
 	private Parcer parcer;
 	private Set<RecInfo> recinfos=new HashSet<RecInfo>(0);
@@ -111,6 +112,12 @@ public class PUser {
 	}
 	public void setPMobile(String pMobile) {
 		PMobile = pMobile;
+	}
+	public String getPic() {
+		return Pic;
+	}
+	public void setPic(String pic) {
+		Pic = pic;
 	}
 	
 }

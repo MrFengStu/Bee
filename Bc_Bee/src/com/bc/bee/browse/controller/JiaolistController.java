@@ -35,15 +35,15 @@ public class JiaolistController{
 	@Resource
 	private PreviewDao PreviewDao;
 	
-	@RequestMapping("jiaoyuan")
-	public String jiao(HttpServletRequest request,HttpSession session){
-		
-		List<Resume> resumes=this.JiaoliatDao.findAll();
-		session.setAttribute("resumes", resumes);
-		
-		return "jiaoyuanlist";
-	
-	}
+//	@RequestMapping("jiaoyuan")
+//	public String jiao(HttpServletRequest request,HttpSession session){
+//		
+//		List<Resume> resumes=this.JiaoliatDao.findAll();
+//		session.setAttribute("resumes", resumes);
+//		
+//		return "jiaoyuanlist";
+//	
+//	}
 	
 	@RequestMapping("peopledetail")
 	public String people(String id,HttpServletRequest request,HttpSession session){
