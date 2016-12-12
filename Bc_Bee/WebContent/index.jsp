@@ -712,7 +712,7 @@ var youdao_conv_id = 271546;
 			                        <br />
 			                
 			                     
-				                    <span>[${rf.reTime}]</span>
+				                    <span>[${rf1.reTime}]</span>
 			                        <!-- <a  class="wb">分享到微博</a> -->
 			                    </div>
 			                	<div class="hot_pos_r">
