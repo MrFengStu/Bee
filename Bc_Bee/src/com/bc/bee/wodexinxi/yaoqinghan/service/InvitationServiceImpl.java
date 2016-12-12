@@ -45,4 +45,7 @@ public class InvitationServiceImpl {
 	public Page<Invitation> findJyInvitationPageList(int TUId, int pageNum, int pageSize){
 		return this.InvitationDaoImpl.findJyInvitationPageList(TUId,pageNum,pageSize,null);
 	}
+	public Page<Invitation> findJzInvitationPageList(int PUId, int pageNum, int pageSize){
+		return this.InvitationDaoImpl.findJzInvitationPageList(PUId,pageNum,pageSize,null);
+	}
 }
