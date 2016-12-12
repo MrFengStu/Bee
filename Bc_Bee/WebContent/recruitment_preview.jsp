@@ -11,10 +11,10 @@
 	<title>招聘信息预览</title>
 
 	<script type="text/javascript">
-var ctx = "h";
+
 console.log(1);
 </script>
-<link rel="Shortcut Icon" href="h/images/favicon.ico">
+<link rel="Shortcut Icon" href="${ctx}/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/style-djw.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/dd.css"/>
 <link rel="stylesheet" type="text/css" href="${ctx}/style/css/external.min.css"/>
@@ -24,7 +24,7 @@ console.log(1);
 <script src="${ctx}/style/js/ajaxfileupload.js" type="text/javascript"></script>
 <script type="text/javascript" src="${ctx}/style/js/additional-methods.js"></script>
 <!--[if lte IE 8]>
-    <script type="text/javascript" src="style/js/excanvas.js"></script>
+    <script type="text/javascript" src="${ctx}/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
@@ -150,7 +150,7 @@ var youdao_conv_id = 271546;
        	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="${ctx}/af/zhaopin.html" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>

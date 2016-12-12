@@ -302,9 +302,7 @@ var youdao_conv_id = 271546;
 	                                		                                		<li>30-50</li>
 	                                		                                		<li>5-100</li>
 	                                		                                		<li>100以上</li>
-	                                		                                		<li>15k-25k</li>
-	                                		                                		<li>25k-50k</li>
-	                                		                                		<li>50k以上</li>
+	                                		                                		
 	                                		                                </ul>
 	                            </div>
 	                       		<!-- <div>
