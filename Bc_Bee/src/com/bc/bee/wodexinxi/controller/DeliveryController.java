@@ -22,6 +22,7 @@ import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.entity.TUser;
 import com.bc.bee.wodexinxi.service.DeliveryServiceImpl;
+import com.framework.Page;
 
 @Controller
 @RequestMapping("Delivery")
@@ -31,20 +32,20 @@ public class DeliveryController {
 	
 	//初始化方法
 	@RequestMapping("Init")
-	public String Init(HttpSession session){
-//	TUser tuser= (TUser) session.getAttribute("TUser");
-	//模拟tuser已经获取到	
-//		TUser tuser = new TUser();
-//		tuser.setTUId(1);
-//		tuser.setTUName("scbnbb");
+	public String Init(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
+
 		TUser tuser = (TUser) session.getAttribute("student");
 		//根据用户Id查询出在数据库投递表中这个用户所有的投递记录
-		List<Delivery> deliverys = DeliveryServiceImpl.findByTUId(tuser.getTUId());
-		
+//		List<Delivery> deliverys1 = DeliveryServiceImpl.findByTUId(tuser.getTUId());
+		Page<Delivery> deliverys;
+		System.out.println("pageNum:"+pageNum);
+		deliverys = this.DeliveryServiceImpl.findDeliveryPageList(tuser.getTUId(),pageNum, 5);
 		//根据deliverys中的招聘表外键找到家长招聘表记录
-		
+		System.out.println("deliverys长度："+deliverys.getList().size());
+
 		//  循环遍历deliverys ，每一个delivery都有一个招聘recinfo，用键值对的方式存到map中
-		Iterator i=deliverys.iterator();
+		Iterator i = deliverys.getList().iterator();
+//		Iterator i=deliverys.iterator();
 		HashMap map=new HashMap();
 		HashMap mapa=new HashMap();
 		HashMap mapb=new HashMap();
@@ -71,7 +72,7 @@ public class DeliveryController {
 			map.put(delivery, recinfo);
 		}
 		session.setAttribute("name", tuser.getTUName());
-		
+		session.setAttribute("deliveryPage", deliverys);
 		session.setAttribute("map", map);
 		session.setAttribute("mapa", mapa);
 		session.setAttribute("mapb", mapb);
@@ -118,28 +119,26 @@ public class DeliveryController {
 		//删除
 		@RequestMapping(value="delete",method=RequestMethod.GET)
 		public String Delete(@RequestParam("DeId") int DeId,HttpSession session){
-//			System.out.println(DeId);
-			//因为是级联，所以不能直接删
 			Delivery delivery = this.DeliveryServiceImpl.findByDeId(DeId);
-	//		delivery.setPuser(null);
-	//		delivery.setTuser(null);
 			this.DeliveryServiceImpl.deleteByDeId(DeId);
 			return "redirect:Init";
 		}
 		//家长收到的简历投递
 		@RequestMapping("jiazhangInit")
-		public String jiazhangInit(HttpSession session){
+		public String jiazhangInit(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
 			PUser puser = (PUser) session.getAttribute("parent");
 			//根据家长用户Id查询出在数据库投递表中这个家长所有的投递记录
-			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
-		//	System.out.println(deliverys.size());  //得到
+//			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
+			Page<Delivery> deliverys = DeliveryServiceImpl.findJzDeliveryPageList(puser.getPUId(),pageNum, 5);
+
+//			System.out.println(deliverys.getList().size());
 			List<List> ParDeList = new ArrayList<List>();
 			List<List> ParDeListA = new ArrayList<List>();
 			List<List> ParDeListB = new ArrayList<List>();
 			List<List> ParDeListC = new ArrayList<List>();
 			List<List> ParDeListD = new ArrayList<List>();
 			List<List> ParDeListE = new ArrayList<List>();
-			Iterator i=deliverys.iterator();
+			Iterator i=deliverys.getList().iterator();
 			while(i.hasNext()){
 				Delivery delivery = (Delivery) i.next();
 				RecInfo recinfo = DeliveryServiceImpl.findByRlId(delivery.getRlId()); 	//得到
@@ -179,6 +178,7 @@ public class DeliveryController {
 //				System.out.println(list.get(3));
 			}
 			session.setAttribute("ParDeListA", ParDeListA);
+//			System.out.println("parDeListA的长度："+ParDeListA.size());
 			session.setAttribute("ParDeListB", ParDeListB);
 			session.setAttribute("ParDeListC", ParDeListC);
 			session.setAttribute("ParDeListD", ParDeListD);
@@ -186,6 +186,7 @@ public class DeliveryController {
 			String jianlivar = "a";
 			session.setAttribute("ParDeList", ParDeListA);
 			session.setAttribute("jianlivar", jianlivar);
+			session.setAttribute("deliveryPage", deliverys);
 			return "canInterviewResumes";
 		}
 		//待处理简历

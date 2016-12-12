@@ -32,6 +32,7 @@ public class TUser {
 	private String TUName;
 	private String TUpwd;
 	private String TMailbox;
+	private String Pic;
 	
 	private TeaCer teacer;
 	private TDeInfo tdeinfo;
@@ -128,6 +129,14 @@ public class TUser {
 
 	public void setInvitations(Set<Invitation> invitations) {
 		this.invitations = invitations;
+	}
+
+	public String getPic() {
+		return Pic;
+	}
+
+	public void setPic(String pic) {
+		Pic = pic;
 	}
 	
 }

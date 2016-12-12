@@ -27,15 +27,15 @@ public class JoblistController {
 	@Resource
 	private JoblistDao JoblistDao;
 	
-	@RequestMapping("joblist")
-	public String jiao(HttpServletRequest request,HttpSession session){
-		
-		List<RecInfo> recinfo=this.JoblistDao.findAll();
-		session.setAttribute("recinfo", recinfo);
-		
-		return "list";
-	}
-	
+//	@RequestMapping("joblist")
+//	public String jiao(HttpServletRequest request,HttpSession session){
+//		
+//		List<RecInfo> recinfo=this.JoblistDao.findAll();
+//		session.setAttribute("recinfo", recinfo);
+//		
+//		return "list";
+//	}
+//	
 	@RequestMapping("job1")
 	public String job(String id,HttpServletRequest request,HttpSession session){
 		

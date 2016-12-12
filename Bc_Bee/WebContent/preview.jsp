@@ -152,7 +152,7 @@ $(function(){
 		            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c9">评价内容：</span>
 		                </div><!--end .descriptionShow-->
 						 <c:forEach items="${tuser1 }" var="t1">
-						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${t1.CId }.${t1.comCon }</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[${t1.CTime }]&nbsp;&nbsp;${t1.comCon }</p>
 						</c:forEach>
 	
 	                </div>

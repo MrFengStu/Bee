@@ -36,7 +36,7 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="">
+    		<a class="logo" href="${ctx }/index.jsp">
     			<img width="229" height="43" alt="蜜蜂招聘" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
@@ -153,15 +153,15 @@ var youdao_conv_id = 271546;
 						  </tbody></table>
 						  </c:forEach>
 						</form><!--end #profileForm-->
+						<form action="<%=request.getContextPath()%>/upload/filesUpload" enctype="multipart/form-data" method="post">
 						<div class="new_portrait">
 						  <div class="portrait_upload" id="portraitNo">
 						      <span>上传自己的头像</span>
 						  </div>
-						  <div class="portraitShow dn" id="portraitShow">
-						    <img width="120" height="120" src="">
-						    <span>更换头像</span>
+						  <div>
+						    <img width="120" height="120" src="${ctx }/upload/${parent.pic}">
 						  </div>
-						  <input type="file" value="" title="支持jpg、jpeg、gif、png格式，文件小于5M" onchange="img_check(this,'${ctx }/resume/uploadPhoto.json','headPic');" name="headPic" id="headPic" class="myfiles">
+						  <input type="file" value="" title="上传头像" name="headPic" id="headPic" class="myfiles">
 							<!-- <input type="hidden" id="headPicHidden" /> -->
 						  	<em>
 						                  尺寸：120*120px <br>   
@@ -169,7 +169,9 @@ var youdao_conv_id = 271546;
 						  	</em>
 						  	<span style="display:none;" id="headPic_error" class="error"></span>
 						</div><!--end .new_portrait-->
+						<input type="submit" value="提交">
             		</div><!--end .basicEdit-->
+            		</form>
             		<c:forEach items="${puser1 }" var="pu1">
             		<input type="hidden" id="nameVal" value="${pu1.PUName }">
             		<input type="hidden" id="genderVal" value="男">
