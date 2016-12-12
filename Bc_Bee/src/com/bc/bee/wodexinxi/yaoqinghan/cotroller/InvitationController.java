@@ -19,6 +19,7 @@ import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TUser;
 import com.bc.bee.wodexinxi.yaoqinghan.service.InvitationServiceImpl;
+import com.framework.Page;
 @Controller
 @RequestMapping("Invitation")
 public class InvitationController {
@@ -27,7 +28,7 @@ public class InvitationController {
 	
 	//初始化方法
 	@RequestMapping("Init")
-	public String Init(HttpSession session){
+	public String Init(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
 //		TUser tuser= (TUser) session.getAttribute("TUser");
 		//模拟tuser已经获取到
 //		TUser tuser = new TUser();
@@ -35,10 +36,10 @@ public class InvitationController {
 //		tuser.setTUName("scbnbb");
 		TUser tuser = (TUser) session.getAttribute("student");
 		//根据用户Id查询出在数据库邀请表中这个用户所有的邀请记录
-		List<Invitation> invitations = this.InvitationServiceImpl.findByTUId(tuser.getTUId());
+//		List<Invitation> invitations = this.InvitationServiceImpl.findByTUId(tuser.getTUId());
 //		System.out.println(invitations.size()); 查到了
-		
-		Iterator i=invitations.iterator();
+		Page<Invitation> invitatins = this.InvitationServiceImpl.findJyInvitationPageList(tuser.getTUId(),pageNum, 5);
+		Iterator i=invitatins.getList().iterator();
 		HashMap invitationmap=new HashMap();
 		while(i.hasNext()){
 			Invitation invitation = (Invitation) i.next();
@@ -49,6 +50,7 @@ public class InvitationController {
 			invitationmap.put(invitation,recinfo );
 			
 		}
+		session.setAttribute("invitationPage", invitatins);
 		session.setAttribute("invitationmap", invitationmap);
 		session.setAttribute("name", tuser.getTUName());
 		return "mList";

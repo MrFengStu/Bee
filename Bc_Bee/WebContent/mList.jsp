@@ -128,7 +128,26 @@ var youdao_conv_id = 271546;
               <input type="hidden" value="" name="r"/>
            </form>
 	       <form id="searchForm"></form>
-	            <div class="Pagination myself"><a title="1" >首页</a><span title="上一页" class="disabled">上一页 </span><span title="1" class="current">1</span><a title="2" >2</a><a title="3" >3</a><a title="4" >4</a><a title="5" >5</a><a title="2" >下一页 </a><a title="7" >尾页</a></div>
+	<!--            <div class="Pagination myself"><a title="1" >首页</a><span title="上一页" class="disabled">上一页 </span><span title="1" class="current">1</span><a title="2" >2</a><a title="3" >3</a><a title="4" >4</a><a title="5" >5</a><a title="2" >下一页 </a><a title="7" >尾页</a></div>
+              --> 
+             <div class="">
+           			共${invitationPage.totalCount }条记录&nbsp;&nbsp;
+					共${invitationPage.totalPageNum }页 &nbsp;&nbsp;
+					当前第${invitationPage.currentPageNum }页<br />
+					<c:if test="${invitationPage.currentPageNum!=1 }">
+						<a href="${ctx }/Delivery/Init?pageNum=1" name="firstPage" value="首页">首页</a>
+						<a href="${ctx }/Delivery/Init?pageNum=${invitationPage.prePageNum}" name="firstPage" value="首页">上一页</a>
+					</c:if>
+ 					
+					<c:forEach begin="1" end="${invitationPage.totalPageNum }" var="pageNum">
+						<a name="pagen" href="${ctx }/Delivery/Init?pageNum=${pageNum }">${pageNum }&nbsp;&nbsp;</a>
+					</c:forEach>
+					<c:if test="${invitationPage.currentPageNum!=invitationPage.totalPageNum }">
+						<a href="${ctx }/Delivery/Init?pageNum=${invitationPage.nextPageNum}" name="firstPage" value="首页">下一页</a>
+						<a href="${ctx }/Delivery/Init?pageNum=${invitationPage.totalPageNum}" name="firstPage" value="首页">尾页</a>
+					</c:if>
+            	</div>
+             
              </div>	
             <div class="content_r">
 

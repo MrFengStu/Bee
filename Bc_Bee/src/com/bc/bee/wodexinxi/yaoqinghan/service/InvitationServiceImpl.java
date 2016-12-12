@@ -11,6 +11,7 @@ import com.bc.bee.entity.Invitation;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.wodexinxi.yaoqinghan.dao.YaoqingbiaoRecInfoDaoImpl;
+import com.framework.Page;
 import com.bc.bee.wodexinxi.yaoqinghan.dao.InvitationDaoImpl;
 import com.bc.bee.wodexinxi.yaoqinghan.dao.ResumeDaoImpl;
 
@@ -40,5 +41,8 @@ public class InvitationServiceImpl {
 	}
 	public Resume findResumeByTUId(int TUId){
 		return this.resumedaoimpl.findByTUId(TUId);
+	}
+	public Page<Invitation> findJyInvitationPageList(int TUId, int pageNum, int pageSize){
+		return this.InvitationDaoImpl.findJyInvitationPageList(TUId,pageNum,pageSize,null);
 	}
 }
