@@ -29,8 +29,8 @@ public class JiaoListController {
 		}
 		Page2 page = jiaoListServiceImpl.queryForPage(Integer.valueOf(pageNo), 6);
 		request.setAttribute("page", page);
-		List<Resume> list = page.getList2();
-		modelMap.put("list", list);
+		List<Resume> resumes = page.getList2();
+		modelMap.put("resumes", resumes);
 		return "jiaoyuanlist";
 	}
 }
