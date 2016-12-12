@@ -51,4 +51,20 @@ public class InvitationDaoImpl extends BaseDao<Invitation, String> {
 		}
 		
 	}
+	
+	public Page<Invitation> findJzInvitationPageList(int PUId, int pageNum, int pageSize, Object[] params){
+		String hql = "from Invitation lu where lu.puser.PUId="+PUId;
+	
+		try {
+			Page<Invitation> InvitationPageList = new Page<Invitation>();
+			InvitationPageList.setCurrentPageNum(pageNum);
+			InvitationPageList.setPageSize(pageSize);
+			InvitationPageList=this.findByPage(pageNum, pageSize, hql, params);
+			return InvitationPageList;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
 }

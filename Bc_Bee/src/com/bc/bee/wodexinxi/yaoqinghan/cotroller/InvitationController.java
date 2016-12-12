@@ -57,10 +57,11 @@ public class InvitationController {
 	}
 	
 	@RequestMapping("send")
-	public String send(HttpSession session){
+	public String send(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
 		PUser puser = (PUser)session.getAttribute("parent");
-		List <Invitation> invitations = this.InvitationServiceImpl.findByPUId(puser.getPUId());
-		Iterator i=invitations.iterator();
+	//	List <Invitation> invitations = this.InvitationServiceImpl.findByPUId(puser.getPUId());
+		Page<Invitation> invitatins = this.InvitationServiceImpl.findJzInvitationPageList(puser.getPUId(),pageNum, 5);
+		Iterator i=invitatins.getList().iterator();
 		HashMap invitationmap=new HashMap();
 		while(i.hasNext()){
 			Invitation invitation = (Invitation) i.next();
@@ -70,6 +71,7 @@ public class InvitationController {
 			
 		}
 		session.setAttribute("invitationmap", invitationmap);
+		session.setAttribute("invitationPage", invitatins);
 		session.setAttribute("name", puser.getPUName());
 		return "parentinvit";
 	}
