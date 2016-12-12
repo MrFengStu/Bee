@@ -293,6 +293,23 @@ function get_jianlivar(){
 		                    		                                               	</form>
                     </dd>
                 </dl><!-- end .company_center_content -->
+                <div class="">
+           			共${deliveryPage.totalCount }条记录&nbsp;&nbsp;
+					共${deliveryPage.totalPageNum }页 &nbsp;&nbsp;
+					当前第${deliveryPage.currentPageNum }页<br />
+					<c:if test="${deliveryPage.currentPageNum!=1 }">
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=1" name="firstPage" value="首页">首页</a>
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.prePageNum}" name="firstPage" value="首页">上一页</a>
+					</c:if>
+ 					
+					<c:forEach begin="1" end="${deliveryPage.totalPageNum }" var="pageNum">
+						<a name="pagen" href="${ctx }/Delivery/jiazhangInit?pageNum=${pageNum }">${pageNum }&nbsp;&nbsp;</a>
+					</c:forEach>
+					<c:if test="${deliveryPage.currentPageNum!=deliveryPage.totalPageNum }">
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.nextPageNum}" name="firstPage" value="首页">下一页</a>
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.totalPageNum}" name="firstPage" value="首页">尾页</a>
+					</c:if>
+            	</div>
             </div><!-- end .content -->
  
 <!------------------------------------- 弹窗lightbox ----------------------------------------->

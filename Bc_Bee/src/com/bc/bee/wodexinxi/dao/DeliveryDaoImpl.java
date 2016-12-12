@@ -60,4 +60,17 @@ public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
 			return null;
 		}
 	}
+	public Page<Delivery> findJzDeliveryPageList(int PUId, int pageNum, int pageSize,Object[] params){
+		String hql = "from Delivery lu where lu.puser.PUId="+PUId;
+		try {
+			Page<Delivery> deliveryPageList = new Page<Delivery>();
+			deliveryPageList.setCurrentPageNum(pageNum);
+			deliveryPageList.setPageSize(pageSize);
+			deliveryPageList=this.findByPage(pageNum, pageSize, hql, params);
+			return deliveryPageList;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
