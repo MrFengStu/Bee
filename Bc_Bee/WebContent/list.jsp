@@ -265,7 +265,7 @@
 						</ul>
 						<div class="searchtype_arrow"></div>
 						<input type="text" id="search_input" name="kd" tabindex="1"
-							value="数学" placeholder="请输入职位名称，如：数学家教" /> <input type="hidden"
+							value="" placeholder="请输入职位名称，如：数学家教" /> <input type="hidden"
 							name="spc" id="spcInput" value="1" /> <input type="hidden"
 							name="pl" id="plInput" value="" /> <input type="hidden" name="gj"
 							id="gjInput" value="" /> <input type="hidden" name="xl"
@@ -318,39 +318,11 @@
 </style>
 				<script type="text/javascript" src="${ctx }/style/js/search.min.js"></script>
 				<dl class="hotSearch">
-					<dt>热门搜索：</dt>
-					<dd>
-						<a href="${ctx }/search1?&kd=英语">英语</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=小学英语">小学英语</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=小学数学">小学数学</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=100元">100元</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=语文">语文</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=初中英语">初中英语</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=数学">数学</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=理综">理综</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=生物">生物</a>
-					</dd>
-					<dd>
-						<a href="${ctx }/search1?&kd=历史">历史</a>
-					</dd>
-
-				</dl>
+	<dt>热门搜索：</dt>
+	<c:forEach items="${hotsearch}" var="hs">
+	<dd><a href="${ctx }/search1?&kd=${hs.including }">${hs.including }</a></dd>
+	</c:forEach>
+</dl>	
 				<div class="breakline"></div>
 				<dl class="workplace" id="workplaceSelect">
 					<dt class="fl">工作地点：</dt>
@@ -461,7 +433,7 @@
 								<span><em class="c7">时薪：</em>${rec.salary}</span> <span><em
 									class="c7">年级：</em> ${rec.grade}</span> <span><em class="c7">工作时间：
 								</em>${rec.WTime}</span> <br /> <span><em class="c7">职位诱惑：</em>${rec.subsidy}</span>
-								<br /> <span>1天前发布</span>
+								<br /> <span>[${rec.reTime}]</span>
 							</div>
 							<div class="hot_pos_r">
 								<div class="apply">

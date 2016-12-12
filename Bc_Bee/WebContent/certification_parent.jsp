@@ -17,10 +17,10 @@
 <title>家长认证</title>
 
 <script type="text/javascript">
-	var ctx = "h";
+	
 	console.log(1);
 </script>
-<link rel="Shortcut Icon" href="h/images/favicon.ico">
+<link rel="Shortcut Icon" href="${ctx }/images/favicon.ico">
 <link rel="stylesheet" type="text/css"
 	href="${ctx }/style/css/style-djw.css" />
 <link rel="stylesheet" type="text/css" href="${ctx }/style/css/dd.css" />
