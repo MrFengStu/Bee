@@ -29,8 +29,8 @@ public class JobListController {
 		}
 		Page2 page = jobListServiceImpl.queryForPage(Integer.valueOf(pageNo), 6);
 		request.setAttribute("page", page);
-		List<RecInfo> list = page.getList1();
-		modelMap.put("list", list);
+		List<RecInfo> recinfo = page.getList1();
+		modelMap.put("recinfo", recinfo);
 		return "list";
 	}
 }

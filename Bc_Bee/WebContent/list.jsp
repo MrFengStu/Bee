@@ -451,7 +451,7 @@
 				</div>
 
 				<ul class="hot_pos reset">
-					<c:forEach items="${list }" var="rec" varStatus="status">
+					<c:forEach items="${recinfo }" var="rec" varStatus="status">
 						<li class="odd clearfix">
 							<div class="hot_pos_l">
 								<div class="mb10">
