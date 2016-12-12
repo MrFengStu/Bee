@@ -265,7 +265,7 @@
 						</ul>
 						<div class="searchtype_arrow"></div>
 						<input type="text" id="search_input" name="kd" tabindex="1"
-							value="数学" placeholder="请输入职位名称，如：数学家教" /> <input type="hidden"
+							value="" placeholder="请输入职位名称，如：数学家教" /> <input type="hidden"
 							name="spc" id="spcInput" value="1" /> <input type="hidden"
 							name="pl" id="plInput" value="" /> <input type="hidden" name="gj"
 							id="gjInput" value="" /> <input type="hidden" name="xl"
