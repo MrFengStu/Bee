@@ -310,7 +310,7 @@
 				</div>
 
 				<ul class="hot_pos reset">
-					<c:forEach items="${list}" var="rs">
+					<c:forEach items="${resumes}" var="rs">
 						<li class="odd clearfix">
 							<div class="hot_pos_l">
 								<div class="mb10">
