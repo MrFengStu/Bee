@@ -13,7 +13,7 @@
 <link  media="handheld" rel="alternate"/>
 <!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>拉勾网-最专业的家教招聘平台</title>
+<title>蜜蜂网-最专业的互联网家教招聘平台</title>
 <meta content="23635710066417756375" property="qc:admins"/>
 
 <!-- <div class="web_root"  style="display:none">http://www.lagou.com</div> -->
@@ -39,7 +39,7 @@ var youdao_conv_id = 271546;
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="${ctx }/index.html">
+    		<a class="logo" href="${ctx }/index.jsp">
     			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="${ctx }/style/images/logo.png">
     		</a>
     		<ul class="reset" id="navheader">
@@ -79,7 +79,7 @@ var youdao_conv_id = 271546;
             		<i></i>
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
-                <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/jiazhangInit">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd class="btm" style="display: none;"><a href="${ctx }/Invitation/send">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
@@ -132,22 +132,22 @@ var youdao_conv_id = 271546;
                <tr>
 
                    <td>
-                        <a href="${ctx }/Delivery/Init" target="_blank">
-                            <img src="${ctx }/style/images/toudixiang.jpg">
+                        <a href="${ctx }/Delivery/jiazhangInit" target="_blank">
+                            <img src="${ctx }/style/images/jianlixiang.jpg">
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/mList.jsp">
+                        <a target="_blank" href="${ctx }/Invitation/send">
                             <img src="${ctx }/style/images/yaoqinghan.jpg">
                         </a>
                    </td>
                    <td>
-                        <a href="${ctx }/collections.html">
+                        <a href="">
                             <img src="${ctx }/style/images/shoucangjia.jpg">
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/subscribe.html">
+                        <a target="_blank" href="">
                             <img src="${ctx }/style/images/dingyuelan.jpg">
                         </a>
                    </td>
@@ -184,7 +184,7 @@ $(function(){
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>

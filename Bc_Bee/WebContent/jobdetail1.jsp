@@ -131,7 +131,7 @@ var youdao_conv_id = 271546;
                                         	<!-- 用户是否激活 0-否；1-是 -->
 	                			       									                    <dd class="resume resume_web">
 				                        <div style="width:400px;">
-								          <span> 你已设置默认投递简历：<a title="jason的简历" target="_blank" href="resume/myresume.html"><strong>在线简历：jason的简历</strong></a></span><br>
+								          <span> 你已设置默认投递简历：<a title="jason的简历" target="_blank" href=""><strong>在线简历：jason的简历</strong></a></span><br>
 								          <span>设置于2014-07-01 17:08</span>
 				                        </div>
 				                        <a title="设置默认投递简历" href="#setResume" class="inline fl cboxElement">重新设置</a>
@@ -155,7 +155,7 @@ var youdao_conv_id = 271546;
                                         <dd>
                                         	                    				                   		<!-- 用户是否激活 0-否；1-是 -->
 		                				                   			
-	                   					                        									                 	<a title="投个简历" class="btn fr btn_apply" href="javascript:sendResume(314873,149487,false,false);">投个简历</a>
+	                   					                        									                 	<a title="投个简历" class="btn fr btn_apply" href="${ctx }/mail/listadd?RlId=${rec.rlId}">投个简历</a>
 						                	                        				                        	
 		                        	                        	                   		                	                </dd>
                 </dl>
@@ -734,7 +734,7 @@ $(function(){
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>

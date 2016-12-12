@@ -105,7 +105,7 @@ function get_jianlivar(){
             		<i></i>
             	</dt>
                 <dd style="display: none;"><a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a></dd>
-                <dd style="display: none;"><a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
+                <dd style="display: none;"><a href="${ctx }/Delivery/jiazhangInit">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd class="btm" style="display: none;"><a href="${ctx }/subscribe.jsp">我发出的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx}/publish/jump">我要招人</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_parent.jsp">用户认证</a></dd>
@@ -121,7 +121,7 @@ function get_jianlivar(){
     </div><!-- end #header -->
     <div id="container">
                 	<div class="sidebar">
-        		            	<a class="btn_create" href="create.html">发布新职位</a>
+        		            	<a class="btn_create" href="${ctx}/publish/jump">发布新职位</a>
             	                <dl class="company_center_aside">
 		<dt>我收到的简历</dt>
 		<dd>
@@ -143,10 +143,10 @@ function get_jianlivar(){
 <dl class="company_center_aside">
 		<dt>我发布的职位</dt>
 			<dd>
-		<a href="${ctx}/positions.html">有效职位</a>
+		<a href="">有效职位</a>
 	</dd>
 	<dd>
-		<a href="${ctx}/positions.html">已下线职位</a>
+		<a href="">已下线职位</a>
 	</dd>
 	</dl>
             </div><!-- end .sidebar -->
@@ -185,24 +185,24 @@ function get_jianlivar(){
                     	</c:if>    
                     </dt>
                     <dd>
-                    	<form action="${ctx}/canInterviewResumes.html" method="get" id="filterForm">
+                    	<form action="" method="get" id="filterForm">
 	                    			                    	<div class="filter_actions">
 		                        	<label class="checkbox">
 		                        		<input type="checkbox">
 		                                <i></i>
 		                        	</label>
 		                            <span>全选</span>
-		                        	<a id="resumeRefuseAll" href="javascript:;">不合适</a>
+		                        	<a id="resumeRefuseAll" href="">不合适</a>
 		                            <div id="filter_btn" class="">筛选简历 <em class=""></em></div>
 		                        </div><!-- end .filter_actions -->
 		                        <div class="filter_options  dn " style="display: none;">
  	<dl>
      	<dt>简历状态：</dt>
          <dd>
-         	         	<a rel="-1" class="current" href="javascript:;">不限</a>
-         	         	<a rel="1" href="javascript:;">未阅读</a>
-         	         	<a rel="2" href="javascript:;">已阅读</a>
-         	         	<a rel="3" href="javascript:;">已转发</a>
+         	         	<a rel="-1" class="current" href="">不限</a>
+         	         	<a rel="1" href="">未阅读</a>
+         	         	<a rel="2" href="">已阅读</a>
+         	         	<a rel="3" href="">已转发</a>
          	         	<input type="hidden" value="-1" name="resumeStatus">
          </dd>
      </dl>
@@ -514,11 +514,11 @@ function get_jianlivar(){
 	</div><!-- end #body -->
 	<div id="footer">
 		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="${ctx}/about.html">联系我们</a>
-		    <a target="_blank" href="http://www.lagou.com/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">Bee微博</a>
+			<a rel="nofollow" target="_blank" href="">联系我们</a>
+		    <a target="_blank" href="">互联网公司导航</a>
+		    <a rel="nofollow" target="_blank" href="">Bee微博</a>
 		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">Bee微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
+			<div class="copyright">&copy;2013-2014 Lagou <a href="" target="_blank">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
 

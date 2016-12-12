@@ -114,7 +114,7 @@ var youdao_conv_id = 271546;
 		<div class="wrapper">
 			<a href="" target="_blank" rel="nofollow">联系我们</a>
 		    <a href="" target="_blank">互联网公司导航</a>
-		    <a href="" target="_blank" rel="nofollow">拉勾微博</a>
+		    <a href="" target="_blank">拉勾微博</a>
 		    <a class="footer_qr" href="javascript:void(0)" rel="nofollow">拉勾微信<i></i></a>
 			<div class="copyright">&copy;2013-2014 Lagou <a target="_blank" href="">京ICP备14023790号-2</a></div>
 		</div>
