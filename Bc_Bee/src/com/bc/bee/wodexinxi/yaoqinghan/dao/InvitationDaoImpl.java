@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.bc.bee.entity.Invitation;
 
 import com.framework.BaseDao;
+import com.framework.Page;
 
 @Repository
 public class InvitationDaoImpl extends BaseDao<Invitation, String> {
@@ -34,5 +35,20 @@ public class InvitationDaoImpl extends BaseDao<Invitation, String> {
 			e.printStackTrace();
 			return null;
 		}
+	}
+	public Page<Invitation> findJyInvitationPageList(int TUId, int pageNum, int pageSize, Object[] params){
+		String hql = "from Invitation lu where lu.tuser.TUId="+TUId;
+	
+		try {
+			Page<Invitation> InvitationPageList = new Page<Invitation>();
+			InvitationPageList.setCurrentPageNum(pageNum);
+			InvitationPageList.setPageSize(pageSize);
+			InvitationPageList=this.findByPage(pageNum, pageSize, hql, params);
+			return InvitationPageList;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
 	}
 }

@@ -38,7 +38,7 @@ public class DeliveryController {
 		//根据用户Id查询出在数据库投递表中这个用户所有的投递记录
 //		List<Delivery> deliverys1 = DeliveryServiceImpl.findByTUId(tuser.getTUId());
 		Page<Delivery> deliverys;
-		
+		System.out.println("pageNum:"+pageNum);
 		deliverys = this.DeliveryServiceImpl.findDeliveryPageList(tuser.getTUId(),pageNum, 5);
 		//根据deliverys中的招聘表外键找到家长招聘表记录
 		System.out.println("deliverys长度："+deliverys.getList().size());
@@ -125,18 +125,20 @@ public class DeliveryController {
 		}
 		//家长收到的简历投递
 		@RequestMapping("jiazhangInit")
-		public String jiazhangInit(HttpSession session){
+		public String jiazhangInit(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
 			PUser puser = (PUser) session.getAttribute("parent");
 			//根据家长用户Id查询出在数据库投递表中这个家长所有的投递记录
-			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
-		//	System.out.println(deliverys.size());  //得到
+//			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
+			Page<Delivery> deliverys = DeliveryServiceImpl.findJzDeliveryPageList(puser.getPUId(),pageNum, 5);
+
+//			System.out.println(deliverys.getList().size());
 			List<List> ParDeList = new ArrayList<List>();
 			List<List> ParDeListA = new ArrayList<List>();
 			List<List> ParDeListB = new ArrayList<List>();
 			List<List> ParDeListC = new ArrayList<List>();
 			List<List> ParDeListD = new ArrayList<List>();
 			List<List> ParDeListE = new ArrayList<List>();
-			Iterator i=deliverys.iterator();
+			Iterator i=deliverys.getList().iterator();
 			while(i.hasNext()){
 				Delivery delivery = (Delivery) i.next();
 				RecInfo recinfo = DeliveryServiceImpl.findByRlId(delivery.getRlId()); 	//得到
@@ -176,6 +178,7 @@ public class DeliveryController {
 //				System.out.println(list.get(3));
 			}
 			session.setAttribute("ParDeListA", ParDeListA);
+//			System.out.println("parDeListA的长度："+ParDeListA.size());
 			session.setAttribute("ParDeListB", ParDeListB);
 			session.setAttribute("ParDeListC", ParDeListC);
 			session.setAttribute("ParDeListD", ParDeListD);
@@ -183,6 +186,7 @@ public class DeliveryController {
 			String jianlivar = "a";
 			session.setAttribute("ParDeList", ParDeListA);
 			session.setAttribute("jianlivar", jianlivar);
+			session.setAttribute("deliveryPage", deliverys);
 			return "canInterviewResumes";
 		}
 		//待处理简历
