@@ -21,7 +21,7 @@ public class WordGenerator {
         configuration.setClassForTemplateLoading(WordGenerator.class, "/com/lovo/ftl");  
         allTemplates = new HashMap<>();   // Java 7 钻石语法  
         try {  
-            allTemplates.put("resume", configuration.getTemplate("resume1.ftl"));  
+            allTemplates.put("resume", configuration.getTemplate("resume1.0.ftl"));  
         } catch (IOException e) {  
             e.printStackTrace();  
             throw new RuntimeException(e);  
