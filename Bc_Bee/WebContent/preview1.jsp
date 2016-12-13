@@ -16,7 +16,7 @@
 </style>  
 </head>  
 <body>  
-    <form action="${ctx }/saveDocServlet" method="post">
+    <form action="saveDocServlet" method="post">
     <div id="file" align="center">  
         <h1><input type="text" name="title" class="textField" value="我的简历"/></h1>  
         <hr/>  
