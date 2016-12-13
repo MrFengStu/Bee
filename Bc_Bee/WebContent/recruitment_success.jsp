@@ -30,6 +30,8 @@ console.log(1);
 var youdao_conv_id = 271546; 
 </script> 
 <script type="text/javascript" src="${ctx}/style/js/conv.js"></script>
+<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+		<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
 </head>
 
 <body>
