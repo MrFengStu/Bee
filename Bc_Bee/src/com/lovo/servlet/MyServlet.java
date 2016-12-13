@@ -23,7 +23,7 @@ import com.lovo.util.WordGenerator;
  * Servlet implementation class MyServlet 
  */  
 
-@WebServlet("/saveDocServlet")
+//@WebServlet("/saveDocServlet")
 public class MyServlet extends HttpServlet {  
     private static final long serialVersionUID = 1L;  
   
