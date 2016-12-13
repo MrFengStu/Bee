@@ -215,13 +215,13 @@
 						</dt>
 						<dd>
 							<div>
-								<a href="${ctx }/search1?&kd=数学">小学</a>
+								<a href="${ctx }/search1?&kd=小学">小学</a>
 							</div>
 							<div>
-								<a href="${ctx }/search1?&kd=语文">初中</a>
+								<a href="${ctx }/search1?&kd=初中">初中</a>
 							</div>
 							<div>
-								<a href="${ctx }/search1?&kd=英语">高中</a>
+								<a href="${ctx }/search1?&kd=高中">高中</a>
 							</div>
 
 

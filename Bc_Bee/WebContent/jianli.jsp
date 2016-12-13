@@ -33,7 +33,10 @@ console.log(1);
 var youdao_conv_id = 271546; 
 </script> 
 <script src="${ctx }/style/js/conv.js" type="text/javascript"></script>
-<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script></head>
+<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script>
+<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+		<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
+</head>
 <body>
 <div id="body">
 	<div id="header">
