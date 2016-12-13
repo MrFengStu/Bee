@@ -65,6 +65,12 @@ public class MailingControllerImpl {
 			re.getRlId();
 			PUser puser = re.getPuser();
 			TUser tuser = (TUser) session.getAttribute("student");
+			Integer TUId = tuser.getTUId();
+			TeaCer teacer = this.recruitmentServiceImpl.findTeacer(TUId);
+			if(teacer.getIdnum()==null || teacer.getSIdnum()==null || teacer.getTUName()==null|| 
+					teacer.getIdnum().equals("") || teacer.getSIdnum().equals("")||teacer.getTUName().equals("")){
+				return "certification_student";
+			}
 			Delivery delivery = new Delivery();
 			delivery.setPuser(puser);
 			delivery.setTuser(tuser);
