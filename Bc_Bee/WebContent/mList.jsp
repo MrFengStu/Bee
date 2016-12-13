@@ -7,7 +7,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 </script><script type="text/javascript" async="" src="${ctx }/style/js/conversion.js"></script>
-<script src="${ctx }/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script>
+
+<script src="${ctx }/style/js/popup.min.js" type="text/javascript"></script>
+
 <style type="text/css"></style>
 <meta content="no-siteapp" http-equiv="Cache-Control"/>
 <link  media="handheld" rel="alternate"/>
@@ -34,7 +36,24 @@ console.log(1);
 var youdao_conv_id = 271546; 
 </script> 
 <script src="${ctx }/style/js/conv.js" type="text/javascript"></script>
-<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script></head>
+<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script>
+<script src="${ctx }/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script>
+<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
+<!-- test -->
+<script type="text/javascript" async="" src="${ctx }/style/js/conversion.js"></script><script src="${ctx }/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script>
+<script type="text/javascript" src="${ctx }/style/js/jquery.1.10.1.min.js"></script>
+<script src="${ctx }/style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="${ctx }/style/js/ajaxfileupload.js"></script>
+<script src="${ctx }/style/js/additional-methods.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/conv.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script>
+<script src="${ctx }/style/js/Chart.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/popup.min.js" type="text/javascript"></script>
+<!-- test -->
+</head>
 <body>
 <div id="body">
 	<div id="header">
@@ -105,13 +124,13 @@ var youdao_conv_id = 271546;
            <li>
               <div class="d_item">
                     <h2 title="随便写">
-	                      <a target="_blank" href="http://www.lagou.com/jobs/149594.html">
+	                      <a target="_blank" href="${ctx }/job1?&id=${ms.value.rlId }">
 	                           <em>${ms.value.grade}   ${ms.value.subject }</em> 
 	                           <span>(${ms.value.salary})</span>
 	                      </a>
 	                </h2>
 	                <div class="clear"></div>
-	                <a title="公司名称" class="d_jobname" target="_blank" href="http://www.lagou.com/c/25927.html">
+	                <a title="公司名称" class="d_jobname" target="_blank" href="${ctx }/job1?&id=${ms.value.rlId }">
 	                	${ms.value.contacts } <span>[${ms.value.workArea }]</span> 
 	               </a>
 	               <span class="d_time">${ms.key.inTime}</span>
@@ -203,9 +222,6 @@ var youdao_conv_id = 271546;
 		</div>
 	</div>
 
-<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
-<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
-<script src="${ctx }/style/js/popup.min.js" type="text/javascript"></script>
 
 <!--  -->
 
