@@ -47,14 +47,16 @@ public class LoginUserController {
 		String str = code.toString();
 		if (tuser != null && puser == null && str.equals(auth)) {
 			System.out.println("学生登录成功");
-			session.setAttribute("user", tuser);
+			session.setAttribute("student", tuser);
+			session.removeAttribute("parent");
 			String name=tuser.getTUName();
 			session.setAttribute("name", name);
 			return "index";
 			
 		}else if(puser != null && tuser == null && str.equals(auth)){
 			System.out.println("家长登录成功");
-			session.setAttribute("user", puser);
+			session.setAttribute("parent", puser);
+			session.removeAttribute("student");
 			String name=puser.getPUName();
 			session.setAttribute("name", name);
 			return "index";

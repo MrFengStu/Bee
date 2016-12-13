@@ -12,7 +12,9 @@ import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.TUser;
+import com.bc.bee.entity.TeaCer;
 import com.bc.bee.mailing.service.MailingServiceImpl;
+import com.bc.bee.recruitment.service.RecruitmentServiceImpl;
 
 @Controller
 @RequestMapping("mail")
@@ -20,6 +22,9 @@ public class MailingControllerImpl {
 
 	@Resource
 	private MailingServiceImpl mailingserviceimpl;
+	
+	@Resource
+	private RecruitmentServiceImpl recruitmentServiceImpl;
 	
 	@RequestMapping("listadd")
 	public String listmail(Integer RlId, HttpSession session) {
@@ -30,6 +35,12 @@ public class MailingControllerImpl {
 			re.getRlId();
 			PUser puser = re.getPuser();
 			TUser tuser = (TUser) session.getAttribute("student");
+			Integer TUId = tuser.getTUId();
+			TeaCer teacer = this.recruitmentServiceImpl.findTeacer(TUId);
+			if(teacer.getIdnum()==null || teacer.getSIdnum()==null || teacer.getTUName()==null|| 
+					teacer.getIdnum().equals("") || teacer.getSIdnum().equals("")||teacer.getTUName().equals("")){
+				return "certification_student";
+			}
 			Delivery delivery = new Delivery();
 			delivery.setPuser(puser);
 			delivery.setTuser(tuser);
@@ -54,6 +65,12 @@ public class MailingControllerImpl {
 			re.getRlId();
 			PUser puser = re.getPuser();
 			TUser tuser = (TUser) session.getAttribute("student");
+			Integer TUId = tuser.getTUId();
+			TeaCer teacer = this.recruitmentServiceImpl.findTeacer(TUId);
+			if(teacer.getIdnum()==null || teacer.getSIdnum()==null || teacer.getTUName()==null|| 
+					teacer.getIdnum().equals("") || teacer.getSIdnum().equals("")||teacer.getTUName().equals("")){
+				return "certification_student";
+			}
 			Delivery delivery = new Delivery();
 			delivery.setPuser(puser);
 			delivery.setTuser(tuser);
