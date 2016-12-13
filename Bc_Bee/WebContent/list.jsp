@@ -148,22 +148,7 @@
 	                    	                    	
 	                    	                </dd> 
                 </dl>-->
-					<dl>
-						<dt>
-							按时间分类 <em></em>
-						</dt>
-						<dd>
-							<div>
-								<a href="${ctx }/search1?&kd=小学数学">周一至周五</a>
-							</div>
-							<div>
-								<a href="${ctx }/search1?&kd=小学语文">周六日</a>
-							</div>
-
-
-
-						</dd>
-					</dl>
+					
 					<dl>
 						<dt>
 							按科目分类<em></em>

@@ -144,6 +144,8 @@ var youdao_conv_id = 271546;
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
 		</div>
 	</div>
+	<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+		<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function(e) {
     	

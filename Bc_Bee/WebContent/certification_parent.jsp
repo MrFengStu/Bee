@@ -164,6 +164,8 @@
 				</div>
 			</div>
 		</div>
+		<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+		<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function(e) {
 
