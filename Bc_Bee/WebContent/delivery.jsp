@@ -174,13 +174,13 @@
 											<div class="d_item">
 												<h2 title="随便写">
 													<a target="_blank"
-														href="http://www.lagou.com/jobs/149594.html"> <em>${ms.value.grade}
+														href="${ctx }/job1?&id=${ms.value.rlId }"> <em>${ms.value.grade}
 															${ms.value.subject }</em> <span>${ms.value.salary }</span> <!--  -->
 													</a>
 												</h2>
 												<div class="clear"></div>
 												<a title="公司名称" class="d_jobname" target="_blank"
-													href="http://www.lagou.com/c/25927.html">
+													href="${ctx }/job1?&id=${ms.value.rlId }">
 													${ms.value.contacts } <span>[${ms.value.workArea }]</span>
 												</a> <span class="d_time">${ms.value.reTime}</span>
 												<div class="clear"></div>

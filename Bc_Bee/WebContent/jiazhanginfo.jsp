@@ -197,7 +197,7 @@ var youdao_conv_id = 271546;
 
 				<div class="mycenterR" id="myResume">
             		<h2>我的招聘信息 
-            			            			<a title="上传附件简历" href="" >填写招聘信息</a>
+            			            			<a title="上传附件简历" href="${ctx}/publish/jump" >填写招聘信息</a>
             			            		</h2>
             		<div class="resumeUploadDiv">
 	            			            		暂无招聘信息
