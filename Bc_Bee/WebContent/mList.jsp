@@ -130,22 +130,23 @@ var youdao_conv_id = 271546;
 	       <form id="searchForm"></form>
 	<!--            <div class="Pagination myself"><a title="1" >首页</a><span title="上一页" class="disabled">上一页 </span><span title="1" class="current">1</span><a title="2" >2</a><a title="3" >3</a><a title="4" >4</a><a title="5" >5</a><a title="2" >下一页 </a><a title="7" >尾页</a></div>
               --> 
-             <div class="">
-           			共${invitationPage.totalCount }条记录&nbsp;&nbsp;
-					共${invitationPage.totalPageNum }页 &nbsp;&nbsp;
+             <div class="Pagination">
+             <td colspan="6" align="center">
+           			共${invitationPage.totalCount }条记录
+					共${invitationPage.totalPageNum }页 
 					当前第${invitationPage.currentPageNum }页<br />
+					<a href="${ctx }/Invitation/Init?pageNum=1" name="firstPage" value="首页">首页</a>
 					<c:if test="${invitationPage.currentPageNum!=1 }">
-						<a href="${ctx }/Invitation/Init?pageNum=1" name="firstPage" value="首页">首页</a>
 						<a href="${ctx }/Invitation/Init?pageNum=${invitationPage.prePageNum}" name="firstPage" value="首页">上一页</a>
 					</c:if>
- 					
 					<c:forEach begin="1" end="${invitationPage.totalPageNum }" var="pageNum">
 						<a name="pagen" href="${ctx }/Invitation/Init?pageNum=${pageNum }">${pageNum }&nbsp;&nbsp;</a>
 					</c:forEach>
 					<c:if test="${invitationPage.currentPageNum!=invitationPage.totalPageNum }">
 						<a href="${ctx }/Invitation/Init?pageNum=${invitationPage.nextPageNum}" name="firstPage" value="首页">下一页</a>
-						<a href="${ctx }/Invitation/Init?pageNum=${invitationPage.totalPageNum}" name="firstPage" value="首页">尾页</a>
 					</c:if>
+					<a href="${ctx }/Invitation/Init?pageNum=${invitationPage.totalPageNum}" name="firstPage" value="尾页">尾页</a>
+					</td>
             	</div>
              
              </div>	
@@ -186,21 +187,7 @@ var youdao_conv_id = 271546;
             </div>
        	</div>
       <input type="hidden" id="userid" name="userid" value="314873">
-<script>
-$(function(){
-	
-	/***************************
- 	 * 分页
- 	 */
- 	 		$('.Pagination').pager({
-		      currPage: 1,
-		      pageNOName: "pn",
-		      form: "searchForm",
-		      pageCount: 7,
-		      pageSize:  5 
-		});
-	});
-</script>
+
 			<div class="clear"></div>
 			<input type="hidden" value="" id="resubmitToken">
 	    	<a rel="nofollow" title="回到顶部" id="backtop" style="display: none;"></a>

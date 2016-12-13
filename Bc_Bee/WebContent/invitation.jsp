@@ -175,17 +175,7 @@ var youdao_conv_id = 271546;
             </div>
        	</div>
 <script src="${ctx }/style/js/collections.min.js"></script>
-<script>
-$(function(){
-	$('.Pagination').pager({
-	      currPage: 1,
-	      pageNOName: "pageNo",
-	      form: "collectionsForm",
-	      pageCount: 1,
-	      pageSize:  5
-	});
-});
-</script>
+
 			<div class="clear"></div>
 			<input type="hidden" value="4c6ae41d8c254f91becdb5f9ef2d4394" id="resubmitToken">
 	    	<a rel="nofollow" title="回到顶部" id="backtop"></a>
