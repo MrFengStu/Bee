@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
+import com.framework.Page;
 
 @Repository
 public class IndexserDao extends BaseDao<RecInfo, String> {
@@ -339,4 +340,5 @@ public class IndexserDao extends BaseDao<RecInfo, String> {
 			return 0;
 		}
 	}
+	
 }
