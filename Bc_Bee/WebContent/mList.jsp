@@ -204,6 +204,7 @@ var youdao_conv_id = 271546;
 	</div>
 
 <script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
 <script src="${ctx }/style/js/popup.min.js" type="text/javascript"></script>
 
 <!--  -->
