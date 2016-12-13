@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.search.dao.IndexserDao;
+import com.framework.Page;
 
 @Service
 @Transactional(readOnly=false)
@@ -51,5 +52,4 @@ public class IndexserServiceImpl {
 	public List<RecInfo> findBySubject(String subject){
 		return this.IndexserDao.findBySubject(subject);
 	}
-	
 }

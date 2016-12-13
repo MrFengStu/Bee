@@ -16,10 +16,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.search.service.IndexserServiceImpl;
+import com.framework.Page;
 import com.bc.bee.search.service.HotsearchServiceImpl;;
 
 @Controller
@@ -60,8 +62,6 @@ public class IndexserController {
 			hot1.setCountn(count+1);
 			this.HotsearchServiceImpl.update(hot1);
 		}
-		
-		
 		
 		
 		return "list";
@@ -176,4 +176,5 @@ public class IndexserController {
  
 		return "list";
 	}
+
 }
