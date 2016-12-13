@@ -381,7 +381,7 @@
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a> <a
-				href="h/af/zhaopin.html" target="_blank">工作地址导航</a> <a href="#"
+				href="" target="_blank">工作地址导航</a> <a href="#"
 				target="_blank" rel="nofollow">蜜蜂微博</a> <a class="footer_qr"
 				href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">

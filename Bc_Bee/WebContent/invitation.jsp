@@ -112,7 +112,7 @@ var youdao_conv_id = 271546;
                              		</a>
                              		<div class="co_item">
                              			<h2 title="酒店业务助理">
-	                                        <a target="_blank" href="h/jobs/133340.html">
+	                                        <a target="_blank" href="">
 	                                        	<em>${rec.jobTitle}</em> 
 	                                        	<span>时薪：${rec.salary}</span>
 	                                    	</a>
@@ -145,22 +145,22 @@ var youdao_conv_id = 271546;
                <tr>
 
                    <td>
-                        <a href="${ctx }/delivery.html" target="_blank">
-                            <img src="${ctx }/style/images/toudixiang.jpg">
+                        <a href="${ctx }/Delivery/jiazhangInit" target="_blank">
+                            <img src="${ctx }/style/images/jianlixiang.jpg">
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/mList.html">
+                        <a target="_blank" href="${ctx }/Invitation/send">
                             <img src="${ctx }/style/images/yaoqinghan.jpg">
                         </a>
                    </td>
                    <td>
-                        <a href="${ctx }/collections.html">
+                        <a href="">
                             <img src="${ctx }/style/images/shoucangjia.jpg">
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/subscribe.html">
+                        <a target="_blank" href="">
                             <img src="${ctx }/style/images/dingyuelan.jpg">
                         </a>
                    </td>

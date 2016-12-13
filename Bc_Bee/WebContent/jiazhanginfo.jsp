@@ -197,7 +197,7 @@ var youdao_conv_id = 271546;
 
 				<div class="mycenterR" id="myResume">
             		<h2>我的招聘信息 
-            			            			<a title="上传附件简历" href="recruitment.html" >填写招聘信息</a>
+            			            			<a title="上传附件简历" href="" >填写招聘信息</a>
             			            		</h2>
             		<div class="resumeUploadDiv">
 	            			            		暂无招聘信息
@@ -391,7 +391,7 @@ $(function(){
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>

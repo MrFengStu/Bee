@@ -29,6 +29,8 @@
 		<servlet-name>springmvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
+	
 	<filter>
 		<filter-name>openSessionInView</filter-name>
 		<filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>

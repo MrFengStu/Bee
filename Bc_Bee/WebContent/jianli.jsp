@@ -43,8 +43,8 @@ var youdao_conv_id = 271546;
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="${ctx }/index.jsp">首页</a></li>
-    			<li><a href="${ctx }/companylist.jsp">教员列表</a></li>
-    			<li><a target="_blank" href="${ctx }/list.jsp">职位列表</a></li>
+    			<li><a href="${ctx }/jiaoyuan">教员列表</a></li>
+    			<li><a target="_blank" href="${ctx }/joblist">职位列表</a></li>
     			<%if(session.getAttribute("student") == null && session.getAttribute("parent") == null){ %>
 	    		<li style="display: none;"><a href="${ctx}/publish/jump" rel="nofollow">发布职位</a></li>
 	    	<%}else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){ %>
@@ -579,22 +579,22 @@ var youdao_conv_id = 271546;
                <tr>
 
                    <td>
-                        <a href="${ctx }/delivery.html" target="_blank">
+                        <a href="${ctx }/Delivery/Init" target="_blank">
                             <img src="${ctx }/style/images/toudixiang.jpg"/>
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/mList.html">
+                        <a target="_blank" href="${ctx }/Invitation/Init">
                             <img src="${ctx }/style/images/yaoqinghan.jpg"/>
                         </a>
                    </td>
                    <td>
-                        <a href="${ctx }/collections.html">
+                        <a href="">
                             <img src="${ctx }/style/images/shoucangjia.jpg"/>
                         </a>
                    </td>
                    <td>
-                        <a target="_blank" href="${ctx }/subscribe.html">
+                        <a target="_blank" href="">
                             <img src="${ctx }/style/images/dingyuelan.jpg"/>
                         </a>
                    </td>
@@ -631,7 +631,7 @@ var youdao_conv_id = 271546;
 				
 				<div class="mycenterR" id="myShare">
             		<h2>当前每日投递量：10个</h2>
-            		<a target="_blank" href="${ctx }/invite.html">邀请好友，提升投递量</a>
+            		<a target="_blank" href="">邀请好友，提升投递量</a>
             	</div><!--end #myShare-->
             	
 								
@@ -799,7 +799,7 @@ $(function(){
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a>
-		    <a href="h/af/zhaopin.html" target="_blank">工作地址导航</a>
+		    <a href="" target="_blank">工作地址导航</a>
 		    <a href="#" target="_blank" rel="nofollow">蜜蜂微博</a>
 		    <a class="footer_qr" href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">&copy;2016-2017 Bee <a target="_blank" href="#">京ICP备14023790号-2</a></div>
