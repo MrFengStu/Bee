@@ -47,14 +47,14 @@ public class LoginUserController {
 		String str = code.toString();
 		if (tuser != null && puser == null && str.equals(auth)) {
 			System.out.println("学生登录成功");
-			session.setAttribute("student", tuser);
+			session.setAttribute("user", tuser);
 			String name=tuser.getTUName();
 			session.setAttribute("name", name);
 			return "index";
 			
 		}else if(puser != null && tuser == null && str.equals(auth)){
 			System.out.println("家长登录成功");
-			session.setAttribute("parent", puser);
+			session.setAttribute("user", puser);
 			String name=puser.getPUName();
 			session.setAttribute("name", name);
 			return "index";
@@ -88,6 +88,7 @@ public class LoginUserController {
 		if (tuser != null && puser == null) {
 			System.out.println("学生登录成功");
 			session.setAttribute("student", tuser);
+			session.removeAttribute("parent");
 			String name=tuser.getTUName();
 			session.setAttribute("name", name);
 			return "index";
@@ -95,6 +96,7 @@ public class LoginUserController {
 		}else if(puser != null && tuser == null){
 			System.out.println("家长登录成功");
 			session.setAttribute("parent", puser);
+			session.removeAttribute("student");
 			String name=puser.getPUName();
 			session.setAttribute("name", name);
 			return "index";
