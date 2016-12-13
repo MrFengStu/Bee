@@ -15,6 +15,7 @@ import com.bc.bee.entity.Comment;
 import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
+import com.framework.Page;
 
 @Repository
 public class IndexserDao extends BaseDao<RecInfo, String>{
@@ -186,4 +187,5 @@ public class IndexserDao extends BaseDao<RecInfo, String>{
 
 		
 	}
+	
 }
