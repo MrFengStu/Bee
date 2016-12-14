@@ -108,7 +108,7 @@ var youdao_conv_id = 271546;
                             
                                	 <li data-id="133340">
                              		<a title="携程旅行网" target="_blank" href="">
-                             			<img alt="携程旅行网" src="${ctx }/style/images/ff808081441c19bf01441f9a47190b3a.png">
+                             			<img alt="" src="${ctx }/style/images/jobimg.jpg">
                              		</a>
                              		<div class="co_item">
                              			<h2 title="酒店业务助理">
