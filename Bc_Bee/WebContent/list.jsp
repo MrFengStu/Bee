@@ -242,8 +242,8 @@
 
 			<div class="content">
 				<div id="search_box">
-					<form id="searchForm" name="searchForm" action="${ctx }/list.jsp"
-						method="get">
+					<form id="searchForm" name="searchForm" action="${ctx }/search1"
+						method="post">
 						<ul id="searchType">
 							<li data-searchtype="1" class="type_selected">职位</li>
 							<li data-searchtype="4">公司</li>
