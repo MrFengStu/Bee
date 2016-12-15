@@ -159,7 +159,7 @@ var youdao_conv_id = 271546;
 						      <span>上传自己的头像</span>
 						  </div>
 						  <div>
-						    <img width="120" height="120" src="${ctx }/upload/${parent.pic}">
+						    <img width="120" height="120" src="${ctx}/upload/${parent.pic}">
 						  </div>
 						  <input type="file" value="" title="上传头像" name="headPic" id="headPic" class="myfiles">
 							<!-- <input type="hidden" id="headPicHidden" /> -->
