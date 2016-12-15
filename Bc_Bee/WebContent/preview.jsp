@@ -48,12 +48,16 @@ $(function(){
 
 <body>
  
- 
+ <form action="${ctx }/saveDocServlet" method="post">
   	<div id="previewWrapper">
         <div class="preview_header">
          
             <h1 title="jason的简历">${resume.TUName }的简历</h1>
-                        	<a title="下载简历" class="inline cboxElement" href="#downloadOnlineResume">下载该简历</a>
+             
+            	  
+                    <a href="#"><input  style="background-color:transparent;color:white;" type="submit" value="下载该简历"></a> 
+                         
+                        	 
                     </div><!--end .preview_header-->
 
         <div class="preview_content">
@@ -76,8 +80,17 @@ $(function(){
                    </br> 
                    ${tdeinfo.TContactInfo} 
                    ${tdeinfo.TMailbox} 
+                   <input type="hidden" value="${tdeinfo.TName} " name="TName">
+                   <input type="hidden" value="${tdeinfo.TSex} " name="TSex">
+                   <input type="hidden" value="${tdeinfo.TCollege} " name="TCollege">
+                   <input type="hidden" value="${tdeinfo.TMajor} " name="TMajor">
+                   <input type="hidden" value="${tdeinfo.TGrade} " name="TGrade">
+                   <input type="hidden" value="${tdeinfo.TAddress} " name="TAddress">
+                   <input type="hidden" value="${tdeinfo.TContactInfo}  " name="TContactInfo">
+                   <input type="hidden" value="${tdeinfo.TMailbox}  " name="TMailbox">
+                    
                    </br> 
-
+	
             			
             		</span>
            			<div class="m_portrait">
@@ -98,6 +111,10 @@ $(function(){
 	                	${resume.salary}
 	                	&nbsp;&nbsp; 
 	                	${resume.teaMode}
+	                	<input type="hidden" value="${resume.area}  " name="area">
+	                	<input type="hidden" value="${resume.teaSubject}  " name="teaSubject">
+	                	<input type="hidden" value="${resume.salary}  " name="salary">
+	                	<input type="hidden" value="${resume.teaMode}  " name="teaMode">
 	                	&nbsp;&nbsp;
 	                </div><!--end .expectShow-->
 	            </div><!--end #expectJob-->
@@ -109,6 +126,8 @@ $(function(){
 	                  	                    	           				            				<li class="clear">
             					           					<span class="c9">${resume.SGrade}</span>
             					           					<span class="c9">${resume.pte}</span>
+            					           					<input type="hidden" value="${resume.SGrade}  " name="SGrade">
+            					           					<input type="hidden" value="${resume.pte}  " name="pte">
 	           					
 	           				</li>
 	           					          				                  </ul>
@@ -125,6 +144,7 @@ $(function(){
             				            					 
             					<div>
             						<h3> ${resume.ted}</h3>
+            						<input type="hidden" value="${resume.ted}  " name="ted">
             					 
             					</div>
             				</li>
@@ -136,6 +156,7 @@ $(function(){
 	                <h2>自我描述</h2>
 	                <div class="descriptionShow">
 	            	 ${resume.brief}
+	            	 <input type="hidden" value=" ${resume.brief}  " name="brief">
 	                </div><!--end .descriptionShow-->
 	            </div><!--end #selfDescription-->
 						
@@ -193,7 +214,10 @@ $(function(){
  <!--新增内容-->         
 	            
 	            
-			        </div><!--end .preview_content-->
+			        </div>
+			        
+			        </form>
+			        <!--end .preview_content-->
   	</div>
  <!--end #previewWrapper-->
 

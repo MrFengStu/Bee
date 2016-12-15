@@ -39,6 +39,7 @@ public class RegisterUserControllerImpl {
 			tuser.setTUName(user);
 			tuser.setTUpwd(password);
 			tuser.setTMailbox(email);
+			tuser.setPic("timg.jpg");
 			this.registeruserserviceimpl.registerTUser(tuser);
 			return "login";
 		}else if(types[0].equals("1") && auth.equals(sRand)){
@@ -46,6 +47,7 @@ public class RegisterUserControllerImpl {
 			puser.setPUName(user);
 			puser.setPUPwd(password);
 			puser.setPMailbox(email);
+			puser.setPic("timg.jpg");
 			this.registeruserserviceimpl.registerPUser(puser);
 			return "login";
 		}else{

@@ -121,7 +121,7 @@ public class JianliController {
 		session.setAttribute("TDeInfo", tde);
 //		System.out.println(tde.getTMailbox());
 //		System.out.println(tde.getTName());
-		session.setAttribute("name", tde.getTName());//用户名
+		session.setAttribute("name1", tde.getTName());//用户名
 		session.setAttribute("grade", tde.getTGrade());//年级
 		session.setAttribute("sex", tde.getTSex());//性别
 		session.setAttribute("tel", tde.getTContactInfo());//电话号
@@ -142,7 +142,7 @@ public class JianliController {
 		session.setAttribute("discount", res.getDiscount());//优惠信息
 		session.setAttribute("brief", res.getBrief());//个人介绍
 		session.setAttribute("ReTime", res.getReTime());//更新时间
-		System.out.println(res.getReTime());
+		System.out.println("插入时间"+res.getReTime());
 		session.setAttribute("expertise", res.getExpertise());//用数据库表中个人专长字段代替作品展示
 		return "jianli";
 		

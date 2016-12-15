@@ -60,7 +60,7 @@ public class UploadControllerImpl {
                 puser.setPic(file.getOriginalFilename());
                 System.out.println("会话中的路径"+puser.getPic());
                 session.setAttribute("parent", puser);
-                this.uploadserviceimpl.upload(puser.getPUId(), filePath);
+                this.uploadserviceimpl.upload(puser.getPUId(), file.getOriginalFilename());
                 //System.out.println(filePath);
                 return true;
             } catch (Exception e) {
@@ -88,7 +88,7 @@ public class UploadControllerImpl {
                 tuser.setPic(file.getOriginalFilename());
                 System.out.println("会话中的路径"+tuser.getPic());
                 session.setAttribute("student", tuser);
-                this.uploadserviceimpl.uploadstudent(tuser.getTUId(), filePath);
+                this.uploadserviceimpl.uploadstudent(tuser.getTUId(), file.getOriginalFilename());
                 //System.out.println(filePath);
                 return true;
             } catch (Exception e) {

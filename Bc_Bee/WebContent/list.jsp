@@ -16,11 +16,11 @@
 
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
-	var ctx = "h";
+	
 	console.log(1);
 </script>
 <link rel="Shortcut Icon"
-	href="http://www.lagou.com/h/images/favicon.ico">
+	href="http://www.lagou.com/${ctx }/images/favicon.ico">
 <link rel="stylesheet" type="text/css"
 	href="${ctx }/style/css/style.css" />
 <link rel="stylesheet" type="text/css"
@@ -242,28 +242,27 @@
 
 			<div class="content">
 				<div id="search_box">
-					<form id="searchForm" name="searchForm" action="${ctx }/list.jsp"
-						method="get">
-						<ul id="searchType">
-							<li data-searchtype="1" class="type_selected">职位</li>
-							<li data-searchtype="4">公司</li>
-						</ul>
-						<div class="searchtype_arrow"></div>
-						<input type="text" id="search_input" name="kd" tabindex="1"
-							value="" placeholder="请输入职位名称，如：数学家教" /> <input type="hidden"
-							name="spc" id="spcInput" value="1" /> <input type="hidden"
-							name="pl" id="plInput" value="" /> <input type="hidden" name="gj"
-							id="gjInput" value="" /> <input type="hidden" name="xl"
-							id="xlInput" value="" /> <input type="hidden" name="yx"
-							id="yxInput" value="" /> <input type="hidden" name="gx"
-							id="gxInput" value="" /> <input type="hidden" name="st"
-							id="stInput" value="" /> <input type="hidden" name="labelWords"
-							id="labelWords" value="label" /> <input type="hidden" name="lc"
-							id="lc" value="" /> <input type="hidden" name="workAddress"
-							id="workAddress" value="" /> <input type="hidden" name="city"
-							id="cityInput" value="全国" /> <input type="submit"
-							id="search_button" value="搜索" />
-					</form>
+<form id="searchForm" name="searchForm" action="${ctx }/search1" method="post">
+        <ul id="searchType">
+        	        	<li data-searchtype="1" class="type_selected">职位</li>
+        	<!--  <li data-searchtype="4">公司</li>-->
+        	        </ul>
+        <div class="searchtype_arrow"></div>
+        <input type="text" id="search_input" name = "kd"  tabindex="1" value=""  placeholder="请输入职位名称，如：小学家教"  />
+        <input type="hidden" name="spc" id="spcInput" value=""/>
+        <input type="hidden" name="pl" id="plInput" value=""/>
+        <input type="hidden" name="gj" id="gjInput" value=""/>
+        <input type="hidden" name="xl" id="xlInput" value=""/>
+        <input type="hidden" name="yx" id="yxInput" value=""/>
+        <input type="hidden" name="gx" id="gxInput" value="" />
+        <input type="hidden" name="st" id="stInput" value="" />
+        <input type="hidden" name="labelWords" id="labelWords" value="" />
+        <input type="hidden" name="lc" id="lc" value="" />
+        <input type="hidden" name="workAddress" id="workAddress" value=""/>
+                <input type="hidden" name="city" id="cityInput" value=""/>
+                <input type="submit" id="search_button" value="搜索" />
+				
+    </form>
 				</div>
 				<style>
 .ui-autocomplete {
@@ -479,7 +478,7 @@
 	<div id="footer">
 		<div class="wrapper">
 			<a href="#" target="_blank" rel="nofollow">联系我们</a> <a
-				href="h/af/zhaopin.html" target="_blank">工作地址导航</a> <a href="#"
+				href="${ctx }/af/zhaopin.html" target="_blank">工作地址导航</a> <a href="#"
 				target="_blank" rel="nofollow">蜜蜂微博</a> <a class="footer_qr"
 				href="#" rel="nofollow">蜜蜂微信<i></i></a>
 			<div class="copyright">

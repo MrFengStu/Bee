@@ -39,7 +39,7 @@ public class JoblistController {
 	@RequestMapping("job1")
 	public String job(String id,HttpServletRequest request,HttpSession session){
 		
-		//String id=request.getParameter("id");
+		//id=request.getParameter("id");
 		System.out.println(id);
 		Integer idn = Integer.parseInt(id);
 		System.out.println(idn);

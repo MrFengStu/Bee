@@ -16,7 +16,8 @@
 </style>  
 </head>  
 <body>  
-    <form action="${ctx }/saveDocServlet" method="post">
+    <form action="saveDocServlet" method="post">
+ 
     <div id="file" align="center">  
         <h1><input type="text" name="title" class="textField" value="我的简历"/></h1>  
         <hr/>  
@@ -43,7 +44,23 @@
                 <td colspan="4">  
                     <textarea rows="10" cols="100" name="content"></textarea>  
                 </td>  
-            </tr>  
+            </tr> 
+            <input type="hidden" value=" " name="TName">
+                   <input type="hidden" value="" name="TSex">
+                   <input type="hidden" value="" name="TCollege">
+                   <input type="hidden" value="" name="TMajor">
+                   <input type="hidden" value=" " name="TGrade">
+                   <input type="hidden" value=" " name="TAddress">
+                   <input type="hidden" value=" " name="TContactInfo">
+                   <input type="hidden" value=" " name="TMailbox">
+                   <input type="hidden" value=" " name="area">
+	                	<input type="hidden" value=" " name="teaSubject">
+	                	<input type="hidden" value=" " name="salary">
+	                	<input type="hidden" value=" " name="teaMode">
+	                	<input type="hidden" value=" " name="SGrade">
+            					           					<input type="hidden" value=" " name="pte">
+            					           					<input type="hidden" value=" " name="ted">
+            					           					<input type="hidden" value=" " name="brief"> 
         </table>  
     </div>  
     <div align="center" style="margin-top:15px;">  
