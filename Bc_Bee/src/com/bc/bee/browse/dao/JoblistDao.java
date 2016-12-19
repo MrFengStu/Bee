@@ -1,9 +1,9 @@
 package com.bc.bee.browse.dao;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
+
 
 import org.hibernate.Query;
 import org.hibernate.Session;
