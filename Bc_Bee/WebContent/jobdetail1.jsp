@@ -157,7 +157,7 @@ var youdao_conv_id = 271546;
                                         <dd>
                                         	                    				                   		<!-- 用户是否激活 0-否；1-是 -->
 		                				                   			
-	                   					                        									                 	<a title="投个简历" class="btn fr btn_apply" href="${ctx }/mail/listadd?RlId=${rec.rlId}">投个简历</a>
+	                   					                        									                 	<a title="投个简历" class="btn fr btn_apply" href="${ctx }/mail/listadd?RlId=${rf1.rlId}">投个简历</a>
 						                	                        				                        	
 		                        	                        	                   		                	                </dd>
                 </dl>
