@@ -1,28 +1,26 @@
 package com.bc.bee.browse.controller;
 
-import java.util.ArrayList;
+
 import java.util.List;
-import java.util.Set;
+
 import java.util.Date;
-import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
+
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.swing.text.html.FormSubmitEvent.MethodType;
 
-import org.hibernate.Session;
+
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bc.bee.entity.Comment;
 import com.bc.bee.entity.PUser;
-import com.bc.bee.entity.RecInfo;
+
 import com.bc.bee.entity.TUser;
 import com.bc.bee.resumepreview.service.ResumepreviewServiceImpl;
 import com.bc.bee.browse.dao.PreviewDao;
