@@ -1,7 +1,6 @@
 package com.bc.bee.recruitment.controller;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;

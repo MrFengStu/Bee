@@ -1,9 +1,7 @@
 package com.bc.bee.recruitment.dao;
 
-import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.RecInfo;
 
- 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,10 +10,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpSession;
-
-import org.hibernate.Query;
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
 import com.framework.BaseDao;
