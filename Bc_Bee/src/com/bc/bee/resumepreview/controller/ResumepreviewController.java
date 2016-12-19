@@ -1,7 +1,5 @@
 package com.bc.bee.resumepreview.controller;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -9,7 +7,6 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.entity.TUser;

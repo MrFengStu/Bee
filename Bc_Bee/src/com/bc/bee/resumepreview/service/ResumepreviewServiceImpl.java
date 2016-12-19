@@ -5,10 +5,8 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
-import com.bc.bee.entity.TUser;
 import com.bc.bee.resumepreview.dao.PreviewDaoImpl;
 import com.bc.bee.resumepreview.dao.ResumepreviewDaoImpl;
 
