@@ -35,7 +35,7 @@ public class JiainfoController {
 			@RequestParam("email") String email,HttpSession session){
 		PUser parent=(PUser) session.getAttribute("parent");
 		Integer id=parent.getPUId();
-		
+//		System.out.println("controller中name"+name);
 		this.jiainfoServiceImpl.editPUser(name,tel,email,id);
 		
 		return "jiazhanginfo";

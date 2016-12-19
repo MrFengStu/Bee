@@ -35,7 +35,7 @@ public class JiainfoDaoImpl extends BaseDao<PUser, Integer> {
 	public void updatePUser(PUser p) {
 		try {
 			String name = p.getPUName();
-			name = new String(name.getBytes("iso-8859-1"),"utf-8");
+	//		name = new String(name.getBytes("iso-8859-1"),"utf-8");
 			p.setPUName(name);
 			this.update(p);
 		} catch (Exception e) {

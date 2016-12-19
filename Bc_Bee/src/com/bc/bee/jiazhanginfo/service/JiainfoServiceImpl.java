@@ -25,7 +25,9 @@ public class JiainfoServiceImpl {
 	
 	public void editPUser(String name,String tel,String email,Integer id){
 		PUser p = this.jiainfoDaoImpl.getPUser(name,tel,email,id);
+	//	System.out.println("service中name:"+name);
 		p.setPUName(name);
+	//	System.out.println("puser.name"+name);
 		p.setPMailbox(email);
 		p.setPMobile(tel);
 		this.jiainfoDaoImpl.updatePUser(p);
