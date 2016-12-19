@@ -1,25 +1,18 @@
 package com.bc.bee.jiazhanginfo.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.swing.text.html.FormSubmitEvent.MethodType;
-
-import org.hibernate.Session;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bc.bee.entity.PUser;
-import com.bc.bee.entity.RecInfo;
 import com.bc.bee.jiazhanginfo.service.JiainfoServiceImpl;
 
-import javafx.scene.Parent;
 /**
  *  author：吴敬怡
  *  日期：2016/11/17
