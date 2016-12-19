@@ -1,19 +1,12 @@
 package com.bc.bee.search.dao;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-
-import javax.annotation.Resource;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import com.bc.bee.entity.Comment;
 import com.bc.bee.entity.Hotsearch;
-import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
 
 @Repository

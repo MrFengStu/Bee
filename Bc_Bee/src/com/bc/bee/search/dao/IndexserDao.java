@@ -1,6 +1,5 @@
 package com.bc.bee.search.dao;
 
-
 import java.util.List;
 
 import org.hibernate.Query;
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
-import com.framework.Page;
 
 @Repository
 public class IndexserDao extends BaseDao<RecInfo, String> {

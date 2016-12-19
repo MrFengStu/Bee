@@ -8,9 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bc.bee.entity.Hotsearch;
-import com.bc.bee.entity.RecInfo;
 import com.bc.bee.search.dao.HotsearchDao;
-import com.bc.bee.search.dao.IndexserDao;
 
 @Service
 @Transactional(readOnly=false)
