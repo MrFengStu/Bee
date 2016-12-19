@@ -1,11 +1,7 @@
 package com.bc.bee.mailing.dao;
-
-import java.util.Date;
-
 import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.Delivery;
-import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
 
 @Repository
