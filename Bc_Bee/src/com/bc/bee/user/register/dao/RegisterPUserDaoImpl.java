@@ -4,7 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.Parcer;
-import com.bc.bee.entity.RecInfo;
 import com.framework.BaseDao;
 
 @Repository
