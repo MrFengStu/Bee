@@ -116,7 +116,7 @@
 						<a rel="nofollow" href="${ctx }/jiazhanginfo.jsp">我的信息</a>
 					</dd>
 					<dd style="display: none;">
-						<a href="">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a>
+						<a href="${ctx }/Delivery/jiazhangInit">我收到的简历 <span id="noticeNo" class="red dn">(0)</span></a>
 					</dd>
 					<dd class="btm" style="display: none;">
 						<a href="${ctx }/Invitation/send">我发出的邀请</a>
