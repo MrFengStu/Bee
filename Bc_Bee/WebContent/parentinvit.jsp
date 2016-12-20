@@ -149,7 +149,7 @@
 								<li>
 									<div class="d_item">
 										<h2 title="随便写">
-											<a target="_blank" href=""> <em>${ms.value.TUName}
+											<a target="_blank" href="${ctx}/resumepreview/parentresume?faculty=${ms.value.TUName }"> <em>${ms.value.TUName}
 													${ms.value.teaSubject }</em> <span>(${ms.value.salary}/小时)</span>
 											</a>
 										</h2>
@@ -194,10 +194,10 @@
 						<table>
 							<tr>
 
-								<td><a href="${ctx }/Delivery/Init" target="_blank"> <img
+								<td><a href="${ctx }/Delivery/jiazhangInit" target="_blank"> <img
 										src="${ctx }/style/images/toudixiang.jpg"/>
 								</a></td>
-								<td><a target="_blank" href="${ctx }/mList.jsp"> <img
+								<td><a target="_blank" href="#"> <img
 										src="${ctx }/style/images/yaoqinghan.jpg"/>
 								</a></td>
 								<td><a href="${ctx }/collections.html"> <img

@@ -317,8 +317,8 @@
 										target="_blank">${rs.TUName }</a> &nbsp; <span class="c9">${rs.area }</span>
 								</div>
 								<span><em class="c7">优惠：</em>${rs.discount }</span> <span><em
-									class="c7">经验：</em> ${rs.pte }</span> <span><em class="c7">学历：
-								</em>${rs.ted }</span> <br /> <br /> <span>[${rs.reTime }]</span>
+									class="c7">经验：</em> ${rs.pte }</span> <br /><span><em class="c7">学历：
+								</em>${rs.ted }</span>  <br /> <span>[${rs.reTime }]</span>
 							</div>
 							<div class="hot_pos_r">
 								<div class="apply">
@@ -340,7 +340,7 @@
 				<div class="Pagination">
 					<td colspan="6" align="center">共${page.totalRecords }条记录
 						共${page.totalPages }页 当前第${page.pageNo }页<br> <a
-						href="<%=request.getContextPath() %>/}/jiaoyuan?pageNo=${page.topPageNo }"
+						href="<%=request.getContextPath() %>/jiaoyuan?pageNo=${page.topPageNo }"
 						name="firstPage" value="首页">首页</a> <c:choose>
 							<c:when test="${page.pageNo!=1 }">
 								<a
