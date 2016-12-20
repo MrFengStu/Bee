@@ -65,6 +65,9 @@ public class RecruitmentController {
 		String salary = (String) request.getParameter("salary");
 		String settle = (String) request.getParameter("settle");
 		String stuInfo = (String) request.getParameter("stuInfo");
+		String school= (String) request.getParameter("school");
+		String WTime= (String) request.getParameter("WTime");
+		String JobDemand= (String) request.getParameter("JobDemand");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -77,6 +80,9 @@ public class RecruitmentController {
 		session.setAttribute("salary", salary);
 		session.setAttribute("settle", settle);
 		session.setAttribute("stuInfo", stuInfo);
+		session.setAttribute("school", school);
+		session.setAttribute("WTime", WTime);
+		session.setAttribute("JobDemand", JobDemand);
 
 		if (jobTitle == "") {
 			error = "招聘题目不能为空";
@@ -119,9 +125,19 @@ public class RecruitmentController {
 			session.setAttribute("settleError", error);
 
 		}
+		if (school == "") {
+			error = "授课年级不能为空";
+			session.setAttribute("schoolError", error);
 
+		}
+		if (WTime == "") {
+			error = "授课时间不能为空";
+			session.setAttribute("tiemError", error);
+
+		}
+		
 		if (jobTitle == "" || contacts == "" || contactInfo == "" || shi == "" || qu == "" || address == ""
-				|| subject == "" || salary == "" || settle == "") {
+				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "") {
 			return "/recruitment";
 		}
 

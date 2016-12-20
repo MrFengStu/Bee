@@ -214,6 +214,106 @@ var youdao_conv_id = 271546;
 											</c:if>	
 									   </td>
                                 </tr>
+                               <!--新加内容  -->
+                                
+                                
+                                <tr >
+                                	<td width="25"><span class="redstar">*</span></td>
+                                	<td width="85">授课年级</td>
+
+                                	<td style="float:left;width:150px;">
+                                		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">小学：</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="小学1-3年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">小学1-3</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="小学4-6年级" id="settle"/><p style="font-size:14px;margin-top:-60px;margin-left:20px;">小学4-6</p>
+                                		 
+                                    	
+                                    </td>
+                                    <td style="float:left;width:150px;">
+                                		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">初中：</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="初中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">初一</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="初中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初二</p> </br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="初中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初三</p>
+                                    	
+                                    </td>
+                                    <td style="float:left;width:150px;">
+                                		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">高中：</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="高中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">高一</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="高中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高二</p> </br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="高中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高三</p>
+                                    	
+                                    </td>
+                                    <td style="height:30px;padding:0px;font-size:14px;" class="redstar"> 
+			                                <c:if test="${sessionScope.schoolError != null}">
+												 ${sessionScope.schoolError} 
+												<br>
+											</c:if>	
+									   </td>
+                                </tr>
+
+							    <tr>
+                                	<td width="25"><span class="redstar">*</span></td>
+                                	<td width="85">授课时间</td>
+                                	
+ 
+                                	<table style="text-align:center;margin-top:-30px;margin-left:60px;font-size:14px; width:500px;"> 
+                                    	<tr style="height:45px;">
+                                    		<td  >
+
+                                    		</td>
+                                    		<td   >星期一</td>
+                                    		<td   >星期二</td>
+                                    		<td   >星期三</td>
+                                    		<td   >星期四</td>
+                                    		<td   >星期五</td>
+                                    		<td   >星期六</td>
+                                    	</tr>
+                                    	<tr>
+                                    		<td  >上午</td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期一上午" id="time"/></td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期二上午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期三上午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期四上午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期五上午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期六上午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期日上午" id="time"/> </td>
+                                    	</tr>
+                                    	<tr>
+                                    		<td  >下午</td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期一下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期二下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期三下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期四下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期五下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期六下午" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期日下午" id="time"/> </td>
+                                    	</tr>
+
+                                    	<tr>
+                                    		<td  >晚上</td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期一晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期二晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期三晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期四晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期五晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期六晚上" id="time"/> </td>
+                                    		<td  ><input name="WTime" type="checkbox" value="星期日晚上" id="time"/> </td>
+                                    		 
+                                    	</tr>
+                                    </table>  
+                                     
+									<td style="height:30px;padding:0px;font-size:14px;" class="redstar"> 
+			                                <c:if test="${sessionScope.timeError != null}">
+												 ${sessionScope.schoolError} 
+												<br>
+											</c:if>	
+									   </td>
+ 
+
+                                </tr>
+                                
+                                
+                                
+                               <!--新加内容  -->
                             	<tr>
                                 	<td><span class="redstar">*</span></td>
                                 	<td>薪资水平（时薪）</td>
@@ -253,6 +353,17 @@ var youdao_conv_id = 271546;
 										</c:if>	
                                     </td>
                                      
+                                </tr>
+                                
+                                
+                                <tr>
+                                	<td><span class="redstar">*</span></td>
+                                	<td>工作需求</td>
+                                	<td>
+              
+                                        <textarea id="stuInfo" name="JobDemand" class="form-control kindeditorSimple" style="height:100px;"></textarea>
+                                       	
+                                    </td>
                                 </tr>
                             	<tr>
                                 	<td><span class="redstar">*</span></td>
