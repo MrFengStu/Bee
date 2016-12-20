@@ -67,7 +67,7 @@ public class RecruitmentController {
 		String stuInfo = (String) request.getParameter("stuInfo");
 		String school= (String) request.getParameter("school");
 		String WTime= (String) request.getParameter("WTime");
-		String JobDemand= (String) request.getParameter("JobDemand");
+		String attract= (String) request.getParameter("attract");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -82,7 +82,7 @@ public class RecruitmentController {
 		session.setAttribute("stuInfo", stuInfo);
 		session.setAttribute("school", school);
 		session.setAttribute("WTime", WTime);
-		session.setAttribute("JobDemand", JobDemand);
+		session.setAttribute("attract", attract);
 
 		if (jobTitle == "") {
 			error = "招聘题目不能为空";
