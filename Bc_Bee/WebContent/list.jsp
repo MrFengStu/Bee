@@ -40,6 +40,13 @@
 	var youdao_conv_id = 271546;
 </script>
 <script type="text/javascript" src="${ctx }/style/js/conv.js"></script>
+<script type="text/javascript">
+	
+	function ale(){
+		alert("认证后的学生用户才可投简历哦~");
+	}
+	
+</script>
 </head>
 <body>
 	<div id="body">
@@ -419,10 +426,20 @@
 								</em>${rec.WTime}</span> <br /> <span><em class="c7">职位诱惑：</em>${rec.subsidy}</span>
 								<br /> <span>[${rec.reTime}]</span>
 							</div>
+							
 							<div class="hot_pos_r">
-								<div class="apply">
-									<a href="${ctx }/mail/listadd?RlId=${rec.rlId}" target="_blank">投个简历</a>
-								</div>
+								  <%if(session.getAttribute("student") != null && session.getAttribute("parent") == null){%>
+			                       	<div class="apply">
+										<a href="${ctx }/mail/listadd?RlId=${rec.rlId}" target="_blank">投个简历</a>
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){%>
+			                     	<div class="apply">
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") == null){%>
+			                        <div class="apply">
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}	%>	
 								<div class="mb10">
 									<a href="${ctx }/job1?&id=${rec.rlId }" title="紫色医疗"
 										target="_blank">${rec.contacts}</a>

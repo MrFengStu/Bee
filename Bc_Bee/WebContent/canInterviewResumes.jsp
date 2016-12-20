@@ -29,6 +29,17 @@ console.log(1);
 <script src="${ctx }/style/js/jquery.lib.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="${ctx }/style/js/ajaxfileupload.js"></script>
 <script src="${ctx }/style/js/additional-methods.js" type="text/javascript"></script>
+<script type="text/javascript" async="" src="${ctx }/style/js/conversion.js"></script><script src="${ctx }/style/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
+<script type="text/javascript" src="${ctx }/style/js/jquery.1.10.1.min.js"></script>
+<script src="${ctx }/style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="${ctx }/style/js/ajaxfileupload.js"></script>
+<script src="${ctx }/style/js/additional-methods.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/conv.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/ajaxCross.json" charset="UTF-8"></script>
+<script src="${ctx }/style/js/Chart.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/profile.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/core.min.js" type="text/javascript"></script>
+<script src="${ctx }/style/js/popup.min.js" type="text/javascript"></script>
 <!--[if lte IE 8]>
     <script type="text/javascript" src="style/js/excanvas.js"></script>
 <![endif]-->

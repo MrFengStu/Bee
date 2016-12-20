@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bc.bee.entity.Delivery;
 import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
-import com.bc.bee.entity.TDeInfo;
 import com.bc.bee.wodexinxi.dao.DeliveryDaoImpl;
 import com.bc.bee.wodexinxi.dao.RecInfoDaoImpl;
 import com.framework.Page;

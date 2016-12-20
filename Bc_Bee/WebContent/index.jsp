@@ -36,6 +36,9 @@ var youdao_conv_id = 271546;
 	function login() {
 		document.loginForm.submit();
 	}
+	function ale(){
+		alert("认证后的学生用户才可投简历哦~");
+	}
 	
 </script>
 
@@ -691,9 +694,21 @@ var youdao_conv_id = 271546;
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span><br/>
+			                        
+			                        <%if(session.getAttribute("student") != null && session.getAttribute("parent") == null){%>
 			                       	<div class="apply">
 										<a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
-			                     	</div>		                    
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){%>
+			                     	<div class="apply">
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") == null){%>
+			                        <div class="apply">
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}	%>			                  
+			                     
+			                     			                    
 			                       	</div>
 			                 </li>
 			                 </c:forEach>	                		                	           	            	            	                         	                		                	           	            	            	           	           	        	                	            				            		
@@ -723,9 +738,18 @@ var youdao_conv_id = 271546;
 			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
 			                         <br />
 			                        <span><em class="c7">工作时间：</em>周六下午</span>
+			                         <%if(session.getAttribute("student") != null && session.getAttribute("parent") == null){%>
+			                       	<div class="apply">
+										<a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") != null){%>
+			                     	<div class="apply">
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}
+			                        else if(session.getAttribute("student") == null && session.getAttribute("parent") == null){%>
 			                        <div class="apply">
-			                        <a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
-			                        </div>	
+										<a target="_blank" onclick="ale()">投个简历</a>
+			                     	</div><%}	%>	
 			                    </div>
 			                 </li>
 			                 </c:forEach>

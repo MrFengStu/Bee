@@ -13,7 +13,6 @@ import com.bc.bee.entity.Invitation;
 import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.Parcer;
 import com.bc.bee.entity.RecInfo;
-import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TUser;
 import com.bc.bee.recruitment.service.RecruitmentServiceImpl;
 import com.bc.bee.send.service.SaveServiceImpl;

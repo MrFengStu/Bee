@@ -2,7 +2,6 @@ package com.bc.bee.user.upload.dao;
 
 import org.springframework.stereotype.Repository;
 
-import com.bc.bee.entity.PUser;
 import com.bc.bee.entity.TUser;
 import com.framework.BaseDao;
 

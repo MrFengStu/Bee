@@ -6,10 +6,8 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
-import com.bc.bee.entity.RecInfo;
 import com.bc.bee.entity.Resume;
 import com.bc.bee.entity.TDeInfo;
-import com.bc.bee.entity.TUser;
 import com.framework.BaseDao;
 
 @Repository
