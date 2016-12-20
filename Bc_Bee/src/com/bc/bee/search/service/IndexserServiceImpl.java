@@ -17,6 +17,11 @@ public class IndexserServiceImpl {
 
 	@Resource
 	private IndexserDao IndexserDao;
+	
+	public List findAll(){
+		List<RecInfo> list = IndexserDao.findAll();
+		return this.IndexserDao.findAll();
+	}
 
 	public Page2 findByName(String name, int currentPage, int pageSize) {
 //		return this.IndexserDao.findByName(name, currentPage, pageSize);

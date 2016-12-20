@@ -12,6 +12,21 @@ import com.framework.BaseDao;
 @Repository
 public class IndexserDao extends BaseDao<RecInfo, String> {
 
+	public List<RecInfo> findAll(){
+		Session u = super.getSessionFactory().openSession();
+		try {
+  
+			Query query = u.createQuery("from RecInfo"); 
+			return query.list();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		} finally {
+			u.close();
+		}
+	}
 	public List<RecInfo> findByName(String name, int offset, int length) {
 		Session u = super.getSessionFactory().openSession();
 		try {

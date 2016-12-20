@@ -44,6 +44,7 @@ public class RecInfo {
 	private String WTime;
 	private String StuInfo;
 	private String JobDemand;
+	private String Attract;
 	private String Subsidy;
 	private String State;
 	private String ReTime;

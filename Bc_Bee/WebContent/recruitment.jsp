@@ -358,7 +358,7 @@ var youdao_conv_id = 271546;
                                 
                                 <tr>
                                 	<td><span class="redstar">*</span></td>
-                                	<td>工作需求</td>
+                                	<td>职位诱惑：</td>
                                 	<td>
               
                                         <textarea id="stuInfo" name="attract" class="form-control kindeditorSimple" style="height:100px;"></textarea>
