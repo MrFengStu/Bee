@@ -340,7 +340,7 @@
 				<div class="Pagination">
 					<td colspan="6" align="center">共${page.totalRecords }条记录
 						共${page.totalPages }页 当前第${page.pageNo }页<br> <a
-						href="<%=request.getContextPath() %>/}/jiaoyuan?pageNo=${page.topPageNo }"
+						href="<%=request.getContextPath() %>/jiaoyuan?pageNo=${page.topPageNo }"
 						name="firstPage" value="首页">首页</a> <c:choose>
 							<c:when test="${page.pageNo!=1 }">
 								<a
