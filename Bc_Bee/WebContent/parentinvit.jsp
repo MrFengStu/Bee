@@ -155,7 +155,7 @@
 										</h2>
 										<div class="clear"></div>
 										<a title="公司名称" class="d_jobname" target="_blank"
-											href="http://www.lagou.com/c/25927.html"> <span>${ms.value.area}</span>
+											href="${ctx}/resumepreview/parentresume?faculty=${ms.value.TUName }"> <span>${ms.value.area}</span>
 										</a> <span class="d_time">${ms.key.inTime}</span>
 										<div class="clear"></div>
 										<div class="d_resume">
