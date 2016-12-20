@@ -678,7 +678,7 @@ var youdao_conv_id = 271546;
 			                    <div class="mb10">
 			                        	<a href="${ctx }/job1?&id=${rf.rlId }"target="_blank">${rf.jobTitle }</a> 
 			                            &nbsp;
-			                            <span class="c9">${rf.workArea }</span>
+			                            <span class="c9">${rf.qu }</span>
 			                    </div>
 			                        <span><em class="c7">结算方式： </em>${rf.salary}</span>
 			                        <span><em class="c7">学历：</em> 大学本科</span> <br />
@@ -722,7 +722,7 @@ var youdao_conv_id = 271546;
 			                    <div class="mb10">
 			                        	<a href="${ctx }/job1?&id=${rf1.rlId }" target="_blank">${rf1.jobTitle }</a> 
 			                            &nbsp;
-			                            <span class="c9">${rf1.workArea }</span>
+			                            <span class="c9">${rf1.qu }</span>
 			                    </div>
 			                        <span><em class="c7">结算方式： </em>${rf1.salary}</span>
 			                        <span><em class="c7">学历：</em> 大学本科</span> <br />

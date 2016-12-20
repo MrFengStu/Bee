@@ -419,11 +419,11 @@
 							<div class="hot_pos_l">
 								<div class="mb10">
 									<a href="${ctx }/job1?&id=${rec.rlId }" title="前端开发"
-										target="_blank">${rec.jobTitle }</a> &nbsp; <span class="c9">${rec.workArea }</span>
+										target="_blank">${rec.jobTitle }</a> &nbsp; <span class="c9">${rec.qu }</span>
 								</div>
 								<span><em class="c7">时薪：</em>${rec.salary}</span> <span><em
-									class="c7">年级：</em> ${rec.grade}</span> <span><em class="c7">工作时间：
-								</em>${rec.WTime}</span> <br /> <span><em class="c7">职位诱惑：</em>${rec.subsidy}</span>
+									class="c7">年级：</em> ${rec.grade}</span> <br /><span><em class="c7">工作时间：
+								</em>${rec.WTime}</span>  <span><em class="c7">职位诱惑：</em>${rec.attract}</span>
 								<br /> <span>[${rec.reTime}]</span>
 							</div>
 							

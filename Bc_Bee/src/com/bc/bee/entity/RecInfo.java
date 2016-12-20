@@ -22,7 +22,7 @@ import javax.persistence.Table;
  *	WTime （工作时间）varchar    50
  *	StuInfo（学生情况）varchar     255
  *	JobDemand（工作需求）varchar   255
- *	Subsidy（补贴） varchar    30
+ *	Attract（补贴） varchar    30
  *	State（状态）char 
  *
  */
@@ -35,7 +35,6 @@ public class RecInfo {
 	private String JobTitle;
 	private String Contacts;
 	private String ContactInfo;
-	private String WorkArea;
 	private String Address;
 	private String Grade;
 	private String Subject;
@@ -45,7 +44,10 @@ public class RecInfo {
 	private String StuInfo;
 	private String JobDemand;
 	private String Attract;
+<<<<<<< HEAD
 	private String Subsidy;
+=======
+>>>>>>> 2aafac369c9d204a6e23f0bcf9554ac888527289
 	private String State;
 	private String ReTime;
 	private String Shi;
@@ -87,12 +89,6 @@ public class RecInfo {
 	}
 	public void setContactInfo(String contactInfo) {
 		ContactInfo = contactInfo;
-	}
-	public String getWorkArea() {
-		return WorkArea;
-	}
-	public void setWorkArea(String workArea) {
-		WorkArea = workArea;
 	}
 	public String getAddress() {
 		return Address;
@@ -137,12 +133,7 @@ public class RecInfo {
 	public void setJobDemand(String jobDemand) {
 		JobDemand = jobDemand;
 	}
-	public String getSubsidy() {
-		return Subsidy;
-	}
-	public void setSubsidy(String subsidy) {
-		Subsidy = subsidy;
-	}
+	
 	public String getSalary() {
 		return Salary;
 	}
@@ -184,6 +175,12 @@ public class RecInfo {
 	}
 	public void setSchool(String school) {
 		School = school;
+	}
+	public String getAttract() {
+		return Attract;
+	}
+	public void setAttract(String attract) {
+		Attract = attract;
 	}
 	
 	

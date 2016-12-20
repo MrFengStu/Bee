@@ -65,9 +65,10 @@ public class RecruitmentController {
 		String salary = (String) request.getParameter("salary");
 		String settle = (String) request.getParameter("settle");
 		String stuInfo = (String) request.getParameter("stuInfo");
-		String school= (String) request.getParameter("school");
+		String grade= (String) request.getParameter("grade");
 		String WTime= (String) request.getParameter("WTime");
 		String attract= (String) request.getParameter("attract");
+		String jobdemand= (String) request.getParameter("jobdemand");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -80,9 +81,10 @@ public class RecruitmentController {
 		session.setAttribute("salary", salary);
 		session.setAttribute("settle", settle);
 		session.setAttribute("stuInfo", stuInfo);
-		session.setAttribute("school", school);
+		session.setAttribute("grade", grade);
 		session.setAttribute("WTime", WTime);
 		session.setAttribute("attract", attract);
+		session.setAttribute("jobdemand", jobdemand);
 
 		if (jobTitle == "") {
 			error = "招聘题目不能为空";
@@ -125,9 +127,14 @@ public class RecruitmentController {
 			session.setAttribute("settleError", error);
 
 		}
-		if (school == "") {
+		if (grade == "") {
 			error = "授课年级不能为空";
-			session.setAttribute("schoolError", error);
+			session.setAttribute("gradeError", error);
+
+		}
+		if (jobdemand == "") {
+			error = "工作需求不能为空";
+			session.setAttribute("jobdemandError", error);
 
 		}
 		if (WTime == "") {
@@ -137,7 +144,7 @@ public class RecruitmentController {
 		}
 		
 		if (jobTitle == "" || contacts == "" || contactInfo == "" || shi == "" || qu == "" || address == ""
-				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "") {
+				|| subject == "" || salary == "" || settle == "" || grade == "" || WTime == "") {
 			return "/recruitment";
 		}
 
@@ -169,6 +176,10 @@ public class RecruitmentController {
 		String salary = (String) request.getParameter("salary");
 		String settle = (String) request.getParameter("settle");
 		String stuInfo = (String) request.getParameter("stuInfo");
+		String grade= (String) request.getParameter("grade");
+		String WTime= (String) request.getParameter("WTime");
+		String attract= (String) request.getParameter("attract");
+		String jobdemand= (String) request.getParameter("jobdemand");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -181,6 +192,11 @@ public class RecruitmentController {
 		session.setAttribute("salary", salary);
 		session.setAttribute("settle", settle);
 		session.setAttribute("stuInfo", stuInfo);
+		session.setAttribute("grade", grade);
+		session.setAttribute("WTime", WTime);
+		session.setAttribute("attract", attract);
+		session.setAttribute("jobdemand", jobdemand);
+		
 
 		if (jobTitle == "") {
 			error = "招聘题目不能为空";
@@ -221,6 +237,21 @@ public class RecruitmentController {
 		if (settle == "") {
 			error = "结算方式不能为空";
 			session.setAttribute("settleError", error);
+
+		}
+		if (grade == "") {
+			error = "授课年级不能为空";
+			session.setAttribute("gradeError", error);
+
+		}
+		if (jobdemand == "") {
+			error = "工作需求不能为空";
+			session.setAttribute("jobdemandError", error);
+
+		}
+		if (WTime == "") {
+			error = "授课时间不能为空";
+			session.setAttribute("tiemError", error);
 
 		}
 

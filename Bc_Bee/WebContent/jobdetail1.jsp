@@ -115,18 +115,18 @@ var youdao_conv_id = 271546;
                        	                    </dt>
                     <dd class="job_request">
                     	<span class="red">${rf1.salary}</span>
-                       	<span>${rf1.workArea}</span> 
+                       	<span>${rf1.qu}</span> 
                        	<span>${rf1.grade} </span>
                        	<span> ${rf1.subject}</span> 
                        	<br>
-                      	  职位诱惑 : ${rf1.subsidy}
+                      	  职位诱惑 : ${rf1.attract}
                       	<div>发布时间：16:05发布</div>
                     </dd>
                     <dd class="job_bt">
                         <h3 class="description">职位描述</h3>
                         <p>${rf1.jobDemand}</p>
                         <h3 class="description">你可以得到</h3>
-						<p>${rf1.subsidy}</p>
+						<p>${rf1.attract}</p>
 
                     </dd>
                      

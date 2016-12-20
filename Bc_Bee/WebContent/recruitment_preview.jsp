@@ -120,6 +120,11 @@ var youdao_conv_id = 271546;
 	                 			<input type="hidden"  name="salary" value="${salary}">
 	                 			<input type="hidden"  name="settle" value="${settle}">
 	                 			<input type="hidden"  name="stuInfo" value="${stuInfo}">
+	                 			
+	                 			<input type="hidden"  name="grade" value="${grade}">
+	                 			<input type="hidden"  name="WTime" value="${WTime}">
+	                 			<input type="hidden"  name="attract" value="${attract}">
+	                 			<input type="hidden"  name="jobdemand" value="${jobdemand}">
 	                 			 
 	                 
 	               
