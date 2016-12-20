@@ -123,7 +123,7 @@ var youdao_conv_id = 271546;
                      
                                         	<dd class="unresume">
 	                        <div>
-	                        	你在蜜蜂还没有简历呢，你可以<a href="${ctx }/login.jsp" target="_blank" title="完善在线简历">完善在线简历</a>，也可<a class="inline" href="#loginPop" title="登录">上传附件简历</a>直接投递
+	                        	你在蜜蜂还没有简历呢，你可以<a href="" target="_blank" title="完善在线简历">完善在线简历</a>，也可<a href="" title="登录">上传附件简历</a>直接投递
 	                       	</div>
 	                    </dd>
                                                             <div class="saoma saoma_btm">
@@ -142,7 +142,7 @@ var youdao_conv_id = 271546;
 						</div>
                     </div>
                                         <dd>
-                                        	                    			                        	<a href="#loginPop" title="登录" class="inline btn fr btn_apply">发出邀请</a>
+                                        	                    			                        	<!--  <a href="#loginPop" title="登录" class="inline btn fr btn_apply">发出邀请</a>-->
 	                        	                   		                	                </dd>
                 </dl>
                                 <div id="weibolist"></div>
@@ -151,7 +151,7 @@ var youdao_conv_id = 271546;
             <div class="content_r">
                 <dl class="job_company">
                     <dt>
-                    	<a href="h/c/683.html" target="_blank">
+                    	<a href="" target="_blank">
                             <img class="b2" src="${ctx }/style/images/ff80808140ac5ed90140b953972e0215.png" width="80" height="80" alt="北京立方网信息技术有限公司" />
                             <div>
                                 <h2 class="fl">
@@ -210,6 +210,7 @@ var youdao_conv_id = 271546;
                        	<a href="javascript:;" id="mapPreview">查看完整地图</a>
                        	                    </dd>-->
                 </dl>
+<<<<<<< HEAD
                 <div id="myRecommend_jd">
             		<h2>可能适合你的职位 <i>匹配度</i></h2>
             		<ul class="reset">
@@ -254,6 +255,9 @@ var youdao_conv_id = 271546;
 				               
             
                                 <a href="h/subject/s_zhouyou.html?utm_source=BD__lagou&utm_medium=&utm_campaign=zhouyou" target="_blank" class="eventAd">
+=======
+                                <a href="" target="_blank" class="eventAd">
+>>>>>>> 9052fa238ade5d44c0c5e8828d313a2bedbbbbfc
                   <img src="${ctx }/style/images/zhouyou.jpg" width="280" height="135" />
                 </a>
             </div>
@@ -563,7 +567,7 @@ var youdao_conv_id = 271546;
             <tr class="drawGGJ">
                 <td align="center">
                 	<p class="font_16 count"></p>
-                	<p class="font_16 share dn">邀请好友成功注册拉勾，可提升每日投递量 &nbsp;&nbsp; <a href="h/share/invite.html" target="_blank">邀请好友>></a></p>
+                	<p class="font_16 share dn">邀请好友成功注册拉勾，可提升每日投递量 &nbsp;&nbsp; <a href="" target="_blank">邀请好友>></a></p>
                 </td>
             </tr>
         	<tr class="drawQD">
@@ -606,7 +610,7 @@ var youdao_conv_id = 271546;
 	                        class="filePrew" type="file" onchange="file_check(this,'h/nearBy/updateMyResume.json','resumeUpload2')" />
                         </a>
                     </form>
-                    <a class="btn" href="${ctx }/jianli.jsp" target="_blank">完善在线简历</a>
+                    <a class="btn" href="" target="_blank">完善在线简历</a>
 	            </td>
 	        </tr>
 	    </table>
