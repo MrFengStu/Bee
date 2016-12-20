@@ -317,8 +317,8 @@
 										target="_blank">${rs.TUName }</a> &nbsp; <span class="c9">${rs.area }</span>
 								</div>
 								<span><em class="c7">优惠：</em>${rs.discount }</span> <span><em
-									class="c7">经验：</em> ${rs.pte }</span> <span><em class="c7">学历：
-								</em>${rs.ted }</span> <br /> <br /> <span>[${rs.reTime }]</span>
+									class="c7">经验：</em> ${rs.pte }</span> <br /><span><em class="c7">学历：
+								</em>${rs.ted }</span>  <br /> <span>[${rs.reTime }]</span>
 							</div>
 							<div class="hot_pos_r">
 								<div class="apply">
