@@ -149,7 +149,7 @@
 								<li>
 									<div class="d_item">
 										<h2 title="随便写">
-											<a target="_blank" href=""> <em>${ms.value.TUName}
+											<a target="_blank" href="${ctx}/resumepreview/parentresume?faculty=${ms.value.TUName }"> <em>${ms.value.TUName}
 													${ms.value.teaSubject }</em> <span>(${ms.value.salary}/小时)</span>
 											</a>
 										</h2>
