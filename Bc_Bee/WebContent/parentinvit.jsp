@@ -194,10 +194,10 @@
 						<table>
 							<tr>
 
-								<td><a href="${ctx }/Delivery/Init" target="_blank"> <img
+								<td><a href="${ctx }/Delivery/jiazhangInit" target="_blank"> <img
 										src="${ctx }/style/images/toudixiang.jpg"/>
 								</a></td>
-								<td><a target="_blank" href="${ctx }/mList.jsp"> <img
+								<td><a target="_blank" href="#"> <img
 										src="${ctx }/style/images/yaoqinghan.jpg"/>
 								</a></td>
 								<td><a href="${ctx }/collections.html"> <img
