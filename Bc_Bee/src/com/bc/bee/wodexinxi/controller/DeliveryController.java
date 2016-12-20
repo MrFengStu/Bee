@@ -36,16 +36,10 @@ public class DeliveryController {
 
 		TUser tuser = (TUser) session.getAttribute("student");
 		//根据用户Id查询出在数据库投递表中这个用户所有的投递记录
-//		List<Delivery> deliverys1 = DeliveryServiceImpl.findByTUId(tuser.getTUId());
 		Page<Delivery> deliverys;
-		System.out.println("pageNum:"+pageNum);
 		deliverys = this.DeliveryServiceImpl.findDeliveryPageList(tuser.getTUId(),pageNum, 5);
-		//根据deliverys中的招聘表外键找到家长招聘表记录
-		System.out.println("deliverys长度："+deliverys.getList().size());
-
 		//  循环遍历deliverys ，每一个delivery都有一个招聘recinfo，用键值对的方式存到map中
 		Iterator i = deliverys.getList().iterator();
-//		Iterator i=deliverys.iterator();
 		HashMap map=new HashMap();
 		HashMap mapa=new HashMap();
 		HashMap mapb=new HashMap();
@@ -71,7 +65,13 @@ public class DeliveryController {
 			}
 			map.put(delivery, recinfo);
 		}
-		session.setAttribute("name", tuser.getTUName());
+
+		setAttributeAll(tuser.getTUName(),deliverys,map,mapa,mapb,mapc,mapd,mape,session);
+		return "delivery";
+	}
+	public void setAttributeAll(String name, Page deliverys, HashMap map, HashMap mapa, HashMap mapb, 
+			HashMap mapc, HashMap mapd, HashMap mape,HttpSession session){
+		session.setAttribute("name", name);
 		session.setAttribute("deliveryPage", deliverys);
 		session.setAttribute("map", map);
 		session.setAttribute("mapa", mapa);
@@ -79,7 +79,6 @@ public class DeliveryController {
 		session.setAttribute("mapc", mapc);
 		session.setAttribute("mapd", mapd);
 		session.setAttribute("mape", mape);
-		return "delivery";
 	}
 	//投递成功
 		@RequestMapping("a")
