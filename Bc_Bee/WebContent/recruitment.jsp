@@ -361,7 +361,7 @@ var youdao_conv_id = 271546;
                                 	<td>工作需求</td>
                                 	<td>
               
-                                        <textarea id="stuInfo" name="JobDemand" class="form-control kindeditorSimple" style="height:100px;"></textarea>
+                                        <textarea id="stuInfo" name="attract" class="form-control kindeditorSimple" style="height:100px;"></textarea>
                                        	
                                     </td>
                                 </tr>

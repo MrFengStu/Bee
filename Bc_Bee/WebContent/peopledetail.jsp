@@ -146,7 +146,7 @@ var youdao_conv_id = 271546;
 	                        	                   		                	                </dd>
                 </dl>
                                 <div id="weibolist"></div>
-                                </c:forEach>
+                               
             </div>	
             <div class="content_r">
                 <dl class="job_company">
@@ -155,16 +155,17 @@ var youdao_conv_id = 271546;
                             <img class="b2" src="${ctx }/style/images/ff80808140ac5ed90140b953972e0215.png" width="80" height="80" alt="北京立方网信息技术有限公司" />
                             <div>
                                 <h2 class="fl">
-                                	                                  		立方网
+                                	                                  		${rm.TUName}
                                   	                                  	
                                   	                                    	<img src="${ctx }/style/images/valid.png" width="15" height="19" alt="蜜蜂认证企业" /> 
-                                    	<span class="dn">蜜蜂认证企业</span>
+                                    	<span class="dn">蜜蜂认证教员</span>
                                                                         
                                 </h2>
                             </div>
                         </a>
+                         </c:forEach>
                     </dt>
-                    <dd>
+                    <!-- <dd>
                     	<ul class="c_feature reset">
                         	<li><span>领域</span> 大学生家教</li>
                         	<li><span>规模</span> 5-20人</li>
@@ -203,13 +204,60 @@ var youdao_conv_id = 271546;
                             <input type="submit" id="add" value="贴上" />
                         </div> -->
                        	
-                       	                       	<h4>工作地址</h4>
+                       	                       <!--  	<h4>工作地址</h4>
                        	<div>石家庄市裕华区河北师范大学软件学院</div>
                        	<div id="smallmap"></div>
                        	<a href="javascript:;" id="mapPreview">查看完整地图</a>
-                       	                    </dd>
+                       	                    </dd>-->
                 </dl>
+
+                <div id="myRecommend_jd">
+            		<h2>可能适合你的职位 <i>匹配度</i></h2>
+            		<ul class="reset">
+            			            			<li>
+            				<a target="_blank" href="">
+								<span class="f14">小学数学</span>
+								<span class="c7">家长B</span>
+								<em>92%</em>
+							</a>
+            			</li>
+            			            			<li>
+            				<a target="_blank" href="">
+								<span class="f14">初中数学</span>
+								<span class="c7">家长C</span>
+								<em>92%</em>
+							</a>
+            			</li>
+            			            			<li>
+            				<a target="_blank" href="">
+								<span class="f14">小学语文</span>
+								<span class="c7">家长D</span>
+								<em>89%</em>
+							</a>
+            			</li>
+            			            			<li>
+            				<a target="_blank" href="">
+								<span class="f14">小学英语</span>
+								<span class="c7">家长E</span>
+								<em>88%</em>
+							</a>
+            			</li>
+            			            			<li>
+            				<a target="_blank" href="">
+								<span class="f14">初中英语</span>
+								<span class="c7">家长F</span>
+								<em>88%</em>
+							</a>
+            			</li>
+            			            		</ul>
+            		            		<a target="_blank" class="more" href="">更多推荐职位&gt;&gt;</a>
+            		            	</div><!--end #myRecommend-->
+				               
+            
+                                <a href="h/subject/s_zhouyou.html?utm_source=BD__lagou&utm_medium=&utm_campaign=zhouyou" target="_blank" class="eventAd">
+
                                 <a href="" target="_blank" class="eventAd">
+
                   <img src="${ctx }/style/images/zhouyou.jpg" width="280" height="135" />
                 </a>
             </div>
