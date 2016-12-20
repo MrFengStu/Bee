@@ -59,7 +59,7 @@ $(function(){
                          
                         	 
                     </div><!--end .preview_header-->
-
+</form>
         <div class="preview_content">
             <div class="profile_box" id="basicInfo">
                 <h2>基本信息</h2>
@@ -216,7 +216,7 @@ $(function(){
 	            
 			        </div>
 			        
-			        </form>
+			     
 			        <!--end .preview_content-->
   	</div>
  <!--end #previewWrapper-->
