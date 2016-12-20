@@ -210,7 +210,7 @@ var youdao_conv_id = 271546;
                        	<a href="javascript:;" id="mapPreview">查看完整地图</a>
                        	                    </dd>-->
                 </dl>
-<<<<<<< HEAD
+
                 <div id="myRecommend_jd">
             		<h2>可能适合你的职位 <i>匹配度</i></h2>
             		<ul class="reset">
@@ -255,9 +255,9 @@ var youdao_conv_id = 271546;
 				               
             
                                 <a href="h/subject/s_zhouyou.html?utm_source=BD__lagou&utm_medium=&utm_campaign=zhouyou" target="_blank" class="eventAd">
-=======
+
                                 <a href="" target="_blank" class="eventAd">
->>>>>>> 9052fa238ade5d44c0c5e8828d313a2bedbbbbfc
+
                   <img src="${ctx }/style/images/zhouyou.jpg" width="280" height="135" />
                 </a>
             </div>
