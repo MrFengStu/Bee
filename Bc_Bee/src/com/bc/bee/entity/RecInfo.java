@@ -36,21 +36,20 @@ public class RecInfo {
 	private String Contacts;
 	private String ContactInfo;
 	private String Address;
-	private String Grade;
 	private String Subject;
+	private String Grade;
 	private String Salary;
 	private String Settle;
 	private String WTime;
 	private String StuInfo;
+	private String State;
 	private String JobDemand;
 	private String Attract;
-	private String Subsidy;
-	private String State;
 	private String ReTime;
 	private String Shi;
 	private String Qu;
-	private Integer View;
 	private String School;
+	private Integer View;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -178,12 +177,6 @@ public class RecInfo {
 	}
 	public void setAttract(String attract) {
 		Attract = attract;
-	}
-	public String getSubsidy() {
-		return Subsidy;
-	}
-	public void setSubsidy(String subsidy) {
-		Subsidy = subsidy;
 	}
 	
 	

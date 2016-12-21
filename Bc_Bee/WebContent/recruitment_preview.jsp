@@ -108,7 +108,7 @@ var youdao_conv_id = 271546;
 	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${school}</li><br/>
 	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${WTime}</li><br/>
 	                 	        <li style="list-style-type:none;height: 20px;font-size: 15px;">${attract}</li><br/>
-	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${jobdemand}</li><br/>
+	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${jobDemand}</li><br/>
 	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${stuInfo}</li><br/>
 	                 		</ul>
 	                 	</div>
@@ -127,7 +127,7 @@ var youdao_conv_id = 271546;
 	                 			<input type="hidden"  name="school" value="${school}">
 	                 			<input type="hidden"  name="WTime" value="${WTime}">
 	                 			<input type="hidden"  name="attract" value="${attract}">
-	                 			<input type="hidden"  name="jobdemand" value="${jobdemand}">
+	                 			<input type="hidden"  name="jobdemand" value="${jobDemand}">
 	                 			 
 	                 
 	               

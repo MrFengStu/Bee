@@ -68,7 +68,7 @@ public class RecruitmentController {
 		String school= (String) request.getParameter("school");
 		String WTime= (String) request.getParameter("WTime");
 		String attract= (String) request.getParameter("attract");
-		String jobdemand= (String) request.getParameter("jobdemand");
+		String jobDemand= (String) request.getParameter("jobDemand");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -84,7 +84,7 @@ public class RecruitmentController {
 		session.setAttribute("school", school);
 		session.setAttribute("WTime", WTime);
 		session.setAttribute("attract", attract);
-		session.setAttribute("jobdemand", jobdemand);
+		session.setAttribute("jobDemand", jobDemand);
 
 		if (jobTitle == "") {
 			error = "招聘题目不能为空";
@@ -137,7 +137,7 @@ public class RecruitmentController {
 			session.setAttribute("attractError", error);
 
 		}
-		if (jobdemand == "") {
+		if (jobDemand == "") {
 			error = "工作需求不能为空";
 			session.setAttribute("jobdemandError", error);
 
@@ -149,7 +149,7 @@ public class RecruitmentController {
 		}
 		
 		if (jobTitle == "" || contacts == "" || contactInfo == "" || shi == "" || qu == "" || address == ""
-				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "" || attract == "" || jobdemand == "") {
+				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "" || attract == "" || jobDemand == "") {
 			return "/recruitment";
 		}
 
@@ -184,7 +184,7 @@ public class RecruitmentController {
 		String school= (String) request.getParameter("school");
 		String WTime= (String) request.getParameter("WTime");
 		String attract= (String) request.getParameter("attract");
-		String jobdemand= (String) request.getParameter("jobdemand");
+		String jobDemand= (String) request.getParameter("jobDemand");
 		String error = null;
 
 		session.setAttribute("jobTitle", jobTitle);
@@ -200,7 +200,7 @@ public class RecruitmentController {
 		session.setAttribute("school",school);
 		session.setAttribute("WTime", WTime);
 		session.setAttribute("attract", attract);
-		session.setAttribute("jobdemand", jobdemand);
+		session.setAttribute("jobDemand", jobDemand);
 		
 
 		if (jobTitle == "") {
@@ -259,14 +259,14 @@ public class RecruitmentController {
 			session.setAttribute("gradeError", error);
 
 		}
-		if (jobdemand == "") {
+		if (jobDemand == "") {
 			error = "工作需求不能为空";
-			session.setAttribute("tiemError", error);
+			session.setAttribute("jobdemandError", error);
 
 		}
 
 		if (jobTitle == "" || contacts == "" || contactInfo == "" || shi == "" || qu == "" || address == ""
-				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "" || attract == "" || jobdemand == "") {
+				|| subject == "" || salary == "" || settle == "" || school == "" || WTime == "" || attract == "" || jobDemand == "") {
 			return "/recruitment";
 		} else {
 			return "/recruitment_preview";
