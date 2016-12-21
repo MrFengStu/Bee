@@ -42,7 +42,7 @@ public class RecInfo {
 	private String Settle;
 	private String WTime;
 	private String StuInfo;
-	String State;
+	private String State;
 	private String JobDemand;
 	private String Attract;
 	private String ReTime;
