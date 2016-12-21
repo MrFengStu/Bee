@@ -223,23 +223,23 @@ var youdao_conv_id = 271546;
 
                                 	<td style="float:left;width:150px;">
                                 		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">小学：</p>
-                                		<input style="font-size:14px;float:left;" name="grade" type="radio" value="小学1-3年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">小学1-3</p></br>
-                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="grade" type="radio" value="小学4-6年级" id="settle"/><p style="font-size:14px;margin-top:-60px;margin-left:20px;">小学4-6</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="小学1-3年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">小学1-3</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="小学4-6年级" id="settle"/><p style="font-size:14px;margin-top:-60px;margin-left:20px;">小学4-6</p>
                                 		 
                                     	
                                     </td>
                                     <td style="float:left;width:150px;">
                                 		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">初中：</p>
-                                		<input style="font-size:14px;float:left;" name="grade" type="radio" value="初中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">初一</p></br>
-                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="grade" type="radio" value="初中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初二</p> </br>
-                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="grade" type="radio" value="初中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初三</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="初中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">初一</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="初中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初二</p> </br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="初中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">初三</p>
                                     	
                                     </td>
                                     <td style="float:left;width:150px;">
                                 		<p style="margin-top:-0px;margin-left:15px;font-size:14px;">高中：</p>
-                                		<input style="font-size:14px;float:left;" name="grade" type="radio" value="高中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">高一</p></br>
-                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="grade" type="radio" value="高中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高二</p> </br>
-                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="grade" type="radio" value="高中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高三</p>
+                                		<input style="font-size:14px;float:left;" name="school" type="radio" value="高中一年级" id="settle"/><p style="font-size:14px;margin-top:-15px;margin-left:20px;">高一</p></br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="高中二年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高二</p> </br>
+                                		<input style="margin-top:-45px;font-size:14px;float:left;" name="school" type="radio" value="高中三年级" id="settle"/><p style=" font-size:14px;margin-top:-60px;margin-left:20px;">高三</p>
                                     	
                                     </td>
                                     <td style="height:30px;padding:0px;font-size:14px;" class="redstar"> 
@@ -370,7 +370,7 @@ var youdao_conv_id = 271546;
                                 
                                 <tr>
                                 	<td><span class="redstar">*</span></td>
-                                	<td>工作需求</td>
+                                	<td>工作需求：</td>
                                 	<td>
               
                                         <textarea id="stuInfo" name="jobdemand" class="form-control kindeditorSimple" style="height:100px;"></textarea>

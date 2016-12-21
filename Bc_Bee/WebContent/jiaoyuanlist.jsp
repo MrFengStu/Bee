@@ -283,25 +283,50 @@
 </dl>	
 				<div class="breakline"></div>
 				<dl class="workplace" id="workplaceSelect">
-					<dt class="fl">工作地点：</dt>
+					<dt class="fl">教授科目：</dt>
 					<dd>
-						<a href="javascript:;" class="current">桥西区</a> |
+						<a href="${ctx }/teasearch?&param=科目数学">数学</a> |
 					</dd>
 					<dd>
-						<a href="javascript:;">桥东区</a> |
+						<a href="${ctx }/teasearch?&param=科目语文">语文</a> |
 					</dd>
 					<dd>
-						<a href="javascript:;">裕华区</a> |
+						<a href="${ctx }/teasearch?&param=科目英语">英语</a> |
 					</dd>
 					<dd>
-						<a href="javascript:;">长安区</a> |
+						<a href="${ctx }/teasearch?&param=科目物理">物理</a> |
 					</dd>
 					<dd>
-						<a href="javascript:;">新华区</a> |
+						<a href="${ctx }/teasearch?&param=科目化学">化学</a> |
 					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=科目生物">生物</a> |
+					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=科目地理">地理</a> |
+					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=科目历史">历史</a> |
+					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=科目政治">政治</a> |
+					</dd>
+					</br>
+					</br>
+					
+					<dt class="fl">教授年级：</dt>
+					<dd>
+						<a href="${ctx }/teasearch?&param=年级小学">小学</a> |
+					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=年级初中">初中</a> |
+					</dd>
+					<dd>
+						<a href="${ctx }/teasearch?&param=年级高中">高中</a> |
+					</dd>
+					 
 
-					<dd class="more">
-						<a href="javascript:;">其他</a>
+					 
 				</dl>
 
 				<div id="tip_didi" class="dn">
