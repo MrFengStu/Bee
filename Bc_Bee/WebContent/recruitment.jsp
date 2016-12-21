@@ -266,6 +266,7 @@ var youdao_conv_id = 271546;
                                     		<td   >星期四</td>
                                     		<td   >星期五</td>
                                     		<td   >星期六</td>
+                                    		<td   >星期日</td>
                                     	</tr>
                                     	<tr>
                                     		<td  >上午</td>
