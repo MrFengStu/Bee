@@ -90,7 +90,7 @@
 						<i></i>
 					</dt>
 					<dd style="display: none;">
-						<a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a>
+						<a rel="nofollow" href="${ctx }/jianli/Init">我的简历</a>
 					</dd>
 					<dd style="display: none;">
 						<a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo"

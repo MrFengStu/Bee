@@ -85,7 +85,7 @@ var youdao_conv_id = 271546;
             		<span class="red dn" id="noticeDot-0"></span>
             		<i></i>
             	</dt>
-                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli.jsp">我的简历</a></dd>
+                <dd style="display: none;"><a rel="nofollow" href="${ctx }/jianli/Init">我的简历</a></dd>
                 <dd style="display: none;"><a href="${ctx }/Delivery/Init">我投递的职位 <span id="noticeNo" class="red dn">(0)</span></a></dd>
                 <dd style="display: none;"><a href="${ctx }/Invitation/Init">我收到的邀请</a></dd>
                 <dd style="display: none;"><a href="${ctx }/certification_student.jsp">用户认证</a></dd>
