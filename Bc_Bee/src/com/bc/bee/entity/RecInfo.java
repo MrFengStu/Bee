@@ -44,7 +44,6 @@ public class RecInfo {
 	private String StuInfo;
 	private String JobDemand;
 	private String Attract;
-	private String Subsidy;
 	private String State;
 	private String ReTime;
 	private String Shi;
@@ -178,12 +177,6 @@ public class RecInfo {
 	}
 	public void setAttract(String attract) {
 		Attract = attract;
-	}
-	public String getSubsidy() {
-		return Subsidy;
-	}
-	public void setSubsidy(String subsidy) {
-		Subsidy = subsidy;
 	}
 	
 	
