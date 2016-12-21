@@ -691,9 +691,9 @@ var youdao_conv_id = 271546;
 			                    </div>
 			                	<div class="hot_pos_r">
 			                    	<div class="mb10 recompany"><a href="${ctx }/job1?&id=${rf.rlId }" target="_blank">${rf.contacts}</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
+			                        <span><em class="c7">地址：</em>${rf.address}</span>
 			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span><br/>
+			                        <span><em class="c7">工作时间：</em>${rf.WTime}</span><br/>
 			                        
 			                        <%if(session.getAttribute("student") != null && session.getAttribute("parent") == null){%>
 			                       	<div class="apply">
@@ -735,9 +735,9 @@ var youdao_conv_id = 271546;
 			                    </div>
 			                	<div class="hot_pos_r">
 			                    	<div class="mb10 recompany"><a href="${ctx }/job1?&id=${rf1.rlId }" target="_blank">${rf1.contacts}</a></div>
-			                        <span><em class="c7">地址：</em>裕华区中山路256号</span>
+			                        <span><em class="c7">地址：</em>${rf1.address}</span>
 			                         <br />
-			                        <span><em class="c7">工作时间：</em>周六下午</span>
+			                        <span><em class="c7">工作时间：</em>${rf1.WTime}</span>
 			                         <%if(session.getAttribute("student") != null && session.getAttribute("parent") == null){%>
 			                       	<div class="apply">
 										<a href="${ctx }/mail/indexadd?RlId=${rf.rlId}" target="_blank">投个简历</a>
