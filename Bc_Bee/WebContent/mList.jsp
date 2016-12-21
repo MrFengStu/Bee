@@ -15,7 +15,7 @@
 <link  media="handheld" rel="alternate"/>
 <!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>拉勾网-最专业的家教招聘平台</title>
+<title>蜜蜂网-最专业的家教招聘平台</title>
 <meta content="23635710066417756375" property="qc:admins"/>
 
 <!-- <div class="web_root"  style="display:none">http://www.lagou.com</div> -->
@@ -131,7 +131,7 @@ var youdao_conv_id = 271546;
 	                </h2>
 	                <div class="clear"></div>
 	                <a title="公司名称" class="d_jobname" target="_blank" href="${ctx }/job1?&id=${ms.value.rlId }">
-	                	${ms.value.contacts } <span>[${ms.value.workArea }]</span> 
+	                	${ms.value.contacts } <span>[${ms.value.qu }]</span> 
 	               </a>
 	               <span class="d_time">${ms.key.inTime}</span>
 	               <div class="clear"></div>

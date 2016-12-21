@@ -243,8 +243,8 @@ var youdao_conv_id = 271546;
                                     	
                                     </td>
                                     <td style="height:30px;padding:0px;font-size:14px;" class="redstar"> 
-			                                <c:if test="${sessionScope.schoolError != null}">
-												 ${sessionScope.schoolError} 
+			                                <c:if test="${sessionScope.gradeError != null}">
+												 ${sessionScope.gradeError} 
 												<br>
 											</c:if>	
 									   </td>
@@ -303,7 +303,7 @@ var youdao_conv_id = 271546;
                                      
 									<td style="height:30px;padding:0px;font-size:14px;" class="redstar"> 
 			                                <c:if test="${sessionScope.timeError != null}">
-												 ${sessionScope.schoolError} 
+												 ${sessionScope.gradeError} 
 												<br>
 											</c:if>	
 									   </td>
@@ -354,14 +354,26 @@ var youdao_conv_id = 271546;
                                     </td>
                                      
                                 </tr>
+                                <tr>
+                                	<td width="25"><span class="redstar">*</span></td>
+                                	<td width="85">职位诱惑</td>
+                                	<td style="width:30px; color:red;font-size:14px;">
+                                    	<input style="margin-right:35px;" type="text" placeholder="如：滴滴打车、午饭等" value="" name="attract" class="input_520" id="settle">
+                                    	<c:if test="${sessionScope.subjectError != null}">
+												 ${sessionScope.subjectError} 
+												 
+										</c:if>	
+                                    </td>
+                                     
+                                </tr>
                                 
                                 
                                 <tr>
                                 	<td><span class="redstar">*</span></td>
-                                	<td>工作需求</td>
+                                	<td>工作需求：</td>
                                 	<td>
               
-                                        <textarea id="stuInfo" name="attract" class="form-control kindeditorSimple" style="height:100px;"></textarea>
+                                        <textarea id="stuInfo" name="jobdemand" class="form-control kindeditorSimple" style="height:100px;"></textarea>
                                        	
                                     </td>
                                 </tr>

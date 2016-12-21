@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bc.bee.entity.Hotsearch;
 import com.bc.bee.entity.RecInfo;
+import com.bc.bee.entity.Resume;
 import com.bc.bee.search.service.HotsearchServiceImpl;
 import com.bc.bee.search.service.IndexserServiceImpl;
+import com.bc.bee.search.service.TeaIndexserServiceImpl;
+ 
 import com.framework.Page2;;
 
 @Controller
@@ -23,6 +26,8 @@ public class IndexserController {
 	private IndexserServiceImpl IndexserServiceImpl;
 	@Resource
 	private HotsearchServiceImpl HotsearchServiceImpl;
+	@Resource
+	private TeaIndexserServiceImpl TeaIndexserServiceImpl;
 
 	// @RequestMapping("search")
 	// public String search(HttpServletRequest request,HttpSession session){
@@ -166,7 +171,7 @@ public class IndexserController {
 				}
 			}
 
-			// area为空
+		// area为空
 		} else {
 
 			// school不为空
@@ -205,7 +210,7 @@ public class IndexserController {
 					// session.setAttribute("recinfo", recinfo);
 				}
 
-				// school为空
+			// school为空
 			} else {
 
 				// subject不为空
@@ -231,5 +236,102 @@ public class IndexserController {
 		}
 
 		return "list";
+	}
+	
+	
+	
+	
+	
+	@RequestMapping("teasearch")
+	public String teasearch(HttpServletRequest request, HttpSession session, ModelMap modelMap) {
+
+		String param = request.getParameter("param").substring(0, 2);
+		String paramValue = request.getParameter("param").substring(2);
+		System.out.println(param);
+		System.out.println(paramValue);
+		String chengdu = "年级";
+		String xueke = "科目";
+
+ 
+		if (param.equalsIgnoreCase(chengdu)) {
+			session.setAttribute("school", paramValue);
+		}
+		if (param.equalsIgnoreCase(xueke)) {
+			session.setAttribute("subject", paramValue);
+		}
+
+		String school = (String) session.getAttribute("school");
+		String subject = (String) session.getAttribute("subject");
+
+		System.out.println("222" + school);
+		System.out.println("333" + subject);
+
+		
+
+			// school不为空
+			if (session.getAttribute("school") != null) {
+
+				// subject不为空
+				if (session.getAttribute("subject") != null) {
+					String pageNo = request.getParameter("pageNo");
+					if (pageNo == null) {
+						pageNo = "1";
+					}
+					Page2 page2 = TeaIndexserServiceImpl.findBySchoolSubject(school, subject, Integer.valueOf(pageNo), 6);
+					request.setAttribute("page", page2);
+					List<Resume> resumes = page2.getList2();
+					modelMap.put("resumes", resumes);
+					// List<RecInfo>
+					// recinfo=this.IndexserServiceImpl.findByAreaSchoolSubject(area,
+					// school, subject);
+					// session.setAttribute("recinfo", recinfo);
+
+				// subject为空
+				} else {
+					String pageNo = request.getParameter("pageNo");
+					if (pageNo == null) {
+						pageNo = "1";
+					}
+					Page2 page3 = TeaIndexserServiceImpl.findBySchool(school, Integer.valueOf(pageNo), 6);
+					request.setAttribute("page", page3);
+					List<Resume> resumes = page3.getList2();
+					modelMap.put("resumes", resumes);
+					// List<RecInfo> recinfo =
+					// this.IndexserServiceImpl.findByAreaSchool(area, school);
+
+					// session.setAttribute("recinfo", recinfo);
+				}
+
+			// school为空
+			} else {
+
+				// subject不为空
+				if (session.getAttribute("subject") != null) {
+					System.out.println("测试内容");
+					String pageNo = request.getParameter("pageNo");
+					if (pageNo == null) {
+						pageNo = "1";
+					}
+					Page2 page4 = TeaIndexserServiceImpl.findBySubject( subject, Integer.valueOf(pageNo), 6);
+					request.setAttribute("page", page4);
+					List<Resume> resumes = page4.getList2();
+					System.out.println("测试内容"+resumes.get(0).getSGrade());
+					modelMap.put("resumes", resumes);
+
+					// List<RecInfo> recinfo =
+					// this.IndexserServiceImpl.findByAreaSubject(area,
+					// subject);
+					// session.setAttribute("recinfo", recinfo);
+
+				// subject为空
+				} else {
+ 
+					
+				}
+			}
+
+		
+
+		return "jiaoyuanlist";
 	}
 }

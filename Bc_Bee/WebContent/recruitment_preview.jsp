@@ -106,7 +106,10 @@ var youdao_conv_id = 271546;
 	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${salary}</li><br/>
 	                 	        <li style="list-style-type:none;height: 20px;font-size: 15px;">${settle}</li><br/>
 	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${stuInfo}</li><br/>
-	                 			
+	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${school}</li><br/>
+	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${WTime}</li><br/>
+	                 	        <li style="list-style-type:none;height: 20px;font-size: 15px;">${attract}</li><br/>
+	                 			<li style="list-style-type:none;height: 20px;font-size: 15px;">${jobdemand}</li><br/>
 	                 		</ul>
 	                 	</div>
 	                 	<form action="${ctx}/publish/add" class="corp_form" id="bindForm" >
@@ -120,6 +123,11 @@ var youdao_conv_id = 271546;
 	                 			<input type="hidden"  name="salary" value="${salary}">
 	                 			<input type="hidden"  name="settle" value="${settle}">
 	                 			<input type="hidden"  name="stuInfo" value="${stuInfo}">
+	                 			
+	                 			<input type="hidden"  name="grade" value="${school}">
+	                 			<input type="hidden"  name="WTime" value="${WTime}">
+	                 			<input type="hidden"  name="attract" value="${attract}">
+	                 			<input type="hidden"  name="jobdemand" value="${jobdemand}">
 	                 			 
 	                 
 	               
