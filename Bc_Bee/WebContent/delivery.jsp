@@ -181,7 +181,7 @@
 												<div class="clear"></div>
 												<a title="公司名称" class="d_jobname" target="_blank"
 													href="${ctx }/job1?&id=${ms.value.rlId }">
-													${ms.value.contacts } <span>[${ms.value.workArea }]</span>
+													${ms.value.contacts } <span>[${ms.value.qu }]</span>
 												</a> <span class="d_time">${ms.value.reTime}</span>
 												<div class="clear"></div>
 												<div class="d_resume">
