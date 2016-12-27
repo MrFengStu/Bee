@@ -53,8 +53,8 @@ public class DeliveryServiceImpl {
 			e.printStackTrace();
 		}
 	}
-	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum, int pageSize){
-		return this.DeliveryDaoImpl.findDeliveryPageList(TUId,pageNum,pageSize,null);
+	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum,String state, int pageSize){
+		return this.DeliveryDaoImpl.findDeliveryPageList(TUId,pageNum,state,pageSize,null);
 	}
 	public Page<Delivery> findJzDeliveryPageList(int PUId, int pageNum, int pageSize){
 		return this.DeliveryDaoImpl.findJzDeliveryPageList(PUId,pageNum,pageSize,null);

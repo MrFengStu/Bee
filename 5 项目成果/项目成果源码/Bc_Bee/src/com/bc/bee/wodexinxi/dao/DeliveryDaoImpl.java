@@ -45,9 +45,12 @@ public class DeliveryDaoImpl extends BaseDao<Delivery, String> {
 			return null;
 		}
 	}
-	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum, int pageSize,Object[] params){
+	public Page<Delivery> findDeliveryPageList(int TUId,int pageNum,String state, int pageSize,Object[] params){
 		String hql = "from Delivery lu where lu.tuser.TUId="+TUId;
-	//	System.out.println("hql语句："+hql);
+		if(!state.equals("f")){
+			hql = "from Delivery lu where State ='"+state+"' and lu.tuser.TUId= '"+TUId+"'";
+		}
+		System.out.println("hql语句："+hql);
 		try {
 			Page<Delivery> deliveryPageList = new Page<Delivery>();
 			deliveryPageList.setCurrentPageNum(pageNum);

@@ -160,11 +160,11 @@
 								<ul class="reset">
 									<li class="current"><a href="${ctx }/Delivery/Init">全部</a>
 									</li>
-									<li><a href="${ctx }/Delivery/a">投递成功</a></li>
-									<li><a href="${ctx }/Delivery/b">被查看</a></li>
-									<li><a href="${ctx }/Delivery/c">通过初筛</a></li>
-									<li><a href="${ctx }/Delivery/d">通知面试</a></li>
-									<li class="last"><a href="${ctx }/Delivery/e">不合适</a></li>
+									<li><a href="${ctx }/Delivery/Init?state=a">投递成功</a></li>
+									<li><a href="${ctx }/Delivery/Init?state=b">被查看</a></li>
+									<li><a href="${ctx }/Delivery/Init?state=c">通过初筛</a></li>
+									<li><a href="${ctx }/Delivery/Init?state=d">通知面试</a></li>
+									<li class="last"><a href="${ctx }/Delivery/Init?state=e">不合适</a></li>
 								</ul>
 							</div>
 							<form id="deliveryForm">
@@ -202,15 +202,17 @@
 						<td colspan="6" align="center">
 						共${deliveryPage.totalCount }条记录
 							共${deliveryPage.totalPageNum }页 当前第${deliveryPage.currentPageNum }页<br />
-							<a href="${ctx }/Delivery/Init?pageNum=1" name="firstPage"
-							value="首页">首页</a> <c:if test="${deliveryPage.currentPageNum!=1 }">
-								<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.prePageNum}"	name="firstPage" value="首页">上一页</a>
-							</c:if> <c:forEach begin="1" end="${deliveryPage.totalPageNum }" var="pageNum">
-								<a name="pagen" href="${ctx }/Delivery/Init?pageNum=${pageNum }">${pageNum }</a>
-							</c:forEach> <c:if test="${deliveryPage.currentPageNum!=deliveryPage.totalPageNum }">
-								<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.nextPageNum}"	name="firstPage" value="首页">下一页</a>
+							<a href="${ctx }/Delivery/Init?pageNum=1&state=${jyDeliveryState}" name="firstPage"value="首页">首页</a> 
+							<c:if test="${deliveryPage.currentPageNum!=1 }">
+								<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.prePageNum}&state=${jyDeliveryState}"	name="firstPage" value="首页">上一页</a>
 							</c:if> 
-							<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.totalPageNum}" name="firstPage" value="尾页">尾页</a>
+							<c:forEach begin="1" end="${deliveryPage.totalPageNum }" var="pageNum">
+								<a name="pagen" href="${ctx }/Delivery/Init?pageNum=${pageNum }&state=${jyDeliveryState}">${pageNum }</a>
+							</c:forEach> 
+							<c:if test="${deliveryPage.currentPageNum!=deliveryPage.totalPageNum }">
+								<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.nextPageNum}&state=${jyDeliveryState}"	name="firstPage" value="首页">下一页</a>
+							</c:if> 
+							<a href="${ctx }/Delivery/Init?pageNum=${deliveryPage.totalPageNum}&state=${jyDeliveryState}" name="firstPage" value="尾页">尾页</a>
 						</td>
 					</div>
 
