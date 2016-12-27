@@ -286,7 +286,7 @@ function get_jianlivar(){
 			   </div>
 			   <div class="links">
 			      <a data-deliverid="1686182" data-name="jason" data-positionid="149594" data-email="888888888@qq.com" class="resume_notice" href="${ctx }/Delivery/notint?DeId=${ms.get(12) }">通知面试</a>
-			      <a data-deliverid="1686182" class="resume_refuse" href="${ctx }/Delivery/buheshi?DeId=${ms.get(12) }">不合适</a>
+			      <a data-deliverid="1686182" class="resume_refuse" href="${ctx }/Delivery/buheshi?DeId=${ms.get(12)}&state=${jianlivar}">不合适</a>
 			      <a data-resumename="jason的简历" data-positionname="随便写" data-deliverid="1686182" data-positionid="149594" data-resumekey="1ccca806e13637f7b1a4560f80f08057" data-forwardcount="1" class="resume_forward" href="javascript:void(0)">
                   	转发
                   <span>(1人)</span>

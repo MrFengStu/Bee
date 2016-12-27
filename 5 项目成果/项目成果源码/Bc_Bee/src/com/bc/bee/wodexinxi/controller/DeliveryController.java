@@ -71,7 +71,9 @@ public class DeliveryController {
 			//根据家长用户Id查询出在数据库投递表中这个家长所有的投递记录
 			//			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
 			Page<Delivery> deliverys = DeliveryServiceImpl.findJzDeliveryPageList(puser.getPUId(),pageNum,state, 5);
-
+			if(state.equals("a")){
+				this.jz_Delivery_State_change_AtoB(deliverys.getList());
+			}
 //			System.out.println(deliverys.getList().size());
 			List<List> ParDeList = new ArrayList<List>();
 
@@ -101,65 +103,30 @@ public class DeliveryController {
 //				ParDeList.add(list);
 //				System.out.println(list.get(3));
 			}
-			System.out.println("page的长度："+deliverys.getList().size());
+			
 			session.setAttribute("ParDeList", ParDeList);
 			session.setAttribute("jianlivar", state);
 			session.setAttribute("deliveryPage", deliverys);
 			return "canInterviewResumes";
 		}
-		//待处理简历
-		@RequestMapping("jiazhanga")
-		public String jiazhangA(HttpSession session,HttpServletRequest request){
-			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListA");
-			session.setAttribute("ParDeList", ParDeList);
-			String jianlivar = "a";
-			session.setAttribute("jianlivar", jianlivar);
-			return "canInterviewResumes";
+		//待处理查看之后变为已查看
+		public void jz_Delivery_State_change_AtoB(List<Delivery> deliverys){
+			Iterator i = deliverys.iterator();
+			while(i.hasNext()){
+				Delivery delivery = (Delivery) i.next();
+				delivery.setState('b');
+				this.DeliveryServiceImpl.uadateDelivery(delivery);
+			}
 		}
-		//待定简历
-		@RequestMapping("jiazhangb")
-		public String jiazhangB(HttpSession session,HttpServletRequest request){
-			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListB");
-			session.setAttribute("ParDeList", ParDeList);
-			String jianlivar = "b";
-			session.setAttribute("jianlivar", jianlivar);
-			return "canInterviewResumes";
-		}
-		//通过初筛简历
-		@RequestMapping("jiazhangc")
-		public String jiazhangC(HttpSession session,HttpServletRequest request){
-			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListC");
-			session.setAttribute("ParDeList", ParDeList);
-			String jianlivar = "c";
-			session.setAttribute("jianlivar", jianlivar);
-			return "canInterviewResumes";
-		}
-		//通知面试简历
-		@RequestMapping("jiazhangd")
-		public String jiazhangD(HttpSession session,HttpServletRequest request){
-			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListD");
-			session.setAttribute("ParDeList", ParDeList);
-			String jianlivar = "d";
-			session.setAttribute("jianlivar", jianlivar);
-			return "canInterviewResumes";
-		}
-		//不合适简历
-		@RequestMapping("jiazhange")
-		public String jiazhangE(HttpSession session,HttpServletRequest request){
-			List<List> ParDeList = (List<List>) session.getAttribute("ParDeListE");
-			session.setAttribute("ParDeList", ParDeList);
-			String jianlivar = "e";
-			session.setAttribute("jianlivar", jianlivar);
-			return "canInterviewResumes";
-		}
+		
 		//不合适方法
 		@RequestMapping("buheshi")
-		public String  Improper(@RequestParam("DeId") int DeId,HttpSession session){
+		public String  Improper(@RequestParam("DeId") int DeId,String state,HttpSession session){
 //			System.out.println(DeId);
 			Delivery delivery = this.DeliveryServiceImpl.findByDeId(DeId);
 			delivery.setState('e');
 			this.DeliveryServiceImpl.uadateDelivery(delivery);
-			return "redirect:jiazhangInit";
+			return "redirect:jiazhangInit?state="+state;
 		}
 		//通知面试
 		@RequestMapping("notint")
