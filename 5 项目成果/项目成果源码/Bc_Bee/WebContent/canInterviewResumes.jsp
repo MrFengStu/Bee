@@ -136,19 +136,19 @@ function get_jianlivar(){
             	                <dl class="company_center_aside">
 		<dt>我收到的简历</dt>
 		<dd>
-			<a href="${ctx }/Delivery/jiazhanga">待处理简历</a> 
+			<a href="${ctx }/Delivery/jiazhangInit?state=a">待处理简历</a> 
 		</dd>
 	<dd class="current">
-		<a  href="${ctx }/Delivery/jiazhangb">待定简历</a>
+		<a  href="${ctx }/Delivery/jiazhangInit?state=b">待定简历</a>
 	</dd>
 	<dd>
-		<a href="${ctx }/Delivery/jiazhangc">通过初筛简历</a>
+		<a href="${ctx }/Delivery/jiazhangInit?state=c">通过初筛简历</a>
 	</dd>
 	<dd>
-		<a href="${ctx }/Delivery/jiazhangd">通知面试简历</a>
+		<a href="${ctx }/Delivery/jiazhangInit?state=d">通知面试简历</a>
 	</dd>
 	<dd class="btm">
-		<a href="${ctx }/Delivery/jiazhange">不合适简历</a> 
+		<a href="${ctx }/Delivery/jiazhangInit?state=e">不合适简历</a> 
 	</dd>
 </dl>
 <dl class="company_center_aside">
@@ -309,18 +309,18 @@ function get_jianlivar(){
            			共${deliveryPage.totalCount }条记录
 					共${deliveryPage.totalPageNum }页 
 					当前第${deliveryPage.currentPageNum }页<br />
-					<a href="${ctx }/Delivery/jiazhangInit?pageNum=1" name="firstPage" value="首页">首页</a>
+					<a href="${ctx }/Delivery/jiazhangInit?pageNum=1&state=${jianlivar}" name="firstPage" value="首页">首页</a>
 					<c:if test="${deliveryPage.currentPageNum!=1 }">
-						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.prePageNum}" name="firstPage" value="首页">上一页</a>
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.prePageNum}&state=${jianlivar}" name="firstPage" value="首页">上一页</a>
 					</c:if>
  					
 					<c:forEach begin="1" end="${deliveryPage.totalPageNum }" var="pageNum">
-						<a name="pagen" href="${ctx }/Delivery/jiazhangInit?pageNum=${pageNum }">${pageNum }&nbsp;&nbsp;</a>
+						<a name="pagen" href="${ctx }/Delivery/jiazhangInit?pageNum=${pageNum }&state=${jianlivar}">${pageNum }&nbsp;&nbsp;</a>
 					</c:forEach>
 					<c:if test="${deliveryPage.currentPageNum!=deliveryPage.totalPageNum }">
-						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.nextPageNum}" name="firstPage" value="首页">下一页</a>
+						<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.nextPageNum}&state=${jianlivar}" name="firstPage" value="首页">下一页</a>
 					</c:if>
-					<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.totalPageNum}" name="firstPage" value="尾页">尾页</a>
+					<a href="${ctx }/Delivery/jiazhangInit?pageNum=${deliveryPage.totalPageNum}&state=${jianlivar}" name="firstPage" value="尾页">尾页</a>
             	</td>
             	</div>
             	

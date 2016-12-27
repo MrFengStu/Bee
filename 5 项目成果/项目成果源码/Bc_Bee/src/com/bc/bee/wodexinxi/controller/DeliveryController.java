@@ -65,19 +65,16 @@ public class DeliveryController {
 		}
 		//家长收到的简历投递
 		@RequestMapping("jiazhangInit")
-		public String jiazhangInit(@RequestParam(name="pageNum", defaultValue="1") int pageNum,HttpSession session){
+		public String jiazhangInit(@RequestParam(name="pageNum", defaultValue="1") int pageNum,@RequestParam(name="state", defaultValue="a") String state,HttpSession session){
+			System.out.println("state:"+state);
 			PUser puser = (PUser) session.getAttribute("parent");
 			//根据家长用户Id查询出在数据库投递表中这个家长所有的投递记录
 			//			List<Delivery> deliverys = DeliveryServiceImpl.findByPUId(puser.getPUId());
-			Page<Delivery> deliverys = DeliveryServiceImpl.findJzDeliveryPageList(puser.getPUId(),pageNum, 5);
+			Page<Delivery> deliverys = DeliveryServiceImpl.findJzDeliveryPageList(puser.getPUId(),pageNum,state, 5);
 
 //			System.out.println(deliverys.getList().size());
 			List<List> ParDeList = new ArrayList<List>();
-			List<List> ParDeListA = new ArrayList<List>();
-			List<List> ParDeListB = new ArrayList<List>();
-			List<List> ParDeListC = new ArrayList<List>();
-			List<List> ParDeListD = new ArrayList<List>();
-			List<List> ParDeListE = new ArrayList<List>();
+
 			Iterator i=deliverys.getList().iterator();
 			while(i.hasNext()){
 				Delivery delivery = (Delivery) i.next();
@@ -100,33 +97,13 @@ public class DeliveryController {
 				list.add(resume.getTeaSubject());			//擅长科目10
 				list.add(resume.getSalary());				//期望薪资11
 				list.add(delivery.getDeId().toString());    //投递表主键12
-				if(delivery.getState()=='a'){
-					ParDeListA.add(list);
-				}else if(delivery.getState()=='b'){
-					ParDeListB.add(list);
-				}
-				else if(delivery.getState()=='c'){
-					ParDeListC.add(list);
-				}
-				else if(delivery.getState()=='d'){
-					ParDeListD.add(list);
-				}
-				else{
-					ParDeListE.add(list);
-				}
+				ParDeList.add(list);
 //				ParDeList.add(list);
 //				System.out.println(list.get(3));
 			}
-			session.setAttribute("ParDeListA", ParDeListA);
 			System.out.println("page的长度："+deliverys.getList().size());
-			System.out.println("parDeListA的长度："+ParDeListA.size());
-			session.setAttribute("ParDeListB", ParDeListB);
-			session.setAttribute("ParDeListC", ParDeListC);
-			session.setAttribute("ParDeListD", ParDeListD);
-			session.setAttribute("ParDeListE", ParDeListE);
-			String jianlivar = "a";
-			session.setAttribute("ParDeList", ParDeListA);
-			session.setAttribute("jianlivar", jianlivar);
+			session.setAttribute("ParDeList", ParDeList);
+			session.setAttribute("jianlivar", state);
 			session.setAttribute("deliveryPage", deliverys);
 			return "canInterviewResumes";
 		}
